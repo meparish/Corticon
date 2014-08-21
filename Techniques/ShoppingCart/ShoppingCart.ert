@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_y1JZyGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_y10IbGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_tYxQo2qnEeGMCd15vaZIXw" ruleActivity="ShoppingCart.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="if the customer is gold and the total value is greater than $100 and cart contains 2 to 4 items then the discount is 15%"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="ShoppingCart.ecore#//Customer">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Gold" eAttribute="ShoppingCart.ecore#//Customer/category"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="ShoppingCart.ecore#//Customer/carts" eClass="ShoppingCart.ecore#//Cart">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="ShoppingCart.ecore#//Cart/items" eClass="ShoppingCart.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Ink Cartridge" eAttribute="ShoppingCart.ecore#//Item/description"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10" eAttribute="ShoppingCart.ecore#//Item/quantity"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="12.560000" eAttribute="ShoppingCart.ecore#//Item/unitPrice"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="ShoppingCart.ecore#//Cart/items" eClass="ShoppingCart.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="paper" eAttribute="ShoppingCart.ecore#//Item/description"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5" eAttribute="ShoppingCart.ecore#//Item/quantity"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="15.500000" eAttribute="ShoppingCart.ecore#//Item/unitPrice"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" expanded="false" eReference="ShoppingCart.ecore#//Customer/carts" eClass="ShoppingCart.ecore#//Cart">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="ShoppingCart.ecore#//Cart/items" eClass="ShoppingCart.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="cable" eAttribute="ShoppingCart.ecore#//Item/description"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="ShoppingCart.ecore#//Item/quantity"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="12.560000" eAttribute="ShoppingCart.ecore#//Item/unitPrice"/>
+            </children>
+          </children>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="ShoppingCart.ecore#//Customer">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Gold" eAttribute="ShoppingCart.ecore#//Customer/category"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="185.195000" eAttribute="ShoppingCart.ecore#//Customer/total"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eReference="ShoppingCart.ecore#//Customer/carts" eClass="ShoppingCart.ecore#//Cart">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.150000" eAttribute="ShoppingCart.ecore#//Cart/discount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="172.635000" eAttribute="ShoppingCart.ecore#//Cart/discountedTotal"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Gold discount" eAttribute="ShoppingCart.ecore#//Cart/message"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="203.100000" eAttribute="ShoppingCart.ecore#//Cart/total"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" eReference="ShoppingCart.ecore#//Cart/items" eClass="ShoppingCart.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Ink Cartridge" eAttribute="ShoppingCart.ecore#//Item/description"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="125.600000" eAttribute="ShoppingCart.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10" eAttribute="ShoppingCart.ecore#//Item/quantity"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="12.560000" eAttribute="ShoppingCart.ecore#//Item/unitPrice"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" eReference="ShoppingCart.ecore#//Cart/items" eClass="ShoppingCart.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="paper" eAttribute="ShoppingCart.ecore#//Item/description"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="77.500000" eAttribute="ShoppingCart.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="ShoppingCart.ecore#//Item/quantity"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="15.500000" eAttribute="ShoppingCart.ecore#//Item/unitPrice"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" expanded="false" eReference="ShoppingCart.ecore#//Customer/carts" eClass="ShoppingCart.ecore#//Cart">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.000000" eAttribute="ShoppingCart.ecore#//Cart/discount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="12.560000" eAttribute="ShoppingCart.ecore#//Cart/discountedTotal"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="12.560000" eAttribute="ShoppingCart.ecore#//Cart/total"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" eReference="ShoppingCart.ecore#//Cart/items" eClass="ShoppingCart.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="cable" eAttribute="ShoppingCart.ecore#//Item/description"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="12.560000" eAttribute="ShoppingCart.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="ShoppingCart.ecore#//Item/quantity"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="12.560000" eAttribute="ShoppingCart.ecore#//Item/unitPrice"/>
+            </children>
+          </children>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="ShoppingCart.ecore#//Customer">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Gold" eAttribute="ShoppingCart.ecore#//Customer/category"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="185.195000" eAttribute="ShoppingCart.ecore#//Customer/total"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="ShoppingCart.ecore#//Customer/carts" eClass="ShoppingCart.ecore#//Cart">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="0.150000" eAttribute="ShoppingCart.ecore#//Cart/discount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="172.635000" eAttribute="ShoppingCart.ecore#//Cart/discountedTotal"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Gold discount" eAttribute="ShoppingCart.ecore#//Cart/message"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="203.100000" eAttribute="ShoppingCart.ecore#//Cart/total"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="ShoppingCart.ecore#//Cart/items" eClass="ShoppingCart.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Ink Cartridge" eAttribute="ShoppingCart.ecore#//Item/description"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="125.600000" eAttribute="ShoppingCart.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10" eAttribute="ShoppingCart.ecore#//Item/quantity"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="12.560000" eAttribute="ShoppingCart.ecore#//Item/unitPrice"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="ShoppingCart.ecore#//Cart/items" eClass="ShoppingCart.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="paper" eAttribute="ShoppingCart.ecore#//Item/description"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="77.500000" eAttribute="ShoppingCart.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5" eAttribute="ShoppingCart.ecore#//Item/quantity"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="15.500000" eAttribute="ShoppingCart.ecore#//Item/unitPrice"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" manuallyCreated="true" expanded="false" eReference="ShoppingCart.ecore#//Customer/carts" eClass="ShoppingCart.ecore#//Cart">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="0.000000" eAttribute="ShoppingCart.ecore#//Cart/discount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="12.560000" eAttribute="ShoppingCart.ecore#//Cart/discountedTotal"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="12.560000" eAttribute="ShoppingCart.ecore#//Cart/total"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="ShoppingCart.ecore#//Cart/items" eClass="ShoppingCart.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="cable" eAttribute="ShoppingCart.ecore#//Item/description"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="12.560000" eAttribute="ShoppingCart.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="ShoppingCart.ecore#//Item/quantity"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="12.560000" eAttribute="ShoppingCart.ecore#//Item/unitPrice"/>
+            </children>
+          </children>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_ldUdAGqnEeGMCd15vaZIXw" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="ShoppingCart.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="ShoppingCart"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

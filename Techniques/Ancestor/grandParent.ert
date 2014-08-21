@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_uoZshGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_uo-UQWqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_l7Q9QWqnEeGMCd15vaZIXw" ruleActivity="grandParent.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Since Percy has child Mike who is Ryan's parent, then Percy is the grandparent of Ryan."/>
+        <PostedMessage severity="Info" text="Since Sidney has child Percy who is Mike's parent, then Sidney is the grandparent of Mike."/>
+        <PostedMessage severity="Info" text="Since Sidney has child Percy who is the grandparent of Ryan , then Sidney is the great grandparent of Ryan."/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="grandParent.ecore#//Person">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Sidney" eAttribute="grandParent.ecore#//Person/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="grandParent.ecore#//Person/child" eClass="grandParent.ecore#//Person">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Percy" eAttribute="grandParent.ecore#//Person/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="grandParent.ecore#//Person/child" eClass="grandParent.ecore#//Person">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Mike" eAttribute="grandParent.ecore#//Person/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="grandParent.ecore#//Person/child" eClass="grandParent.ecore#//Person">
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Ryan" eAttribute="grandParent.ecore#//Person/name"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eClass="grandParent.ecore#//Person">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sidney" eAttribute="grandParent.ecore#//Person/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eReference="grandParent.ecore#//Person/child" eClass="grandParent.ecore#//Person">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Percy" eAttribute="grandParent.ecore#//Person/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2" eReference="grandParent.ecore#//Person/child" eClass="grandParent.ecore#//Person">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Mike" eAttribute="grandParent.ecore#//Person/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.1/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3" eReference="grandParent.ecore#//Person/child" eClass="grandParent.ecore#//Person">
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Ryan" eAttribute="grandParent.ecore#//Person/name"/>
+              </children>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" eReference="grandParent.ecore#//Person/grandChild" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.1/@children.1/@children.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="grandParent.ecore#//Person/grandChild" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.1/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" eReference="grandParent.ecore#//Person/greatGrandChild" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.1/@children.1/@children.1"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="grandParent.ecore#//Person">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Sidney" eAttribute="grandParent.ecore#//Person/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="grandParent.ecore#//Person/child" eClass="grandParent.ecore#//Person">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Percy" eAttribute="grandParent.ecore#//Person/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.2" eReference="grandParent.ecore#//Person/child" eClass="grandParent.ecore#//Person">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Mike" eAttribute="grandParent.ecore#//Person/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.1/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.3" eReference="grandParent.ecore#//Person/child" eClass="grandParent.ecore#//Person">
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Ryan" eAttribute="grandParent.ecore#//Person/name"/>
+              </children>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" manuallyCreated="true" eReference="grandParent.ecore#//Person/grandChild" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.1/@children.1/@children.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="grandParent.ecore#//Person/grandChild" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.1/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" manuallyCreated="true" eReference="grandParent.ecore#//Person/greatGrandChild" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.1/@children.1/@children.1"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_ka2TYGqnEeGMCd15vaZIXw" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="grandParent.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="grandParent"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

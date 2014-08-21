@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_rVQg6WqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_lEtvwGqnEeGMCd15vaZIXw" vocabulary="edge.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(p1.distance &lt; p2.distance)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( p1.distance &lt; p2.distance ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="distance" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p1.distance">
+                <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="distance" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p2.distance">
+                <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="p1.distance &lt; p2.distance" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Request.type='shortest')=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Request.type = 'shortest' ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="Request.type">
+                <parentTerm text="Request" datatype="Request" termtype="ENTITY" fulltext="Request" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Request.type='shortest'" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="p2.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p2.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="p2.remove">
+                <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter>
+      <opaqueExpression expression="p1.from=p2.from">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p1.from = p2.from" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="from" datatype="String" termtype="ATTRIBUTE" fulltext="p2.from">
+              <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="from" datatype="String" termtype="ATTRIBUTE" fulltext="p1.from">
+              <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter>
+      <opaqueExpression expression="p1.to=p2.to">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p1.to = p2.to" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="to" datatype="String" termtype="ATTRIBUTE" fulltext="p1.to">
+              <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="to" datatype="String" termtype="ATTRIBUTE" fulltext="p2.to">
+              <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Path {p1.via} is shorter than {p2.via}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Path  + p1.via +  is shorter than  + p2.via" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="via" datatype="String" termtype="ATTRIBUTE" fulltext="p1.via">
+              <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="via" datatype="String" termtype="ATTRIBUTE" fulltext="p2.via">
+              <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="edge.ecore#//Path" ruleStatements="#//@ruleset/@ruleStatements.0">
+      <alias value="p1"/>
+      <referencedAttributes attribute="edge.ecore#//Path/from"/>
+      <referencedAttributes attribute="edge.ecore#//Path/to"/>
+      <referencedAttributes attribute="edge.ecore#//Path/distance"/>
+      <referencedAttributes attribute="edge.ecore#//Path/via"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="edge.ecore#//Path">
+      <alias value="p2"/>
+      <referencedAttributes attribute="edge.ecore#//Path/from"/>
+      <referencedAttributes attribute="edge.ecore#//Path/to"/>
+      <referencedAttributes attribute="edge.ecore#//Path/distance"/>
+      <referencedAttributes attribute="edge.ecore#//Path/via"/>
+    </logicalVariable>
+    <logicalVariable entity="edge.ecore#//Request">
+      <referencedAttributes attribute="edge.ecore#//Request/type"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="49" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="p2.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p2.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="p2.remove">
+                <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="p1.from=p2.from" filter="#//@ruleset/@filters.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="p1.to=p2.to" filter="#//@ruleset/@filters.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="p1.from=p2.from" filter="#//@ruleset/@filters.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="p1.to=p2.to" filter="#//@ruleset/@filters.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.3"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="p1.from=p2.from">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p1.from = p2.from" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="from" datatype="String" termtype="ATTRIBUTE" fulltext="p2.from">
+                <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="from" datatype="String" termtype="ATTRIBUTE" fulltext="p1.from">
+                <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.1">
+        <expressionCell external="p1.to=p2.to">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p1.to = p2.to" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="to" datatype="String" termtype="ATTRIBUTE" fulltext="p1.to">
+                <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="to" datatype="String" termtype="ATTRIBUTE" fulltext="p2.to">
+                <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="Path {p1.via} is shorter than {p2.via}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Path  + p1.via +  is shorter than  + p2.via" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="via" datatype="String" termtype="ATTRIBUTE" fulltext="p1.via">
+                <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="via" datatype="String" termtype="ATTRIBUTE" fulltext="p2.via">
+                <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="p1.distance &lt; p2.distance">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p1.distance &lt; p2.distance" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="distance" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p1.distance">
+                <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="distance" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p2.distance">
+                <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="Request.type='shortest'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Request.type = 'shortest'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="Request.type">
+                <parentTerm text="Request" datatype="Request" termtype="ENTITY" fulltext="Request" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

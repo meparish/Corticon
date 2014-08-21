@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_sXidemqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset operationMode="ProcessAllLogicalLoops" vocabularyUpdateStamp="_lTyGgWqnEeGMCd15vaZIXw" vocabulary="Loop.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="Puzzle.count =1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.count = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.count">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Puzzle.busDays = 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.busDays = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="busDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.busDays">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(Puzzle.busDays > Puzzle.n)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Puzzle.busDays > Puzzle.n ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.n">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="busDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.busDays">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Puzzle.busDays > Puzzle.n" rhs="T"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Puzzle.targetDate=Puzzle.targetDate.addDays(Puzzle.count)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.targetDate = Puzzle.targetDate.addDays ( Puzzle.count )" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Puzzle.targetDate">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="addDays" datatype="DateTime" termtype="METHOD" fulltext="Puzzle.targetDate.addDays">
+                <parentTerm text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Puzzle.targetDate">
+                  <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.count">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="(Puzzle.busDays > Puzzle.n)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Puzzle.busDays > Puzzle.n ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.n">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="busDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.busDays">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Puzzle.busDays > Puzzle.n" rhs="F"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Puzzle.targetDate.addDays(Puzzle.count).dayOfWeek = 1 or Puzzle.targetDate.addDays(Puzzle.count).dayOfWeek = 7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.targetDate.addDays ( Puzzle.count ).dayOfWeek = 1 or Puzzle.targetDate.addDays ( Puzzle.count ).dayOfWeek = 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.count">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="dayOfWeek" datatype="Integer" termtype="METHOD" fulltext="Puzzle.targetDate.addDays.dayOfWeek">
+                <parentTerm text="addDays" datatype="DateTime" termtype="METHOD" fulltext="Puzzle.targetDate.addDays">
+                  <parentTerm text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Puzzle.targetDate">
+                    <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Puzzle.targetDate.addDays(Puzzle.count).dayOfWeek" rhs="{1, 7}"/>
+      </condition>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Puzzle.count+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.count = Puzzle.count + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.count">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.count">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="(Puzzle.busDays > Puzzle.n)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Puzzle.busDays > Puzzle.n ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.n">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="busDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.busDays">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Puzzle.busDays > Puzzle.n" rhs="F"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Puzzle.targetDate.addDays(Puzzle.count).dayOfWeek = 2 or Puzzle.targetDate.addDays(Puzzle.count).dayOfWeek = 3 or Puzzle.targetDate.addDays(Puzzle.count).dayOfWeek = 4 or Puzzle.targetDate.addDays(Puzzle.count).dayOfWeek = 5 or Puzzle.targetDate.addDays(Puzzle.count).dayOfWeek = 6">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.targetDate.addDays ( Puzzle.count ).dayOfWeek = 2 or Puzzle.targetDate.addDays ( Puzzle.count ).dayOfWeek = 3 or Puzzle.targetDate.addDays ( Puzzle.count ).dayOfWeek = 4 or Puzzle.targetDate.addDays ( Puzzle.count ).dayOfWeek = 5 or Puzzle.targetDate.addDays ( Puzzle.count ).dayOfWeek = 6" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.count">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="dayOfWeek" datatype="Integer" termtype="METHOD" fulltext="Puzzle.targetDate.addDays.dayOfWeek">
+                <parentTerm text="addDays" datatype="DateTime" termtype="METHOD" fulltext="Puzzle.targetDate.addDays">
+                  <parentTerm text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Puzzle.targetDate">
+                    <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Puzzle.targetDate.addDays(Puzzle.count).dayOfWeek" rhs="{2, 3, 4, 5, 6}"/>
+      </condition>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Puzzle.count+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.count = Puzzle.count + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.count">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.count">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Puzzle.busDays+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.busDays = Puzzle.busDays + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="busDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.busDays">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="busDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.busDays">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.1">
+      <text expression="final date is {Puzzle.targetDate}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="final date is  + Puzzle.targetDate" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Puzzle.targetDate">
+              <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="{Puzzle.count} : {Puzzle.targetDate} weekend">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.count +  :  + Puzzle.targetDate +  weekend" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Puzzle.targetDate">
+              <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.count">
+              <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="{Puzzle.count} : {Puzzle.targetDate} weekday">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.count +  :  + Puzzle.targetDate +  weekday" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Puzzle.targetDate">
+              <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.count">
+              <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="Loop.ecore#//Puzzle" ruleStatements="#//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2">
+      <referencedAttributes attribute="Loop.ecore#//Puzzle/count"/>
+      <referencedAttributes attribute="Loop.ecore#//Puzzle/busDays"/>
+      <referencedAttributes attribute="Loop.ecore#//Puzzle/n"/>
+      <referencedAttributes attribute="Loop.ecore#//Puzzle/targetDate"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="49" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Puzzle.count =1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.count = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.count">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Puzzle.busDays = 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.busDays = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="busDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.busDays">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Puzzle.count+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.count = Puzzle.count + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.count">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.count">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Puzzle.busDays+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.busDays = Puzzle.busDays + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="busDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.busDays">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="busDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.busDays">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Puzzle.targetDate=Puzzle.targetDate.addDays(Puzzle.count)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.targetDate = Puzzle.targetDate.addDays ( Puzzle.count )" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Puzzle.targetDate">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="addDays" datatype="DateTime" termtype="METHOD" fulltext="Puzzle.targetDate.addDays">
+                <parentTerm text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Puzzle.targetDate">
+                  <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.count">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="final date is {Puzzle.targetDate}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="final date is  + Puzzle.targetDate" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Puzzle.targetDate">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="{Puzzle.count} : {Puzzle.targetDate} weekend">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.count +  :  + Puzzle.targetDate +  weekend" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Puzzle.targetDate">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.count">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="{Puzzle.count} : {Puzzle.targetDate} weekday">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.count +  :  + Puzzle.targetDate +  weekday" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Puzzle.targetDate">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.count">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="Puzzle.busDays > Puzzle.n">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.busDays > Puzzle.n" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.n">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="busDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.busDays">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{1, 2, 3, 4, 5, 6, 7}"/>
+        <expressionCell external="Puzzle.targetDate.addDays(Puzzle.count).dayOfWeek">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Puzzle.targetDate.addDays ( Puzzle.count ).dayOfWeek" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Puzzle.count">
+                <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="dayOfWeek" datatype="Integer" termtype="METHOD" fulltext="Puzzle.targetDate.addDays.dayOfWeek">
+                <parentTerm text="addDays" datatype="DateTime" termtype="METHOD" fulltext="Puzzle.targetDate.addDays">
+                  <parentTerm text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Puzzle.targetDate">
+                    <parentTerm text="Puzzle" datatype="Puzzle" termtype="ENTITY" fulltext="Puzzle" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="{1, 7}"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="{2, 3, 4, 5, 6}"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

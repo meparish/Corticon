@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_awshc8edEeGwsrqpoHSLQw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_BvJK8McNEeGvp5SsrUOs3w" vocabulary="DynamicHealthForms.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="Question.text = 'Are you pregnant?'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.text = 'Are you pregnant?'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="text" datatype="String" termtype="ATTRIBUTE" fulltext="Question.text">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Question.text" rhs="'Are you pregnant?'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Question.answer = 'yes'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.answer = 'yes'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="answer" datatype="String" termtype="ATTRIBUTE" fulltext="Question.answer">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Question.answer" rhs="'yes'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Question.new[text='What is your due date?']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.new [ Question.text = 'What is your due date?' ]" datatype="Question" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="text" datatype="String" termtype="ATTRIBUTE" fulltext="Question.text">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question"/>
+              </terms>
+              <terms text="Question" datatype="Question" termtype="ENTITY" fulltext="Question"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Question" termtype="NEW" fulltext="Question.new">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="Question.text = 'Have you had a recent prostate exam?'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.text = 'Have you had a recent prostate exam?'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="text" datatype="String" termtype="ATTRIBUTE" fulltext="Question.text">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Question.text" rhs="'Have you had a recent prostate exam?'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Question.answer = 'yes'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.answer = 'yes'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="answer" datatype="String" termtype="ATTRIBUTE" fulltext="Question.answer">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Question.answer" rhs="'yes'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Question.new[text='What was the result?']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.new [ Question.text = 'What was the result?' ]" datatype="Question" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="text" datatype="String" termtype="ATTRIBUTE" fulltext="Question.text">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question"/>
+              </terms>
+              <terms text="Question" datatype="Question" termtype="ENTITY" fulltext="Question"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Question" termtype="NEW" fulltext="Question.new">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="Question.text = 'Any recent flare ups?'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.text = 'Any recent flare ups?'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="text" datatype="String" termtype="ATTRIBUTE" fulltext="Question.text">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Question.text" rhs="'Any recent flare ups?'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Question.answer = 'yes'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.answer = 'yes'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="answer" datatype="String" termtype="ATTRIBUTE" fulltext="Question.answer">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Question.answer" rhs="'yes'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Question.new[text='Do they impact function?']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.new [ Question.text = 'Do they impact function?' ]" datatype="Question" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="text" datatype="String" termtype="ATTRIBUTE" fulltext="Question.text">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question"/>
+              </terms>
+              <terms text="Question" datatype="Question" termtype="ENTITY" fulltext="Question"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Question" termtype="NEW" fulltext="Question.new">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If pregnant then ask 'What is your due date?'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If pregnant then ask 'What is your due date?'" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If any recent flareups then ask 'Do they impact function?'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If any recent flareups then ask 'Do they impact function?'" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If prostate exam then ask 'What was the result?'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If prostate exam then ask 'What was the result?'" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement/>
+    <ruleStatement disabled="true">
+      <text expression="Question.new[text=cellValue]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.new[text=cellValue]" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="DynamicHealthForms.ecore#//Question" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2">
+      <alias value="question"/>
+      <referencedAttributes attribute="DynamicHealthForms.ecore#//Question/text"/>
+      <referencedAttributes attribute="DynamicHealthForms.ecore#//Question/answer"/>
+    </logicalVariable>
+    <logicalVariable entity="DynamicHealthForms.ecore#//Question">
+      <referencedAttributes attribute="DynamicHealthForms.ecore#//Question/text"/>
+      <referencedAttributes attribute="DynamicHealthForms.ecore#//Question/answer"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightAdvancedView="12" sashWeightConditionsIf="28">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList rowHeight="28">
+        <valueSetCell/>
+        <expressionCell external="Question.new[text=cellValue]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.new [ Question.text = cellValue ]" datatype="Question" expressiontype="EXPRESSION" cellValue="true">
+            <modifiedTermList>
+              <terms text="text" datatype="String" termtype="ATTRIBUTE" fulltext="Question.text">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question"/>
+              </terms>
+              <terms text="Question" datatype="Question" termtype="ENTITY" fulltext="Question"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Question" termtype="NEW" fulltext="Question.new">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="5" columnWidthAlias="5" columnWidthID="5" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="If pregnant then ask 'What is your due date?'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If pregnant then ask 'What is your due date?'" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="3"/>
+        <text external="If any recent flareups then ask 'Do they impact function?'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If any recent flareups then ask 'Do they impact function?'" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="2"/>
+        <text external="If prostate exam then ask 'What was the result?'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If prostate exam then ask 'What was the result?'" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference/>
+        <text/>
+      </ruleStatementItemList>
+      <ruleStatementItemList disabled="true" ruleStatement="#//@ruleset/@ruleStatements.4">
+        <reference/>
+        <text external="Question.new[text=cellValue]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.new[text=cellValue]" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList rowHeight="42" variableMode="Literal">
+        <valueSetCell/>
+        <expressionCell external="Question.text">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.text" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="text" datatype="String" termtype="ATTRIBUTE" fulltext="Question.text">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell/>
+        <expressionCell external="Question.answer">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.answer" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="answer" datatype="String" termtype="ATTRIBUTE" fulltext="Question.answer">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="19">
+      <ruleColumnList ruleId="0" columnWidth="22" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="130" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="'Are you pregnant?'"/>
+        <conditionValueSetCellList valueSet="'yes'"/>
+        <actionValueSetCellList valueSet="'What is your due date?'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="'Have you had a recent prostate exam?'"/>
+        <conditionValueSetCellList valueSet="'yes'"/>
+        <actionValueSetCellList valueSet="'What was the result?'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="'Any recent flare ups?'"/>
+        <conditionValueSetCellList valueSet="'yes'"/>
+        <actionValueSetCellList valueSet="'Do they impact function?'"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

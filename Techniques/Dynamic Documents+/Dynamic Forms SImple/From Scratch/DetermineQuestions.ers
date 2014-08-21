@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_JDZ1wMecEeGwsrqpoHSLQw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_BvJK8McNEeGvp5SsrUOs3w" vocabulary="DynamicHealthForms.ecore#/">
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="Person.gender = 'female'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.gender = 'female'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="gender" datatype="String" termtype="ATTRIBUTE" fulltext="Person.gender">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.gender" rhs="'female'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Person.lowBackPain)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Person.lowBackPain ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lowBackPain" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Person.lowBackPain">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.lowBackPain" rhs="T"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Question.newUnique[text='Are you pregnant?']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.newUnique [ Question.text = 'Are you pregnant?' ]" datatype="Question" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="text" datatype="String" termtype="ATTRIBUTE" fulltext="Question.text">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question"/>
+              </terms>
+              <terms text="Question" datatype="Question" termtype="ENTITY" fulltext="Question"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Question" termtype="NEW" fulltext="Question.new">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="Person.gender = 'male'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.gender = 'male'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="gender" datatype="String" termtype="ATTRIBUTE" fulltext="Person.gender">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.gender" rhs="'male'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Person.lowBackPain)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Person.lowBackPain ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lowBackPain" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Person.lowBackPain">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.lowBackPain" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Person.age > 65">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.age > 65" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="Person.age">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.age" rhs="> 65"/>
+      </condition>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Question.newUnique[text='Have you had a recent prostate exam?']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.newUnique [ Question.text = 'Have you had a recent prostate exam?' ]" datatype="Question" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="text" datatype="String" termtype="ATTRIBUTE" fulltext="Question.text">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question"/>
+              </terms>
+              <terms text="Question" datatype="Question" termtype="ENTITY" fulltext="Question"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Question" termtype="NEW" fulltext="Question.new">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(Person.hipThigh)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Person.hipThigh ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hipThigh" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Person.hipThigh">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.hipThigh" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Question.newUnique[text='Any recent flare ups?']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.newUnique [ Question.text = 'Any recent flare ups?' ]" datatype="Question" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="text" datatype="String" termtype="ATTRIBUTE" fulltext="Question.text">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question"/>
+              </terms>
+              <terms text="Question" datatype="Question" termtype="ENTITY" fulltext="Question"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Question" termtype="NEW" fulltext="Question.new">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Person.gender = 'female'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.gender = 'female'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="gender" datatype="String" termtype="ATTRIBUTE" fulltext="Person.gender">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.gender" rhs="'female'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Person.lowBackPain)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Person.lowBackPain ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lowBackPain" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Person.lowBackPain">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.lowBackPain" rhs="F"/>
+      </condition>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(Person.hipThigh)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Person.hipThigh ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hipThigh" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Person.hipThigh">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.hipThigh" rhs="F"/>
+      </condition>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Person.gender = 'male'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.gender = 'male'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="gender" datatype="String" termtype="ATTRIBUTE" fulltext="Person.gender">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.gender" rhs="'male'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Person.lowBackPain)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Person.lowBackPain ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lowBackPain" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Person.lowBackPain">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.lowBackPain" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Person.age &lt;= 65">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.age &lt;= 65" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="Person.age">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.age" rhs="&lt;= 65"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Person.hipThigh)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Person.hipThigh ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hipThigh" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Person.hipThigh">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.hipThigh" rhs="F"/>
+      </condition>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Person.gender = 'male'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.gender = 'male'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="gender" datatype="String" termtype="ATTRIBUTE" fulltext="Person.gender">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.gender" rhs="'male'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Person.lowBackPain)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Person.lowBackPain ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lowBackPain" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Person.lowBackPain">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.lowBackPain" rhs="F"/>
+      </condition>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(Person.hipThigh)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Person.hipThigh ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hipThigh" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Person.hipThigh">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.hipThigh" rhs="F"/>
+      </condition>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition>
+        <opaqueExpression expression="not (Person.gender = 'female' or Person.gender = 'male')">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( Person.gender = 'female' or Person.gender = 'male' )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="gender" datatype="String" termtype="ATTRIBUTE" fulltext="Person.gender">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.gender" rhs="not {'female', 'male'}"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(Person.hipThigh)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Person.hipThigh ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hipThigh" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Person.hipThigh">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Person.hipThigh" rhs="F"/>
+      </condition>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If female with low back pain then ask 'Are you pregnant?'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If female with low back pain then ask 'Are you pregnant?'" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If male over 65 with low back pain then ask 'Have you had a recent prostate exam?'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If male over 65 with low back pain then ask 'Have you had a recent prostate exam?'" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If hip/Thigh conditions then ask  'Any recent flare ups?'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If hip/Thigh conditions then ask  'Any recent flare ups?'" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.7">
+      <text expression="Invalid gender">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Invalid gender" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement disabled="true">
+      <text expression="NOTES">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="NOTES" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement disabled="true">
+      <text expression="Question.newUnique[text=cellValue]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.newUnique[text=cellValue]" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement disabled="true">
+      <text expression="Ambiguity">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Ambiguity" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement disabled="true">
+      <text expression="Completeness">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Completeness" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="DynamicHealthForms.ecore#//Person" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2">
+      <referencedAttributes attribute="DynamicHealthForms.ecore#//Person/lowBackPain"/>
+      <referencedAttributes attribute="DynamicHealthForms.ecore#//Person/hipThigh"/>
+      <referencedAttributes attribute="DynamicHealthForms.ecore#//Person/gender"/>
+      <referencedAttributes attribute="DynamicHealthForms.ecore#//Person/age"/>
+    </logicalVariable>
+    <logicalVariable entity="DynamicHealthForms.ecore#//Question">
+      <referencedAttributes attribute="DynamicHealthForms.ecore#//Question/text"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightScope="35" sashWeightConditionsActions="28" sashWeightConditionsIf="33">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList rowHeight="42">
+        <valueSetCell/>
+        <expressionCell external="Question.newUnique[text=cellValue]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.newUnique [ Question.text = cellValue ]" datatype="Question" expressiontype="EXPRESSION" cellValue="true">
+            <modifiedTermList>
+              <terms text="text" datatype="String" termtype="ATTRIBUTE" fulltext="Question.text">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question"/>
+              </terms>
+              <terms text="Question" datatype="Question" termtype="ENTITY" fulltext="Question"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Question" termtype="NEW" fulltext="Question.new">
+                <parentTerm text="Question" datatype="Question" termtype="ENTITY" fulltext="Question" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="51" columnWidthReference="39" columnWidthPostSeverity="5" columnWidthAlias="5" columnWidthID="5" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="If female with low back pain then ask 'Are you pregnant?'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If female with low back pain then ask 'Are you pregnant?'" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList rowHeight="14" ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="If male over 65 with low back pain then ask 'Have you had a recent prostate exam?'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If male over 65 with low back pain then ask 'Have you had a recent prostate exam?'" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="If hip/Thigh conditions then ask  'Any recent flare ups?'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If hip/Thigh conditions then ask  'Any recent flare ups?'" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="7"/>
+        <text external="Invalid gender">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Invalid gender" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList disabled="true" ruleStatement="#//@ruleset/@ruleStatements.4">
+        <reference/>
+        <text external="NOTES">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="NOTES" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList disabled="true" ruleStatement="#//@ruleset/@ruleStatements.5">
+        <reference/>
+        <text external="Question.newUnique[text=cellValue]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Question.newUnique[text=cellValue]" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList disabled="true" ruleStatement="#//@ruleset/@ruleStatements.6">
+        <reference/>
+        <text external="Ambiguity">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Ambiguity" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList disabled="true" ruleStatement="#//@ruleset/@ruleStatements.7">
+        <reference/>
+        <text external="Completeness">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Completeness" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="52" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell/>
+        <expressionCell external="Person.gender">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.gender" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="gender" datatype="String" termtype="ATTRIBUTE" fulltext="Person.gender">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell/>
+        <expressionCell external="Person.lowBackPain">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.lowBackPain" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lowBackPain" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Person.lowBackPain">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell/>
+        <expressionCell external="Person.age">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.age" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="Person.age">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell/>
+        <expressionCell external="Person.hipThigh">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.hipThigh" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hipThigh" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Person.hipThigh">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="16" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <overrideValueSetCell valueSet=""/>
+        <conditionValueSetCellList valueSet="'female'"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="'Are you pregnant?'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="'male'"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="> 65"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="'Have you had a recent prostate exam?'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="'Any recent flare ups?'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="'female'"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="F"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="'male'"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="&lt;= 65"/>
+        <conditionValueSetCellList valueSet="F"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="6" columnWidth="100" pRule="#//@ruleset/@rules.6">
+        <conditionValueSetCellList valueSet="'male'"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="F"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="7" columnWidth="108" pRule="#//@ruleset/@rules.7">
+        <conditionValueSetCellList valueSet="not {'female', 'male'}"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="F"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_EDXQk7aVEeGU39-PZxk6cQ" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_EDXQ8raVEeGU39-PZxk6cQ" externalChecksum="3054974779:507989954">
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_EDXQ7LaVEeGU39-PZxk6cQ" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.1" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>irregular</textVariables>
+      <textVariables>square, round, oval, triangle</textVariables>
+      <locationVariables>Thing [1].shape</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_EDXQ7baVEeGU39-PZxk6cQ" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.4/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>chartreuse</textVariables>
+      <textVariables>red, green, blue, yellow, pink</textVariables>
+      <locationVariables>Thing [4].color</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_EDXQ7raVEeGU39-PZxk6cQ" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.4/@children.1" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>irregular</textVariables>
+      <textVariables>square, round, oval, triangle</textVariables>
+      <locationVariables>Thing [4].shape</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_EDXQ77aVEeGU39-PZxk6cQ" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.2" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>irregular</textVariables>
+      <textVariables>square, round, oval, triangle</textVariables>
+      <locationVariables>Thing [1].shape</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_EDXQ8LaVEeGU39-PZxk6cQ" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.4/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>chartreuse</textVariables>
+      <textVariables>red, green, blue, yellow, pink</textVariables>
+      <locationVariables>Thing [4].color</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_EDXQ8baVEeGU39-PZxk6cQ" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.4/@children.2" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>irregular</textVariables>
+      <textVariables>square, round, oval, triangle</textVariables>
+      <locationVariables>Thing [4].shape</locationVariables>
+    </validationMessages>
+    <testsheet ruleActivityUpdateStamp="_D2ZLELaVEeGU39-PZxk6cQ" ruleActivity="RGBCaPT.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="4 selected by rule 1"/>
+        <PostedMessage severity="Info" text="4 selected by rule 2"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="pink" eAttribute="RGBCaPT.ecore#//Thing/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.0" manuallyCreated="true" value="irregular" eAttribute="RGBCaPT.ecore#//Thing/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="blue" eAttribute="RGBCaPT.ecore#//Thing/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="oval" eAttribute="RGBCaPT.ecore#//Thing/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="red" eAttribute="RGBCaPT.ecore#//Thing/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="square" eAttribute="RGBCaPT.ecore#//Thing/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="RGBCaPT.ecore#//Search">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="RGBCaPT.ecore#//Search/completed"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.1" manuallyCreated="true" value="chartreuse" eAttribute="RGBCaPT.ecore#//Thing/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.2" manuallyCreated="true" value="irregular" eAttribute="RGBCaPT.ecore#//Thing/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="pink" eAttribute="RGBCaPT.ecore#//Thing/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="irregular" eAttribute="RGBCaPT.ecore#//Thing/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="blue" eAttribute="RGBCaPT.ecore#//Thing/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="false" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="oval" eAttribute="RGBCaPT.ecore#//Thing/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="red" eAttribute="RGBCaPT.ecore#//Thing/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="square" eAttribute="RGBCaPT.ecore#//Thing/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" eClass="RGBCaPT.ecore#//Search">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="RGBCaPT.ecore#//Search/completed"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="chartreuse" eAttribute="RGBCaPT.ecore#//Thing/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="false" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="irregular" eAttribute="RGBCaPT.ecore#//Thing/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="pink" eAttribute="RGBCaPT.ecore#//Thing/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.3" manuallyCreated="true" value="irregular" eAttribute="RGBCaPT.ecore#//Thing/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="blue" eAttribute="RGBCaPT.ecore#//Thing/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="false" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="oval" eAttribute="RGBCaPT.ecore#//Thing/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="red" eAttribute="RGBCaPT.ecore#//Thing/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="square" eAttribute="RGBCaPT.ecore#//Thing/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="RGBCaPT.ecore#//Search">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="RGBCaPT.ecore#//Search/completed"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.4" manuallyCreated="true" value="chartreuse" eAttribute="RGBCaPT.ecore#//Thing/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="false" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.5" manuallyCreated="true" value="irregular" eAttribute="RGBCaPT.ecore#//Thing/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_EDXQ87aVEeGU39-PZxk6cQ" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_D2ZLELaVEeGU39-PZxk6cQ" ruleActivity="RGBCaPT.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="7 uses a global stop condition without CaPT on each rule but with Advanced Inferencing"/>
+        <PostedMessage severity="Info" text=""/>
+        <PostedMessage severity="Info" text=""/>
+        <PostedMessage severity="Info" text="7 selected by rule 1"/>
+        <PostedMessage severity="Info" text="7 selected by rule 1"/>
+        <PostedMessage severity="Info" text="7 selected by rule 1"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="RGBCaPT.ecore#//Search">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="RGBCaPT.ecore#//Search/completed"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eClass="RGBCaPT.ecore#//Search">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="RGBCaPT.ecore#//Search/completed"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.3"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="RGBCaPT.ecore#//Search">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="true" eAttribute="RGBCaPT.ecore#//Search/completed"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" manuallyCreated="true" eClass="RGBCaPT.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_EDXQ9LaVEeGU39-PZxk6cQ" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_D2ZLELaVEeGU39-PZxk6cQ" ruleActivity="RGBCaPT.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="8 uses a global stop condition (not in scope) without CaPT on each rule but with Advanced Inferencing"/>
+        <PostedMessage severity="Info" text=""/>
+        <PostedMessage severity="Info" text=""/>
+        <PostedMessage severity="Info" text="8 selected by rule 1"/>
+        <PostedMessage severity="Info" text="8 selected by rule 1"/>
+        <PostedMessage severity="Info" text="8 selected by rule 1"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="RGBCaPT.ecore#//Search">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="RGBCaPT.ecore#//Search/completed"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eClass="RGBCaPT.ecore#//Search">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="RGBCaPT.ecore#//Search/completed"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="RGBCaPT.ecore#//Search">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="true" eAttribute="RGBCaPT.ecore#//Search/completed"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_EDXQ9raVEeGU39-PZxk6cQ" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_D2ZLELaVEeGU39-PZxk6cQ" ruleActivity="RGBCaPT.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="9 uses a global stop condition (in scope) without CaPT on each rule"/>
+        <PostedMessage severity="Info" text="9 uses a global stop condition (in scope) without CaPT on each rule"/>
+        <PostedMessage severity="Info" text="9 will still process all the instances against one of the rule"/>
+        <PostedMessage severity="Info" text="9 will still process all the instances against one of the rule"/>
+        <PostedMessage severity="Info" text="9 that fact that Search.completed has changed does not affect the current rule - though it does affect subsequent ones"/>
+        <PostedMessage severity="Info" text="9 that fact that Search.completed has changed does not affect the current rule - though it does affect subsequent ones"/>
+        <PostedMessage severity="Info" text="9 selected by rule 1"/>
+        <PostedMessage severity="Info" text="9 selected by rule 2"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="RGBCaPT.ecore#//Search">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="RGBCaPT.ecore#//Search/completed"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="RGBCaPT.ecore#//Search">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="RGBCaPT.ecore#//Search/completed"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="medium" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="medium" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="medium" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eClass="RGBCaPT.ecore#//Search">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="RGBCaPT.ecore#//Search/completed"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" messageItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.6" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.2 #//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eClass="RGBCaPT.ecore#//Search">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="RGBCaPT.ecore#//Search/completed"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="medium" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" newOrModified="true" messageItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.7" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="medium" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="medium" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.1/@children.3"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="RGBCaPT.ecore#//Search">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="true" eAttribute="RGBCaPT.ecore#//Search/completed"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="RGBCaPT.ecore#//Search">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="true" eAttribute="RGBCaPT.ecore#//Search/completed"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="medium" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" newOrModified="true" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="true" eAttribute="RGBCaPT.ecore#//Thing/selected"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="large" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="medium" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" manuallyCreated="true" eReference="RGBCaPT.ecore#//Search/things" eClass="RGBCaPT.ecore#//Thing">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="medium" eAttribute="RGBCaPT.ecore#//Thing/size"/>
+          </children>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_D03hELaVEeGU39-PZxk6cQ" testsheets="#//@testsheetAssets.0/@testsheet #//@testsheetAssets.1/@testsheet #//@testsheetAssets.2/@testsheet #//@testsheetAssets.3/@testsheet" vocabulary="RGBCaPT.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="RGBCaPT"/>
+    <testTabList name="RGBCaPT_1"/>
+    <testTabList name="RGBCaPT_8"/>
+    <testTabList name="RGBCaPT_9"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

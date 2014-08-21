@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_seyU42qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset operationMode="ProcessAllLogicalLoops" vocabularyUpdateStamp="_lUvIwGqnEeGMCd15vaZIXw" vocabulary="MatchingNames.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="theChild.matchCount=0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theChild.matchCount = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="matchCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.matchCount">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="theChild.n =1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theChild.n = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(theChild.n &lt;= (prnt.name.size))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theChild.n &lt;= ( prnt.name.size ) ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="size" datatype="Integer" termtype="METHOD" fulltext="prnt.name.size">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prnt.name">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theChild.n &lt;= (prnt.name.size)" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(theChild.n &lt;= (theChild.name.size))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theChild.n &lt;= ( theChild.name.size ) ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="size" datatype="Integer" termtype="METHOD" fulltext="theChild.name.size">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="theChild.name">
+                  <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theChild.n &lt;= (theChild.name.size)" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(theChild.name.substring (theChild.n,theChild.n+1) = prnt.name.substring ( theChild.n,theChild.n+1))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theChild.name.substring ( theChild.n , theChild.n + 1 ) = prnt.name.substring ( theChild.n , theChild.n + 1 ) ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="prnt.name.substring">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prnt.name">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="theChild.name.substring">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="theChild.name">
+                  <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theChild.name.substring (theChild.n,theChild.n+1) = prnt.name.substring ( theChild.n,theChild.n+1)" rhs="T"/>
+      </condition>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="theChild.matchCount+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theChild.matchCount = theChild.matchCount + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="matchCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.matchCount">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="matchCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.matchCount">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="theChild.n+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theChild.n = theChild.n + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="(theChild.n &lt;= (prnt.name.size))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theChild.n &lt;= ( prnt.name.size ) ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="size" datatype="Integer" termtype="METHOD" fulltext="prnt.name.size">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prnt.name">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theChild.n &lt;= (prnt.name.size)" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(theChild.n &lt;= (theChild.name.size))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theChild.n &lt;= ( theChild.name.size ) ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="size" datatype="Integer" termtype="METHOD" fulltext="theChild.name.size">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="theChild.name">
+                  <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theChild.n &lt;= (theChild.name.size)" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(theChild.name.substring (theChild.n,theChild.n+1) = prnt.name.substring ( theChild.n,theChild.n+1))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theChild.name.substring ( theChild.n , theChild.n + 1 ) = prnt.name.substring ( theChild.n , theChild.n + 1 ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="prnt.name.substring">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prnt.name">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="theChild.name.substring">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="theChild.name">
+                  <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theChild.name.substring (theChild.n,theChild.n+1) = prnt.name.substring ( theChild.n,theChild.n+1)" rhs="F"/>
+      </condition>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="theChild.n+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theChild.n = theChild.n + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule useConditionsAsThresholds="true">
+      <condition>
+        <opaqueExpression expression="(theChild.n &lt;= (prnt.name.size))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theChild.n &lt;= ( prnt.name.size ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="size" datatype="Integer" termtype="METHOD" fulltext="prnt.name.size">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prnt.name">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theChild.n &lt;= (prnt.name.size)" rhs="F"/>
+      </condition>
+      <condition/>
+      <condition/>
+    </rule>
+    <rule useConditionsAsThresholds="true">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(theChild.n &lt;= (theChild.name.size))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theChild.n &lt;= ( theChild.name.size ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="size" datatype="Integer" termtype="METHOD" fulltext="theChild.name.size">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="theChild.name">
+                  <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theChild.n &lt;= (theChild.name.size)" rhs="F"/>
+      </condition>
+      <condition/>
+    </rule>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.1">
+      <text expression="1:Child {theChild.name} HAS matched letter number {theChild.n}: {theChild.name} with the Parent's: {prnt.name}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="1:Child  + theChild.name +  HAS matched letter number  + theChild.n + :  + theChild.name +  with the Parent's:  + prnt.name" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prnt.name">
+              <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+              <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="theChild.name">
+              <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.2">
+      <text expression="1:Child {theChild.name} HAS NOT matched letter number {theChild.n}: {theChild.name} with the Parent's: {prnt.name}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="1:Child  + theChild.name +  HAS NOT matched letter number  + theChild.n + :  + theChild.name +  with the Parent's:  + prnt.name" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prnt.name">
+              <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+              <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="theChild.name">
+              <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="MatchingNames.ecore#//Parent">
+      <alias value="prnt"/>
+      <extension explicit="true" association="true" entity="MatchingNames.ecore#//Dependant" traversedAssocRole="MatchingNames.ecore#//Parent/child">
+        <alias value="theChild"/>
+        <referencedAttributes attribute="MatchingNames.ecore#//Dependant/matchCount"/>
+        <referencedAttributes attribute="MatchingNames.ecore#//Dependant/n"/>
+        <referencedAttributes attribute="MatchingNames.ecore#//Dependant/name"/>
+      </extension>
+      <referencedAttributes attribute="MatchingNames.ecore#//Parent/name"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="49" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="theChild.matchCount=0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theChild.matchCount = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="matchCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.matchCount">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="theChild.n =1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theChild.n = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="theChild.matchCount+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theChild.matchCount = theChild.matchCount + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="matchCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.matchCount">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="matchCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.matchCount">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="theChild.n+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theChild.n = theChild.n + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.2"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="1:Child {theChild.name} HAS matched letter number {theChild.n}: {theChild.name} with the Parent's: {prnt.name}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="1:Child  + theChild.name +  HAS matched letter number  + theChild.n + :  + theChild.name +  with the Parent's:  + prnt.name" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prnt.name">
+                <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="theChild.name">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="1:Child {theChild.name} HAS NOT matched letter number {theChild.n}: {theChild.name} with the Parent's: {prnt.name}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="1:Child  + theChild.name +  HAS NOT matched letter number  + theChild.n + :  + theChild.name +  with the Parent's:  + prnt.name" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prnt.name">
+                <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="theChild.name">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="theChild.n &lt;= (prnt.name.size)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theChild.n &lt;= ( prnt.name.size )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="size" datatype="Integer" termtype="METHOD" fulltext="prnt.name.size">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prnt.name">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="theChild.n &lt;= (theChild.name.size)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theChild.n &lt;= ( theChild.name.size )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="size" datatype="Integer" termtype="METHOD" fulltext="theChild.name.size">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="theChild.name">
+                  <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="theChild.name.substring (theChild.n,theChild.n+1) = prnt.name.substring ( theChild.n,theChild.n+1)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theChild.name.substring ( theChild.n , theChild.n + 1 ) = prnt.name.substring ( theChild.n , theChild.n + 1 )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="prnt.name.substring">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prnt.name">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="theChild.n">
+                <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="theChild.name.substring">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="theChild.name">
+                  <parentTerm text="theChild" datatype="Dependant" termtype="ENTITY" fulltext="theChild" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="prnt" datatype="Parent" termtype="ENTITY" fulltext="prnt" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_qKfXMWqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_k7FSoGqnEeGMCd15vaZIXw" vocabulary="Ducks.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(theDuck.age = thePerson.age)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theDuck.age = thePerson.age ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="theDuck.age">
+                <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="thePerson.age">
+                <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theDuck.age = thePerson.age" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="thePersonsSetOfDucks->size &lt; 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="thePersonsSetOfDucks->size &lt; 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="thePersonsSetOfDucks" datatype="Integer" termtype="COLLECTION" fulltext="thePersonsSetOfDucks->size">
+                <parentTerm text="thePersonsSetOfDucks" datatype="Duck" termtype="ENTITY" fulltext="thePersonsSetOfDucks" variable="#//@ruleset/@logicalVariables.1/@extension.0">
+                  <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="thePersonsSetOfDucks->size" rhs="&lt; 1"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(duckOwner->isEmpty)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( duckOwner->isEmpty ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="duckOwner" datatype="Boolean" termtype="COLLECTION" fulltext="duckOwner->isEmpty">
+                <parentTerm text="duckOwner" datatype="Person" termtype="ENTITY" fulltext="duckOwner" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="duckOwner->isEmpty" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="duckOwner=thePerson">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="duckOwner = thePerson" datatype="Person" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="duckOwner" datatype="Person" termtype="ENTITY" fulltext="duckOwner">
+                <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="thePersonsSetOfDucks += theDuck">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="thePersonsSetOfDucks += theDuck" datatype="Duck" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="thePersonsSetOfDucks" datatype="Duck" termtype="ENTITY" fulltext="thePersonsSetOfDucks">
+                <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="(theDuck.age = thePerson.age)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theDuck.age = thePerson.age ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="theDuck.age">
+                <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="thePerson.age">
+                <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theDuck.age = thePerson.age" rhs="T"/>
+      </condition>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(duckOwner->isEmpty)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( duckOwner->isEmpty ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="duckOwner" datatype="Boolean" termtype="COLLECTION" fulltext="duckOwner->isEmpty">
+                <parentTerm text="duckOwner" datatype="Person" termtype="ENTITY" fulltext="duckOwner" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="duckOwner->isEmpty" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="duckOwner=thePerson">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="duckOwner = thePerson" datatype="Person" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="duckOwner" datatype="Person" termtype="ENTITY" fulltext="duckOwner">
+                <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="thePersonsSetOfDucks += theDuck">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="thePersonsSetOfDucks += theDuck" datatype="Duck" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="thePersonsSetOfDucks" datatype="Duck" termtype="ENTITY" fulltext="thePersonsSetOfDucks">
+                <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="(theDuck.age = thePerson.age)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theDuck.age = thePerson.age ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="theDuck.age">
+                <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="thePerson.age">
+                <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theDuck.age = thePerson.age" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="thePersonsSetOfDucks->size >= 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="thePersonsSetOfDucks->size >= 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="thePersonsSetOfDucks" datatype="Integer" termtype="COLLECTION" fulltext="thePersonsSetOfDucks->size">
+                <parentTerm text="thePersonsSetOfDucks" datatype="Duck" termtype="ENTITY" fulltext="thePersonsSetOfDucks" variable="#//@ruleset/@logicalVariables.1/@extension.0">
+                  <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="thePersonsSetOfDucks->size" rhs=">= 1"/>
+      </condition>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition>
+        <opaqueExpression expression="(theDuck.age = thePerson.age)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theDuck.age = thePerson.age ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="theDuck.age">
+                <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="thePerson.age">
+                <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theDuck.age = thePerson.age" rhs="F"/>
+      </condition>
+      <condition/>
+      <condition/>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.1">
+      <text expression="Assign another duck {theDuck.name} { theDuck.age} to person {thePerson.name} { thePerson.age} - ages are the same">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assign another duck  + theDuck.name +   + theDuck.age +  to person  + thePerson.name +   + thePerson.age +  - ages are the same" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="theDuck.age">
+              <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="thePerson.name">
+              <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="thePerson.age">
+              <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="theDuck.name">
+              <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.1">
+      <text expression="Assign first duck {theDuck.name} { theDuck.age} to person {thePerson.name} { thePerson.age} - ages are the same">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assign first duck  + theDuck.name +   + theDuck.age +  to person  + thePerson.name +   + thePerson.age +  - ages are the same" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="theDuck.age">
+              <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="thePerson.name">
+              <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="thePerson.age">
+              <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="theDuck.name">
+              <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.1">
+      <text expression="Person {thePerson.name} has enough ducks already">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person  + thePerson.name +  has enough ducks already" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="thePerson.name">
+              <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.4">
+      <text expression="Duck {theDuck.name} { theDuck.age} not suitable for person {thePerson.name} { thePerson.age} - ages are the differnt">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Duck  + theDuck.name +   + theDuck.age +  not suitable for person  + thePerson.name +   + thePerson.age +  - ages are the differnt" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="theDuck.age">
+              <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="thePerson.name">
+              <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="thePerson.age">
+              <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="theDuck.name">
+              <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="Ducks.ecore#//Duck">
+      <alias value="theDuck"/>
+      <extension explicit="true" association="true" entity="Ducks.ecore#//Person" traversedAssocRole="Ducks.ecore#//Duck/owner">
+        <alias value="duckOwner"/>
+      </extension>
+      <referencedAttributes attribute="Ducks.ecore#//Duck/age"/>
+      <referencedAttributes attribute="Ducks.ecore#//Duck/name"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="Ducks.ecore#//Person" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2">
+      <alias value="thePerson"/>
+      <extension explicit="true" association="true" entity="Ducks.ecore#//Duck" traversedAssocRole="Ducks.ecore#//Person/ducks">
+        <alias value="thePersonsSetOfDucks"/>
+      </extension>
+      <referencedAttributes attribute="Ducks.ecore#//Person/age"/>
+      <referencedAttributes attribute="Ducks.ecore#//Person/name"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="duckOwner=thePerson">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="duckOwner = thePerson" datatype="Person" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="duckOwner" datatype="Person" termtype="ENTITY" fulltext="duckOwner">
+                <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="thePersonsSetOfDucks += theDuck">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="thePersonsSetOfDucks += theDuck" datatype="Duck" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="thePersonsSetOfDucks" datatype="Duck" termtype="ENTITY" fulltext="thePersonsSetOfDucks">
+                <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.1/@extension.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="Assign another duck {theDuck.name} { theDuck.age} to person {thePerson.name} { thePerson.age} - ages are the same">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assign another duck  + theDuck.name +   + theDuck.age +  to person  + thePerson.name +   + thePerson.age +  - ages are the same" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="theDuck.age">
+                <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="thePerson.name">
+                <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="thePerson.age">
+                <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="theDuck.name">
+                <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="Assign first duck {theDuck.name} { theDuck.age} to person {thePerson.name} { thePerson.age} - ages are the same">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assign first duck  + theDuck.name +   + theDuck.age +  to person  + thePerson.name +   + thePerson.age +  - ages are the same" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="theDuck.age">
+                <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="thePerson.name">
+                <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="thePerson.age">
+                <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="theDuck.name">
+                <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="Person {thePerson.name} has enough ducks already">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person  + thePerson.name +  has enough ducks already" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="thePerson.name">
+                <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="4"/>
+        <text external="Duck {theDuck.name} { theDuck.age} not suitable for person {thePerson.name} { thePerson.age} - ages are the differnt">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Duck  + theDuck.name +   + theDuck.age +  not suitable for person  + thePerson.name +   + thePerson.age +  - ages are the differnt" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="theDuck.age">
+                <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="thePerson.name">
+                <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="thePerson.age">
+                <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="theDuck.name">
+                <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="theDuck.age = thePerson.age">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theDuck.age = thePerson.age" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="theDuck.age">
+                <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="thePerson.age">
+                <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{&lt; 1, >= 1}"/>
+        <expressionCell external="thePersonsSetOfDucks->size">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="thePersonsSetOfDucks->size" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="thePersonsSetOfDucks" datatype="Integer" termtype="COLLECTION" fulltext="thePersonsSetOfDucks->size">
+                <parentTerm text="thePersonsSetOfDucks" datatype="Duck" termtype="ENTITY" fulltext="thePersonsSetOfDucks" variable="#//@ruleset/@logicalVariables.1/@extension.0">
+                  <parentTerm text="thePerson" datatype="Person" termtype="ENTITY" fulltext="thePerson" variable="#//@ruleset/@logicalVariables.1"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="duckOwner->isEmpty">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="duckOwner->isEmpty" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="duckOwner" datatype="Boolean" termtype="COLLECTION" fulltext="duckOwner->isEmpty">
+                <parentTerm text="duckOwner" datatype="Person" termtype="ENTITY" fulltext="duckOwner" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="theDuck" datatype="Duck" termtype="ENTITY" fulltext="theDuck" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="&lt; 1"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet=">= 1"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

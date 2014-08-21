@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" majorServiceNumber="3" buildNumber="5565" updateStamp="_aGGTEUicEeOPRaNWspogNA" externalChecksum="3054974779:507989954:1410878994">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_ZWEkUEicEeOPRaNWspogNA" vocabulary="Dinner.ecore#/">
+    <rule>
+      <condition/>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="(dinner1.price &lt; dinner2.price)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( dinner1.price &lt; dinner2.price ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="price" datatype="Decimal" termtype="ATTRIBUTE" fulltext="dinner1.price">
+                <parentTerm text="dinner1" datatype="Dinner" termtype="ENTITY" fulltext="dinner1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="price" datatype="Decimal" termtype="ATTRIBUTE" fulltext="dinner2.price">
+                <parentTerm text="dinner2" datatype="Dinner" termtype="ENTITY" fulltext="dinner2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="dinner1.price &lt; dinner2.price" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="dinner2.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="dinner2.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="dinner2.remove">
+                <parentTerm text="dinner2" datatype="Dinner" termtype="ENTITY" fulltext="dinner2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.1 #//@ruleset/@logicalVariables.0">
+      <opaqueExpression expression="dinner1&lt;>dinner2">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="dinner1 &lt;> dinner2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="dinner2" datatype="Dinner" termtype="ENTITY" fulltext="dinner2" variable="#//@ruleset/@logicalVariables.1"/>
+            <terms text="dinner1" datatype="Dinner" termtype="ENTITY" fulltext="dinner1" variable="#//@ruleset/@logicalVariables.0"/>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <logicalVariable explicit="true" entity="Dinner.ecore#//Dinner" filters="#//@ruleset/@filters.0">
+      <alias value="dinner1"/>
+      <referencedAttributes attribute="Dinner.ecore#//Dinner/price"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="Dinner.ecore#//Dinner" filters="#//@ruleset/@filters.0">
+      <alias value="dinner2"/>
+      <referencedAttributes attribute="Dinner.ecore#//Dinner/price"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="dinner2.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="dinner2.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="dinner2.remove">
+                <parentTerm text="dinner2" datatype="Dinner" termtype="ENTITY" fulltext="dinner2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="dinner1&lt;>dinner2" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="dinner1&lt;>dinner2" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="dinner1&lt;>dinner2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="dinner1 &lt;> dinner2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dinner2" datatype="Dinner" termtype="ENTITY" fulltext="dinner2" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="dinner1" datatype="Dinner" termtype="ENTITY" fulltext="dinner1" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="dinner1.price &lt; dinner2.price">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="dinner1.price &lt; dinner2.price" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="price" datatype="Decimal" termtype="ATTRIBUTE" fulltext="dinner1.price">
+                <parentTerm text="dinner1" datatype="Dinner" termtype="ENTITY" fulltext="dinner1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="price" datatype="Decimal" termtype="ATTRIBUTE" fulltext="dinner2.price">
+                <parentTerm text="dinner2" datatype="Dinner" termtype="ENTITY" fulltext="dinner2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

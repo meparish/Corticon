@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_tqRxYLaYEeGU39-PZxk6cQ" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_505e1raZEeGU39-PZxk6cQ" externalChecksum="3054974779:507989954">
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_505e1LaZEeGU39-PZxk6cQ" key="100" type="Validation" severity="Warning" textKey="TestsheetTreeSetModelAPIImpl.Validation.Mismatch.OutputTree.ExpectedTree" locationKey="TestsheetTreeSetModelAPIImpl.Validation.Testsheet.Name">
+      <locationVariables>PortR</locationVariables>
+    </validationMessages>
+    <testsheet ruleActivityUpdateStamp="_4VoEULaZEeGU39-PZxk6cQ" ruleActivity="PortR.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="S4 Enterprise: Berth B2 has all the capabilities required by the ship"/>
+        <PostedMessage severity="Info" text="S6 SS Salmon: Berth B2 has all the capabilities required by the ship"/>
+        <PostedMessage severity="Info" text="S3 SS Minnow: Berth B2 has all the capabilities required by the ship"/>
+        <PostedMessage severity="Info" text="S2 Titanic: Berth B3 has all the capabilities required by the ship"/>
+        <PostedMessage severity="Info" text="S3 SS Minnow: Berth B3 has all the capabilities required by the ship"/>
+        <PostedMessage severity="Info" text="S6 SS Salmon: Berth B3 has all the capabilities required by the ship"/>
+        <PostedMessage severity="Violation" text="B3: Berth does not have all the capabilities required by S4 Enterprise"/>
+        <PostedMessage severity="Info" text="S6 SS Salmon: Berth B5 has all the capabilities required by the ship"/>
+        <PostedMessage severity="Info" text="S3 SS Minnow: Berth B5 has all the capabilities required by the ship"/>
+        <PostedMessage severity="Info" text="S1 USS Virginia (CGN-38): Berth B1 has all the capabilities required by the ship"/>
+        <PostedMessage severity="Violation" text="B1: Berth does not have all the capabilities required by S6 SS Salmon"/>
+        <PostedMessage severity="Violation" text="B1: Berth does not have all the capabilities required by S3 SS Minnow"/>
+        <PostedMessage severity="Warning" text="S5 USS Unassignable has no assigned berth"/>
+        <PostedMessage severity="Info" text="S4 Enterprise has only one possible berth B2"/>
+        <PostedMessage severity="Info" text="S2 Titanic has only one possible berth B3"/>
+        <PostedMessage severity="Info" text="S1 USS Virginia (CGN-38) has only one possible berth B1"/>
+        <PostedMessage severity="Info" text="S6 SS Salmon can be assigned to any of 3 berths"/>
+        <PostedMessage severity="Info" text="S3 SS Minnow can be assigned to any of 3 berths"/>
+        <PostedMessage severity="Info" text="We can remove B3 from S3 SS Minnow since it has other possible berths and B3 is the only berth possible for S2 Titanic"/>
+        <PostedMessage severity="Info" text="We can remove B2 from S3 SS Minnow since it has other possible berths and B2 is the only berth possible for S4 Enterprise"/>
+        <PostedMessage severity="Info" text="We can remove B3 from S6 SS Salmon since it has other possible berths and B3 is the only berth possible for S2 Titanic"/>
+        <PostedMessage severity="Info" text="We can remove B2 from S6 SS Salmon since it has other possible berths and B2 is the only berth possible for S4 Enterprise"/>
+        <PostedMessage severity="Info" text="Ships with perishable cargo can bump those without (when they are both competing for the same berth) S3 SS Minnow bumps S6 SS Salmon"/>
+        <PostedMessage severity="Warning" text="Final: S6 SS Salmon has no assigned berth"/>
+        <PostedMessage severity="Warning" text="Final: S5 USS Unassignable has no assigned berth"/>
+        <PostedMessage severity="Info" text="Final: S4 Enterprise has only one possible berth B2"/>
+        <PostedMessage severity="Info" text="Final: S3 SS Minnow has only one possible berth B5"/>
+        <PostedMessage severity="Info" text="Final: S2 Titanic has only one possible berth B3"/>
+        <PostedMessage severity="Info" text="Final: S1 USS Virginia (CGN-38) has only one possible berth B1"/>
+        <PostedMessage severity="Warning" text="Perishable goods needs to be inspected by the FDA before S3 SS Minnow can dock"/>
+        <PostedMessage severity="Info" text="S6 SS Salmon is cleared for docking"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" expanded="false" eClass="PortV.ecore#//Berth">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="33" eAttribute="PortV.ecore#//Berth/depth"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="PortV.ecore#//Berth/inService"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="750" eAttribute="PortV.ecore#//Berth/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="B1" eAttribute="PortV.ecore#//Berth/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Phalanx Repair" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tomahawk Repair" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Harpoon Repair" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="14" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="SAM Repair" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <comments>Berth B1</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="PortV.ecore#//Ship">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="63" eAttribute="PortV.ecore#//Ship/beam"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="32" eAttribute="PortV.ecore#//Ship/draft"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/eta"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/etd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="585" eAttribute="PortV.ecore#//Ship/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="S1 USS Virginia (CGN-38)" eAttribute="PortV.ecore#//Ship/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Phalanx Repair" eAttribute="PortV.ecore#//Requirement/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tomahawk Repair" eAttribute="PortV.ecore#//Requirement/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Harpoon Repair" eAttribute="PortV.ecore#//Requirement/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="SAM Repair" eAttribute="PortV.ecore#//Requirement/name"/>
+          </children>
+          <comments>USS Virginia (CGN-38)</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" expanded="false" eClass="PortV.ecore#//Berth">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="75" eAttribute="PortV.ecore#//Berth/depth"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="PortV.ecore#//Berth/inService"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="25" eAttribute="PortV.ecore#//Berth/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="B2" eAttribute="PortV.ecore#//Berth/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Container" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="15" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Dilithium Crystals" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <comments>Berth B2</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" expanded="false" eClass="PortV.ecore#//Berth">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="75" eAttribute="PortV.ecore#//Berth/depth"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="PortV.ecore#//Berth/inService"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="75" eAttribute="PortV.ecore#//Berth/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="B3" eAttribute="PortV.ecore#//Berth/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Container" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Bulk" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Coal" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <comments>Berth B3</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" expanded="false" eClass="PortV.ecore#//Berth">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="75" eAttribute="PortV.ecore#//Berth/depth"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="false" eAttribute="PortV.ecore#//Berth/inService"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="75" eAttribute="PortV.ecore#//Berth/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="B4" eAttribute="PortV.ecore#//Berth/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Container" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="11" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Bulk" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="12" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="13" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Coal" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <comments>Berth B4</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" expanded="false" eClass="PortV.ecore#//Ship">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100" eAttribute="PortV.ecore#//Ship/beam"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="PortV.ecore#//Ship/draft"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/eta"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/etd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="PortV.ecore#//Ship/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="S2 Titanic" eAttribute="PortV.ecore#//Ship/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil" eAttribute="PortV.ecore#//Requirement/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Coal" eAttribute="PortV.ecore#//Requirement/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Container" eAttribute="PortV.ecore#//Requirement/name"/>
+          </children>
+          <comments>Titanic</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" expanded="false" eClass="PortV.ecore#//Berth">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="25" eAttribute="PortV.ecore#//Berth/depth"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="PortV.ecore#//Berth/inService"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="200" eAttribute="PortV.ecore#//Berth/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="B5" eAttribute="PortV.ecore#//Berth/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="16" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Container" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <comments>Berth B5</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="PortV.ecore#//Ship">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10" eAttribute="PortV.ecore#//Ship/beam"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10" eAttribute="PortV.ecore#//Ship/draft"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/eta"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/etd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20" eAttribute="PortV.ecore#//Ship/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="S3 SS Minnow" eAttribute="PortV.ecore#//Ship/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="PortV.ecore#//Ship/manifest" eClass="PortV.ecore#//Manifest">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="PortV.ecore#//Manifest/cargo" eClass="PortV.ecore#//Cargo">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="gorgonzola cheeze" eAttribute="PortV.ecore#//Cargo/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="PortV.ecore#//Cargo/perishable"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Container" eAttribute="PortV.ecore#//Requirement/name"/>
+          </children>
+          <comments>Minnow</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" expanded="false" eClass="PortV.ecore#//Ship">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="74" eAttribute="PortV.ecore#//Ship/draft"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/eta"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/etd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="24" eAttribute="PortV.ecore#//Ship/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="S4 Enterprise" eAttribute="PortV.ecore#//Ship/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Dilithium Crystals" eAttribute="PortV.ecore#//Requirement/name"/>
+          </children>
+          <comments>S4 Enterprise</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" expanded="false" eClass="PortV.ecore#//Ship">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="999" eAttribute="PortV.ecore#//Ship/draft"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/eta"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/etd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="999" eAttribute="PortV.ecore#//Ship/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="S5 USS Unassignable" eAttribute="PortV.ecore#//Ship/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Unreasonable" eAttribute="PortV.ecore#//Requirement/name"/>
+          </children>
+          <comments>S5 USS Unassignable</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="PortV.ecore#//Ship">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10" eAttribute="PortV.ecore#//Ship/beam"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10" eAttribute="PortV.ecore#//Ship/draft"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/eta"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/etd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20" eAttribute="PortV.ecore#//Ship/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="S6 SS Salmon" eAttribute="PortV.ecore#//Ship/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="PortV.ecore#//Ship/manifest" eClass="PortV.ecore#//Manifest">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="PortV.ecore#//Manifest/cargo" eClass="PortV.ecore#//Cargo">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="cheap tin trays" eAttribute="PortV.ecore#//Cargo/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="false" eAttribute="PortV.ecore#//Cargo/perishable"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="11" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Container" eAttribute="PortV.ecore#//Requirement/name"/>
+          </children>
+          <comments>Salmon</comments>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true" passed="false">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" expanded="false" eClass="PortV.ecore#//Berth">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="75" eAttribute="PortV.ecore#//Berth/depth"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="false" eAttribute="PortV.ecore#//Berth/inService"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="75" eAttribute="PortV.ecore#//Berth/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="B4" eAttribute="PortV.ecore#//Berth/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Container" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="11" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Bulk" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="12" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="13" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Coal" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <comments>Berth B4</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" expanded="false" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.12 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.24" eClass="PortV.ecore#//Ship">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="999" eAttribute="PortV.ecore#//Ship/draft"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="PortV.ecore#//Ship/eta"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="PortV.ecore#//Ship/etd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="999" eAttribute="PortV.ecore#//Ship/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="S5 USS Unassignable" eAttribute="PortV.ecore#//Ship/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Unreasonable" eAttribute="PortV.ecore#//Requirement/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="PortV.ecore#//Ship/berthCount"/>
+          <comments>S5 USS Unassignable</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="PortV.ecore#//Assignment">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.13 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.25" eReference="PortV.ecore#//Assignment/ship" eClass="PortV.ecore#//Ship">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="74" eAttribute="PortV.ecore#//Ship/draft"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="PortV.ecore#//Ship/eta"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="PortV.ecore#//Ship/etd"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="24" eAttribute="PortV.ecore#//Ship/length"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="S4 Enterprise" eAttribute="PortV.ecore#//Ship/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" newOrModified="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Dilithium Crystals" eAttribute="PortV.ecore#//Requirement/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="false" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="PortV.ecore#//Ship/requirementCount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="PortV.ecore#//Ship/berthCount"/>
+            <comments>S4 Enterprise</comments>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" eClass="PortV.ecore#//Assignment">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.14 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.27" eReference="PortV.ecore#//Assignment/ship" eClass="PortV.ecore#//Ship">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="100" eAttribute="PortV.ecore#//Ship/beam"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="70" eAttribute="PortV.ecore#//Ship/draft"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="PortV.ecore#//Ship/eta"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="PortV.ecore#//Ship/etd"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="70" eAttribute="PortV.ecore#//Ship/length"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="S2 Titanic" eAttribute="PortV.ecore#//Ship/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Oil" eAttribute="PortV.ecore#//Requirement/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Coal" eAttribute="PortV.ecore#//Requirement/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" newOrModified="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Container" eAttribute="PortV.ecore#//Requirement/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3" eAttribute="PortV.ecore#//Ship/requirementCount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="PortV.ecore#//Ship/berthCount"/>
+            <comments>Titanic</comments>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="8" newOrModified="true" eClass="PortV.ecore#//Assignment">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="PortV.ecore#//Assignment/ship" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.7"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="5" newOrModified="true" eReference="PortV.ecore#//Assignment/berth" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.10"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="9" newOrModified="true" eClass="PortV.ecore#//Assignment">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.9 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.15 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.28" eReference="PortV.ecore#//Assignment/ship" eClass="PortV.ecore#//Ship">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="63" eAttribute="PortV.ecore#//Ship/beam"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="32" eAttribute="PortV.ecore#//Ship/draft"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="PortV.ecore#//Ship/eta"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="PortV.ecore#//Ship/etd"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="585" eAttribute="PortV.ecore#//Ship/length"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="S1 USS Virginia (CGN-38)" eAttribute="PortV.ecore#//Ship/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Phalanx Repair" eAttribute="PortV.ecore#//Requirement/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tomahawk Repair" eAttribute="PortV.ecore#//Requirement/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Harpoon Repair" eAttribute="PortV.ecore#//Requirement/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" newOrModified="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="SAM Repair" eAttribute="PortV.ecore#//Requirement/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="4" eAttribute="PortV.ecore#//Ship/requirementCount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="PortV.ecore#//Ship/berthCount"/>
+            <comments>USS Virginia (CGN-38)</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.10 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.11" eReference="PortV.ecore#//Assignment/berth" eClass="PortV.ecore#//Berth">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="33" eAttribute="PortV.ecore#//Berth/depth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="true" eAttribute="PortV.ecore#//Berth/inService"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="750" eAttribute="PortV.ecore#//Berth/length"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="B1" eAttribute="PortV.ecore#//Berth/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Phalanx Repair" eAttribute="PortV.ecore#//Capability/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tomahawk Repair" eAttribute="PortV.ecore#//Capability/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Harpoon Repair" eAttribute="PortV.ecore#//Capability/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="14" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="SAM Repair" eAttribute="PortV.ecore#//Capability/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="4" eAttribute="PortV.ecore#//Berth/capabilityCount"/>
+            <comments>Berth B1</comments>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" expanded="false" passed="false" issue="Extra" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.6" eClass="PortV.ecore#//Berth">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="75" eAttribute="PortV.ecore#//Berth/depth"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="true" eAttribute="PortV.ecore#//Berth/inService"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="75" eAttribute="PortV.ecore#//Berth/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="B3" eAttribute="PortV.ecore#//Berth/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" issue="Extra" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="Container" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" issue="Extra" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="Bulk" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" issue="Extra" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="Oil" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" issue="Extra" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="Coal" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" issue="Extra" value="4" eAttribute="PortV.ecore#//Berth/capabilityCount"/>
+          <comments>Berth B3</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.4/@children.0" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.8 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.17 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.18 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.19 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.26 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.29" eClass="PortV.ecore#//Ship">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10" eAttribute="PortV.ecore#//Ship/beam"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10" eAttribute="PortV.ecore#//Ship/draft"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="PortV.ecore#//Ship/eta"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="PortV.ecore#//Ship/etd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20" eAttribute="PortV.ecore#//Ship/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="S3 SS Minnow" eAttribute="PortV.ecore#//Ship/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" eReference="PortV.ecore#//Ship/manifest" eClass="PortV.ecore#//Manifest">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" eReference="PortV.ecore#//Manifest/cargo" eClass="PortV.ecore#//Cargo">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="gorgonzola cheeze" eAttribute="PortV.ecore#//Cargo/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="true" eAttribute="PortV.ecore#//Cargo/perishable"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" newOrModified="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Container" eAttribute="PortV.ecore#//Requirement/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="false" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="PortV.ecore#//Ship/requirementCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="PortV.ecore#//Ship/berthCount"/>
+          <comments>Minnow</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" expanded="false" passed="false" issue="Extra" eClass="PortV.ecore#//Berth">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="75" eAttribute="PortV.ecore#//Berth/depth"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="true" eAttribute="PortV.ecore#//Berth/inService"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="25" eAttribute="PortV.ecore#//Berth/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="B2" eAttribute="PortV.ecore#//Berth/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" issue="Extra" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="Container" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" issue="Extra" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="Oil" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="15" issue="Extra" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="Dilithium Crystals" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" issue="Extra" value="3" eAttribute="PortV.ecore#//Berth/capabilityCount"/>
+          <comments>Berth B2</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.5 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.7 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.16 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.20 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.21 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.22 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.23 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.30" eClass="PortV.ecore#//Ship">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10" eAttribute="PortV.ecore#//Ship/beam"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10" eAttribute="PortV.ecore#//Ship/draft"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="PortV.ecore#//Ship/eta"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="PortV.ecore#//Ship/etd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20" eAttribute="PortV.ecore#//Ship/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="S6 SS Salmon" eAttribute="PortV.ecore#//Ship/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" eReference="PortV.ecore#//Ship/manifest" eClass="PortV.ecore#//Manifest">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" eReference="PortV.ecore#//Manifest/cargo" eClass="PortV.ecore#//Cargo">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="cheap tin trays" eAttribute="PortV.ecore#//Cargo/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="false" eAttribute="PortV.ecore#//Cargo/perishable"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="11" newOrModified="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Container" eAttribute="PortV.ecore#//Requirement/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="false" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="PortV.ecore#//Ship/requirementCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="PortV.ecore#//Ship/berthCount"/>
+          <comments>Salmon</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.4/@children.1" eClass="PortV.ecore#//Berth">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="25" eAttribute="PortV.ecore#//Berth/depth"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="true" eAttribute="PortV.ecore#//Berth/inService"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="200" eAttribute="PortV.ecore#//Berth/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="B5" eAttribute="PortV.ecore#//Berth/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="16" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Container" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="PortV.ecore#//Berth/capabilityCount"/>
+          <comments>Berth B5</comments>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.2/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.9"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.7"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.7"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.9"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.9"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.8" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.7"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.9" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.5/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.10" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.5/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.11" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.5/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.12" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.13" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.2/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.14" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.15" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.5/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.16" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.9"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.17" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.7"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.18" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.7"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.19" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.7"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.20" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.9"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.21" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.9"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.22" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.9"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.23" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.9"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.24" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.25" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.2/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.26" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.7"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.27" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.28" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.5/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.29" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.7"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.30" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.9"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true" passed="false">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" expanded="false" eClass="PortV.ecore#//Berth">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="75" eAttribute="PortV.ecore#//Berth/depth"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="false" eAttribute="PortV.ecore#//Berth/inService"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="75" eAttribute="PortV.ecore#//Berth/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="B4" eAttribute="PortV.ecore#//Berth/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Container" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="11" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Bulk" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="12" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="13" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Coal" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <comments>Berth B4</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.7/@children.0" eClass="PortV.ecore#//Berth">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="PortV.ecore#//Berth/capabilityCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="25" eAttribute="PortV.ecore#//Berth/depth"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="PortV.ecore#//Berth/inService"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="200" eAttribute="PortV.ecore#//Berth/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="B5" eAttribute="PortV.ecore#//Berth/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="16" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Container" eAttribute="PortV.ecore#//Capability/name"/>
+          </children>
+          <comments>Berth B5</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.7/@children.1" eClass="PortV.ecore#//Ship">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10" eAttribute="PortV.ecore#//Ship/beam"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="PortV.ecore#//Ship/berthCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10" eAttribute="PortV.ecore#//Ship/draft"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/eta"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/etd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20" eAttribute="PortV.ecore#//Ship/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="S3 SS Minnow" eAttribute="PortV.ecore#//Ship/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="PortV.ecore#//Ship/requirementCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="PortV.ecore#//Ship/manifest" eClass="PortV.ecore#//Manifest">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="PortV.ecore#//Manifest/cargo" eClass="PortV.ecore#//Cargo">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="gorgonzola cheeze" eAttribute="PortV.ecore#//Cargo/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="PortV.ecore#//Cargo/perishable"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Container" eAttribute="PortV.ecore#//Requirement/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="false" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+          </children>
+          <comments>Minnow</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" expanded="false" eClass="PortV.ecore#//Ship">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="PortV.ecore#//Ship/berthCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="999" eAttribute="PortV.ecore#//Ship/draft"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/eta"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/etd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="999" eAttribute="PortV.ecore#//Ship/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="S5 USS Unassignable" eAttribute="PortV.ecore#//Ship/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Unreasonable" eAttribute="PortV.ecore#//Requirement/name"/>
+          </children>
+          <comments>S5 USS Unassignable</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="PortV.ecore#//Ship">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10" eAttribute="PortV.ecore#//Ship/beam"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="PortV.ecore#//Ship/berthCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10" eAttribute="PortV.ecore#//Ship/draft"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/eta"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/etd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20" eAttribute="PortV.ecore#//Ship/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="S6 SS Salmon" eAttribute="PortV.ecore#//Ship/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="PortV.ecore#//Ship/requirementCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="PortV.ecore#//Ship/manifest" eClass="PortV.ecore#//Manifest">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="PortV.ecore#//Manifest/cargo" eClass="PortV.ecore#//Cargo">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="cheap tin trays" eAttribute="PortV.ecore#//Cargo/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="false" eAttribute="PortV.ecore#//Cargo/perishable"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="11" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Container" eAttribute="PortV.ecore#//Requirement/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="false" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+          </children>
+          <comments>Salmon</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="PortV.ecore#//Assignment">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" manuallyCreated="true" expanded="false" passed="false" issue="Missing" eReference="PortV.ecore#//Assignment/berth" eClass="PortV.ecore#//Berth">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="3" eAttribute="PortV.ecore#//Berth/capabilityCount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="75" eAttribute="PortV.ecore#//Berth/depth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="true" eAttribute="PortV.ecore#//Berth/inService"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="25" eAttribute="PortV.ecore#//Berth/length"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="B2" eAttribute="PortV.ecore#//Berth/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" issue="Missing" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="Container" eAttribute="PortV.ecore#//Capability/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" manuallyCreated="true" issue="Missing" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="Oil" eAttribute="PortV.ecore#//Capability/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="15" manuallyCreated="true" issue="Missing" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="Dilithium Crystals" eAttribute="PortV.ecore#//Capability/name"/>
+            </children>
+            <comments>Berth B2</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" manuallyCreated="true" expanded="false" eReference="PortV.ecore#//Assignment/ship" eClass="PortV.ecore#//Ship">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="PortV.ecore#//Ship/berthCount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="74" eAttribute="PortV.ecore#//Ship/draft"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/eta"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/etd"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="24" eAttribute="PortV.ecore#//Ship/length"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="S4 Enterprise" eAttribute="PortV.ecore#//Ship/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="PortV.ecore#//Ship/requirementCount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Dilithium Crystals" eAttribute="PortV.ecore#//Requirement/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="false" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+            </children>
+            <comments>S4 Enterprise</comments>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" manuallyCreated="true" eClass="PortV.ecore#//Assignment">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" manuallyCreated="true" expanded="false" passed="false" issue="Missing" eReference="PortV.ecore#//Assignment/berth" eClass="PortV.ecore#//Berth">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="4" eAttribute="PortV.ecore#//Berth/capabilityCount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="75" eAttribute="PortV.ecore#//Berth/depth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="true" eAttribute="PortV.ecore#//Berth/inService"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="75" eAttribute="PortV.ecore#//Berth/length"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="B3" eAttribute="PortV.ecore#//Berth/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" issue="Missing" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="Container" eAttribute="PortV.ecore#//Capability/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" issue="Missing" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="Bulk" eAttribute="PortV.ecore#//Capability/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" manuallyCreated="true" issue="Missing" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="Oil" eAttribute="PortV.ecore#//Capability/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" manuallyCreated="true" issue="Missing" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="Coal" eAttribute="PortV.ecore#//Capability/name"/>
+            </children>
+            <comments>Berth B3</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" manuallyCreated="true" expanded="false" eReference="PortV.ecore#//Assignment/ship" eClass="PortV.ecore#//Ship">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100" eAttribute="PortV.ecore#//Ship/beam"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="PortV.ecore#//Ship/berthCount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="PortV.ecore#//Ship/draft"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/eta"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/etd"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="PortV.ecore#//Ship/length"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="S2 Titanic" eAttribute="PortV.ecore#//Ship/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="3" eAttribute="PortV.ecore#//Ship/requirementCount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Oil" eAttribute="PortV.ecore#//Requirement/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Coal" eAttribute="PortV.ecore#//Requirement/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Container" eAttribute="PortV.ecore#//Requirement/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+            </children>
+            <comments>Titanic</comments>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="8" newOrModified="true" manuallyCreated="true" eClass="PortV.ecore#//Assignment">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="5" newOrModified="true" manuallyCreated="true" eReference="PortV.ecore#//Assignment/berth" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="PortV.ecore#//Assignment/ship" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="9" newOrModified="true" manuallyCreated="true" eClass="PortV.ecore#//Assignment">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" manuallyCreated="true" expanded="false" eReference="PortV.ecore#//Assignment/berth" eClass="PortV.ecore#//Berth">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="4" eAttribute="PortV.ecore#//Berth/capabilityCount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="33" eAttribute="PortV.ecore#//Berth/depth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="PortV.ecore#//Berth/inService"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="750" eAttribute="PortV.ecore#//Berth/length"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="B1" eAttribute="PortV.ecore#//Berth/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Phalanx Repair" eAttribute="PortV.ecore#//Capability/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tomahawk Repair" eAttribute="PortV.ecore#//Capability/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Harpoon Repair" eAttribute="PortV.ecore#//Capability/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="14" manuallyCreated="true" eReference="PortV.ecore#//Berth/capabilities" eClass="PortV.ecore#//Capability">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="SAM Repair" eAttribute="PortV.ecore#//Capability/name"/>
+            </children>
+            <comments>Berth B1</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="PortV.ecore#//Assignment/ship" eClass="PortV.ecore#//Ship">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="63" eAttribute="PortV.ecore#//Ship/beam"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="PortV.ecore#//Ship/berthCount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="32" eAttribute="PortV.ecore#//Ship/draft"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/eta"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="PortV.ecore#//Ship/etd"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="585" eAttribute="PortV.ecore#//Ship/length"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="S1 USS Virginia (CGN-38)" eAttribute="PortV.ecore#//Ship/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="4" eAttribute="PortV.ecore#//Ship/requirementCount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Phalanx Repair" eAttribute="PortV.ecore#//Requirement/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tomahawk Repair" eAttribute="PortV.ecore#//Requirement/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Harpoon Repair" eAttribute="PortV.ecore#//Requirement/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" manuallyCreated="true" eReference="PortV.ecore#//Ship/requirements" eClass="PortV.ecore#//Requirement">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="SAM Repair" eAttribute="PortV.ecore#//Requirement/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="PortV.ecore#//Requirement/satisfied"/>
+            </children>
+            <comments>USS Virginia (CGN-38)</comments>
+          </children>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_taQYYLaYEeGU39-PZxk6cQ" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="PortV.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="PortR"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

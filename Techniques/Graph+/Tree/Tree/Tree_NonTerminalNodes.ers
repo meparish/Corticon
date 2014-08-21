@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_uVtaGWqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_ly984GqnEeGMCd15vaZIXw" vocabulary="Tree.ecore#/">
+    <rule>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="node.treeValue = subnodes.treeValue->sum + node.nodeValue">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.treeValue = subnodes.treeValue->sum + node.nodeValue" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="treeValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="node.treeValue">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="nodeValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="node.nodeValue">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="subnodes_treeValue" datatype="Integer" termtype="COLLECTION" fulltext="subnodes.treeValue->sum">
+                <parentTerm text="treeValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="subnodes.treeValue">
+                  <parentTerm text="subnodes" datatype="Node" termtype="ENTITY" fulltext="subnodes" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter>
+      <opaqueExpression expression="node.terminalNode = false">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.terminalNode = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="terminalNode" datatype="Boolean" termtype="ATTRIBUTE" fulltext="node.terminalNode">
+              <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0/@actions.0" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="{node.name} {node.treeValue}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.name +   + node.treeValue" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="treeValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="node.treeValue">
+              <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node.name">
+              <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="Tree.ecore#//Node" ruleStatements="#//@ruleset/@ruleStatements.0">
+      <alias value="node"/>
+      <extension explicit="true" association="true" entity="Tree.ecore#//Node" traversedAssocRole="Tree.ecore#//Node/nodes">
+        <alias value="subnodes"/>
+        <referencedAttributes attribute="Tree.ecore#//Node/treeValue"/>
+      </extension>
+      <referencedAttributes attribute="Tree.ecore#//Node/terminalNode"/>
+      <referencedAttributes attribute="Tree.ecore#//Node/nodeValue"/>
+      <referencedAttributes attribute="Tree.ecore#//Node/treeValue"/>
+      <referencedAttributes attribute="Tree.ecore#//Node/name"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="node.treeValue = subnodes.treeValue->sum + node.nodeValue">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.treeValue = subnodes.treeValue->sum + node.nodeValue" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="treeValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="node.treeValue">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="nodeValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="node.nodeValue">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="subnodes_treeValue" datatype="Integer" termtype="COLLECTION" fulltext="subnodes.treeValue->sum">
+                <parentTerm text="treeValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="subnodes.treeValue">
+                  <parentTerm text="subnodes" datatype="Node" termtype="ENTITY" fulltext="subnodes" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="node.terminalNode = false" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="node.terminalNode = false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.terminalNode = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="terminalNode" datatype="Boolean" termtype="ATTRIBUTE" fulltext="node.terminalNode">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="A0"/>
+        <text external="{node.name} {node.treeValue}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.name +   + node.treeValue" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="treeValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="node.treeValue">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node.name">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

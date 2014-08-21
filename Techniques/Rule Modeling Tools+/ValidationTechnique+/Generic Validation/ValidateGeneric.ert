@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_00XfhGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_01aoa2qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_01aoaGqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.1/@children.1" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>unknown</textVariables>
+      <textVariables>male, female</textVariables>
+      <locationVariables>Applicant [1].gender</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_01aoaWqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1/@children.1" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>unknown</textVariables>
+      <textVariables>male, female</textVariables>
+      <locationVariables>Applicant [1].gender</locationVariables>
+    </validationMessages>
+    <testsheet ruleActivityUpdateStamp="_umTaw2qnEeGMCd15vaZIXw" ruleActivity="ValidateGeneric.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Workkaround for bug that causes Corticon to get Fatal Error when toString is used in action #2"/>
+        <PostedMessage severity="Violation" text="Applicant.Gender is invalid. gender must be male or female. Value is"/>
+        <PostedMessage severity="Violation" text="Applicant.Gender is invalid. gender must be male or female. Value is unknown"/>
+        <PostedMessage severity="Violation" text="Applicant.Age is invalid. age must not be less than zero. Value is -3"/>
+        <PostedMessage severity="Violation" text="Applicant.Gender is invalid. gender must be male or female. Value is null"/>
+        <PostedMessage severity="Violation" text="null.null is invalid. null. Value is null"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="ValidateGeneric.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ValidateGeneric.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="" eAttribute="ValidateGeneric.ecore#//Applicant/gender"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="ValidateGeneric.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="-3" eAttribute="ValidateGeneric.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.0" manuallyCreated="true" value="unknown" eAttribute="ValidateGeneric.ecore#//Applicant/gender"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="" eAttribute="ValidateGeneric.ecore#//Applicant/name"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" expanded="false" eClass="ValidateGeneric.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="ValidateGeneric.ecore#//Applicant/errors" eClass="ValidateGeneric.ecore#//Error"/>
+          <comments>Force hierarchical</comments>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="ValidateGeneric.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="ValidateGeneric.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="" eAttribute="ValidateGeneric.ecore#//Applicant/gender"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" eReference="ValidateGeneric.ecore#//Applicant/errors" eClass="ValidateGeneric.ecore#//Error">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Gender" eAttribute="ValidateGeneric.ecore#//Error/attributeName"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="" eAttribute="ValidateGeneric.ecore#//Error/attributeValueSTR"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Applicant" eAttribute="ValidateGeneric.ecore#//Error/entityName"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="gender must be male or female" eAttribute="ValidateGeneric.ecore#//Error/message"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eClass="ValidateGeneric.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="-3" eAttribute="ValidateGeneric.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="unknown" eAttribute="ValidateGeneric.ecore#//Applicant/gender"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="" eAttribute="ValidateGeneric.ecore#//Applicant/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" eReference="ValidateGeneric.ecore#//Applicant/errors" eClass="ValidateGeneric.ecore#//Error">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Age" eAttribute="ValidateGeneric.ecore#//Error/attributeName"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="-3" eAttribute="ValidateGeneric.ecore#//Error/attributeValueSTR"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Applicant" eAttribute="ValidateGeneric.ecore#//Error/entityName"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="age must not be less than zero" eAttribute="ValidateGeneric.ecore#//Error/message"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" eReference="ValidateGeneric.ecore#//Applicant/errors" eClass="ValidateGeneric.ecore#//Error">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Gender" eAttribute="ValidateGeneric.ecore#//Error/attributeName"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="unknown" eAttribute="ValidateGeneric.ecore#//Error/attributeValueSTR"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Applicant" eAttribute="ValidateGeneric.ecore#//Error/entityName"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="gender must be male or female" eAttribute="ValidateGeneric.ecore#//Error/message"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" expanded="false" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eClass="ValidateGeneric.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" eReference="ValidateGeneric.ecore#//Applicant/errors" eClass="ValidateGeneric.ecore#//Error"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" eReference="ValidateGeneric.ecore#//Applicant/errors" eClass="ValidateGeneric.ecore#//Error">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Gender" eAttribute="ValidateGeneric.ecore#//Error/attributeName"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Applicant" eAttribute="ValidateGeneric.ecore#//Error/entityName"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="gender must be male or female" eAttribute="ValidateGeneric.ecore#//Error/message"/>
+          </children>
+          <comments>Force hierarchical</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="ValidateGeneric.ecore#//Work">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" eAttribute="ValidateGeneric.ecore#//Work/attributeValueSTR"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.2"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="ValidateGeneric.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ValidateGeneric.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="" eAttribute="ValidateGeneric.ecore#//Applicant/gender"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="ValidateGeneric.ecore#//Applicant/errors" eClass="ValidateGeneric.ecore#//Error">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Gender" eAttribute="ValidateGeneric.ecore#//Error/attributeName"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="" eAttribute="ValidateGeneric.ecore#//Error/attributeValueSTR"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Applicant" eAttribute="ValidateGeneric.ecore#//Error/entityName"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="gender must be male or female" eAttribute="ValidateGeneric.ecore#//Error/message"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="ValidateGeneric.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="-3" eAttribute="ValidateGeneric.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.1" manuallyCreated="true" value="unknown" eAttribute="ValidateGeneric.ecore#//Applicant/gender"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="" eAttribute="ValidateGeneric.ecore#//Applicant/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="ValidateGeneric.ecore#//Applicant/errors" eClass="ValidateGeneric.ecore#//Error">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Age" eAttribute="ValidateGeneric.ecore#//Error/attributeName"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="-3" eAttribute="ValidateGeneric.ecore#//Error/attributeValueSTR"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Applicant" eAttribute="ValidateGeneric.ecore#//Error/entityName"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="age must not be less than zero" eAttribute="ValidateGeneric.ecore#//Error/message"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" manuallyCreated="true" eReference="ValidateGeneric.ecore#//Applicant/errors" eClass="ValidateGeneric.ecore#//Error">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Gender" eAttribute="ValidateGeneric.ecore#//Error/attributeName"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="unknown" eAttribute="ValidateGeneric.ecore#//Error/attributeValueSTR"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Applicant" eAttribute="ValidateGeneric.ecore#//Error/entityName"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="gender must be male or female" eAttribute="ValidateGeneric.ecore#//Error/message"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" expanded="false" eClass="ValidateGeneric.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="ValidateGeneric.ecore#//Applicant/errors" eClass="ValidateGeneric.ecore#//Error"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" manuallyCreated="true" eReference="ValidateGeneric.ecore#//Applicant/errors" eClass="ValidateGeneric.ecore#//Error">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Gender" eAttribute="ValidateGeneric.ecore#//Error/attributeName"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Applicant" eAttribute="ValidateGeneric.ecore#//Error/entityName"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="gender must be male or female" eAttribute="ValidateGeneric.ecore#//Error/message"/>
+          </children>
+          <comments>Force hierarchical</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="ValidateGeneric.ecore#//Work">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" eAttribute="ValidateGeneric.ecore#//Work/attributeValueSTR"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_l0TZsGqnEeGMCd15vaZIXw" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="ValidateGeneric.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="Validate"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

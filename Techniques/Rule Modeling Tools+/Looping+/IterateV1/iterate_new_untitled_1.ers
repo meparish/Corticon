@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" majorServiceNumber="3" buildNumber="5565" updateStamp="_g-Rc3ydsEeSLStJy1PZoRg" externalChecksum="3054974779:507989954:1410878994">
+  <languageCode>en_US</languageCode>
+  <ruleset operationMode="ProcessAllLogicalLoops" vocabularyUpdateStamp="_g-Hr0CdsEeSLStJy1PZoRg" vocabulary="Cargo.ecore#/">
+    <rule>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Cargo.volume = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Cargo.volume = 1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="volume" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Cargo.volume">
+                <parentTerm text="Cargo" datatype="Cargo" termtype="ENTITY" fulltext="Cargo"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Cargo" datatype="Cargo" termtype="ENTITY" fulltext="Cargo" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="(Cargo.volume &lt;= 10)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Cargo.volume &lt;= 10 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="volume" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Cargo.volume">
+                <parentTerm text="Cargo" datatype="Cargo" termtype="ENTITY" fulltext="Cargo" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Cargo.volume &lt;= 10" rhs="T"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Aircraft.new[aircraftType='747']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Aircraft.new [ Aircraft.aircraftType = '747' ]" datatype="Aircraft" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Aircraft" datatype="Aircraft" termtype="ENTITY" fulltext="Aircraft"/>
+              <terms text="aircraftType" datatype="String" termtype="ATTRIBUTE" fulltext="Aircraft.aircraftType">
+                <parentTerm text="Aircraft" datatype="Aircraft" termtype="ENTITY" fulltext="Aircraft"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Aircraft" termtype="NEW" fulltext="Aircraft.new">
+                <parentTerm text="Aircraft" datatype="Aircraft" termtype="ENTITY" fulltext="Aircraft" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Cargo.volume += 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Cargo.volume = Cargo.volume + 1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="volume" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Cargo.volume">
+                <parentTerm text="Cargo" datatype="Cargo" termtype="ENTITY" fulltext="Cargo"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Cargo" datatype="Cargo" termtype="ENTITY" fulltext="Cargo" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="volume" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Cargo.volume">
+                <parentTerm text="Cargo" datatype="Cargo" termtype="ENTITY" fulltext="Cargo" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable entity="Cargo.ecore#//Cargo">
+      <referencedAttributes attribute="Cargo.ecore#//Cargo/volume"/>
+    </logicalVariable>
+    <logicalVariable entity="Cargo.ecore#//Aircraft">
+      <referencedAttributes attribute="Cargo.ecore#//Aircraft/aircraftType"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Cargo.volume = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Cargo.volume = 1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="volume" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Cargo.volume">
+                <parentTerm text="Cargo" datatype="Cargo" termtype="ENTITY" fulltext="Cargo"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Cargo" datatype="Cargo" termtype="ENTITY" fulltext="Cargo" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Aircraft.new[aircraftType='747']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Aircraft.new [ Aircraft.aircraftType = '747' ]" datatype="Aircraft" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Aircraft" datatype="Aircraft" termtype="ENTITY" fulltext="Aircraft"/>
+              <terms text="aircraftType" datatype="String" termtype="ATTRIBUTE" fulltext="Aircraft.aircraftType">
+                <parentTerm text="Aircraft" datatype="Aircraft" termtype="ENTITY" fulltext="Aircraft"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Aircraft" termtype="NEW" fulltext="Aircraft.new">
+                <parentTerm text="Aircraft" datatype="Aircraft" termtype="ENTITY" fulltext="Aircraft" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Cargo.volume += 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Cargo.volume = Cargo.volume + 1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="volume" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Cargo.volume">
+                <parentTerm text="Cargo" datatype="Cargo" termtype="ENTITY" fulltext="Cargo"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Cargo" datatype="Cargo" termtype="ENTITY" fulltext="Cargo" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="volume" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Cargo.volume">
+                <parentTerm text="Cargo" datatype="Cargo" termtype="ENTITY" fulltext="Cargo" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="Cargo.volume &lt;= 10">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Cargo.volume &lt;= 10" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="volume" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Cargo.volume">
+                <parentTerm text="Cargo" datatype="Cargo" termtype="ENTITY" fulltext="Cargo" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

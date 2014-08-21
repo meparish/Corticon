@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_tKj1l2qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_ladWQGqnEeGMCd15vaZIXw" vocabulary="ResourceAllocation.ecore#/">
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0"/>
+    <filter>
+      <opaqueExpression expression="Workitem.assigned =false">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Workitem.assigned = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="assigned" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Workitem.assigned">
+              <parentTerm text="Workitem" datatype="Workitem" termtype="ENTITY" fulltext="Workitem" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="UNASSIGNED: {Workitem.name} {Workitem.type} is not assigned to anyone">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="UNASSIGNED:  + Workitem.name +   + Workitem.type +  is not assigned to anyone" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Workitem.name">
+              <parentTerm text="Workitem" datatype="Workitem" termtype="ENTITY" fulltext="Workitem" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="Workitem.type">
+              <parentTerm text="Workitem" datatype="Workitem" termtype="ENTITY" fulltext="Workitem" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="ResourceAllocation.ecore#//Workitem" ruleStatements="#//@ruleset/@ruleStatements.0">
+      <referencedAttributes attribute="ResourceAllocation.ecore#//Workitem/assigned"/>
+      <referencedAttributes attribute="ResourceAllocation.ecore#//Workitem/name"/>
+      <referencedAttributes attribute="ResourceAllocation.ecore#//Workitem/type"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5"/>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Workitem.assigned =false" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="Workitem.assigned =false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Workitem.assigned = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="assigned" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Workitem.assigned">
+                <parentTerm text="Workitem" datatype="Workitem" termtype="ENTITY" fulltext="Workitem"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="0"/>
+        <text external="UNASSIGNED: {Workitem.name} {Workitem.type} is not assigned to anyone">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="UNASSIGNED:  + Workitem.name +   + Workitem.type +  is not assigned to anyone" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Workitem.name">
+                <parentTerm text="Workitem" datatype="Workitem" termtype="ENTITY" fulltext="Workitem" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="Workitem.type">
+                <parentTerm text="Workitem" datatype="Workitem" termtype="ENTITY" fulltext="Workitem" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

@@ -1,0 +1,36 @@
+Uncertainty and Expert Systems
+
+Humans act in a world of perpetual uncertainty. If an expert system is to mimic human behaviour it must be provided with ways of dealing with uncertainty. Over the years many such ways have been developed. In CPS820 we will discuss two of these, Fuzzy logic and certainty factors in some detail.
+
+Uncertainty seems to come from several sources.
+Sources of uncertainty
+
+    * Human ignorance
+    * Randomness in nature
+    * Imprecision of many concepts
+    * Unpredictability of other autonomous agents 
+
+Human Ignorance
+
+This source of uncertainty can be overcome to a certain extent by education, the acquisition of more knowledge. In a knowledge based system one can add more rules to the knowledge base. Still, a well designed knowledge based system must be prepared for human ignorance. For example, the animal.clp ES has the problem that the user is not allowed to answer questions with "don't know". This is a major weakness. The ES should degrade gracefully as more and more unknowns are put in by the user.
+Randomness in nature
+
+Most scientists now believe that randomness is a fundamental property of many natural processes. (e.g. in quantum mechanics, the uncertainty principle, in Thermodynamics, entropy) These random factors are usually handled with statistical methods.
+Imprecision of many concepts
+
+In the human world many everyday concepts are imprecise. Humans reason with these imprecise concepts all the time. Examples are "old", "tall", "cold", "warm", "hot". The list could go on and on. It seems clear that any computer program imitating human behaviour will have to deal in some way with this sort of imprecision. After all, humans base many judgments and decisions on these "fuzzy" concepts.
+Unpredictability of other autonomous agents
+
+Much of AI concerns single agents acting in a world of inanimate objects. But in reality the world is full of other agents acting out their own plans. For example, consider the statement "A barking dog does not bite". What is the truth value of this statement? Different people might have different beliefs in its validity. It might be true in general but not for rotweilers, for example.
+Some methods developed to deal with uncertainty in Knowledge Based Systems
+
+    * Bayesian Statistics
+    * Belief Networks
+    * Dempster-Shafer Theory
+    * Truth maintenance systems
+    * Certainty factors
+    * Fuzzy sets and logic 
+
+In CPS820 we briefly discuss Bayesian statistics and then look at Certainty factors and Fuzzy theory in more detail.
+
+There is some controversy between the advocates of Bayes/Belief nets/Dempster-Shafer and the advocates of certainty factors/fuzzy. The former want to take advantage of the rigour of statistical theory. The latter want to create practical working systems, even if their theoretical foundation is somewhat dubious.

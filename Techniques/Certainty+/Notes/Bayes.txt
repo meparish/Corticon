@@ -1,0 +1,114 @@
+Bayes Theorem (Conditional probability)
+
+Probability theory originated with Pascal in the 17 century. In the 18th century Rev. Bayes developed a theorem which forms the basis of conditional probability.
+
+In one way or another, most attempts to use rigorous probablity theory to handle uncertainty in Expert Systems is based on Bayes Theorem.
+
+If enough data, of the right sort, is available, statistical analysis based on conditional probablility theory is the best way to handle uncertainty in Expert Systems. In many practical cases, however, there is simple not enough data to produce adequate sample sizes, or the data does not have the necessary properties, such as independence from one another.
+
+A Simple Statistical Example (Weather Example)
+
+Bayes Theorem
+
+The simple example, above, actually illustrates the so-called 'naive' Bayes Theory. Bayes' original equation is,
+
+p(H | e) = p(e | H) * p(H) / p(e).
+
+p(H) is called the prior probability. This the probability of H with no supporting evidence. p(H | e) is the probability of H given that 'evidence', e, has been observerd (that is, is true). Evidently, one would expect p(H | e) > p(H) in most cases, although e could be an abili.
+
+p(e) is the prior probability that e would exist, regardless of the state of H. Finally, p(e | H) is the probability of e given that H has definitely true.
+
+In the weather example, e is the result of a particular choice of attribures outlook, temperature, humidity and windy. Call these choices e1, e2, e3, and e4. If these are assumed to be independent (the 'naive' assumption), the corresponding probabilities can be multiplied. Thus, if we take H to be the hypothesis that, yes, the game will be played, then,
+
+p(yes | e) = p(e1 | yes) * p(e2 | yes) * p(e3| yes) * p(e4 | yes) * p(yes) / p(E).
+
+Therefore in the weather example, for the case outlook = sunny, temperature = cool, humidity = hige, windy = true, we have, using the data preiviously calculated,
+
+p(yes | e) = 2/9 * 3/9 * 3/9 * 3/9 * 9/14 / p(e).
+
+Similarly,
+
+p(no | e) = 3/5 * 1/5 * 4/5 * 3/5 * 5/14 /p(e).
+
+The p(e, that is, the probability that tht particular weather will occur, is the same for both cases and will cancel out when we normalize the probabilities to add up to 1 (or 1000%).
+
+We get,
+
+p(yes | e) = 0.205
+
+p(no | e) = 0.795
+Another Example
+
+The simplest case is as follows. We have a hypothesis, H. For example, H = "This new power supply is defective.". There is clearly some uncertainty in this statement. The question is, how much? A second question is, how would you quantify the uncertainty?
+
+Call the probability of H, p(H). That is, p(H) is the probability that a randomly chosen new power supply is defective. To determine a value of p(H) someone would have to thoroughly test a large sample of power supplies. Presumably that is just what the manufacturer's quality control people do.
+
+Now suppose you have a subset of these new power supplies, those with noisier fans. Suppose E= "the new power supply has a noisy fan".
+
+Now we ask, what is the probability that the new power supply is defective, given that the fan is noisy? This probability is written, p(H | E), the probability of H occurring, given E has occurred. (Intuitively we would be worried that p(H | E) > p(H).) We can think of E as evidence that the power supply is defective.
+
+Often p(H | E) is not so easy to measure. Bayes found a simple formula which "turns p(H | E) around". The formula is,
+
+        p(H | E) = p(E | H) *p(H) / p(E)
+
+Here p(E | H) is the probability that the power supply is has a noisy fan given that it is defective..
+
+Bayes Theorem and Rules
+
+H and E could be stated in rule form such as,
+
+        IF E is true THEN H is true with probability p(H | E).
+
+For example, IF the fan is noisy THEN the power supply is defective (p = 0.003).
+Problems using the conditional probability approach in ES
+
+    * Gathering appropriate data
+    * Can experts accurately estimate probabilities? 
+
+Gathering appropriate data
+
+To calculate the appropriate probabilities, statisticians must be able to obtain appropriate sample data. In many real cases this can be impossible.
+
+Consider even the simple power supply example above. Quality control can obtain samples to calculate p(H) and p(E). But what about p(E | H)? If the power supply is defective enough, you will not even be able to hear the fan because it won't be running! They could avoid Bayes theorem and try to measure p(H | E) directly. This could also be difficult if noisy fan power supplies are rare.
+
+Often one might have to rely on human estimates of one or more of these probability factors. But if you have to do that, it might be better to let experienced experts estimate the relevant probabilities from the start. This is the point of view of the advocates of certainty factors.
+Can experts accurately estimate probabilities?
+
+Studies have shown that humans are notoriously bad at estimating probabilities. Governments exploit this to collect huge sums of money from lottery players. (A sort of voluntary tax.)
+A small example of probability estimation
+
+(From Deborah Bennett, Randomness, p.2.)
+
+    A taxicab was involved in a hit and run accident at night. Two cab companies, the Green and the Blue, operate in the city. You are given the following data:
+
+    (a) 85% of the cabs in the city are Green, and 15 % are Blue.
+
+    (b) A witness identified the cab as Blue. The court tested the reliability of the witness under the same conditions that existed the night of the accident. The court concluded that the witness correctly identifies each one of the two colours 80 % of the time and fails 20 % of the time.
+
+    What is the probability that the cab involved in the accident was Blue rather than Green. [i.e/, that the witness correctly identified the cab colour?]
+
+Answer (and another question)
+
+We are left in a quandary. If there is usually not enough data to do a proper statistical analysis, and if the intuition of people, even well educated people, is often so wrong when it comes to probabilities, what is to be done to make ES handle uncertainty.
+
+The supporters of certainty factors still argue that expert intuition is still the best bet. Some experts are good at estimating probabilities. One just has to find them.
+
+One the other hand, maybe something completely different should be tried. Fuzzy theory for example.
+
+
+
+ANSWER
+41 percent
+
+In other words, it is actually more likely that the taxicab was Green, even though the person who is correct 80 % of the time said it was Blue.
+
+ 
+Another example.
+
+If a test to detect a disease whose prevalence is one in a thousand has a false positive rate of 5 %, what is the chance that a person found to have a positive result actually has the disease, assuming you know nothing about the patient's symptoms or signs?
+
+This question was given to physicians, residents and fourth year medical students at a prominent teaching hospital. Almost half gave the incorrect answer of 95 %. Only 18 % of those answering got the correct answer which is 2 % !! 
+
+
+
+weather example : http://www.ryerson.ca/~dgrimsha/courses/cps820/bayes2.html

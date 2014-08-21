@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_v8Or6GqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_xaQ6EGr9EeGmFIX1vyl7Wg" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_qL66IWqnEeGMCd15vaZIXw" ruleActivity="Ducks.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Assign first duck Huey 20 to person Tom 20 - ages are the same"/>
+        <PostedMessage severity="Info" text="Assign first duck Dewey 20 to person Dick 20 - ages are the same"/>
+        <PostedMessage severity="Info" text="Assign another duck Louie 20 to person Tom 20 - ages are the same"/>
+        <PostedMessage severity="Warning" text="Person Tom has enough ducks already"/>
+        <PostedMessage severity="Warning" text="Person Tom has enough ducks already"/>
+        <PostedMessage severity="Warning" text="Person Tom has enough ducks already"/>
+        <PostedMessage severity="Warning" text="Duck Huey 20 is already owned by Tom"/>
+        <PostedMessage severity="Warning" text="Duck Dewey 20 is already owned by Dick"/>
+        <PostedMessage severity="Warning" text="Duck Louie 20 is already owned by Tom"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Ducks.ecore#//Duck">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20" eAttribute="Ducks.ecore#//Duck/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Huey" eAttribute="Ducks.ecore#//Duck/name"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Ducks.ecore#//Duck">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20" eAttribute="Ducks.ecore#//Duck/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Dewey" eAttribute="Ducks.ecore#//Duck/name"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Ducks.ecore#//Person">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20" eAttribute="Ducks.ecore#//Person/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tom" eAttribute="Ducks.ecore#//Person/name"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Ducks.ecore#//Person">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20" eAttribute="Ducks.ecore#//Person/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Dick" eAttribute="Ducks.ecore#//Person/name"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Ducks.ecore#//Duck">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20" eAttribute="Ducks.ecore#//Duck/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Louie" eAttribute="Ducks.ecore#//Duck/name"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true" passed="false">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" passed="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2/@children.3" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.6" eClass="Ducks.ecore#//Duck">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20" eAttribute="Ducks.ecore#//Duck/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" passed="false" value="Huey" eAttribute="Ducks.ecore#//Duck/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" passed="false" issue="Extra" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2/@children.2/@children.2" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eReference="Ducks.ecore#//Duck/owner" eClass="Ducks.ecore#//Person">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="20" eAttribute="Ducks.ecore#//Person/age"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="Tom" eAttribute="Ducks.ecore#//Person/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" issue="Extra" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.8" eReference="Ducks.ecore#//Person/duck" eClass="Ducks.ecore#//Duck">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="20" eAttribute="Ducks.ecore#//Duck/age"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="Louie" eAttribute="Ducks.ecore#//Duck/name"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" issue="Extra" eReference="Ducks.ecore#//Duck/owner" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" issue="Extra" eReference="Ducks.ecore#//Person/duck" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" passed="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1/@children.2/@children.2" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.7" eClass="Ducks.ecore#//Duck">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20" eAttribute="Ducks.ecore#//Duck/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" passed="false" value="Dewey" eAttribute="Ducks.ecore#//Duck/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" passed="false" issue="Extra" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eReference="Ducks.ecore#//Duck/owner" eClass="Ducks.ecore#//Person">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="20" eAttribute="Ducks.ecore#//Person/age"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" issue="Extra" value="Dick" eAttribute="Ducks.ecore#//Person/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" issue="Extra" eReference="Ducks.ecore#//Person/duck" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+          </children>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.8" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2/@children.2"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true" passed="false">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" passed="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.3/@children.2" eClass="Ducks.ecore#//Duck">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20" eAttribute="Ducks.ecore#//Duck/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" passed="false" value="D1" eAttribute="Ducks.ecore#//Duck/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eReference="Ducks.ecore#//Duck/owner" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.3"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" passed="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.2/@children.2" eClass="Ducks.ecore#//Duck">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20" eAttribute="Ducks.ecore#//Duck/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" passed="false" value="d2" eAttribute="Ducks.ecore#//Duck/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eReference="Ducks.ecore#//Duck/owner" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1/@children.2" eClass="Ducks.ecore#//Person">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="20" eAttribute="Ducks.ecore#//Person/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="P1" eAttribute="Ducks.ecore#//Person/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" manuallyCreated="true" issue="Missing" eReference="Ducks.ecore#//Person/duck" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.2" eClass="Ducks.ecore#//Person">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="20" eAttribute="Ducks.ecore#//Person/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="P2" eAttribute="Ducks.ecore#//Person/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" issue="Missing" eReference="Ducks.ecore#//Person/duck" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_k7dtIGqnEeGMCd15vaZIXw" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="Ducks.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="Ducks"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

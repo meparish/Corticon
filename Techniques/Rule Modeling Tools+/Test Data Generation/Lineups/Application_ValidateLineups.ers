@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_t1SN92qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:2389860949">
+  <languageCode>en_US</languageCode>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_WWjr4IE-EeKsEprkToUcIw" key="1" type="Validation" severity="Warning" invalidObjects="#//@rulesheetViewList.0/@ruleSection/@ruleColumnList.2/@conditionValueSetCellList.1" textKey="RulesheetTableModelAPIImpl.Validation.InvalidConditionExpressionCell" locationKey="RulesheetTableModelAPIImpl.Validation.Location.If">
+    <textVariables>'other' maps to an empty set of values (rule will never fire, or rule will always fire if not other).</textVariables>
+    <locationVariables>b</locationVariables>
+    <locationVariables>2</locationVariables>
+  </validationMessages>
+  <ruleset vocabularyUpdateStamp="_lrbxgGqnEeGMCd15vaZIXw" vocabulary="Application.ecore#/">
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="Control.count = lineup->size">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Control.count = lineup->size" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.count">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="lineup" datatype="Integer" termtype="COLLECTION" fulltext="lineup->size">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="lineup.switchboardType = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.switchboardType = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="switchboardType" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.switchboardType">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lineup.switchboardType" rhs="other"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="lineup.status = 'violation'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.status = 'violation'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.status">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Control.invalid+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Control.invalid = Control.invalid + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Rules.rulelist+='1'+' '">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rules.rulelist = Rules.rulelist + '1' + ' '" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList/>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lineup.application" rhs="other"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="lineup.status = 'violation'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.status = 'violation'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.status">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Control.invalid+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Control.invalid = Control.invalid + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Rules.rulelist+='2'+' '">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rules.rulelist = Rules.rulelist + '2' + ' '" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="not (lineup.incomingFeedLocation = 'Top' or lineup.incomingFeedLocation = 'Center' or lineup.incomingFeedLocation = 'Bottom') or lineup.incomingFeedLocation = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( lineup.incomingFeedLocation = 'Top' or lineup.incomingFeedLocation = 'Center' or lineup.incomingFeedLocation = 'Bottom' ) or lineup.incomingFeedLocation = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="incomingFeedLocation" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.incomingFeedLocation">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lineup.incomingFeedLocation" rhs="not {'Top', 'Center', 'Bottom'}"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="lineup.status = 'violation'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.status = 'violation'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.status">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Control.invalid+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Control.invalid = Control.invalid + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Rules.rulelist+='3'+' '">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rules.rulelist = Rules.rulelist + '3' + ' '" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.4">
+      <condition>
+        <opaqueExpression expression="lineup.switchboardType = 'Commercial Metering'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.switchboardType = 'Commercial Metering'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="switchboardType" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.switchboardType">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lineup.switchboardType" rhs="'Commercial Metering'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="not (lineup.application = 'Service Disconnect (Max 6)') or lineup.application = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( lineup.application = 'Service Disconnect (Max 6)' ) or lineup.application = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="application" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.application">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lineup.application" rhs="not 'Service Disconnect (Max 6)'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="lineup.incomingFeedLocation = 'Center'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.incomingFeedLocation = 'Center'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="incomingFeedLocation" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.incomingFeedLocation">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lineup.incomingFeedLocation" rhs="'Center'"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="lineup.status = 'violation'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.status = 'violation'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.status">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Control.invalid+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Control.invalid = Control.invalid + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Rules.rulelist+='4'+' '">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rules.rulelist = Rules.rulelist + '4' + ' '" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.5">
+      <condition>
+        <opaqueExpression expression="lineup.switchboardType = 'Commercial Metering'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.switchboardType = 'Commercial Metering'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="switchboardType" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.switchboardType">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lineup.switchboardType" rhs="'Commercial Metering'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="lineup.application = 'Other'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.application = 'Other'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="application" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.application">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lineup.application" rhs="'Other'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="not (lineup.incomingFeedLocation = 'Center') or lineup.incomingFeedLocation = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( lineup.incomingFeedLocation = 'Center' ) or lineup.incomingFeedLocation = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="incomingFeedLocation" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.incomingFeedLocation">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lineup.incomingFeedLocation" rhs="not 'Center'"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="lineup.status = 'violation'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.status = 'violation'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.status">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Control.invalid+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Control.invalid = Control.invalid + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Rules.rulelist+='5'+' '">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rules.rulelist = Rules.rulelist + '5' + ' '" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.6">
+      <condition>
+        <opaqueExpression expression="lineup.switchboardType = 'Assembly Center'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.switchboardType = 'Assembly Center'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="switchboardType" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.switchboardType">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lineup.switchboardType" rhs="'Assembly Center'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="not (lineup.application = 'Main Tie Main') or lineup.application = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( lineup.application = 'Main Tie Main' ) or lineup.application = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="application" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.application">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lineup.application" rhs="not 'Main Tie Main'"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="lineup.status = 'violation'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.status = 'violation'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.status">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Control.invalid+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Control.invalid = Control.invalid + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Rules.rulelist+='6'+' '">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rules.rulelist = Rules.rulelist + '6' + ' '" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.7">
+      <condition>
+        <opaqueExpression expression="lineup.switchboardType = 'Commercial Metering'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.switchboardType = 'Commercial Metering'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="switchboardType" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.switchboardType">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lineup.switchboardType" rhs="'Commercial Metering'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="lineup.application = 'Service Disconnect (Max 6)'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.application = 'Service Disconnect (Max 6)'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="application" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.application">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lineup.application" rhs="'Service Disconnect (Max 6)'"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="lineup.status = 'valid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.status = 'valid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.status">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action>
+        <opaqueExpression expression="Control.vallid+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Control.vallid = Control.vallid + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="vallid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.vallid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="vallid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.vallid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action>
+        <opaqueExpression expression="Rules.rulelist+='7'+' '">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rules.rulelist = Rules.rulelist + '7' + ' '" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.8">
+      <condition>
+        <opaqueExpression expression="lineup.switchboardType = 'Assembly Center'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.switchboardType = 'Assembly Center'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="switchboardType" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.switchboardType">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lineup.switchboardType" rhs="'Assembly Center'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="lineup.application = 'Main Tie Main'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.application = 'Main Tie Main'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="application" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.application">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lineup.application" rhs="'Main Tie Main'"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="lineup.status = 'valid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.status = 'valid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.status">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action>
+        <opaqueExpression expression="Control.vallid+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Control.vallid = Control.vallid + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="vallid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.vallid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="vallid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.vallid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action>
+        <opaqueExpression expression="Rules.rulelist+='8'+' '">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rules.rulelist = Rules.rulelist + '8' + ' '" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.9">
+      <condition>
+        <opaqueExpression expression="lineup.switchboardType = 'Standard Switchboard' or lineup.switchboardType = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.switchboardType = 'Standard Switchboard' or lineup.switchboardType = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="switchboardType" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.switchboardType">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lineup.switchboardType" rhs="{'Standard Switchboard', other}"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="lineup.application = 'Main Disconnect' or lineup.application = 'Service Disconnect (Max 6)' or lineup.application = 'Main Tie Main' or lineup.application = 'Add to Existing' or lineup.application = 'Feeders Only' or lineup.application = 'Other'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.application = 'Main Disconnect' or lineup.application = 'Service Disconnect (Max 6)' or lineup.application = 'Main Tie Main' or lineup.application = 'Add to Existing' or lineup.application = 'Feeders Only' or lineup.application = 'Other'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="application" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.application">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lineup.application" rhs="{'Main Disconnect', 'Service Disconnect (Max 6)', 'Main Tie Main', 'Add to Existing', 'Feeders Only', 'Other'}"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="lineup.status = 'unknown'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.status = 'unknown'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.status">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Control.unknown+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Control.unknown = Control.unknown + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="unknown" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.unknown">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="unknown" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.unknown">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Rules.rulelist+='9'+' '">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rules.rulelist = Rules.rulelist + '9' + ' '" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0/@actions.0" logicalVariable="#//@ruleset/@logicalVariables.1">
+      <text expression="{Control.count} test cases generated">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Control.count +  test cases generated" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.count">
+              <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Violation" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Invalid value for switchboard type must be from 'Standard Switchboard' , 'Commercial Metering' , 'Assembly Center'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Invalid value for switchboard type must be from 'Standard Switchboard' , 'Commercial Metering' , 'Assembly Center'" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Violation" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Invalid value for Application Valid Values are: Main Disconnect, Service Disconnect (Max 6), Main Tie Main, Add to Existing, Feeders Only, Other. VIOLATION">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Invalid value for Application Valid Values are: Main Disconnect, Service Disconnect (Max 6), Main Tie Main, Add to Existing, Feeders Only, Other. VIOLATION" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Violation" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Invalid value for incoming feed location must be from 'Top' , 'Center' , 'Bottom'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Invalid value for incoming feed location must be from 'Top' , 'Center' , 'Bottom'" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Violation" ruleModelElements="#//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If Switchboard Type = Commercial Metering and Incoming Feed Location = Center then Application must be Service Disconnect (Max 6) VIOLATION">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If Switchboard Type = Commercial Metering and Incoming Feed Location = Center then Application must be Service Disconnect (Max 6) VIOLATION" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Violation" ruleModelElements="#//@ruleset/@rules.5" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If Switchboard Type = Commercial Metering then Other is not valid. WARNING">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If Switchboard Type = Commercial Metering then Other is not valid. WARNING" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Violation" ruleModelElements="#//@ruleset/@rules.6" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If Switchboard Type = Assembly Center then Main Tie Main, Other are invalid. VIOLATION">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If Switchboard Type = Assembly Center then Main Tie Main, Other are invalid. VIOLATION" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.7" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="valid">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="valid" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.8" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="valid">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="valid" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.9" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="unknown case">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="unknown case" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="Application.ecore#//Lineup" ruleStatements="#//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2 #//@ruleset/@ruleStatements.3 #//@ruleset/@ruleStatements.4 #//@ruleset/@ruleStatements.5 #//@ruleset/@ruleStatements.6 #//@ruleset/@ruleStatements.7 #//@ruleset/@ruleStatements.8 #//@ruleset/@ruleStatements.9">
+      <alias value="lineup"/>
+      <referencedAttributes attribute="Application.ecore#//Lineup/switchboardType"/>
+      <referencedAttributes attribute="Application.ecore#//Lineup/application"/>
+      <referencedAttributes attribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+      <referencedAttributes attribute="Application.ecore#//Lineup/status"/>
+    </logicalVariable>
+    <logicalVariable entity="Application.ecore#//Control" ruleStatements="#//@ruleset/@ruleStatements.0">
+      <referencedAttributes attribute="Application.ecore#//Control/count"/>
+      <referencedAttributes attribute="Application.ecore#//Control/invalid"/>
+      <referencedAttributes attribute="Application.ecore#//Control/vallid"/>
+      <referencedAttributes attribute="Application.ecore#//Control/unknown"/>
+    </logicalVariable>
+    <logicalVariable entity="Application.ecore#//Rules">
+      <referencedAttributes attribute="Application.ecore#//Rules/rulelist"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightConditionsActions="26" sashWeightConditionsIf="26">
+    <actionSection rowCount="47" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Control.count = lineup->size">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Control.count = lineup->size" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.count">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="lineup" datatype="Integer" termtype="COLLECTION" fulltext="lineup->size">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet="{'violation', 'warning', 'unknown', 'valid'}"/>
+        <expressionCell external="lineup.status">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.status" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.status">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Control.invalid+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Control.invalid = Control.invalid + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Control.vallid+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Control.vallid = Control.vallid + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="vallid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.vallid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="vallid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.vallid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Control.unknown+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Control.unknown = Control.unknown + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="unknown" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.unknown">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="unknown" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.unknown">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet="{'1', '2', '3', '4', '5', '6', '7', '8', '9'}"/>
+        <expressionCell external="Rules.rulelist+=cellValue+' '">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rules.rulelist = Rules.rulelist + cellValue + ' '" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="true">
+            <modifiedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="rulelist" datatype="String" termtype="ATTRIBUTE" fulltext="Rules.rulelist">
+                <parentTerm text="Rules" datatype="Rules" termtype="ENTITY" fulltext="Rules" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.3"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="A0"/>
+        <text external="{Control.count} test cases generated">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Control.count +  test cases generated" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.count">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="1"/>
+        <text external="Invalid value for switchboard type must be from 'Standard Switchboard' , 'Commercial Metering' , 'Assembly Center'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Invalid value for switchboard type must be from 'Standard Switchboard' , 'Commercial Metering' , 'Assembly Center'" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="2"/>
+        <text external="Invalid value for Application Valid Values are: Main Disconnect, Service Disconnect (Max 6), Main Tie Main, Add to Existing, Feeders Only, Other. VIOLATION">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Invalid value for Application Valid Values are: Main Disconnect, Service Disconnect (Max 6), Main Tie Main, Add to Existing, Feeders Only, Other. VIOLATION" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="3"/>
+        <text external="Invalid value for incoming feed location must be from 'Top' , 'Center' , 'Bottom'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Invalid value for incoming feed location must be from 'Top' , 'Center' , 'Bottom'" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.4">
+        <reference external="4"/>
+        <text external="If Switchboard Type = Commercial Metering and Incoming Feed Location = Center then Application must be Service Disconnect (Max 6) VIOLATION">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If Switchboard Type = Commercial Metering and Incoming Feed Location = Center then Application must be Service Disconnect (Max 6) VIOLATION" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.5">
+        <reference external="5"/>
+        <text external="If Switchboard Type = Commercial Metering then Other is not valid. WARNING">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If Switchboard Type = Commercial Metering then Other is not valid. WARNING" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.6">
+        <reference external="6"/>
+        <text external="If Switchboard Type = Assembly Center then Main Tie Main, Other are invalid. VIOLATION">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If Switchboard Type = Assembly Center then Main Tie Main, Other are invalid. VIOLATION" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.7">
+        <reference external="7"/>
+        <text external="valid">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="valid" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.8">
+        <reference external="8"/>
+        <text external="valid">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="valid" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.9">
+        <reference external="9"/>
+        <text external="unknown case">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="unknown case" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'Standard Switchboard', 'Commercial Metering', 'Assembly Center', other}"/>
+        <expressionCell external="lineup.switchboardType">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.switchboardType" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="switchboardType" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.switchboardType">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'Main Disconnect', 'Service Disconnect (Max 6)', 'Main Tie Main', 'Add to Existing', 'Feeders Only', 'Other', other}"/>
+        <expressionCell external="lineup.application">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.application" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="application" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.application">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'Top', 'Center', 'Bottom', other}"/>
+        <expressionCell external="lineup.incomingFeedLocation">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lineup.incomingFeedLocation" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="incomingFeedLocation" datatype="String" termtype="ATTRIBUTE" fulltext="lineup.incomingFeedLocation">
+                <parentTerm text="lineup" datatype="Lineup" termtype="ENTITY" fulltext="lineup" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="other"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'violation'"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'1'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList validationMessages="#//@validationMessages.0" tooltip="'other' maps to an empty set of values (rule will never fire, or rule will always fire if not other)." valueSet="other"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'violation'"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'2'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="not {'Top', 'Center', 'Bottom'}"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'violation'"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'3'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="'Commercial Metering'"/>
+        <conditionValueSetCellList valueSet="not 'Service Disconnect (Max 6)'"/>
+        <conditionValueSetCellList valueSet="'Center'"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'violation'"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'4'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="'Commercial Metering'"/>
+        <conditionValueSetCellList valueSet="'Other'"/>
+        <conditionValueSetCellList valueSet="not 'Center'"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'violation'"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'5'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="6" columnWidth="100" pRule="#//@ruleset/@rules.6">
+        <conditionValueSetCellList valueSet="'Assembly Center'"/>
+        <conditionValueSetCellList valueSet="not 'Main Tie Main'"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'violation'"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'6'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="7" columnWidth="100" pRule="#//@ruleset/@rules.7">
+        <conditionValueSetCellList valueSet="'Commercial Metering'"/>
+        <conditionValueSetCellList valueSet="'Service Disconnect (Max 6)'"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'valid'"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'7'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="8" columnWidth="100" pRule="#//@ruleset/@rules.8">
+        <conditionValueSetCellList valueSet="'Assembly Center'"/>
+        <conditionValueSetCellList valueSet="'Main Tie Main'"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'valid'"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'8'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="9" columnWidth="100" pRule="#//@ruleset/@rules.9">
+        <conditionValueSetCellList valueSet="{'Standard Switchboard', other}"/>
+        <conditionValueSetCellList valueSet="{'Main Disconnect', 'Service Disconnect (Max 6)', 'Main Tie Main', 'Add to Existing', 'Feeders Only', 'Other'}"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'unknown'"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="'9'"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

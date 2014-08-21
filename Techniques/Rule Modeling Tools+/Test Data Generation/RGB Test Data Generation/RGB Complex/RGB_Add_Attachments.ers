@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" majorServiceNumber="3" buildNumber="5565" updateStamp="_ohMzEmhLEeOwx4C8AWaqWA" externalChecksum="3054974779:507989954:1410878994">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_XvSVEGhLEeOwx4C8AWaqWA" vocabulary="RGB.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="attachment+=Attachment.new[color=anyColor.value]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="attachment += Attachment.new [ Attachment.color = anyColor.value ]" datatype="Attachment" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="attachment" datatype="Attachment" termtype="ENTITY" fulltext="attachment">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="anyColor.value">
+                <parentTerm text="anyColor" datatype="Color" termtype="ENTITY" fulltext="anyColor" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable entity="RGB.ecore#//Thing">
+      <extension explicit="true" association="true" entity="RGB.ecore#//Attachment" traversedAssocRole="RGB.ecore#//Thing/attachments">
+        <alias value="attachment"/>
+      </extension>
+    </logicalVariable>
+    <logicalVariable entity="RGB.ecore#//Attachment"/>
+    <logicalVariable explicit="true" entity="RGB.ecore#//Color">
+      <alias value="anyColor"/>
+      <referencedAttributes attribute="RGB.ecore#//Color/value"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="attachment+=Attachment.new[color=anyColor.value]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="attachment += Attachment.new [ Attachment.color = anyColor.value ]" datatype="Attachment" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="attachment" datatype="Attachment" termtype="ENTITY" fulltext="attachment">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="anyColor.value">
+                <parentTerm text="anyColor" datatype="Color" termtype="ENTITY" fulltext="anyColor" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1"/>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

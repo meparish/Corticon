@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_tcZMe2qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_ljtY52qnEeGMCd15vaZIXw" vocabulary="Indexer.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="TX.index = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="TX.index = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="index" datatype="Integer" termtype="ATTRIBUTE" fulltext="TX.index">
+                <parentTerm text="TX" datatype="TX" termtype="ENTITY" fulltext="TX"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="TX" datatype="TX" termtype="ENTITY" fulltext="TX" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Customer.counter = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customer.counter = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="Customer.counter">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable entity="Indexer.ecore#//TX">
+      <referencedAttributes attribute="Indexer.ecore#//TX/index"/>
+    </logicalVariable>
+    <logicalVariable entity="Indexer.ecore#//Customer">
+      <referencedAttributes attribute="Indexer.ecore#//Customer/counter"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="TX.index = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="TX.index = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="index" datatype="Integer" termtype="ATTRIBUTE" fulltext="TX.index">
+                <parentTerm text="TX" datatype="TX" termtype="ENTITY" fulltext="TX"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="TX" datatype="TX" termtype="ENTITY" fulltext="TX"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Customer.counter = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customer.counter = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="Customer.counter">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

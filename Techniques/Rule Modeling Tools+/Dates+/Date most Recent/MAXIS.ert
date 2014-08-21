@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_vtWiaGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_vuNeAmqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_vt7KR2qnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.0/@children.0/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.Datatype.Value" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>1/1/2010</textVariables>
+      <textVariables>DateTime</textVariables>
+      <locationVariables>MAXISCase [1].links (MAXISPrismLink) [1].case (PRISMCase) [1].openDate</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_vt7KSGqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.1/@children.0/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.Datatype.Value" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>2/1/2010</textVariables>
+      <textVariables>DateTime</textVariables>
+      <locationVariables>MAXISCase [1].links (MAXISPrismLink) [2].case (PRISMCase) [2].openDate</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_vuBQwGqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.2/@children.0/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.Datatype.Value" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>3/1/2010</textVariables>
+      <textVariables>DateTime</textVariables>
+      <locationVariables>MAXISCase [1].links (MAXISPrismLink) [3].case (PRISMCase) [3].openDate</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_vuBQwWqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.3/@children.0/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.Datatype.Value" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>1/1/2009</textVariables>
+      <textVariables>DateTime</textVariables>
+      <locationVariables>MAXISCase [1].links (MAXISPrismLink) [4].case (PRISMCase) [4].openDate</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_vuBQwmqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.1/@children.1/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.Datatype.Value" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>1/1/2010</textVariables>
+      <textVariables>DateTime</textVariables>
+      <locationVariables>MAXISCase [1].links (MAXISPrismLink) [1].case (PRISMCase) [1].openDate</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_vuHXYGqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.2/@children.1/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.Datatype.Value" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>2/1/2010</textVariables>
+      <textVariables>DateTime</textVariables>
+      <locationVariables>MAXISCase [1].links (MAXISPrismLink) [2].case (PRISMCase) [2].openDate</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_vuHXYWqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.3/@children.1/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.Datatype.Value" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>3/1/2010</textVariables>
+      <textVariables>DateTime</textVariables>
+      <locationVariables>MAXISCase [1].links (MAXISPrismLink) [3].case (PRISMCase) [3].openDate</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_vuNeAGqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.4/@children.1/@children.2" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.Datatype.Value" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>1/1/2009</textVariables>
+      <textVariables>DateTime</textVariables>
+      <locationVariables>MAXISCase [1].links (MAXISPrismLink) [4].case (PRISMCase) [4].openDate</locationVariables>
+    </validationMessages>
+    <testsheet ruleActivityUpdateStamp="_pxscQ2qnEeGMCd15vaZIXw" ruleActivity="MAXIS.erf#//@ruleflow">
+      <input/>
+      <output/>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAXIS.ecore#//MAXISCase">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="MAXIS.ecore#//MAXISCase/links" eClass="MAXIS.ecore#//MAXISPrismLink">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="MAXIS.ecore#//MAXISPrismLink/case" eClass="MAXIS.ecore#//PRISMCase">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.0" manuallyCreated="true" value="1/1/2010" eAttribute="MAXIS.ecore#//PRISMCase/openDate"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="MAXIS.ecore#//MAXISCase/links" eClass="MAXIS.ecore#//MAXISPrismLink">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="MAXIS.ecore#//MAXISPrismLink/case" eClass="MAXIS.ecore#//PRISMCase">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.1" manuallyCreated="true" value="2/1/2010" eAttribute="MAXIS.ecore#//PRISMCase/openDate"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="MAXIS.ecore#//MAXISCase/links" eClass="MAXIS.ecore#//MAXISPrismLink">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="MAXIS.ecore#//MAXISPrismLink/case" eClass="MAXIS.ecore#//PRISMCase">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.2" manuallyCreated="true" value="3/1/2010" eAttribute="MAXIS.ecore#//PRISMCase/openDate"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="MAXIS.ecore#//MAXISCase/links" eClass="MAXIS.ecore#//MAXISPrismLink">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="MAXIS.ecore#//MAXISPrismLink/case" eClass="MAXIS.ecore#//PRISMCase">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.3" manuallyCreated="true" value="1/1/2009" eAttribute="MAXIS.ecore#//PRISMCase/openDate"/>
+            </children>
+          </children>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="MAXIS.ecore#//MAXISCase">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="525" eAttribute="MAXIS.ecore#//MAXISCase/maxAge"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" eReference="MAXIS.ecore#//MAXISCase/links" eClass="MAXIS.ecore#//MAXISPrismLink">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="160" eAttribute="MAXIS.ecore#//MAXISPrismLink/age"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" eReference="MAXIS.ecore#//MAXISPrismLink/case" eClass="MAXIS.ecore#//PRISMCase">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/2010" eAttribute="MAXIS.ecore#//PRISMCase/openDate"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" eReference="MAXIS.ecore#//MAXISCase/links" eClass="MAXIS.ecore#//MAXISPrismLink">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="129" eAttribute="MAXIS.ecore#//MAXISPrismLink/age"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" eReference="MAXIS.ecore#//MAXISPrismLink/case" eClass="MAXIS.ecore#//PRISMCase">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2/1/2010" eAttribute="MAXIS.ecore#//PRISMCase/openDate"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" eReference="MAXIS.ecore#//MAXISCase/links" eClass="MAXIS.ecore#//MAXISPrismLink">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="101" eAttribute="MAXIS.ecore#//MAXISPrismLink/age"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" eReference="MAXIS.ecore#//MAXISPrismLink/case" eClass="MAXIS.ecore#//PRISMCase">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3/1/2010" eAttribute="MAXIS.ecore#//PRISMCase/openDate"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" eReference="MAXIS.ecore#//MAXISCase/links" eClass="MAXIS.ecore#//MAXISPrismLink">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="525" eAttribute="MAXIS.ecore#//MAXISPrismLink/age"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" eReference="MAXIS.ecore#//MAXISPrismLink/case" eClass="MAXIS.ecore#//PRISMCase">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="MAXIS.ecore#//PRISMCase/isIncluded"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="MAXIS.ecore#//PRISMCase/isPrimary"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/2009" eAttribute="MAXIS.ecore#//PRISMCase/openDate"/>
+            </children>
+          </children>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="MAXIS.ecore#//MAXISCase">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="525" eAttribute="MAXIS.ecore#//MAXISCase/maxAge"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="MAXIS.ecore#//MAXISCase/links" eClass="MAXIS.ecore#//MAXISPrismLink">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="160" eAttribute="MAXIS.ecore#//MAXISPrismLink/age"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="MAXIS.ecore#//MAXISPrismLink/case" eClass="MAXIS.ecore#//PRISMCase">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.4" manuallyCreated="true" value="1/1/2010" eAttribute="MAXIS.ecore#//PRISMCase/openDate"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="MAXIS.ecore#//MAXISCase/links" eClass="MAXIS.ecore#//MAXISPrismLink">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="129" eAttribute="MAXIS.ecore#//MAXISPrismLink/age"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="MAXIS.ecore#//MAXISPrismLink/case" eClass="MAXIS.ecore#//PRISMCase">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.5" manuallyCreated="true" value="2/1/2010" eAttribute="MAXIS.ecore#//PRISMCase/openDate"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="MAXIS.ecore#//MAXISCase/links" eClass="MAXIS.ecore#//MAXISPrismLink">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="101" eAttribute="MAXIS.ecore#//MAXISPrismLink/age"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="MAXIS.ecore#//MAXISPrismLink/case" eClass="MAXIS.ecore#//PRISMCase">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.6" manuallyCreated="true" value="3/1/2010" eAttribute="MAXIS.ecore#//PRISMCase/openDate"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" manuallyCreated="true" eReference="MAXIS.ecore#//MAXISCase/links" eClass="MAXIS.ecore#//MAXISPrismLink">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="525" eAttribute="MAXIS.ecore#//MAXISPrismLink/age"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" manuallyCreated="true" eReference="MAXIS.ecore#//MAXISPrismLink/case" eClass="MAXIS.ecore#//PRISMCase">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="true" eAttribute="MAXIS.ecore#//PRISMCase/isIncluded"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="true" eAttribute="MAXIS.ecore#//PRISMCase/isPrimary"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.7" manuallyCreated="true" value="1/1/2009" eAttribute="MAXIS.ecore#//PRISMCase/openDate"/>
+            </children>
+          </children>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_k3dW4GqnEeGMCd15vaZIXw" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="MAXIS.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="MAXIS"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_x0ZHaGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_x-4gImqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_x-mMoWqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.Datatype.Value" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>1982/3/27</textVariables>
+      <textVariables>DateTime</textVariables>
+      <locationVariables>Marriages [1].date</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_x-sS4GqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.2/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.Datatype.Value" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>1980/4/7</textVariables>
+      <textVariables>DateTime</textVariables>
+      <locationVariables>Marriages [1].biologicalChildren (Persons) [1].dateOfBirth</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_x-sS4WqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.3/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.Datatype.Value" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>1984/10/14</textVariables>
+      <textVariables>DateTime</textVariables>
+      <locationVariables>Marriages [1].biologicalChildren (Persons) [2].dateOfBirth</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_x-sS4mqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.4/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.Datatype.Value" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>1982/11/24</textVariables>
+      <textVariables>DateTime</textVariables>
+      <locationVariables>Marriages [1].biologicalChildren (Persons) [3].dateOfBirth</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_x-yZgGqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.Datatype.Value" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>1982/3/27</textVariables>
+      <textVariables>DateTime</textVariables>
+      <locationVariables>Marriages [1].date</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_x-yZgWqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.2/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.Datatype.Value" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>1980/4/7</textVariables>
+      <textVariables>DateTime</textVariables>
+      <locationVariables>Marriages [1].biologicalChildren (Persons) [1].dateOfBirth</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_x-yZgmqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.3/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.Datatype.Value" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>1984/10/14</textVariables>
+      <textVariables>DateTime</textVariables>
+      <locationVariables>Marriages [1].biologicalChildren (Persons) [2].dateOfBirth</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_x-4gIGqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.4/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.Datatype.Value" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>1982/11/24</textVariables>
+      <textVariables>DateTime</textVariables>
+      <locationVariables>Marriages [1].biologicalChildren (Persons) [3].dateOfBirth</locationVariables>
+    </validationMessages>
+    <testsheet ruleActivityUpdateStamp="_seHmQ2qnEeGMCd15vaZIXw" ruleActivity="Marriage.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Ryan is a sibling of Jonathan because they have the same biological parents"/>
+        <PostedMessage severity="Info" text="Jonathan is a sibling of Richard because they have the same biological parents"/>
+        <PostedMessage severity="Info" text="Ryan is a sibling of Richard because they have the same biological parents"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.2/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.3/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.4/@children.3" eClass="Marriage.ecore#//Marriages">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.0" manuallyCreated="true" value="1982/3/27" eAttribute="Marriage.ecore#//Marriages/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Orange County" eAttribute="Marriage.ecore#//Marriages/place"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="Marriage.ecore#//Marriages/biologicalChildren" eClass="Marriage.ecore#//Persons">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.1" manuallyCreated="true" value="1980/4/7" eAttribute="Marriage.ecore#//Persons/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="M" eAttribute="Marriage.ecore#//Persons/gender"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Ryan" eAttribute="Marriage.ecore#//Persons/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" manuallyCreated="true" eReference="Marriage.ecore#//Persons/biologicalParents" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="Marriage.ecore#//Marriages/biologicalChildren" eClass="Marriage.ecore#//Persons">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.2" manuallyCreated="true" value="1984/10/14" eAttribute="Marriage.ecore#//Persons/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="M" eAttribute="Marriage.ecore#//Persons/gender"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Richard" eAttribute="Marriage.ecore#//Persons/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" manuallyCreated="true" eReference="Marriage.ecore#//Persons/biologicalParents" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="Marriage.ecore#//Marriages/biologicalChildren" eClass="Marriage.ecore#//Persons">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.3" manuallyCreated="true" value="1982/11/24" eAttribute="Marriage.ecore#//Persons/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="M" eAttribute="Marriage.ecore#//Persons/gender"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Jonathan" eAttribute="Marriage.ecore#//Persons/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" manuallyCreated="true" eReference="Marriage.ecore#//Persons/biologicalParents" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="Marriage.ecore#//Marriages/husband" eClass="Marriage.ecore#//Persons">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Marriage.ecore#//Persons/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Marriage.ecore#//Persons/gender"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Mike" eAttribute="Marriage.ecore#//Persons/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" eReference="Marriage.ecore#//Marriages/wife" eClass="Marriage.ecore#//Persons">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Marriage.ecore#//Persons/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Marriage.ecore#//Persons/gender"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Dorothy" eAttribute="Marriage.ecore#//Persons/name"/>
+          </children>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4/@children.3" eClass="Marriage.ecore#//Marriages">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1982/3/27" eAttribute="Marriage.ecore#//Marriages/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Orange County" eAttribute="Marriage.ecore#//Marriages/place"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.4 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4/@children.4" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eReference="Marriage.ecore#//Marriages/biologicalChildren" eClass="Marriage.ecore#//Persons">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1980/4/7" eAttribute="Marriage.ecore#//Persons/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="M" eAttribute="Marriage.ecore#//Persons/gender"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Ryan" eAttribute="Marriage.ecore#//Persons/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Marriage.ecore#//Persons/biologicalParents" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" eReference="Marriage.ecore#//Persons/siblings" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="Marriage.ecore#//Persons/siblings" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2/@children.4 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4/@children.5" eReference="Marriage.ecore#//Marriages/biologicalChildren" eClass="Marriage.ecore#//Persons">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1984/10/14" eAttribute="Marriage.ecore#//Persons/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="M" eAttribute="Marriage.ecore#//Persons/gender"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Richard" eAttribute="Marriage.ecore#//Persons/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Marriage.ecore#//Persons/biologicalParents" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" eReference="Marriage.ecore#//Persons/siblings" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="Marriage.ecore#//Persons/siblings" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2/@children.5 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.5" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eReference="Marriage.ecore#//Marriages/biologicalChildren" eClass="Marriage.ecore#//Persons">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1982/11/24" eAttribute="Marriage.ecore#//Persons/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="M" eAttribute="Marriage.ecore#//Persons/gender"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Jonathan" eAttribute="Marriage.ecore#//Persons/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Marriage.ecore#//Persons/biologicalParents" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" eReference="Marriage.ecore#//Persons/siblings" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" eReference="Marriage.ecore#//Persons/siblings" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" eReference="Marriage.ecore#//Marriages/husband" eClass="Marriage.ecore#//Persons">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="Marriage.ecore#//Persons/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="Marriage.ecore#//Persons/gender"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Mike" eAttribute="Marriage.ecore#//Persons/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" eReference="Marriage.ecore#//Marriages/wife" eClass="Marriage.ecore#//Persons">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="Marriage.ecore#//Persons/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="Marriage.ecore#//Persons/gender"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Dorothy" eAttribute="Marriage.ecore#//Persons/name"/>
+          </children>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.2/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.3/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.4/@children.3" eClass="Marriage.ecore#//Marriages">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.4" manuallyCreated="true" value="1982/3/27" eAttribute="Marriage.ecore#//Marriages/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Orange County" eAttribute="Marriage.ecore#//Marriages/place"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.3/@children.4 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.4/@children.4" eReference="Marriage.ecore#//Marriages/biologicalChildren" eClass="Marriage.ecore#//Persons">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.5" manuallyCreated="true" value="1980/4/7" eAttribute="Marriage.ecore#//Persons/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="M" eAttribute="Marriage.ecore#//Persons/gender"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Ryan" eAttribute="Marriage.ecore#//Persons/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" manuallyCreated="true" eReference="Marriage.ecore#//Persons/biologicalParents" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="Marriage.ecore#//Persons/siblings" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.3"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="Marriage.ecore#//Persons/siblings" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.4"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.2/@children.4 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.4/@children.5" eReference="Marriage.ecore#//Marriages/biologicalChildren" eClass="Marriage.ecore#//Persons">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.6" manuallyCreated="true" value="1984/10/14" eAttribute="Marriage.ecore#//Persons/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="M" eAttribute="Marriage.ecore#//Persons/gender"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Richard" eAttribute="Marriage.ecore#//Persons/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" manuallyCreated="true" eReference="Marriage.ecore#//Persons/biologicalParents" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="Marriage.ecore#//Persons/siblings" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="Marriage.ecore#//Persons/siblings" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.4"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.2/@children.5 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.3/@children.5" eReference="Marriage.ecore#//Marriages/biologicalChildren" eClass="Marriage.ecore#//Persons">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.7" manuallyCreated="true" value="1982/11/24" eAttribute="Marriage.ecore#//Persons/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="M" eAttribute="Marriage.ecore#//Persons/gender"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Jonathan" eAttribute="Marriage.ecore#//Persons/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" manuallyCreated="true" eReference="Marriage.ecore#//Persons/biologicalParents" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="Marriage.ecore#//Persons/siblings" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="Marriage.ecore#//Persons/siblings" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.3"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="Marriage.ecore#//Marriages/husband" eClass="Marriage.ecore#//Persons">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Marriage.ecore#//Persons/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Marriage.ecore#//Persons/gender"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Mike" eAttribute="Marriage.ecore#//Persons/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" eReference="Marriage.ecore#//Marriages/wife" eClass="Marriage.ecore#//Persons">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Marriage.ecore#//Persons/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Marriage.ecore#//Persons/gender"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Dorothy" eAttribute="Marriage.ecore#//Persons/name"/>
+          </children>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_lUWuQGqnEeGMCd15vaZIXw" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="Marriage.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="Siblingship_1"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

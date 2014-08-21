@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="1" majorServiceNumber="1" buildNumber="2351" updateStamp="_sI5W4PT4EeCsToIOY2hlUQ" externalChecksum="3180356350:507989954:3595225655">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_ryu5oPT4EeCsToIOY2hlUQ" vocabulary="Dinner.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="Dessert.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Dessert.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="Dessert.remove">
+                <parentTerm text="Dessert" datatype="Dessert" termtype="ENTITY" fulltext="Dessert" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Starter.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Starter.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="Starter.remove">
+                <parentTerm text="Starter" datatype="Starter" termtype="ENTITY" fulltext="Starter" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Entree.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Entree.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="Entree.remove">
+                <parentTerm text="Entree" datatype="Entree" termtype="ENTITY" fulltext="Entree" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Side.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Side.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="Side.remove">
+                <parentTerm text="Side" datatype="Side" termtype="ENTITY" fulltext="Side" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Coffee.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Coffee.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="Coffee.remove">
+                <parentTerm text="Coffee" datatype="Coffee" termtype="ENTITY" fulltext="Coffee" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable entity="Dinner.ecore#//Dessert"/>
+    <logicalVariable entity="Dinner.ecore#//Starter"/>
+    <logicalVariable entity="Dinner.ecore#//Entree"/>
+    <logicalVariable entity="Dinner.ecore#//Side"/>
+    <logicalVariable entity="Dinner.ecore#//Coffee"/>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Dessert.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Dessert.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="Dessert.remove">
+                <parentTerm text="Dessert" datatype="Dessert" termtype="ENTITY" fulltext="Dessert"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Starter.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Starter.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="Starter.remove">
+                <parentTerm text="Starter" datatype="Starter" termtype="ENTITY" fulltext="Starter"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Entree.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Entree.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="Entree.remove">
+                <parentTerm text="Entree" datatype="Entree" termtype="ENTITY" fulltext="Entree"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Side.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Side.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="Side.remove">
+                <parentTerm text="Side" datatype="Side" termtype="ENTITY" fulltext="Side"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Coffee.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Coffee.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="Coffee.remove">
+                <parentTerm text="Coffee" datatype="Coffee" termtype="ENTITY" fulltext="Coffee"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0"/>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1"/>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2"/>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.3"/>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.4"/>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

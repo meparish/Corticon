@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_WFEdIAhGEeKQ1tmMitp5cg" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_ZBt0cQhGEeKQ1tmMitp5cg" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_tBZ5gWqnEeGMCd15vaZIXw" ruleActivity="Relationships.erf#//@ruleflow">
+      <input/>
+      <output/>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.3/@children.1" eClass="Relationships.ecore#//Object">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tom" eAttribute="Relationships.ecore#//Object/name"/>
+          <comments>Tom</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.3/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.4/@children.2" eClass="Relationships.ecore#//Object">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Dick" eAttribute="Relationships.ecore#//Object/name"/>
+          <comments>Dick</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.4/@children.1" eClass="Relationships.ecore#//Object">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="jane" eAttribute="Relationships.ecore#//Object/name"/>
+          <comments>Jane</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Relationships.ecore#//Relationship">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="is the brother of" eAttribute="Relationships.ecore#//Relationship/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" manuallyCreated="true" eReference="Relationships.ecore#//Relationship/source" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0">
+            <comments>Tom</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" manuallyCreated="true" eReference="Relationships.ecore#//Relationship/target" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.1">
+            <comments>Dick</comments>
+          </children>
+          <comments>Tom is the brother of Dick</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Relationships.ecore#//Relationship">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="is the sister of" eAttribute="Relationships.ecore#//Relationship/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" manuallyCreated="true" eReference="Relationships.ecore#//Relationship/source" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.2">
+            <comments>Jane</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" manuallyCreated="true" eReference="Relationships.ecore#//Relationship/target" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.1">
+            <comments>Dick</comments>
+          </children>
+          <comments>Jane is the sister of Dick</comments>
+        </children>
+      </inputRoot>
+      <outputRoot/>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_lZgUAGqnEeGMCd15vaZIXw" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="Relationships.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="FACTS"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

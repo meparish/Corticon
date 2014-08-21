@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_xlOqCmqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_SVtE5whFEeKQ1tmMitp5cg" externalChecksum="3054974779:507989954">
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_SVtE5QhFEeKQ1tmMitp5cg" key="100" type="Validation" severity="Warning" textKey="TestsheetTreeSetModelAPIImpl.Validation.Mismatch.OutputTree.ExpectedTree" locationKey="TestsheetTreeSetModelAPIImpl.Validation.Testsheet.Name">
+      <locationVariables>NoGap</locationVariables>
+    </validationMessages>
+    <testsheet ruleActivityUpdateStamp="_QKhmwAhFEeKQ1tmMitp5cg" ruleActivity="IntervalRules.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Case 1: Interval C(B) fully encompasses interval  - delete "/>
+        <PostedMessage severity="Info" text="Case 1: Interval E(A) fully encompasses interval  - delete "/>
+        <PostedMessage severity="Info" text="Case 1: Interval C(B)(D) fully encompasses interval  - delete "/>
+        <PostedMessage severity="Info" text="Case 2:Interval  partially overlaps  merge into one from 2002-01-01T00:00:00-2008-01-01T00:00:00"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-08-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="A" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-06-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="B" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-10-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2008-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="C" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2004-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-12-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="D" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-12-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="E" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2002-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Target">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2008-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/applicationDate"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true" passed="false">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="IntervalVocabulary.ecore#//Target">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2008-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/applicationDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2002-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/date"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" passed="false" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2002-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" value="E(A)+C(B)(D)" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2008-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true" passed="false">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="2006-08-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="2006-06-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="2006-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="2006-10-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="2008-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="2004-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="2006-12-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="2006-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="2006-12-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="2002-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Target">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2008-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/applicationDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2002-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/date"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" manuallyCreated="true" passed="false" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2008-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" passed="false" value="E(A)(B)+C(D)" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2002-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_emuxqQhFEeKQ1tmMitp5cg" externalChecksum="3054974779:507989954">
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_emuxpwhFEeKQ1tmMitp5cg" key="100" type="Validation" severity="Warning" textKey="TestsheetTreeSetModelAPIImpl.Validation.Mismatch.OutputTree.ExpectedTree" locationKey="TestsheetTreeSetModelAPIImpl.Validation.Testsheet.Name">
+      <locationVariables>Gap</locationVariables>
+    </validationMessages>
+    <testsheet ruleActivityUpdateStamp="_QKhmwAhFEeKQ1tmMitp5cg" ruleActivity="IntervalRules.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Case 1: Interval D(A) fully encompasses interval  - delete "/>
+        <PostedMessage severity="Info" text="Case 1: Interval E(D(A)) fully encompasses interval  - delete "/>
+        <PostedMessage severity="Info" text="Case 2:Interval  partially overlaps  merge into one from 2003-01-01T00:00:00-2008-01-01T00:00:00"/>
+        <PostedMessage severity="Info" text="Case 3: no overlap"/>
+        <PostedMessage severity="Info" text="Gap Identified from 2008-01-01T00:00:00 to 2003-01-01T00:00:00"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2008-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="C" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2004-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-12-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="D" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-12-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="E" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2003-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-08-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="A" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-06-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2002-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="B" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2002-10-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2001-02-28T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="F" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2001-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Target">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2008-02-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/applicationDate"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true" passed="false">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2002-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="B" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2002-10-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2001-02-28T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="F" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2001-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eClass="IntervalVocabulary.ecore#//Target">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2008-02-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/applicationDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2003-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/date"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" passed="false" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2003-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" value="E(D(A))+C" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2008-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" passed="false" eClass="IntervalVocabulary.ecore#//Gap">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" value="2008-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Gap/start"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2008-02-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Gap/end"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.2"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true" passed="false">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2002-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="B" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2002-10-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2001-02-28T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="F" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2001-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Target">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2008-02-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/applicationDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2003-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/date"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" passed="false" eClass="IntervalVocabulary.ecore#//Gap">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2008-02-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Gap/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" passed="false" value="2006-12-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Gap/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" manuallyCreated="true" passed="false" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2008-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" passed="false" value="E(D)+C(A)" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2003-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_xla3QmqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_QKhmwAhFEeKQ1tmMitp5cg" ruleActivity="IntervalRules.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Case 3: no overlap"/>
+        <PostedMessage severity="Info" text="Gap Identified from 2006-11-30T23:59:59 to 2008-01-01T00:00:00"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-08-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="JUN-AUG" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-06-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="OCT-NOV" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-10-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Target">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2008-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/applicationDate"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2006-08-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="JUN-AUG" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2006-06-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2006-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="OCT-NOV" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2006-10-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="IntervalVocabulary.ecore#//Target">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2008-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/applicationDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2006-10-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Target/date"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="IntervalVocabulary.ecore#//Gap">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2008-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Gap/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2006-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Gap/start"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.2"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-08-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="JUN-AUG" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-06-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="OCT-NOV" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-10-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Target">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2008-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/applicationDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-10-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Target/date"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Gap">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2008-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Gap/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2006-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Gap/start"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_xla3RGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_QKhmwAhFEeKQ1tmMitp5cg" ruleActivity="IntervalRules.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Case 1: Interval JUL-NOV fully encompasses interval AUG-OCT - delete AUG-OCT"/>
+        <PostedMessage severity="Info" text="Case 2:Interval JUN-AUG partially overlaps JUL-NOV(AUG-OCT) merge into one from 2006-06-01T00:00:00-2006-11-30T23:59:59"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-08-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="JUN-AUG" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-06-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="JUL-NOV" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-07-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-10-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="AUG-OCT" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-09-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2006-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="JUN-AUG+JUL-NOV(AUG-OCT)" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2006-06-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.1"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2006-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="JUN-AUG+JUL-NOV(AUG-OCT)" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2006-06-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_xlg94GqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_QKhmwAhFEeKQ1tmMitp5cg" ruleActivity="IntervalRules.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Case 1: Interval JUN-AUG fully encompasses interval JUL - delete JUL"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-08-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="JUN-AUG" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-06-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-07-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="JUL" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-07-01T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2006-08-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="JUN-AUG(JUL)" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2006-06-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-08-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="JUN-AUG(JUL)" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-06-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_xlg94mqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_QKhmwAhFEeKQ1tmMitp5cg" ruleActivity="IntervalRules.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Violation" text="Start must not be after the end in interval (BAD INTERVAL)"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2005-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="BAD INTERVAL" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-07-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+      </inputRoot>
+      <outputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" messageItem="#//@testsheetAssets.5/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2005-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="BAD INTERVAL" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2006-07-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.5/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2005-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="BAD INTERVAL" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-07-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_xlg95GqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_QKhmwAhFEeKQ1tmMitp5cg" ruleActivity="IntervalRules.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Gap Identified from 2006-08-31T23:59:59 to 2006-09-30T23:59:59"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-08-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="A" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-06-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Target">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-09-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Target/applicationDate"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2006-08-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="A" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2006-06-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" messageItem="#//@testsheetAssets.6/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="IntervalVocabulary.ecore#//Target">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2006-09-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Target/applicationDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2006-06-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/date"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="IntervalVocabulary.ecore#//Gap">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2006-09-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Gap/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2006-08-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Gap/start"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.6/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.6/@testsheetViewList.0/@outputRoot/@children.1"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-08-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="A" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-06-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Target">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-09-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Target/applicationDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006-06-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/date"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Gap">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2006-09-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Gap/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2006-08-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Gap/start"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_xlnEgWqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_QKhmwAhFEeKQ1tmMitp5cg" ruleActivity="IntervalRules.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Case 3: no overlap"/>
+        <PostedMessage severity="Info" text="Gap Identified from 2002-11-30T23:59:59 to 2008-02-01T00:00:00"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2002-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="B" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2002-10-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2001-02-28T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="F" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2001-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Target">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2008-02-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/applicationDate"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2002-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="B" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2002-10-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" messageItem="#//@testsheetAssets.7/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2001-02-28T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="F" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2001-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" messageItem="#//@testsheetAssets.7/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="IntervalVocabulary.ecore#//Target">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2008-02-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/applicationDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2002-10-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Target/date"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="IntervalVocabulary.ecore#//Gap">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2008-02-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Gap/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2002-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Gap/start"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.7/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.7/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.7/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.7/@testsheetViewList.0/@outputRoot/@children.2"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2002-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="B" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2002-10-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Interval">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2001-02-28T23:59:59" eAttribute="IntervalVocabulary.ecore#//Interval/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="F" eAttribute="IntervalVocabulary.ecore#//Interval/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2001-01-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Interval/start"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Target">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2008-02-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Target/applicationDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2002-10-31T23:59:59" eAttribute="IntervalVocabulary.ecore#//Target/date"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="IntervalVocabulary.ecore#//Gap">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2008-02-01T00:00:00" eAttribute="IntervalVocabulary.ecore#//Gap/end"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2002-11-30T23:59:59" eAttribute="IntervalVocabulary.ecore#//Gap/start"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_lMP7IGqnEeGMCd15vaZIXw" testsheets="#//@testsheetAssets.0/@testsheet #//@testsheetAssets.1/@testsheet #//@testsheetAssets.2/@testsheet #//@testsheetAssets.3/@testsheet #//@testsheetAssets.4/@testsheet #//@testsheetAssets.5/@testsheet #//@testsheetAssets.6/@testsheet #//@testsheetAssets.7/@testsheet" vocabulary="IntervalVocabulary.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="NoGap"/>
+    <testTabList name="Gap"/>
+    <testTabList name="NoOverlap"/>
+    <testTabList name="Overlap"/>
+    <testTabList name="Contains"/>
+    <testTabList name="Validation"/>
+    <testTabList name="Simple"/>
+    <testTabList name="IntervalRules"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

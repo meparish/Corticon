@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_rmnWl2qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_lIJeQGqnEeGMCd15vaZIXw" vocabulary="Edges.ecore#/">
+    <rule/>
+    <rule>
+      <condition>
+        <opaqueExpression expression="(gen.n = gen.numberOfNodes)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( gen.n = gen.numberOfNodes ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="numberOfNodes" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.numberOfNodes">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="gen.n = gen.numberOfNodes" rhs="F"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Temp.distance = (gen.n*RandomGenerator.getRandomNumber.absVal).round(0).toInteger+1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Temp.distance = ( gen.n * RandomGenerator.getRandomNumber.absVal ).round ( 0 ).toInteger + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="Temp.distance">
+                <parentTerm text="Temp" datatype="Temp" termtype="ENTITY" fulltext="Temp"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Temp" datatype="Temp" termtype="ENTITY" fulltext="Temp" variable="#//@ruleset/@logicalVariables.2"/>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="e+=Edge.newUnique[start=g.name.concat(gen.n.toString).concat(' '),end=g.name.concat((gen.n+1).toString).concat(' '),distance=Temp.distance]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="e += Edge.newUnique [ Edge.start = g.name.concat ( gen.n.toString ).concat ( ' ' ) , Edge.end = g.name.concat ( ( gen.n + 1 ).toString ).concat ( ' ' ) , Edge.distance = Temp.distance ]" datatype="Edge" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="e" datatype="Edge" termtype="ENTITY" fulltext="e">
+                <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="toString" datatype="String" termtype="METHOD" fulltext="gen.n.toString">
+                <parentTerm text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                  <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="Temp.distance">
+                <parentTerm text="Temp" datatype="Temp" termtype="ENTITY" fulltext="Temp" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="concat" datatype="String" termtype="METHOD" fulltext="g.name.concat.concat">
+                <parentTerm text="concat" datatype="String" termtype="METHOD" fulltext="g.name.concat">
+                  <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="g.name">
+                    <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.1"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Temp.distance = (gen.n*RandomGenerator.getRandomNumber.absVal).round(0).toInteger+1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Temp.distance = ( gen.n * RandomGenerator.getRandomNumber.absVal ).round ( 0 ).toInteger + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="Temp.distance">
+                <parentTerm text="Temp" datatype="Temp" termtype="ENTITY" fulltext="Temp"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Temp" datatype="Temp" termtype="ENTITY" fulltext="Temp" variable="#//@ruleset/@logicalVariables.2"/>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="e+=Edge.newUnique[end=g.name.concat(gen.n.toString).concat(' '),start=g.name.concat((gen.n+1).toString).concat(' '),distance=Temp.distance]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="e += Edge.newUnique [ Edge.start = g.name.concat ( ( gen.n + 1 ).toString ).concat ( ' ' ) , Edge.end = g.name.concat ( gen.n.toString ).concat ( ' ' ) , Edge.distance = Temp.distance ]" datatype="Edge" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="e" datatype="Edge" termtype="ENTITY" fulltext="e">
+                <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="toString" datatype="String" termtype="METHOD" fulltext="gen.n.toString">
+                <parentTerm text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                  <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="Temp.distance">
+                <parentTerm text="Temp" datatype="Temp" termtype="ENTITY" fulltext="Temp" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="concat" datatype="String" termtype="METHOD" fulltext="g.name.concat.concat">
+                <parentTerm text="concat" datatype="String" termtype="METHOD" fulltext="g.name.concat">
+                  <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="g.name">
+                    <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.1"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action>
+        <opaqueExpression expression="gen.n+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="gen.n = gen.n + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter>
+      <opaqueExpression expression="g.name='Y'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="g.name = 'Y'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="g.name">
+              <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <logicalVariable explicit="true" entity="Edges.ecore#//GraphGenerator">
+      <alias value="gen"/>
+      <referencedAttributes attribute="Edges.ecore#//GraphGenerator/numberOfNodes"/>
+      <referencedAttributes attribute="Edges.ecore#//GraphGenerator/n"/>
+      <referencedAttributes attribute="Edges.ecore#//GraphGenerator/end"/>
+      <referencedAttributes attribute="Edges.ecore#//GraphGenerator/start"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="Edges.ecore#//Graph">
+      <alias value="g"/>
+      <extension explicit="true" association="true" entity="Edges.ecore#//Edge" traversedAssocRole="Edges.ecore#//Graph/edge">
+        <alias value="e"/>
+      </extension>
+      <referencedAttributes attribute="Edges.ecore#//Graph/name"/>
+    </logicalVariable>
+    <logicalVariable entity="Edges.ecore#//Temp">
+      <referencedAttributes attribute="Edges.ecore#//Temp/distance"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Temp.distance = (gen.n*RandomGenerator.getRandomNumber.absVal).round(0).toInteger+1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Temp.distance = ( gen.n * RandomGenerator.getRandomNumber.absVal ).round ( 0 ).toInteger + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="Temp.distance">
+                <parentTerm text="Temp" datatype="Temp" termtype="ENTITY" fulltext="Temp"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Temp" datatype="Temp" termtype="ENTITY" fulltext="Temp"/>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="e+=Edge.newUnique[start=g.name.concat(gen.n.toString).concat(' '),end=g.name.concat((gen.n+1).toString).concat(' '),distance=Temp.distance]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="e += Edge.newUnique [ Edge.start = g.name.concat ( gen.n.toString ).concat ( ' ' ) , Edge.end = g.name.concat ( ( gen.n + 1 ).toString ).concat ( ' ' ) , Edge.distance = Temp.distance ]" datatype="Edge" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="e" datatype="Edge" termtype="ENTITY" fulltext="e">
+                <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="toString" datatype="String" termtype="METHOD" fulltext="gen.n.toString">
+                <parentTerm text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                  <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="Temp.distance">
+                <parentTerm text="Temp" datatype="Temp" termtype="ENTITY" fulltext="Temp" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="concat" datatype="String" termtype="METHOD" fulltext="g.name.concat.concat">
+                <parentTerm text="concat" datatype="String" termtype="METHOD" fulltext="g.name.concat">
+                  <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="g.name">
+                    <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.1"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Temp.distance = (gen.n*RandomGenerator.getRandomNumber.absVal).round(0).toInteger+1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Temp.distance = ( gen.n * RandomGenerator.getRandomNumber.absVal ).round ( 0 ).toInteger + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="Temp.distance">
+                <parentTerm text="Temp" datatype="Temp" termtype="ENTITY" fulltext="Temp"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Temp" datatype="Temp" termtype="ENTITY" fulltext="Temp" variable="#//@ruleset/@logicalVariables.2"/>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="e+=Edge.newUnique[end=g.name.concat(gen.n.toString).concat(' '),start=g.name.concat((gen.n+1).toString).concat(' '),distance=Temp.distance]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="e += Edge.newUnique [ Edge.start = g.name.concat ( ( gen.n + 1 ).toString ).concat ( ' ' ) , Edge.end = g.name.concat ( gen.n.toString ).concat ( ' ' ) , Edge.distance = Temp.distance ]" datatype="Edge" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="e" datatype="Edge" termtype="ENTITY" fulltext="e">
+                <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="toString" datatype="String" termtype="METHOD" fulltext="gen.n.toString">
+                <parentTerm text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                  <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="Temp.distance">
+                <parentTerm text="Temp" datatype="Temp" termtype="ENTITY" fulltext="Temp" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="concat" datatype="String" termtype="METHOD" fulltext="g.name.concat.concat">
+                <parentTerm text="concat" datatype="String" termtype="METHOD" fulltext="g.name.concat">
+                  <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="g.name">
+                    <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.1"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell external="e+=Edge.newUnique[start=gen.start,end=gen.end,distance=2]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="e += Edge.newUnique [ Edge.start = gen.start , Edge.end = gen.end , Edge.distance = 2 ]" datatype="Edge" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="e" datatype="Edge" termtype="ENTITY" fulltext="e">
+                <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="gen.end">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="gen.start">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="gen.n+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="gen.n = gen.n + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="gen.end = (gen.n*RandomGenerator.getRandomNumber.absVal).round(0).toString">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="gen.end = ( gen.n * RandomGenerator.getRandomNumber.absVal ).round ( 0 ).toString" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="gen.end">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="gen.start = (gen.n*RandomGenerator.getRandomNumber.absVal).round(0).toString">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="gen.start = ( gen.n * RandomGenerator.getRandomNumber.absVal ).round ( 0 ).toString" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="gen.start">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="g.name='Y'" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.1/@extension.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="g.name='Y'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="g.name = 'Y'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="g.name">
+                <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="gen.n = gen.numberOfNodes">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="gen.n = gen.numberOfNodes" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="numberOfNodes" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.numberOfNodes">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="n" datatype="Integer" termtype="ATTRIBUTE" fulltext="gen.n">
+                <parentTerm text="gen" datatype="GraphGenerator" termtype="ENTITY" fulltext="gen" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_ty5oHGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_lrbxgGqnEeGMCd15vaZIXw" vocabulary="Application.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="Application.new[value= 'Main Disconnect']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Application.new [ Application.value = 'Main Disconnect' ]" datatype="Application" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Application.value">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Application" termtype="NEW" fulltext="Application.new">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Application.new[value='Service Disconnect (Max 6)']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Application.new [ Application.value = 'Service Disconnect (Max 6)' ]" datatype="Application" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Application.value">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Application" termtype="NEW" fulltext="Application.new">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Application.new[value='Main Tie Main']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Application.new [ Application.value = 'Main Tie Main' ]" datatype="Application" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Application.value">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Application" termtype="NEW" fulltext="Application.new">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action disabled="true">
+        <opaqueExpression expression="Application.new[value='Add to Existing']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Application.new [ Application.value = 'Add to Existing' ]" datatype="Application" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Application.value">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Application" termtype="NEW" fulltext="Application.new">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action disabled="true">
+        <opaqueExpression expression="Application.new[value= 'Feeders Only' ]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Application.new [ Application.value = 'Feeders Only' ]" datatype="Application" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Application.value">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Application" termtype="NEW" fulltext="Application.new">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action disabled="true">
+        <opaqueExpression expression="Application.new[value= 'Other' ]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Application.new [ Application.value = 'Other' ]" datatype="Application" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Application.value">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Application" termtype="NEW" fulltext="Application.new">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Application.new[value= 'something else' ]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Application.new [ Application.value = 'something else' ]" datatype="Application" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Application.value">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Application" termtype="NEW" fulltext="Application.new">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Feed.new[value='Top']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Feed.new [ Feed.value = 'Top' ]" datatype="Feed" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Feed.value">
+                <parentTerm text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Feed" termtype="NEW" fulltext="Feed.new">
+                <parentTerm text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Feed.new[value='Center']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Feed.new [ Feed.value = 'Center' ]" datatype="Feed" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Feed.value">
+                <parentTerm text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Feed" termtype="NEW" fulltext="Feed.new">
+                <parentTerm text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action disabled="true">
+        <opaqueExpression expression="Feed.new[value='Bottom']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Feed.new [ Feed.value = 'Bottom' ]" datatype="Feed" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Feed.value">
+                <parentTerm text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Feed" termtype="NEW" fulltext="Feed.new">
+                <parentTerm text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Feed.new[value='something else']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Feed.new [ Feed.value = 'something else' ]" datatype="Feed" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Feed.value">
+                <parentTerm text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Feed" termtype="NEW" fulltext="Feed.new">
+                <parentTerm text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="SwitchboardType.new[value= 'Standard Switchboard' ]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="SwitchboardType.new [ SwitchboardType.value = 'Standard Switchboard' ]" datatype="SwitchboardType" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="SwitchboardType.value">
+                <parentTerm text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType"/>
+              </terms>
+              <terms text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="SwitchboardType" termtype="NEW" fulltext="SwitchboardType.new">
+                <parentTerm text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="SwitchboardType.new[value= 'Commercial Metering' ]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="SwitchboardType.new [ SwitchboardType.value = 'Commercial Metering' ]" datatype="SwitchboardType" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="SwitchboardType.value">
+                <parentTerm text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType"/>
+              </terms>
+              <terms text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="SwitchboardType" termtype="NEW" fulltext="SwitchboardType.new">
+                <parentTerm text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action disabled="true">
+        <opaqueExpression expression="SwitchboardType.new[value= 'Assembly Center' ]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="SwitchboardType.new [ SwitchboardType.value = 'Assembly Center' ]" datatype="SwitchboardType" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="SwitchboardType.value">
+                <parentTerm text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType"/>
+              </terms>
+              <terms text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="SwitchboardType" termtype="NEW" fulltext="SwitchboardType.new">
+                <parentTerm text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action disabled="true">
+        <opaqueExpression expression="SwitchboardType.new[value= 'something else' ]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="SwitchboardType.new [ SwitchboardType.value = 'something else' ]" datatype="SwitchboardType" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="SwitchboardType.value">
+                <parentTerm text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType"/>
+              </terms>
+              <terms text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="SwitchboardType" termtype="NEW" fulltext="SwitchboardType.new">
+                <parentTerm text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable entity="Application.ecore#//Application">
+      <referencedAttributes attribute="Application.ecore#//Application/value"/>
+    </logicalVariable>
+    <logicalVariable entity="Application.ecore#//Feed">
+      <referencedAttributes attribute="Application.ecore#//Feed/value"/>
+    </logicalVariable>
+    <logicalVariable entity="Application.ecore#//SwitchboardType">
+      <referencedAttributes attribute="Application.ecore#//SwitchboardType/value"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Application.new[value= 'Main Disconnect']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Application.new [ Application.value = 'Main Disconnect' ]" datatype="Application" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Application.value">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Application" termtype="NEW" fulltext="Application.new">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Application.new[value='Service Disconnect (Max 6)']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Application.new [ Application.value = 'Service Disconnect (Max 6)' ]" datatype="Application" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Application.value">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Application" termtype="NEW" fulltext="Application.new">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Application.new[value='Main Tie Main']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Application.new [ Application.value = 'Main Tie Main' ]" datatype="Application" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Application.value">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Application" termtype="NEW" fulltext="Application.new">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell external="Application.new[value='Add to Existing']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Application.new [ Application.value = 'Add to Existing' ]" datatype="Application" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Application.value">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Application" termtype="NEW" fulltext="Application.new">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell external="Application.new[value= 'Feeders Only' ]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Application.new [ Application.value = 'Feeders Only' ]" datatype="Application" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Application.value">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Application" termtype="NEW" fulltext="Application.new">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell external="Application.new[value= 'Other' ]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Application.new [ Application.value = 'Other' ]" datatype="Application" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Application.value">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Application" termtype="NEW" fulltext="Application.new">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Application.new[value= 'something else' ]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Application.new [ Application.value = 'something else' ]" datatype="Application" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Application.value">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Application" termtype="NEW" fulltext="Application.new">
+                <parentTerm text="Application" datatype="Application" termtype="ENTITY" fulltext="Application" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Feed.new[value='Top']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Feed.new [ Feed.value = 'Top' ]" datatype="Feed" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Feed.value">
+                <parentTerm text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Feed" termtype="NEW" fulltext="Feed.new">
+                <parentTerm text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Feed.new[value='Center']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Feed.new [ Feed.value = 'Center' ]" datatype="Feed" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Feed.value">
+                <parentTerm text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Feed" termtype="NEW" fulltext="Feed.new">
+                <parentTerm text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell external="Feed.new[value='Bottom']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Feed.new [ Feed.value = 'Bottom' ]" datatype="Feed" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Feed.value">
+                <parentTerm text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Feed" termtype="NEW" fulltext="Feed.new">
+                <parentTerm text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Feed.new[value='something else']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Feed.new [ Feed.value = 'something else' ]" datatype="Feed" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed"/>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="Feed.value">
+                <parentTerm text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Feed" termtype="NEW" fulltext="Feed.new">
+                <parentTerm text="Feed" datatype="Feed" termtype="ENTITY" fulltext="Feed" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="SwitchboardType.new[value= 'Standard Switchboard' ]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="SwitchboardType.new [ SwitchboardType.value = 'Standard Switchboard' ]" datatype="SwitchboardType" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="SwitchboardType.value">
+                <parentTerm text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType"/>
+              </terms>
+              <terms text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="SwitchboardType" termtype="NEW" fulltext="SwitchboardType.new">
+                <parentTerm text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="SwitchboardType.new[value= 'Commercial Metering' ]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="SwitchboardType.new [ SwitchboardType.value = 'Commercial Metering' ]" datatype="SwitchboardType" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="SwitchboardType.value">
+                <parentTerm text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType"/>
+              </terms>
+              <terms text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="SwitchboardType" termtype="NEW" fulltext="SwitchboardType.new">
+                <parentTerm text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell external="SwitchboardType.new[value= 'Assembly Center' ]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="SwitchboardType.new [ SwitchboardType.value = 'Assembly Center' ]" datatype="SwitchboardType" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="SwitchboardType.value">
+                <parentTerm text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType"/>
+              </terms>
+              <terms text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="SwitchboardType" termtype="NEW" fulltext="SwitchboardType.new">
+                <parentTerm text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell external="SwitchboardType.new[value= 'something else' ]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="SwitchboardType.new [ SwitchboardType.value = 'something else' ]" datatype="SwitchboardType" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="SwitchboardType.value">
+                <parentTerm text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType"/>
+              </terms>
+              <terms text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="SwitchboardType" termtype="NEW" fulltext="SwitchboardType.new">
+                <parentTerm text="SwitchboardType" datatype="SwitchboardType" termtype="ENTITY" fulltext="SwitchboardType" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

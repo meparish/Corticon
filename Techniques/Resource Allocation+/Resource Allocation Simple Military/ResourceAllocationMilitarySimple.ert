@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_yijOGmqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_yipU8mqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_tEEzA2qnEeGMCd15vaZIXw" ruleActivity="GenerateAndTest.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Tom can perform task bomb disposal"/>
+        <PostedMessage severity="Warning" text="Dick does not have the skill to perform task bomb disposal"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tom" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+          </children>
+          <comments>Tom is a bomb disposal expert</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="ResourceAllocationMilitarySimple.ecore#//Task">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="4" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/workEffort"/>
+          <comments>We need a bomb disposal expert for 4 days</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Dick" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="truck driver" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+          </children>
+          <comments>Dick is a truck driver</comments>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Dick" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="truck driver" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+          </children>
+          <comments>Dick is a truck driver</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="ResourceAllocationMilitarySimple.ecore#//Assignments">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="tentative" eAttribute="ResourceAllocationMilitarySimple.ecore#//Assignments/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theResource" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tom" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+            </children>
+            <comments>Tom is a bomb disposal expert</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theTask" eClass="ResourceAllocationMilitarySimple.ecore#//Task">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/description"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/workEffort"/>
+            <comments>We need a bomb disposal expert for 4 days</comments>
+          </children>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Dick" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="truck driver" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+          </children>
+          <comments>Dick is a truck driver</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="ResourceAllocationMilitarySimple.ecore#//Assignments">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="tentative" eAttribute="ResourceAllocationMilitarySimple.ecore#//Assignments/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theResource" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tom" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+            </children>
+            <comments>Tom is a bomb disposal expert</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theTask" eClass="ResourceAllocationMilitarySimple.ecore#//Task">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/description"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="4" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/workEffort"/>
+            <comments>We need a bomb disposal expert for 4 days</comments>
+          </children>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_yipU9GqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_tEEzA2qnEeGMCd15vaZIXw" ruleActivity="GenerateAndTest.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Tom can perform task truck driver"/>
+        <PostedMessage severity="Info" text="Tom can perform task bomb disposal"/>
+        <PostedMessage severity="Info" text="Jane can perform task bomb disposal"/>
+        <PostedMessage severity="Info" text="Dick can perform task truck driver"/>
+        <PostedMessage severity="Info" text="Harry can perform task bomb disposal"/>
+        <PostedMessage severity="Warning" text="Jane does not have the skill to perform task truck driver"/>
+        <PostedMessage severity="Warning" text="Dick does not have the skill to perform task bomb disposal"/>
+        <PostedMessage severity="Warning" text="Harry does not have the skill to perform task truck driver"/>
+        <PostedMessage severity="Info" text="If two resources can perform the same task then choose the less expensive resource: Tom can perform task bomb disposal cheaper than Harry"/>
+        <PostedMessage severity="Info" text="If two resources can perform the same task then choose the less expensive resource: Tom can perform task bomb disposal cheaper than Jane"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5.000000" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/cost"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tom" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="truck driver" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+          </children>
+          <comments>Tom is a bomb disposal expert and a truck driver</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="ResourceAllocationMilitarySimple.ecore#//Task">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="4" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/workEffort"/>
+          <comments>We need a bomb disposal expert for 4 days</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5.000000" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/cost"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Dick" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="truck driver" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+          </children>
+          <comments>Dick is a truck driver</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="ResourceAllocationMilitarySimple.ecore#//Task">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="truck driver" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/workEffort"/>
+          <comments>We need a truck driver for 5 days</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10.000000" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/cost"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Harry" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+          </children>
+          <comments>Harry is a bomb disposal expert</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="8.000000" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/cost"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Jane" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+          </children>
+          <comments>Jane is a bomb disposal expert</comments>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="ResourceAllocationMilitarySimple.ecore#//Assignments">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="tentative" eAttribute="ResourceAllocationMilitarySimple.ecore#//Assignments/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" referencingHrefs="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.1/@children.2" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theResource" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5.000000" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/cost"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tom" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="truck driver" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+            </children>
+            <comments>Tom is a bomb disposal expert and a truck driver</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" referencingHrefs="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.3/@children.2" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theTask" eClass="ResourceAllocationMilitarySimple.ecore#//Task">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="truck driver" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/description"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/workEffort"/>
+            <comments>We need a truck driver for 5 days</comments>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.8 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.9" eClass="ResourceAllocationMilitarySimple.ecore#//Assignments">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="tentative" eAttribute="ResourceAllocationMilitarySimple.ecore#//Assignments/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" referencingHrefs="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.2/@children.2 #//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.4/@children.2" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theTask" eClass="ResourceAllocationMilitarySimple.ecore#//Task">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/description"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/workEffort"/>
+            <comments>We need a bomb disposal expert for 4 days</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theResource" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" eClass="ResourceAllocationMilitarySimple.ecore#//Assignments">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="cancelled" eAttribute="ResourceAllocationMilitarySimple.ecore#//Assignments/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.2 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theResource" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="8.000000" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/cost"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Jane" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+            </children>
+            <comments>Jane is a bomb disposal expert</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theTask" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.1/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" eClass="ResourceAllocationMilitarySimple.ecore#//Assignments">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="tentative" eAttribute="ResourceAllocationMilitarySimple.ecore#//Assignments/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.6" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theResource" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5.000000" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/cost"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Dick" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="truck driver" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+            </children>
+            <comments>Dick is a truck driver</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theTask" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" eClass="ResourceAllocationMilitarySimple.ecore#//Assignments">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="cancelled" eAttribute="ResourceAllocationMilitarySimple.ecore#//Assignments/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.7" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theResource" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10.000000" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/cost"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Harry" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+            </children>
+            <comments>Harry is a bomb disposal expert</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theTask" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.1/@children.1"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.2/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.3/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.4/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.2/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.3/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.4/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.8" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.9" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.1"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="ResourceAllocationMilitarySimple.ecore#//Assignments">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="tentative" eAttribute="ResourceAllocationMilitarySimple.ecore#//Assignments/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.1/@testsheetViewList.0/@expectedRoot/@children.1/@children.2" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theResource" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5.000000" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/cost"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tom" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="truck driver" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+            </children>
+            <comments>Tom is a bomb disposal expert and a truck driver</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.1/@testsheetViewList.0/@expectedRoot/@children.3/@children.2" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theTask" eClass="ResourceAllocationMilitarySimple.ecore#//Task">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="truck driver" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/description"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/workEffort"/>
+            <comments>We need a truck driver for 5 days</comments>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="ResourceAllocationMilitarySimple.ecore#//Assignments">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="tentative" eAttribute="ResourceAllocationMilitarySimple.ecore#//Assignments/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.1/@testsheetViewList.0/@expectedRoot/@children.2/@children.2 #//@testsheetAssets.1/@testsheetViewList.0/@expectedRoot/@children.4/@children.2" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theTask" eClass="ResourceAllocationMilitarySimple.ecore#//Task">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/description"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="4" eAttribute="ResourceAllocationMilitarySimple.ecore#//Task/workEffort"/>
+            <comments>We need a bomb disposal expert for 4 days</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theResource" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@expectedRoot/@children.0/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" eClass="ResourceAllocationMilitarySimple.ecore#//Assignments">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="cancelled" eAttribute="ResourceAllocationMilitarySimple.ecore#//Assignments/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theResource" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="8.000000" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/cost"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Jane" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+            </children>
+            <comments>Jane is a bomb disposal expert</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theTask" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@expectedRoot/@children.1/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" manuallyCreated="true" eClass="ResourceAllocationMilitarySimple.ecore#//Assignments">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="tentative" eAttribute="ResourceAllocationMilitarySimple.ecore#//Assignments/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theResource" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5.000000" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/cost"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Dick" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="truck driver" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+            </children>
+            <comments>Dick is a truck driver</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theTask" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@expectedRoot/@children.0/@children.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" manuallyCreated="true" eClass="ResourceAllocationMilitarySimple.ecore#//Assignments">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="cancelled" eAttribute="ResourceAllocationMilitarySimple.ecore#//Assignments/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theResource" eClass="ResourceAllocationMilitarySimple.ecore#//Resource">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10.000000" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/cost"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Harry" eAttribute="ResourceAllocationMilitarySimple.ecore#//Resource/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Resource/skills" eClass="ResourceAllocationMilitarySimple.ecore#//Skills">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="bomb disposal" eAttribute="ResourceAllocationMilitarySimple.ecore#//Skills/description"/>
+            </children>
+            <comments>Harry is a bomb disposal expert</comments>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="ResourceAllocationMilitarySimple.ecore#//Assignments/theTask" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@expectedRoot/@children.1/@children.1"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_lZ4uwGqnEeGMCd15vaZIXw" testsheets="#//@testsheetAssets.0/@testsheet #//@testsheetAssets.1/@testsheet" vocabulary="ResourceAllocationMilitarySimple.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="T1"/>
+    <testTabList name="T2"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

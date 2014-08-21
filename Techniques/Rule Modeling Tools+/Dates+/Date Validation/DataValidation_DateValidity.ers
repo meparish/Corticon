@@ -1,0 +1,1753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_pzaTv2qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_k4B-oGqnEeGMCd15vaZIXw" vocabulary="DateValidation.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="Trade.status='valid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'valid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(Trade.possibleDate.toDateTime=null)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Trade.possibleDate.toDateTime = null ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="toDateTime" datatype="DateTime" termtype="METHOD" fulltext="Trade.possibleDate.toDateTime">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.toDateTime=null" rhs="T"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Trade.status = 'invalid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'invalid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="not (Trade.possibleDate.substring (1,1) = '0' or Trade.possibleDate.substring (1,1) = '1' or Trade.possibleDate.substring (1,1) = '2' or Trade.possibleDate.substring (1,1) = '3')">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( Trade.possibleDate.substring ( 1 , 1 ) = '0' or Trade.possibleDate.substring ( 1 , 1 ) = '1' or Trade.possibleDate.substring ( 1 , 1 ) = '2' or Trade.possibleDate.substring ( 1 , 1 ) = '3' )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (1,1)" rhs="not {'0', '1', '2', '3'}"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Trade.status = 'invalid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'invalid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="not (Trade.possibleDate.substring (2,2) = '0' or Trade.possibleDate.substring (2,2) = '1' or Trade.possibleDate.substring (2,2) = '2' or Trade.possibleDate.substring (2,2) = '3' or Trade.possibleDate.substring (2,2) = '4' or Trade.possibleDate.substring (2,2) = '5' or Trade.possibleDate.substring (2,2) = '6' or Trade.possibleDate.substring (2,2) = '7' or Trade.possibleDate.substring (2,2) = '8' or Trade.possibleDate.substring (2,2) = '9')">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( Trade.possibleDate.substring ( 2 , 2 ) = '0' or Trade.possibleDate.substring ( 2 , 2 ) = '1' or Trade.possibleDate.substring ( 2 , 2 ) = '2' or Trade.possibleDate.substring ( 2 , 2 ) = '3' or Trade.possibleDate.substring ( 2 , 2 ) = '4' or Trade.possibleDate.substring ( 2 , 2 ) = '5' or Trade.possibleDate.substring ( 2 , 2 ) = '6' or Trade.possibleDate.substring ( 2 , 2 ) = '7' or Trade.possibleDate.substring ( 2 , 2 ) = '8' or Trade.possibleDate.substring ( 2 , 2 ) = '9' )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (2,2)" rhs="not {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'}"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Trade.status = 'invalid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'invalid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition>
+        <opaqueExpression expression="Trade.possibleDate.substring (1,1) = '3'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 1 , 1 ) = '3'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (1,1)" rhs="'3'"/>
+      </condition>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Trade.possibleDate.substring (1,2).toInteger > 31">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 1 , 2 ).toInteger > 31" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="toInteger" datatype="Integer" termtype="METHOD" fulltext="Trade.possibleDate.substring.toInteger">
+                <parentTerm text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                  <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                    <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (1,2).toInteger" rhs="> 31"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Trade.status = 'invalid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'invalid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.4">
+      <condition>
+        <opaqueExpression expression="Trade.possibleDate.substring (1,1) = '3'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 1 , 1 ) = '3'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (1,1)" rhs="'3'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Trade.possibleDate.substring (2,2) = '1'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 2 , 2 ) = '1'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (2,2)" rhs="'1'"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Trade.possibleDate.substring (4,5).toInteger = 2 or Trade.possibleDate.substring (4,5).toInteger = 4 or Trade.possibleDate.substring (4,5).toInteger = 6 or Trade.possibleDate.substring (4,5).toInteger = 9 or Trade.possibleDate.substring (4,5).toInteger = 11">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 4 , 5 ).toInteger = 2 or Trade.possibleDate.substring ( 4 , 5 ).toInteger = 4 or Trade.possibleDate.substring ( 4 , 5 ).toInteger = 6 or Trade.possibleDate.substring ( 4 , 5 ).toInteger = 9 or Trade.possibleDate.substring ( 4 , 5 ).toInteger = 11" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="toInteger" datatype="Integer" termtype="METHOD" fulltext="Trade.possibleDate.substring.toInteger">
+                <parentTerm text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                  <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                    <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (4,5).toInteger" rhs="{2, 4, 6, 9, 11}"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Trade.status = 'invalid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'invalid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.5">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="not (Trade.possibleDate.substring (3,3) = '/' or Trade.possibleDate.substring (3,3) = '-' or Trade.possibleDate.substring (3,3) = '.')">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( Trade.possibleDate.substring ( 3 , 3 ) = '/' or Trade.possibleDate.substring ( 3 , 3 ) = '-' or Trade.possibleDate.substring ( 3 , 3 ) = '.' )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (3,3)" rhs="not {'/', '-', '.'}"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Trade.status = 'invalid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'invalid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.6">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="not (Trade.possibleDate.substring (4,4) = '0' or Trade.possibleDate.substring (4,4) = '1')">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( Trade.possibleDate.substring ( 4 , 4 ) = '0' or Trade.possibleDate.substring ( 4 , 4 ) = '1' )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (4,4)" rhs="not {'0', '1'}"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Trade.status = 'invalid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'invalid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.7">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="not (Trade.possibleDate.substring (5,5) = '1' or Trade.possibleDate.substring (5,5) = '2' or Trade.possibleDate.substring (5,5) = '3' or Trade.possibleDate.substring (5,5) = '4' or Trade.possibleDate.substring (5,5) = '5' or Trade.possibleDate.substring (5,5) = '6' or Trade.possibleDate.substring (5,5) = '7' or Trade.possibleDate.substring (5,5) = '8' or Trade.possibleDate.substring (5,5) = '9')">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( Trade.possibleDate.substring ( 5 , 5 ) = '1' or Trade.possibleDate.substring ( 5 , 5 ) = '2' or Trade.possibleDate.substring ( 5 , 5 ) = '3' or Trade.possibleDate.substring ( 5 , 5 ) = '4' or Trade.possibleDate.substring ( 5 , 5 ) = '5' or Trade.possibleDate.substring ( 5 , 5 ) = '6' or Trade.possibleDate.substring ( 5 , 5 ) = '7' or Trade.possibleDate.substring ( 5 , 5 ) = '8' or Trade.possibleDate.substring ( 5 , 5 ) = '9' )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (5,5)" rhs="not {'1', '2', '3', '4', '5', '6', '7', '8', '9'}"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Trade.status = 'invalid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'invalid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.8">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Trade.possibleDate.substring (4,5).toInteger > 12">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 4 , 5 ).toInteger > 12" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="toInteger" datatype="Integer" termtype="METHOD" fulltext="Trade.possibleDate.substring.toInteger">
+                <parentTerm text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                  <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                    <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (4,5).toInteger" rhs="> 12"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Trade.status = 'invalid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'invalid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.9">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="not (Trade.possibleDate.substring (6,6) = '/' or Trade.possibleDate.substring (6,6) = '-' or Trade.possibleDate.substring (6,6) = '.')">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( Trade.possibleDate.substring ( 6 , 6 ) = '/' or Trade.possibleDate.substring ( 6 , 6 ) = '-' or Trade.possibleDate.substring ( 6 , 6 ) = '.' )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (6,6)" rhs="not {'/', '-', '.'}"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Trade.status = 'invalid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'invalid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.10">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="not (Trade.possibleDate.substring (7,7) = '0' or Trade.possibleDate.substring (7,7) = '1')">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( Trade.possibleDate.substring ( 7 , 7 ) = '0' or Trade.possibleDate.substring ( 7 , 7 ) = '1' )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (7,7)" rhs="not {'0', '1'}"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Trade.status = 'invalid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'invalid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.11">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="not (Trade.possibleDate.substring (8,8) = '0' or Trade.possibleDate.substring (8,8) = '1' or Trade.possibleDate.substring (8,8) = '2' or Trade.possibleDate.substring (8,8) = '3' or Trade.possibleDate.substring (8,8) = '4' or Trade.possibleDate.substring (8,8) = '5' or Trade.possibleDate.substring (8,8) = '6' or Trade.possibleDate.substring (8,8) = '7' or Trade.possibleDate.substring (8,8) = '8' or Trade.possibleDate.substring (8,8) = '9')">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( Trade.possibleDate.substring ( 8 , 8 ) = '0' or Trade.possibleDate.substring ( 8 , 8 ) = '1' or Trade.possibleDate.substring ( 8 , 8 ) = '2' or Trade.possibleDate.substring ( 8 , 8 ) = '3' or Trade.possibleDate.substring ( 8 , 8 ) = '4' or Trade.possibleDate.substring ( 8 , 8 ) = '5' or Trade.possibleDate.substring ( 8 , 8 ) = '6' or Trade.possibleDate.substring ( 8 , 8 ) = '7' or Trade.possibleDate.substring ( 8 , 8 ) = '8' or Trade.possibleDate.substring ( 8 , 8 ) = '9' )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (8,8)" rhs="not {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'}"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Trade.status = 'invalid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'invalid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.12">
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Trade.possibleDate.substring (1,2).toInteger = 29">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 1 , 2 ).toInteger = 29" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="toInteger" datatype="Integer" termtype="METHOD" fulltext="Trade.possibleDate.substring.toInteger">
+                <parentTerm text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                  <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                    <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (1,2).toInteger" rhs="29"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Trade.possibleDate.substring (4,5).toInteger = 2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 4 , 5 ).toInteger = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="toInteger" datatype="Integer" termtype="METHOD" fulltext="Trade.possibleDate.substring.toInteger">
+                <parentTerm text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                  <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                    <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (4,5).toInteger" rhs="2"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="not (Trade.possibleDate.substring (7,8).toInteger = 0 or Trade.possibleDate.substring (7,8).toInteger = 4 or Trade.possibleDate.substring (7,8).toInteger = 8 or Trade.possibleDate.substring (7,8).toInteger = 12 or Trade.possibleDate.substring (7,8).toInteger = 16 or Trade.possibleDate.substring (7,8).toInteger = 20 or Trade.possibleDate.substring (7,8).toInteger = 24 or Trade.possibleDate.substring (7,8).toInteger = 28)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( Trade.possibleDate.substring ( 7 , 8 ).toInteger = 0 or Trade.possibleDate.substring ( 7 , 8 ).toInteger = 4 or Trade.possibleDate.substring ( 7 , 8 ).toInteger = 8 or Trade.possibleDate.substring ( 7 , 8 ).toInteger = 12 or Trade.possibleDate.substring ( 7 , 8 ).toInteger = 16 or Trade.possibleDate.substring ( 7 , 8 ).toInteger = 20 or Trade.possibleDate.substring ( 7 , 8 ).toInteger = 24 or Trade.possibleDate.substring ( 7 , 8 ).toInteger = 28 )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="toInteger" datatype="Integer" termtype="METHOD" fulltext="Trade.possibleDate.substring.toInteger">
+                <parentTerm text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                  <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                    <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (7,8).toInteger" rhs="not {0, 4, 8, 12, 16, 20, 24, 28}"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Trade.status = 'invalid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'invalid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.13">
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Trade.possibleDate.substring (1,2).toInteger = 30">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 1 , 2 ).toInteger = 30" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="toInteger" datatype="Integer" termtype="METHOD" fulltext="Trade.possibleDate.substring.toInteger">
+                <parentTerm text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                  <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                    <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (1,2).toInteger" rhs="30"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Trade.possibleDate.substring (4,5).toInteger = 2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 4 , 5 ).toInteger = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="toInteger" datatype="Integer" termtype="METHOD" fulltext="Trade.possibleDate.substring.toInteger">
+                <parentTerm text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                  <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                    <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.substring (4,5).toInteger" rhs="2"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Trade.status = 'invalid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'invalid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.14">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="not (Trade.possibleDate.size = 8)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( Trade.possibleDate.size = 8 )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="size" datatype="Integer" termtype="METHOD" fulltext="Trade.possibleDate.size">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.possibleDate.size" rhs="not 8"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Trade.status = 'invalid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'invalid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.15">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(Trade.actualDate=Trade.possibleDate.toDateTime)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Trade.actualDate = Trade.possibleDate.toDateTime ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="actualDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Trade.actualDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="toDateTime" datatype="DateTime" termtype="METHOD" fulltext="Trade.possibleDate.toDateTime">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Trade.actualDate=Trade.possibleDate.toDateTime" rhs="F"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Trade.status = 'invalid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'invalid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="PossibleDate {Trade.possibleDate} is not a valid Corticon date format">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PossibleDate  + Trade.possibleDate +  is not a valid Corticon date format" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+              <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Day in date [{Trade.possibleDate}] can't start with something other than numbers 0, 1 or 2 or 3.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Day in date [ + Trade.possibleDate + ] can't start with something other than numbers 0, 1 or 2 or 3." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+              <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Second character in Day in date [{Trade.possibleDate}] can't contain something other than numbers between 0 and 9.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Second character in Day in date [ + Trade.possibleDate + ] can't contain something other than numbers between 0 and 9." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+              <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Day in date [{Trade.possibleDate}] can't start with a day number above 31.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Day in date [ + Trade.possibleDate + ] can't start with a day number above 31." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+              <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.5" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Day number in date [{Trade.possibleDate}] can't be 31 in the months numbered 2,4,6,9,11.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Day number in date [ + Trade.possibleDate + ] can't be 31 in the months numbered 2,4,6,9,11." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+              <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.6" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Date [{Trade.possibleDate}] contains an invalid string after the day number.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Date [ + Trade.possibleDate + ] contains an invalid string after the day number." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+              <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.7" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Month in date [{Trade.possibleDate}] can't start with something other than 0 or 1.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Month in date [ + Trade.possibleDate + ] can't start with something other than 0 or 1." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+              <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.8" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Second character in Month in date [{Trade.possibleDate}] can't contain something other than numbers between 0 and 9.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Second character in Month in date [ + Trade.possibleDate + ] can't contain something other than numbers between 0 and 9." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+              <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.9" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Month in date [{Trade.possibleDate}] can't contain a month number above 12.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Month in date [ + Trade.possibleDate + ] can't contain a month number above 12." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+              <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.10" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Date [{Trade.possibleDate}] contains an invalid string after the month number.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Date [ + Trade.possibleDate + ] contains an invalid string after the month number." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+              <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.11" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Year in date [{Trade.possibleDate}] can't start with something other than 0 or 1.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Year in date [ + Trade.possibleDate + ] can't start with something other than 0 or 1." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+              <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.12" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Second character in Year in date [{Trade.possibleDate}] can't contain something other than numbers between 0 and 9.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Second character in Year in date [ + Trade.possibleDate + ] can't contain something other than numbers between 0 and 9." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+              <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.13" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Date [{Trade.possibleDate}] is invalid on the Calendar.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Date [ + Trade.possibleDate + ] is invalid on the Calendar." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+              <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.14" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Date [{Trade.possibleDate}] is invalid as there are no day numbers 30 in February.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Date [ + Trade.possibleDate + ] is invalid as there are no day numbers 30 in February." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+              <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.15" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Date [{Trade.possibleDate}] supplied is longer than the expected length of 8 characaters.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Date [ + Trade.possibleDate + ] supplied is longer than the expected length of 8 characaters." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+              <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.16" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="R15: Date [{Trade.possibleDate}] is invalid on the Calendar.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="R15: Date [ + Trade.possibleDate + ] is invalid on the Calendar." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+              <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="DateValidation.ecore#//Trade" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2 #//@ruleset/@ruleStatements.3 #//@ruleset/@ruleStatements.4 #//@ruleset/@ruleStatements.5 #//@ruleset/@ruleStatements.6 #//@ruleset/@ruleStatements.7 #//@ruleset/@ruleStatements.8 #//@ruleset/@ruleStatements.9 #//@ruleset/@ruleStatements.10 #//@ruleset/@ruleStatements.11 #//@ruleset/@ruleStatements.12 #//@ruleset/@ruleStatements.13 #//@ruleset/@ruleStatements.14 #//@ruleset/@ruleStatements.15">
+      <referencedAttributes attribute="DateValidation.ecore#//Trade/status"/>
+      <referencedAttributes attribute="DateValidation.ecore#//Trade/possibleDate"/>
+      <referencedAttributes attribute="DateValidation.ecore#//Trade/actualDate"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Trade.status='valid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status = 'valid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet="{'valid', 'invalid'}"/>
+        <expressionCell external="Trade.status">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.status" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.status">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="PossibleDate {Trade.possibleDate} is not a valid Corticon date format">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PossibleDate  + Trade.possibleDate +  is not a valid Corticon date format" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="Day in date [{Trade.possibleDate}] can't start with something other than numbers 0, 1 or 2 or 3.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Day in date [ + Trade.possibleDate + ] can't start with something other than numbers 0, 1 or 2 or 3." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="Second character in Day in date [{Trade.possibleDate}] can't contain something other than numbers between 0 and 9.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Second character in Day in date [ + Trade.possibleDate + ] can't contain something other than numbers between 0 and 9." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="4"/>
+        <text external="Day in date [{Trade.possibleDate}] can't start with a day number above 31.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Day in date [ + Trade.possibleDate + ] can't start with a day number above 31." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.4">
+        <reference external="5"/>
+        <text external="Day number in date [{Trade.possibleDate}] can't be 31 in the months numbered 2,4,6,9,11.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Day number in date [ + Trade.possibleDate + ] can't be 31 in the months numbered 2,4,6,9,11." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.5">
+        <reference external="6"/>
+        <text external="Date [{Trade.possibleDate}] contains an invalid string after the day number.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Date [ + Trade.possibleDate + ] contains an invalid string after the day number." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.6">
+        <reference external="7"/>
+        <text external="Month in date [{Trade.possibleDate}] can't start with something other than 0 or 1.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Month in date [ + Trade.possibleDate + ] can't start with something other than 0 or 1." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.7">
+        <reference external="8"/>
+        <text external="Second character in Month in date [{Trade.possibleDate}] can't contain something other than numbers between 0 and 9.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Second character in Month in date [ + Trade.possibleDate + ] can't contain something other than numbers between 0 and 9." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.8">
+        <reference external="9"/>
+        <text external="Month in date [{Trade.possibleDate}] can't contain a month number above 12.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Month in date [ + Trade.possibleDate + ] can't contain a month number above 12." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.9">
+        <reference external="10"/>
+        <text external="Date [{Trade.possibleDate}] contains an invalid string after the month number.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Date [ + Trade.possibleDate + ] contains an invalid string after the month number." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.10">
+        <reference external="11"/>
+        <text external="Year in date [{Trade.possibleDate}] can't start with something other than 0 or 1.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Year in date [ + Trade.possibleDate + ] can't start with something other than 0 or 1." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.11">
+        <reference external="12"/>
+        <text external="Second character in Year in date [{Trade.possibleDate}] can't contain something other than numbers between 0 and 9.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Second character in Year in date [ + Trade.possibleDate + ] can't contain something other than numbers between 0 and 9." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.12">
+        <reference external="13"/>
+        <text external="Date [{Trade.possibleDate}] is invalid on the Calendar.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Date [ + Trade.possibleDate + ] is invalid on the Calendar." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.13">
+        <reference external="14"/>
+        <text external="Date [{Trade.possibleDate}] is invalid as there are no day numbers 30 in February.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Date [ + Trade.possibleDate + ] is invalid as there are no day numbers 30 in February." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.14">
+        <reference external="15"/>
+        <text external="Date [{Trade.possibleDate}] supplied is longer than the expected length of 8 characaters.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Date [ + Trade.possibleDate + ] supplied is longer than the expected length of 8 characaters." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.15">
+        <reference external="16"/>
+        <text external="R15: Date [{Trade.possibleDate}] is invalid on the Calendar.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="R15: Date [ + Trade.possibleDate + ] is invalid on the Calendar." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'0', '1', '2', '3', other}"/>
+        <expressionCell external="Trade.possibleDate.substring (1,1)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 1 , 1 )" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', other}"/>
+        <expressionCell external="Trade.possibleDate.substring (2,2)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 2 , 2 )" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{&lt;= 28, 29, 30, > 31}"/>
+        <expressionCell external="Trade.possibleDate.substring (1,2).toInteger">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 1 , 2 ).toInteger" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="toInteger" datatype="Integer" termtype="METHOD" fulltext="Trade.possibleDate.substring.toInteger">
+                <parentTerm text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                  <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                    <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'/', '-', '.', other}"/>
+        <expressionCell external="Trade.possibleDate.substring (3,3)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 3 , 3 )" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'0', '1', other}"/>
+        <expressionCell external="Trade.possibleDate.substring (4,4)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 4 , 4 )" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'1', '2', '3', '4', '5', '6', '7', '8', '9', other}"/>
+        <expressionCell external="Trade.possibleDate.substring (5,5)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 5 , 5 )" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, > 12}"/>
+        <expressionCell external="Trade.possibleDate.substring (4,5).toInteger">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 4 , 5 ).toInteger" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="toInteger" datatype="Integer" termtype="METHOD" fulltext="Trade.possibleDate.substring.toInteger">
+                <parentTerm text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                  <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                    <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'/', '-', '.', other}"/>
+        <expressionCell external="Trade.possibleDate.substring (6,6)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 6 , 6 )" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'0', '1', other}"/>
+        <expressionCell external="Trade.possibleDate.substring (7,7)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 7 , 7 )" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', other}"/>
+        <expressionCell external="Trade.possibleDate.substring (8,8)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 8 , 8 )" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{0, 4, 8, 12, 16, 20, 24, 28, other}"/>
+        <expressionCell external="Trade.possibleDate.substring (7,8).toInteger">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.substring ( 7 , 8 ).toInteger" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="toInteger" datatype="Integer" termtype="METHOD" fulltext="Trade.possibleDate.substring.toInteger">
+                <parentTerm text="substring" datatype="String" termtype="METHOD" fulltext="Trade.possibleDate.substring">
+                  <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                    <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{8, other}"/>
+        <expressionCell external="Trade.possibleDate.size">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.size" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="size" datatype="Integer" termtype="METHOD" fulltext="Trade.possibleDate.size">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="Trade.actualDate=Trade.possibleDate.toDateTime">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.actualDate = Trade.possibleDate.toDateTime" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="actualDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Trade.actualDate">
+                <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="toDateTime" datatype="DateTime" termtype="METHOD" fulltext="Trade.possibleDate.toDateTime">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="Trade.possibleDate.toDateTime=null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trade.possibleDate.toDateTime = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="toDateTime" datatype="DateTime" termtype="METHOD" fulltext="Trade.possibleDate.toDateTime">
+                <parentTerm text="possibleDate" datatype="String" termtype="ATTRIBUTE" fulltext="Trade.possibleDate">
+                  <parentTerm text="Trade" datatype="Trade" termtype="ENTITY" fulltext="Trade" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'invalid'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="not {'0', '1', '2', '3'}"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'invalid'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="not {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'}"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'invalid'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="'3'"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="> 31"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'invalid'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="'3'"/>
+        <conditionValueSetCellList valueSet="'1'"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="{2, 4, 6, 9, 11}"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'invalid'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="6" columnWidth="100" pRule="#//@ruleset/@rules.6">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="not {'/', '-', '.'}"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'invalid'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="7" columnWidth="100" pRule="#//@ruleset/@rules.7">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="not {'0', '1'}"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'invalid'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="8" columnWidth="100" pRule="#//@ruleset/@rules.8">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="not {'1', '2', '3', '4', '5', '6', '7', '8', '9'}"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'invalid'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="9" columnWidth="100" pRule="#//@ruleset/@rules.9">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="> 12"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'invalid'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="10" columnWidth="100" pRule="#//@ruleset/@rules.10">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="not {'/', '-', '.'}"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'invalid'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="11" columnWidth="100" pRule="#//@ruleset/@rules.11">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="not {'0', '1'}"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'invalid'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="12" columnWidth="100" pRule="#//@ruleset/@rules.12">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="not {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'}"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'invalid'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="13" columnWidth="100" pRule="#//@ruleset/@rules.13">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="29"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="not {0, 4, 8, 12, 16, 20, 24, 28}"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'invalid'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="14" columnWidth="100" pRule="#//@ruleset/@rules.14">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="30"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'invalid'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="15" columnWidth="100" pRule="#//@ruleset/@rules.15">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="not 8"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'invalid'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="16" columnWidth="100" pRule="#//@ruleset/@rules.16">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'invalid'"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

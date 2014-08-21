@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_mwAM-2qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:3895593748">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_kria3GqnEeGMCd15vaZIXw" vocabulary="Component.ecore#/">
+    <rule>
+      <condition/>
+      <condition/>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="productLimit.usageConstraint = 'must be included and may be changed'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="productLimit.usageConstraint = 'must be included and may be changed'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="usageConstraint" datatype="String" termtype="ATTRIBUTE" fulltext="productLimit.usageConstraint">
+                <parentTerm text="productLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="productLimit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="productLimit.usageConstraint" rhs="'must be included and may be changed'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="productLimit.resolution = 'all are to be summed'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="productLimit.resolution = 'all are to be summed'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="resolution" datatype="String" termtype="ATTRIBUTE" fulltext="productLimit.resolution">
+                <parentTerm text="productLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="productLimit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="productLimit.resolution" rhs="'all are to be summed'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="productLimit.quantity=subcomponentLimit.quantity->sum">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="productLimit.quantity = subcomponentLimit.quantity->sum" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="quantity" datatype="Decimal" termtype="ATTRIBUTE" fulltext="productLimit.quantity">
+                <parentTerm text="productLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="productLimit">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="subcomponentLimit_quantity" datatype="Decimal" termtype="COLLECTION" fulltext="subcomponentLimit.quantity->sum">
+                <parentTerm text="quantity" datatype="Decimal" termtype="ATTRIBUTE" fulltext="subcomponentLimit.quantity">
+                  <parentTerm text="subcomponentLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="subcomponentLimit" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+                    <parentTerm text="subcomponent" datatype="ProductComponent" termtype="ENTITY" fulltext="subcomponent" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                      <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="productLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="productLimit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="productLimit.usageConstraint = 'must be included and may be changed'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="productLimit.usageConstraint = 'must be included and may be changed'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="usageConstraint" datatype="String" termtype="ATTRIBUTE" fulltext="productLimit.usageConstraint">
+                <parentTerm text="productLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="productLimit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="productLimit.usageConstraint" rhs="'must be included and may be changed'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="productLimit.resolution = 'greatest'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="productLimit.resolution = 'greatest'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="resolution" datatype="String" termtype="ATTRIBUTE" fulltext="productLimit.resolution">
+                <parentTerm text="productLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="productLimit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="productLimit.resolution" rhs="'greatest'"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="productLimit.quantity=subcomponentLimit.quantity->max">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="productLimit.quantity = subcomponentLimit.quantity->max" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="quantity" datatype="Decimal" termtype="ATTRIBUTE" fulltext="productLimit.quantity">
+                <parentTerm text="productLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="productLimit">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="subcomponentLimit_quantity" datatype="Decimal" termtype="COLLECTION" fulltext="subcomponentLimit.quantity->max">
+                <parentTerm text="quantity" datatype="Decimal" termtype="ATTRIBUTE" fulltext="subcomponentLimit.quantity">
+                  <parentTerm text="subcomponentLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="subcomponentLimit" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+                    <parentTerm text="subcomponent" datatype="ProductComponent" termtype="ENTITY" fulltext="subcomponent" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                      <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="productLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="productLimit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter>
+      <opaqueExpression expression="subcomponent->size >0">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="subcomponent->size > 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="subcomponent" datatype="Integer" termtype="COLLECTION" fulltext="subcomponent->size">
+              <parentTerm text="subcomponent" datatype="ProductComponent" termtype="ENTITY" fulltext="subcomponent" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter>
+      <opaqueExpression expression="productLimit.type='max'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="productLimit.type = 'max'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+          <referencedTermList>
+            <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="productLimit.type">
+              <parentTerm text="productLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="productLimit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <logicalVariable explicit="true" entity="Component.ecore#//ProductComponent">
+      <alias value="product"/>
+      <extension explicit="true" association="true" entity="Component.ecore#//LimitSpecification" traversedAssocRole="Component.ecore#//ProductComponent/limitSpecification">
+        <alias value="productLimit"/>
+        <referencedAttributes attribute="Component.ecore#//LimitSpecification/type"/>
+        <referencedAttributes attribute="Component.ecore#//LimitSpecification/usageConstraint"/>
+        <referencedAttributes attribute="Component.ecore#//LimitSpecification/resolution"/>
+        <referencedAttributes attribute="Component.ecore#//LimitSpecification/quantity"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Component.ecore#//ProductComponent" traversedAssocRole="Component.ecore#//ProductComponent/subcomponents">
+        <alias value="subcomponent"/>
+        <extension explicit="true" association="true" entity="Component.ecore#//LimitSpecification" traversedAssocRole="Component.ecore#//ProductComponent/limitSpecification">
+          <alias value="subcomponentLimit"/>
+          <referencedAttributes attribute="Component.ecore#//LimitSpecification/quantity"/>
+        </extension>
+      </extension>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="productLimit.quantity=subcomponentLimit.quantity->sum">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="productLimit.quantity = subcomponentLimit.quantity->sum" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="quantity" datatype="Decimal" termtype="ATTRIBUTE" fulltext="productLimit.quantity">
+                <parentTerm text="productLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="productLimit">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="subcomponentLimit_quantity" datatype="Decimal" termtype="COLLECTION" fulltext="subcomponentLimit.quantity->sum">
+                <parentTerm text="quantity" datatype="Decimal" termtype="ATTRIBUTE" fulltext="subcomponentLimit.quantity">
+                  <parentTerm text="subcomponentLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="subcomponentLimit" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+                    <parentTerm text="subcomponent" datatype="ProductComponent" termtype="ENTITY" fulltext="subcomponent" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                      <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="productLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="productLimit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="productLimit.quantity=subcomponentLimit.quantity->max">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="productLimit.quantity = subcomponentLimit.quantity->max" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="quantity" datatype="Decimal" termtype="ATTRIBUTE" fulltext="productLimit.quantity">
+                <parentTerm text="productLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="productLimit">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="subcomponentLimit_quantity" datatype="Decimal" termtype="COLLECTION" fulltext="subcomponentLimit.quantity->max">
+                <parentTerm text="quantity" datatype="Decimal" termtype="ATTRIBUTE" fulltext="subcomponentLimit.quantity">
+                  <parentTerm text="subcomponentLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="subcomponentLimit" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+                    <parentTerm text="subcomponent" datatype="ProductComponent" termtype="ENTITY" fulltext="subcomponent" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                      <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="productLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="productLimit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="productLimit.type='max'" filter="#//@ruleset/@filters.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="subcomponent->size >0" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="productLimit.type='max'" filter="#//@ruleset/@filters.1"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.3"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="subcomponent->size >0" filter="#//@ruleset/@filters.0"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0/@referencedAttributes.0"/>
+            </children>
+          </children>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="subcomponent->size >0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="subcomponent->size > 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="subcomponent" datatype="Integer" termtype="COLLECTION" fulltext="subcomponent->size">
+                <parentTerm text="subcomponent" datatype="ProductComponent" termtype="ENTITY" fulltext="subcomponent" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.1">
+        <expressionCell external="productLimit.type='max'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="productLimit.type = 'max'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="productLimit.type">
+                <parentTerm text="productLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="productLimit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'NA', 'must not be included', 'must be included and may be changed', 'may be excluded', 'may be included'}"/>
+        <expressionCell external="productLimit.usageConstraint">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="productLimit.usageConstraint" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="usageConstraint" datatype="String" termtype="ATTRIBUTE" fulltext="productLimit.usageConstraint">
+                <parentTerm text="productLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="productLimit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'not a bundle', 'all are to be applied', 'all are to be summed', 'combined limit', 'greatest', 'soonest', 'last', 'restrictive'}"/>
+        <expressionCell external="productLimit.resolution">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="productLimit.resolution" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="resolution" datatype="String" termtype="ATTRIBUTE" fulltext="productLimit.resolution">
+                <parentTerm text="productLimit" datatype="LimitSpecification" termtype="ENTITY" fulltext="productLimit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="231" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="'must be included and may be changed'"/>
+        <conditionValueSetCellList valueSet="'all are to be summed'"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="153" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="'must be included and may be changed'"/>
+        <conditionValueSetCellList valueSet="'greatest'"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

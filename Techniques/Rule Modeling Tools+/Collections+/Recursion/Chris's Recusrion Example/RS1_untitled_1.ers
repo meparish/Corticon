@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" majorServiceNumber="3" buildNumber="5565" updateStamp="_9NhBDCdEEeSLStJy1PZoRg" externalChecksum="3054974779:507989954:1410878994">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_9M6kBCdEEeSLStJy1PZoRg" vocabulary="Recursion.ecore#/">
+    <rule>
+      <condition/>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(Thing.value > Child.value)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Thing.value > Child.value ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Child.value">
+                <parentTerm text="Child" datatype="Thing" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Thing.value">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.value > Child.value" rhs="T"/>
+      </condition>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="(Thing.value > Child.value)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Thing.value > Child.value ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Child.value">
+                <parentTerm text="Child" datatype="Thing" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Thing.value">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.value > Child.value" rhs="F"/>
+      </condition>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(Thing.value > Parent.value)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Thing.value > Parent.value ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Parent.value">
+                <parentTerm text="Parent" datatype="Thing" termtype="ENTITY" fulltext="Parent" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Thing.value">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.value > Parent.value" rhs="T"/>
+      </condition>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(Thing.value > Parent.value)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Thing.value > Parent.value ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Parent.value">
+                <parentTerm text="Parent" datatype="Thing" termtype="ENTITY" fulltext="Parent" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Thing.value">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.value > Parent.value" rhs="F"/>
+      </condition>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="The value of {Thing.name} is greater than the child {Child.name}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The value of  + Thing.name +  is greater than the child  + Child.name" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.name">
+              <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Child.name">
+              <parentTerm text="Child" datatype="Thing" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="The value of {Thing.name} is not greater than the child {Child.name}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The value of  + Thing.name +  is not greater than the child  + Child.name" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.name">
+              <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Child.name">
+              <parentTerm text="Child" datatype="Thing" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="The value of {Thing.name} is greater than the parent {Parent.name}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The value of  + Thing.name +  is greater than the parent  + Parent.name" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.name">
+              <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Parent.name">
+              <parentTerm text="Parent" datatype="Thing" termtype="ENTITY" fulltext="Parent" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="The value of {Thing.name} is not greater than the parent {Parent.name}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The value of  + Thing.name +  is not greater than the parent  + Parent.name" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.name">
+              <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Parent.name">
+              <parentTerm text="Parent" datatype="Thing" termtype="ENTITY" fulltext="Parent" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="Recursion.ecore#//Thing" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2 #//@ruleset/@ruleStatements.3">
+      <extension explicit="true" association="true" entity="Recursion.ecore#//Thing" traversedAssocRole="Recursion.ecore#//Thing/thing">
+        <alias value="Child"/>
+        <referencedAttributes attribute="Recursion.ecore#//Thing/value"/>
+        <referencedAttributes attribute="Recursion.ecore#//Thing/name"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Recursion.ecore#//Thing" traversedAssocRole="Recursion.ecore#//Thing/thing_1">
+        <alias value="Parent"/>
+        <referencedAttributes attribute="Recursion.ecore#//Thing/value"/>
+        <referencedAttributes attribute="Recursion.ecore#//Thing/name"/>
+      </extension>
+      <referencedAttributes attribute="Recursion.ecore#//Thing/value"/>
+      <referencedAttributes attribute="Recursion.ecore#//Thing/name"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true">
+    <actionSection rowCount="50" columnWidthFactor="0.5"/>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="The value of {Thing.name} is greater than the child {Child.name}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The value of  + Thing.name +  is greater than the child  + Child.name" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.name">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Child.name">
+                <parentTerm text="Child" datatype="Thing" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="The value of {Thing.name} is not greater than the child {Child.name}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The value of  + Thing.name +  is not greater than the child  + Child.name" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.name">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Child.name">
+                <parentTerm text="Child" datatype="Thing" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="The value of {Thing.name} is greater than the parent {Parent.name}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The value of  + Thing.name +  is greater than the parent  + Parent.name" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.name">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Parent.name">
+                <parentTerm text="Parent" datatype="Thing" termtype="ENTITY" fulltext="Parent" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="4"/>
+        <text external="The value of {Thing.name} is not greater than the parent {Parent.name}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The value of  + Thing.name +  is not greater than the parent  + Parent.name" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.name">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Parent.name">
+                <parentTerm text="Parent" datatype="Thing" termtype="ENTITY" fulltext="Parent" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="Thing.value > Child.value">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.value > Child.value" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Child.value">
+                <parentTerm text="Child" datatype="Thing" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Thing.value">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="Thing.value > Parent.value">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.value > Parent.value" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Parent.value">
+                <parentTerm text="Parent" datatype="Thing" termtype="ENTITY" fulltext="Parent" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Thing.value">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet=""/>
+        <conditionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="T"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="F"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

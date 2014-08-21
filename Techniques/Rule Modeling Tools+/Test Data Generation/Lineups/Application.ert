@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_0SCOiGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_ZjUi0YE-EeKsEprkToUcIw" externalChecksum="3054974779:507989954">
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TJWqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.5/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>something else</textVariables>
+      <textVariables>Main Disconnect, Service Disconnect (Max 6), Main Tie Main, Add to Existing, Feeders Only, Other</textVariables>
+      <locationVariables>Application [4].value</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TJmqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.8/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>something else</textVariables>
+      <textVariables>Top, Center, Bottom</textVariables>
+      <locationVariables>Feed [3].value</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TJ2qnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.9/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>something else</textVariables>
+      <textVariables>Main Disconnect, Service Disconnect (Max 6), Main Tie Main, Add to Existing, Feeders Only, Other</textVariables>
+      <locationVariables>Lineup [1].application</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TKGqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.10/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>something else</textVariables>
+      <textVariables>Main Disconnect, Service Disconnect (Max 6), Main Tie Main, Add to Existing, Feeders Only, Other</textVariables>
+      <locationVariables>Lineup [2].application</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TKWqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.11/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>something else</textVariables>
+      <textVariables>Main Disconnect, Service Disconnect (Max 6), Main Tie Main, Add to Existing, Feeders Only, Other</textVariables>
+      <locationVariables>Lineup [3].application</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TKmqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.12/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>something else</textVariables>
+      <textVariables>Main Disconnect, Service Disconnect (Max 6), Main Tie Main, Add to Existing, Feeders Only, Other</textVariables>
+      <locationVariables>Lineup [4].application</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TK2qnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.13/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>something else</textVariables>
+      <textVariables>Main Disconnect, Service Disconnect (Max 6), Main Tie Main, Add to Existing, Feeders Only, Other</textVariables>
+      <locationVariables>Lineup [5].application</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TLGqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.13/@children.1" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>something else</textVariables>
+      <textVariables>Top, Center, Bottom</textVariables>
+      <locationVariables>Lineup [5].incomingFeedLocation</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TLWqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.14/@children.0" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>something else</textVariables>
+      <textVariables>Main Disconnect, Service Disconnect (Max 6), Main Tie Main, Add to Existing, Feeders Only, Other</textVariables>
+      <locationVariables>Lineup [6].application</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TLmqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.14/@children.1" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>something else</textVariables>
+      <textVariables>Top, Center, Bottom</textVariables>
+      <locationVariables>Lineup [6].incomingFeedLocation</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TL2qnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.16/@children.2" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>unknown</textVariables>
+      <textVariables>violation, warning</textVariables>
+      <locationVariables>Lineup [8].status</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TMGqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.18/@children.2" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>unknown</textVariables>
+      <textVariables>violation, warning</textVariables>
+      <locationVariables>Lineup [10].status</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TMWqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.19/@children.1" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>something else</textVariables>
+      <textVariables>Top, Center, Bottom</textVariables>
+      <locationVariables>Lineup [11].incomingFeedLocation</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TMmqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.20/@children.1" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>something else</textVariables>
+      <textVariables>Top, Center, Bottom</textVariables>
+      <locationVariables>Lineup [12].incomingFeedLocation</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TM2qnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.20/@children.2" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>unknown</textVariables>
+      <textVariables>violation, warning</textVariables>
+      <locationVariables>Lineup [12].status</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TNGqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.21/@children.2" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>valid</textVariables>
+      <textVariables>violation, warning</textVariables>
+      <locationVariables>Lineup [13].status</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TNWqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.22/@children.2" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>unknown</textVariables>
+      <textVariables>violation, warning</textVariables>
+      <locationVariables>Lineup [14].status</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TNmqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.23/@children.2" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>valid</textVariables>
+      <textVariables>violation, warning</textVariables>
+      <locationVariables>Lineup [15].status</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TN2qnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.24/@children.2" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>unknown</textVariables>
+      <textVariables>violation, warning</textVariables>
+      <locationVariables>Lineup [16].status</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TOGqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.25/@children.1" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>something else</textVariables>
+      <textVariables>Top, Center, Bottom</textVariables>
+      <locationVariables>Lineup [17].incomingFeedLocation</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TOWqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.25/@children.2" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>valid</textVariables>
+      <textVariables>violation, warning</textVariables>
+      <locationVariables>Lineup [17].status</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TOmqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.26/@children.1" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>something else</textVariables>
+      <textVariables>Top, Center, Bottom</textVariables>
+      <locationVariables>Lineup [18].incomingFeedLocation</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TO2qnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.26/@children.2" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>unknown</textVariables>
+      <textVariables>violation, warning</textVariables>
+      <locationVariables>Lineup [18].status</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TPGqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.28/@children.2" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>unknown</textVariables>
+      <textVariables>violation, warning</textVariables>
+      <locationVariables>Lineup [20].status</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TPWqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.30/@children.2" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>unknown</textVariables>
+      <textVariables>violation, warning</textVariables>
+      <locationVariables>Lineup [22].status</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TPmqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.31/@children.1" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>something else</textVariables>
+      <textVariables>Top, Center, Bottom</textVariables>
+      <locationVariables>Lineup [23].incomingFeedLocation</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TP2qnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.32/@children.1" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>something else</textVariables>
+      <textVariables>Top, Center, Bottom</textVariables>
+      <locationVariables>Lineup [24].incomingFeedLocation</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_0T8TQGqnEeGMCd15vaZIXw" key="2" type="Validation" severity="Warning" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.32/@children.2" textKey="TestsheetTreeSetModelAPIImpl.Validation.Attribute.CustomDataType.Value.NotInList" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>unknown</textVariables>
+      <textVariables>violation, warning</textVariables>
+      <locationVariables>Lineup [24].status</locationVariables>
+    </validationMessages>
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_ZjT7wIE-EeKsEprkToUcIw" key="100" type="Validation" severity="Warning" textKey="TestsheetTreeSetModelAPIImpl.Validation.Mismatch.OutputTree.ExpectedTree" locationKey="TestsheetTreeSetModelAPIImpl.Validation.Testsheet.Name">
+      <locationVariables>Generate</locationVariables>
+    </validationMessages>
+    <testsheet ruleActivityUpdateStamp="_t3SYomqnEeGMCd15vaZIXw" ruleActivity="Application.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Violation" text="The system has encountered a data value that violates the constraints of its corresponding Custom Data Type: constraint violation setting Application.value to value [something else]"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Application.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Application.ecore#//Control/count"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="Application.ecore#//Control/invalid"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="Application.ecore#//Control/unknown"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="Application.ecore#//Control/vallid"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Application.ecore#//Rules">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="" eAttribute="Application.ecore#//Rules/rulelist"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true" passed="false">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" passed="false" eClass="Application.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" passed="false" eAttribute="Application.ecore#//Control/count"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" passed="false" value="0" eAttribute="Application.ecore#//Control/invalid"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" passed="false" value="0" eAttribute="Application.ecore#//Control/unknown"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" passed="false" value="0" eAttribute="Application.ecore#//Control/vallid"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" passed="false" eClass="Application.ecore#//Rules">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" passed="false" value="" eAttribute="Application.ecore#//Rules/rulelist"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Application.ecore#//Application">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Main Disconnect" eAttribute="Application.ecore#//Application/value"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" eClass="Application.ecore#//Application">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Service Disconnect (Max 6)" eAttribute="Application.ecore#//Application/value"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" eClass="Application.ecore#//Application">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Main Tie Main" eAttribute="Application.ecore#//Application/value"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" passed="false" eClass="Application.ecore#//Application"/>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true" passed="false">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" passed="false" eClass="Application.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" passed="false" value="24" eAttribute="Application.ecore#//Control/count"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" passed="false" value="17" eAttribute="Application.ecore#//Control/invalid"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" passed="false" value="9" eAttribute="Application.ecore#//Control/unknown"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" passed="false" value="3" eAttribute="Application.ecore#//Control/vallid"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" passed="false" eClass="Application.ecore#//Rules">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" passed="false" value="2 2 2 2 2 2 3 3 3 3 3 3 3 3 4 4 4 7 7 7 9 9 9 9 9 9 9 9 9" eAttribute="Application.ecore#//Rules/rulelist"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Application.ecore#//Application">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Main Disconnect" eAttribute="Application.ecore#//Application/value"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="Application.ecore#//Application">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Service Disconnect (Max 6)" eAttribute="Application.ecore#//Application/value"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" eClass="Application.ecore#//Application">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Main Tie Main" eAttribute="Application.ecore#//Application/value"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" manuallyCreated="true" passed="false" eClass="Application.ecore#//Application">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.0" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" value="something else" eAttribute="Application.ecore#//Application/value"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Feed">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Top" eAttribute="Application.ecore#//Feed/value"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Feed">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Center" eAttribute="Application.ecore#//Feed/value"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Feed">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.1" newOrModified="true" manuallyCreated="true" issue="Missing" value="something else" eAttribute="Application.ecore#//Feed/value"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.2" newOrModified="true" manuallyCreated="true" issue="Missing" value="something else" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Center" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="violation" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Commercial Metering" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.3" newOrModified="true" manuallyCreated="true" issue="Missing" value="something else" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Center" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="violation" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Standard Switchboard" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.4" newOrModified="true" manuallyCreated="true" issue="Missing" value="something else" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Top" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="violation" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Commercial Metering" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.5" newOrModified="true" manuallyCreated="true" issue="Missing" value="something else" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Top" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="violation" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Standard Switchboard" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.6" newOrModified="true" manuallyCreated="true" issue="Missing" value="something else" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.7" newOrModified="true" manuallyCreated="true" issue="Missing" value="something else" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="violation" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Commercial Metering" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.8" newOrModified="true" manuallyCreated="true" issue="Missing" value="something else" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.9" newOrModified="true" manuallyCreated="true" issue="Missing" value="something else" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="violation" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Standard Switchboard" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Main Disconnect" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Center" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="violation" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Commercial Metering" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="8" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Main Disconnect" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Center" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.10" manuallyCreated="true" issue="Missing" value="unknown" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Standard Switchboard" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="9" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Main Disconnect" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Top" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Commercial Metering" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="10" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Main Disconnect" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Top" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.11" manuallyCreated="true" issue="Missing" value="unknown" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Standard Switchboard" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="11" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Main Disconnect" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.12" newOrModified="true" manuallyCreated="true" issue="Missing" value="something else" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="violation" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Commercial Metering" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="12" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Main Disconnect" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.13" newOrModified="true" manuallyCreated="true" issue="Missing" value="something else" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.14" manuallyCreated="true" issue="Missing" value="unknown" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Standard Switchboard" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="13" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Service Disconnect (Max 6)" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Center" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.15" manuallyCreated="true" issue="Missing" value="valid" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Commercial Metering" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="14" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Service Disconnect (Max 6)" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Center" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.16" manuallyCreated="true" issue="Missing" value="unknown" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Standard Switchboard" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="15" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Service Disconnect (Max 6)" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Top" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.17" manuallyCreated="true" issue="Missing" value="valid" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Commercial Metering" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="16" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Service Disconnect (Max 6)" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Top" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.18" manuallyCreated="true" issue="Missing" value="unknown" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Standard Switchboard" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="17" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Service Disconnect (Max 6)" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.19" newOrModified="true" manuallyCreated="true" issue="Missing" value="something else" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.20" manuallyCreated="true" issue="Missing" value="valid" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Commercial Metering" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="18" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Service Disconnect (Max 6)" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.21" newOrModified="true" manuallyCreated="true" issue="Missing" value="something else" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.22" manuallyCreated="true" issue="Missing" value="unknown" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Standard Switchboard" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="19" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Main Tie Main" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Center" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="violation" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Commercial Metering" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="20" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Main Tie Main" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Center" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.23" manuallyCreated="true" issue="Missing" value="unknown" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Standard Switchboard" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="21" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Main Tie Main" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Top" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Commercial Metering" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="22" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Main Tie Main" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Top" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.24" manuallyCreated="true" issue="Missing" value="unknown" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Standard Switchboard" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="23" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Main Tie Main" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.25" newOrModified="true" manuallyCreated="true" issue="Missing" value="something else" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" issue="Missing" value="violation" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Commercial Metering" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="24" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//Lineup">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Main Tie Main" eAttribute="Application.ecore#//Lineup/application"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.26" newOrModified="true" manuallyCreated="true" issue="Missing" value="something else" eAttribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" validationMessages="#//@testsheetAssets.0/@validationMessages.27" manuallyCreated="true" issue="Missing" value="unknown" eAttribute="Application.ecore#//Lineup/status"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Standard Switchboard" eAttribute="Application.ecore#//Lineup/switchboardType"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//SwitchboardType">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Standard Switchboard" eAttribute="Application.ecore#//SwitchboardType/value"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eClass="Application.ecore#//SwitchboardType">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Commercial Metering" eAttribute="Application.ecore#//SwitchboardType/value"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_lrbxgGqnEeGMCd15vaZIXw" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="Application.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="Generate"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

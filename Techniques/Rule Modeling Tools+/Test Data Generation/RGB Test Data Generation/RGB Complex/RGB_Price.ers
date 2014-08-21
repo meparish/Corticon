@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" majorServiceNumber="3" buildNumber="5565" updateStamp="_XxWxpmhLEeOwx4C8AWaqWA" externalChecksum="3054974779:507989954:1410878994">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_XvSVEGhLEeOwx4C8AWaqWA" vocabulary="RGB.ecore#/">
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition/>
+      <condition/>
+      <condition/>
+    </rule>
+    <rule>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Thing.shape = 'square'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.shape = 'square'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.shape">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.shape" rhs="'square'"/>
+      </condition>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Thing.price = 10">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.price = 10" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="price" datatype="Integer" termtype="ATTRIBUTE" fulltext="Thing.price">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Trace.ruleList+='P1'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trace.ruleList = Trace.ruleList + 'P1'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ruleList" datatype="String" termtype="ATTRIBUTE" fulltext="Trace.ruleList">
+                <parentTerm text="Trace" datatype="Trace" termtype="ENTITY" fulltext="Trace"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trace" datatype="Trace" termtype="ENTITY" fulltext="Trace" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="ruleList" datatype="String" termtype="ATTRIBUTE" fulltext="Trace.ruleList">
+                <parentTerm text="Trace" datatype="Trace" termtype="ENTITY" fulltext="Trace" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Thing.color = 'red'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.color = 'red'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="color" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.color">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.color" rhs="'red'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Thing.shape = 'round'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.shape = 'round'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.shape">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.shape" rhs="'round'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Thing.size = 'large'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.size = 'large'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="size" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.size">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.size" rhs="'large'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Thing.price = 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.price = 5" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="price" datatype="Integer" termtype="ATTRIBUTE" fulltext="Thing.price">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Trace.ruleList+='P2'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trace.ruleList = Trace.ruleList + 'P2'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ruleList" datatype="String" termtype="ATTRIBUTE" fulltext="Trace.ruleList">
+                <parentTerm text="Trace" datatype="Trace" termtype="ENTITY" fulltext="Trace"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trace" datatype="Trace" termtype="ENTITY" fulltext="Trace" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="ruleList" datatype="String" termtype="ATTRIBUTE" fulltext="Trace.ruleList">
+                <parentTerm text="Trace" datatype="Trace" termtype="ENTITY" fulltext="Trace" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Thing.color = 'blue'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.color = 'blue'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="color" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.color">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.color" rhs="'blue'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Thing.shape = 'square'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.shape = 'square'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.shape">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.shape" rhs="'square'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Thing.size = 'small'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.size = 'small'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="size" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.size">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.size" rhs="'small'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Thing.price = 15">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.price = 15" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="price" datatype="Integer" termtype="ATTRIBUTE" fulltext="Thing.price">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Trace.ruleList+='P3'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trace.ruleList = Trace.ruleList + 'P3'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ruleList" datatype="String" termtype="ATTRIBUTE" fulltext="Trace.ruleList">
+                <parentTerm text="Trace" datatype="Trace" termtype="ENTITY" fulltext="Trace"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trace" datatype="Trace" termtype="ENTITY" fulltext="Trace" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="ruleList" datatype="String" termtype="ATTRIBUTE" fulltext="Trace.ruleList">
+                <parentTerm text="Trace" datatype="Trace" termtype="ENTITY" fulltext="Trace" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Thing.color = 'blue'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.color = 'blue'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="color" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.color">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.color" rhs="'blue'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Thing.shape = 'round'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.shape = 'round'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.shape">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.shape" rhs="'round'"/>
+      </condition>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Thing.price = 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.price = 5" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="price" datatype="Integer" termtype="ATTRIBUTE" fulltext="Thing.price">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Trace.ruleList+='P4'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trace.ruleList = Trace.ruleList + 'P4'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ruleList" datatype="String" termtype="ATTRIBUTE" fulltext="Trace.ruleList">
+                <parentTerm text="Trace" datatype="Trace" termtype="ENTITY" fulltext="Trace"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trace" datatype="Trace" termtype="ENTITY" fulltext="Trace" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="ruleList" datatype="String" termtype="ATTRIBUTE" fulltext="Trace.ruleList">
+                <parentTerm text="Trace" datatype="Trace" termtype="ENTITY" fulltext="Trace" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Thing.color = 'red'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.color = 'red'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="color" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.color">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.color" rhs="'red'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Thing.shape = 'round'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.shape = 'round'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.shape">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.shape" rhs="'round'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Thing.size = 'small'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.size = 'small'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="size" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.size">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.size" rhs="'small'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Thing.price = 10">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.price = 10" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="price" datatype="Integer" termtype="ATTRIBUTE" fulltext="Thing.price">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Trace.ruleList+='P5'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trace.ruleList = Trace.ruleList + 'P5'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ruleList" datatype="String" termtype="ATTRIBUTE" fulltext="Trace.ruleList">
+                <parentTerm text="Trace" datatype="Trace" termtype="ENTITY" fulltext="Trace"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Trace" datatype="Trace" termtype="ENTITY" fulltext="Trace" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="ruleList" datatype="String" termtype="ATTRIBUTE" fulltext="Trace.ruleList">
+                <parentTerm text="Trace" datatype="Trace" termtype="ENTITY" fulltext="Trace" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="not (Thing.color = 'blue' or Thing.color = 'red' or Thing.color = null) or Thing.color = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( Thing.color = 'blue' or Thing.color = 'red' or Thing.color = null ) or Thing.color = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="color" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.color">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.color" rhs="other"/>
+      </condition>
+      <condition/>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="not (Thing.shape = 'round' or Thing.shape = 'square' or Thing.shape = null) or Thing.shape = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( Thing.shape = 'round' or Thing.shape = 'square' or Thing.shape = null ) or Thing.shape = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.shape">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.shape" rhs="other"/>
+      </condition>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="not (Thing.size = 'large' or Thing.size = 'small' or Thing.size = null) or Thing.size = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( Thing.size = 'large' or Thing.size = 'small' or Thing.size = null ) or Thing.size = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="size" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.size">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.size" rhs="other"/>
+      </condition>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.2">
+      <text expression="------DEBUG: Applying pricing rules to the data">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="------DEBUG: Applying pricing rules to the data" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.6" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Color {Thing.color} is not covered by the rules">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Color  + Thing.color +  is not covered by the rules" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="color" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.color">
+              <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.7" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Shape {Thing.shape} is not covered by the rules">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Shape  + Thing.shape +  is not covered by the rules" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.shape">
+              <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.8" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Size {Thing.size} is not covered by the rules">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Size  + Thing.size +  is not covered by the rules" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="size" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.size">
+              <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="RGB.ecore#//Thing" ruleStatements="#//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2 #//@ruleset/@ruleStatements.3">
+      <referencedAttributes attribute="RGB.ecore#//Thing/color"/>
+      <referencedAttributes attribute="RGB.ecore#//Thing/shape"/>
+      <referencedAttributes attribute="RGB.ecore#//Thing/size"/>
+      <referencedAttributes attribute="RGB.ecore#//Thing/price"/>
+    </logicalVariable>
+    <logicalVariable entity="RGB.ecore#//Trace">
+      <referencedAttributes attribute="RGB.ecore#//Trace/ruleList"/>
+    </logicalVariable>
+    <logicalVariable entity="RGB.ecore#//DEBUG" ruleStatements="#//@ruleset/@ruleStatements.0"/>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="49" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell valueSet="{5, 10, 15}"/>
+        <expressionCell external="Thing.price">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.price" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="price" datatype="Integer" termtype="ATTRIBUTE" fulltext="Thing.price">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet="{'P1', 'P2', 'P3', 'P4', 'P5'}"/>
+        <expressionCell external="Trace.ruleList+=cellValue">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Trace.ruleList = Trace.ruleList + cellValue" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="true">
+            <modifiedTermList>
+              <terms text="ruleList" datatype="String" termtype="ATTRIBUTE" fulltext="Trace.ruleList">
+                <parentTerm text="Trace" datatype="Trace" termtype="ENTITY" fulltext="Trace"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="ruleList" datatype="String" termtype="ATTRIBUTE" fulltext="Trace.ruleList">
+                <parentTerm text="Trace" datatype="Trace" termtype="ENTITY" fulltext="Trace" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2"/>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="0"/>
+        <text external="------DEBUG: Applying pricing rules to the data">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="------DEBUG: Applying pricing rules to the data" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="6"/>
+        <text external="Color {Thing.color} is not covered by the rules">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Color  + Thing.color +  is not covered by the rules" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="color" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.color">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="7"/>
+        <text external="Shape {Thing.shape} is not covered by the rules">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Shape  + Thing.shape +  is not covered by the rules" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.shape">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="8"/>
+        <text external="Size {Thing.size} is not covered by the rules">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Size  + Thing.size +  is not covered by the rules" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="size" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.size">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'red', 'blue', other}"/>
+        <expressionCell external="Thing.color">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.color" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="color" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.color">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'square', 'round', other}"/>
+        <expressionCell external="Thing.shape">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.shape" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.shape">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'large', 'small', other}"/>
+        <expressionCell external="Thing.size">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.size" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="size" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.size">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet=""/>
+        <conditionValueSetCellList valueSet=""/>
+        <conditionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="'square'"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="10"/>
+        <actionValueSetCellList valueSet="'P1'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="'red'"/>
+        <conditionValueSetCellList valueSet="'round'"/>
+        <conditionValueSetCellList valueSet="'large'"/>
+        <actionValueSetCellList valueSet="5"/>
+        <actionValueSetCellList valueSet="'P2'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="'blue'"/>
+        <conditionValueSetCellList valueSet="'square'"/>
+        <conditionValueSetCellList valueSet="'small'"/>
+        <actionValueSetCellList valueSet="15"/>
+        <actionValueSetCellList valueSet="'P3'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="'blue'"/>
+        <conditionValueSetCellList valueSet="'round'"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="5"/>
+        <actionValueSetCellList valueSet="'P4'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="'red'"/>
+        <conditionValueSetCellList valueSet="'round'"/>
+        <conditionValueSetCellList valueSet="'small'"/>
+        <actionValueSetCellList valueSet="10"/>
+        <actionValueSetCellList valueSet="'P5'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="6" columnWidth="100" pRule="#//@ruleset/@rules.6">
+        <conditionValueSetCellList valueSet="other"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="7" columnWidth="100" pRule="#//@ruleset/@rules.7">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="other"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="8" columnWidth="100" pRule="#//@ruleset/@rules.8">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="other"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

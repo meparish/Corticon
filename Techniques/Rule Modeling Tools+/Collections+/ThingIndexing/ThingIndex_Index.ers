@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" majorServiceNumber="3" buildNumber="5565" updateStamp="_COa7ZScLEeSLStJy1PZoRg" externalChecksum="3054974779:507989954:1410878994">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_BjbdpCcLEeSLStJy1PZoRg" vocabulary="ThingIndexing.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="Thing.index=0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.index = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="index" datatype="Integer" termtype="ATTRIBUTE" fulltext="Thing.index">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Thing.index=thing.index->max+1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.index = thing.index->max + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="index" datatype="Integer" termtype="ATTRIBUTE" fulltext="Thing.index">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="thing_index" datatype="Integer" termtype="COLLECTION" fulltext="thing.index->max">
+                <parentTerm text="index" datatype="Integer" termtype="ATTRIBUTE" fulltext="thing.index">
+                  <parentTerm text="thing" datatype="Thing" termtype="ENTITY" fulltext="thing" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable explicit="true" entity="ThingIndexing.ecore#//Thing">
+      <alias value="thing"/>
+      <referencedAttributes attribute="ThingIndexing.ecore#//Thing/index"/>
+    </logicalVariable>
+    <logicalVariable entity="ThingIndexing.ecore#//Thing">
+      <referencedAttributes attribute="ThingIndexing.ecore#//Thing/index"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Thing.index=0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.index = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="index" datatype="Integer" termtype="ATTRIBUTE" fulltext="Thing.index">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Thing.index=thing.index->max+1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.index = thing.index->max + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="index" datatype="Integer" termtype="ATTRIBUTE" fulltext="Thing.index">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="thing_index" datatype="Integer" termtype="COLLECTION" fulltext="thing.index->max">
+                <parentTerm text="index" datatype="Integer" termtype="ATTRIBUTE" fulltext="thing.index">
+                  <parentTerm text="thing" datatype="Thing" termtype="ENTITY" fulltext="thing" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

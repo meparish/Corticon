@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_qDPfZGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_k6UdoGqnEeGMCd15vaZIXw" vocabulary="Infinity.ecore#/">
+    <rule/>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Customer.age in 0 .. 25">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customer.age in 0 .. 25" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="Customer.age">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Customer.age" rhs="0 .. 25"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Customer.state = 'CA' or Customer.state = 'TX'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customer.state = 'CA' or Customer.state = 'TX'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="state" datatype="String" termtype="ATTRIBUTE" fulltext="Customer.state">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Customer.state" rhs="{'CA', 'TX'}"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Paragraphs += Paragraph.new[id=1]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 1 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Paragraphs += Paragraph.new[id=2]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 2 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Paragraphs += Paragraph.new[id=3]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 3 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Paragraphs += Paragraph.new[id=4]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 4 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Paragraphs += Paragraph.new[id=5]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 5 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Paragraphs += Paragraph.new[id=6]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 6 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Paragraphs += Paragraph.new[id=7]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 7 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Customer.age in 26 .. 45 or Customer.age > 45">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customer.age in 26 .. 45 or Customer.age > 45" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="Customer.age">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Customer.age" rhs="{26 .. 45, > 45}"/>
+      </condition>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Paragraphs += Paragraph.new[id=1]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 1 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Paragraphs += Paragraph.new[id=4]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 4 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Paragraphs += Paragraph.new[id=7]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 7 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Paragraphs += Paragraph.new[id=10]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 10 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Customer.age in 0 .. 25">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customer.age in 0 .. 25" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="Customer.age">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Customer.age" rhs="0 .. 25"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Customer.state = 'NY' or not (Customer.state = 'CA' or Customer.state = 'NY' or Customer.state = 'TX' or Customer.state = null) or Customer.state = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customer.state = 'NY' or not ( Customer.state = 'CA' or Customer.state = 'NY' or Customer.state = 'TX' or Customer.state = null ) or Customer.state = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="state" datatype="String" termtype="ATTRIBUTE" fulltext="Customer.state">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Customer.state" rhs="{'NY', other}"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Paragraphs += Paragraph.new[id=1]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 1 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action>
+        <opaqueExpression expression="Paragraphs += Paragraph.new[id=3]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 3 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter>
+      <opaqueExpression expression="Doc.id = 1">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Doc.id = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="id" datatype="Integer" termtype="ATTRIBUTE" fulltext="Doc.id">
+              <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <logicalVariable explicit="true" entity="Infinity.ecore#//Document">
+      <alias value="Doc"/>
+      <extension explicit="true" association="true" entity="Infinity.ecore#//Paragraph" traversedAssocRole="Infinity.ecore#//Document/paragraph">
+        <alias value="Paragraphs"/>
+      </extension>
+      <referencedAttributes attribute="Infinity.ecore#//Document/id"/>
+    </logicalVariable>
+    <logicalVariable entity="Infinity.ecore#//Customer">
+      <referencedAttributes attribute="Infinity.ecore#//Customer/age"/>
+      <referencedAttributes attribute="Infinity.ecore#//Customer/state"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightConditionsIf="36">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Paragraphs += Paragraph.new[id=1]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 1 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Paragraphs += Paragraph.new[id=2]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 2 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Paragraphs += Paragraph.new[id=3]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 3 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Paragraphs += Paragraph.new[id=4]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 4 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Paragraphs += Paragraph.new[id=5]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 5 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Paragraphs += Paragraph.new[id=6]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 6 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Paragraphs += Paragraph.new[id=7]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 7 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Paragraphs += Paragraph.new[id=8]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 8 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Paragraphs += Paragraph.new[id=9]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 9 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Paragraphs += Paragraph.new[id=10]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Paragraphs += Paragraph.new [ Paragraph.id = 10 ]" datatype="Paragraph" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Paragraphs" datatype="Paragraph" termtype="ENTITY" fulltext="Paragraphs">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Doc.id = 1" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="Doc.id = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Doc.id = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="id" datatype="Integer" termtype="ATTRIBUTE" fulltext="Doc.id">
+                <parentTerm text="Doc" datatype="Document" termtype="ENTITY" fulltext="Doc" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5139664804469274">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{0 .. 25, 26 .. 45, > 45}"/>
+        <expressionCell external="Customer.age">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customer.age" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="Customer.age">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'CA', 'NY', 'TX', other}"/>
+        <expressionCell external="Customer.state">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customer.state" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="state" datatype="String" termtype="ATTRIBUTE" fulltext="Customer.state">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="0 .. 25"/>
+        <conditionValueSetCellList valueSet="{'CA', 'TX'}"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="{26 .. 45, > 45}"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="0 .. 25"/>
+        <conditionValueSetCellList valueSet="{'NY', other}"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

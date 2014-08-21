@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" majorServiceNumber="3" buildNumber="5565" updateStamp="_TJlwyQIkEeSnquVrLkJo2w" externalChecksum="3054974779:507989954:371640521">
+  <languageCode>en_US</languageCode>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_TJlwwAIkEeSnquVrLkJo2w" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@actionSection/@actionItemList.1/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidActionExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Action">
+    <textVariables>Invalid collection call: [max].</textVariables>
+    <locationVariables>B</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_TJlwwQIkEeSnquVrLkJo2w" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@actionSection/@actionItemList.2/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidActionExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Action">
+    <textVariables>Collection and Sequence operators cannot be used against a Sorted Alias.</textVariables>
+    <locationVariables>C</locationVariables>
+  </validationMessages>
+  <ruleset vocabularyUpdateStamp="_TJS11AIkEeSnquVrLkJo2w" vocabulary="MostRecentDate.ecore#/">
+    <rule>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="patient.mostRecentDate = event.date->sortedByDesc(date)->first">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="patient.mostRecentDate = event.date->sortedByDesc (event.date)->first" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="mostRecentDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="patient.mostRecentDate">
+                <parentTerm text="patient" datatype="Patient" termtype="ENTITY" fulltext="patient"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="patient" datatype="Patient" termtype="ENTITY" fulltext="patient" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="event_date" datatype="DateTime" termtype="COLLECTION" fulltext="event.date->asSequence->first">
+                <parentTerm text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="event.date">
+                  <parentTerm text="event" datatype="Event" termtype="ENTITY" fulltext="event" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="patient" datatype="Patient" termtype="ENTITY" fulltext="patient" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.0/@actions.0">
+      <text expression="this works">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="this works" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="MostRecentDate.ecore#//Patient">
+      <alias value="patient"/>
+      <extension explicit="true" association="true" entity="MostRecentDate.ecore#//Event" traversedAssocRole="MostRecentDate.ecore#//Patient/events">
+        <alias value="event"/>
+        <referencedAttributes attribute="MostRecentDate.ecore#//Event/date"/>
+      </extension>
+      <extension explicit="true" sortedAliasAttributeName="date" sortedAliasDescending="true" entity="MostRecentDate.ecore#//Event" traversedAssocRole="MostRecentDate.ecore#//Patient/events">
+        <alias value="sortedEvent"/>
+      </extension>
+      <referencedAttributes attribute="MostRecentDate.ecore#//Patient/mostRecentDate"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightConditionsActions="20">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="patient.mostRecentDate = event.date->sortedByDesc(date)->first">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="patient.mostRecentDate = event.date->sortedByDesc (event.date)->first" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="mostRecentDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="patient.mostRecentDate">
+                <parentTerm text="patient" datatype="Patient" termtype="ENTITY" fulltext="patient"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="patient" datatype="Patient" termtype="ENTITY" fulltext="patient" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="event_date" datatype="DateTime" termtype="COLLECTION" fulltext="event.date->asSequence->first">
+                <parentTerm text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="event.date">
+                  <parentTerm text="event" datatype="Event" termtype="ENTITY" fulltext="event" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="patient" datatype="Patient" termtype="ENTITY" fulltext="patient" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell validationMessages="#//@validationMessages.0" tooltip="Invalid collection call: [max]." external="patient.mostRecentDate = event.date->max"/>
+      </actionItemList>
+      <actionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell validationMessages="#//@validationMessages.1" tooltip="Collection and Sequence operators cannot be used against a Sorted Alias." external="patient.mostRecentDate = sortedEvent.date->first"/>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" expanded="true" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeSortedAlias" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1" operatorID="com.corticon.operations.EntityAssocOperators.Collection.sortedByDesc"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="A0"/>
+        <text external="this works">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="this works" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

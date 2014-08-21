@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_QySPYPq8EeC0DIIU7F1K1A" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_zQkeNgNQEeKyU9JVs7c2sw" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_kHqStQE2EeKohvw8nfaf_g" ruleActivity="Dinner.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, fries, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, carrots, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, carrots, souffle, decaf"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, fries, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, fries, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, peas, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, fries, ice cream, regular"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, peas, ice cream, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, peas, souffle, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, fries, souffle, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, peas, no dessert, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, fries, no dessert, regular"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, peas, ice cream, regular"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, fries, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, fries, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, fries, ice cream, regular"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, fries, no dessert, regular"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, fries, ice cream, regular"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, fries, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, carrots, souffle, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,fries, peas, souffle, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,fries, peas, souffle, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, fries, souffle, regular"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, fries, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, peas, no dessert, regular"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, fries, souffle, decaf"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, peas, souffle, decaf"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, fries, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, carrots, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, carrots, ice cream, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, carrots, souffle, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, fries, ice cream, regular"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, peas, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, carrots, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,fries, peas, no dessert, regular"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, peas, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, fries, souffle, regular"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, peas, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, peas, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, peas, souffle, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, peas, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,fries, peas, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, peas, ice cream, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,fries, peas, souffle, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, fries, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, peas, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, fries, souffle, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, fries, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, fries, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="salad, chicken,fries, peas, souffle, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, carrots, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, peas, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, peas, ice cream, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, fries, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, fries, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, carrots, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,fries, peas, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, carrots, no dessert, regular"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, fries, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, peas, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, fries, souffle, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, fries, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="salad, chicken,fries, peas, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, peas, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, peas, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, peas, no dessert, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, peas, ice cream, regular"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, fries, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, peas, souffle, regular"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, carrots, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, fries, no dessert, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,fries, peas, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, carrots, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,fries, peas, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, carrots, souffle, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, fries, souffle, regular"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, fries, souffle, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, carrots, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, fries, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, fries, ice cream, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, fries, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, peas, no dessert, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, peas, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,fries, peas, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, peas, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, peas, ice cream, regular"/>
+        <PostedMessage severity="Info" text="salad, beef,fries, peas, no dessert, regular"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, peas, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, fries, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, peas, souffle, decaf"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, carrots, souffle, decaf"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, fries, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, carrots, no dessert, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, fries, souffle, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, fries, ice cream, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, carrots, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,fries, peas, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, carrots, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, carrots, souffle, regular"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, fries, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, fries, no dessert, regular"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, fries, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, fries, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,fries, peas, ice cream, regular"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, carrots, no dessert, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, peas, ice cream, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,fries, peas, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,fries, peas, ice cream, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, fries, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, peas, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, peas, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, peas, souffle, regular"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, peas, no dessert, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, peas, souffle, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, fries, ice cream, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, fries, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, peas, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, peas, ice cream, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, peas, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,fries, peas, souffle, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, peas, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, peas, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, peas, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, peas, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, carrots, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,fries, peas, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, fries, souffle, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, peas, souffle, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, carrots, ice cream, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, peas, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, carrots, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, peas, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, fries, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, carrots, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, carrots, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, fries, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, carrots, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, peas, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, peas, souffle, regular"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, peas, souffle, decaf"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, peas, souffle, decaf"/>
+        <PostedMessage severity="Info" text="salad, chicken,fries, peas, ice cream, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, fries, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, fries, no dessert, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, fries, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, fries, no dessert, regular"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, fries, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, carrots, ice cream, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, fries, souffle, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, peas, souffle, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, peas, no dessert, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, peas, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, peas, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="salad, chicken,fries, peas, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, fries, souffle, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, peas, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, peas, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,fries, peas, souffle, decaf"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, peas, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="salad, chicken,fries, peas, no dessert, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, carrots, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,fries, peas, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, peas, no dessert, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, peas, souffle, regular"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, peas, souffle, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,fries, peas, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, fries, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, peas, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, carrots, ice cream, regular"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, carrots, souffle, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,fries, peas, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, peas, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, peas, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, carrots, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, fries, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, peas, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, peas, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,fries, peas, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, fries, ice cream, regular"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, carrots, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, fries, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, fries, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, fries, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,fries, peas, no dessert, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, fries, no dessert, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, fries, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, peas, souffle, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, fries, souffle, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, peas, souffle, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,fries, peas, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, peas, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="salad, chicken,fries, peas, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, peas, no dessert, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,carrots, peas, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, fries, souffle, regular"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, fries, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="soup, beef,fries, peas, ice cream, regular"/>
+        <PostedMessage severity="Info" text="salad, beef,broccoli, carrots, souffle, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,fries, peas, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="salad, chicken,fries, peas, souffle, no coffee"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, fries, souffle, regular"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, fries, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,fries, peas, souffle, regular"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, fries, no dessert, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,carrots, peas, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, peas, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="salad, chicken,broccoli, carrots, no dessert, regular"/>
+        <PostedMessage severity="Info" text="salad, chicken,fries, peas, souffle, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,carrots, fries, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,carrots, fries, souffle, regular"/>
+        <PostedMessage severity="Info" text="salad, beef,fries, peas, no dessert, decaf"/>
+        <PostedMessage severity="Info" text="salad, beef,fries, peas, no dessert, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, carrots, ice cream, decaf"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, carrots, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="soup, chicken,broccoli, peas, ice cream, no coffee"/>
+        <PostedMessage severity="Info" text="soup, beef,broccoli, fries, no dessert, decaf"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot/>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Dinner.ecore#//Starter">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="7.000000" eAttribute="Dinner.ecore#//Starter/price"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="soup" eAttribute="Dinner.ecore#//Starter/item"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" eClass="Dinner.ecore#//Starter">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3.500000" eAttribute="Dinner.ecore#//Starter/price"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="salad" eAttribute="Dinner.ecore#//Starter/item"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Dinner.ecore#//Entree">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="13.500000" eAttribute="Dinner.ecore#//Entree/price"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="chicken" eAttribute="Dinner.ecore#//Entree/item"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" eClass="Dinner.ecore#//Entree">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="18.500000" eAttribute="Dinner.ecore#//Entree/price"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="beef" eAttribute="Dinner.ecore#//Entree/item"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Dinner.ecore#//Side">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.500000" eAttribute="Dinner.ecore#//Side/price"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="fries" eAttribute="Dinner.ecore#//Side/item"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" eClass="Dinner.ecore#//Side">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.000000" eAttribute="Dinner.ecore#//Side/price"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="carrots" eAttribute="Dinner.ecore#//Side/item"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" eClass="Dinner.ecore#//Side">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.250000" eAttribute="Dinner.ecore#//Side/price"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="peas" eAttribute="Dinner.ecore#//Side/item"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" eClass="Dinner.ecore#//Side">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.750000" eAttribute="Dinner.ecore#//Side/price"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="broccoli" eAttribute="Dinner.ecore#//Side/item"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Dinner.ecore#//Dessert">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3.000000" eAttribute="Dinner.ecore#//Dessert/price"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="ice cream" eAttribute="Dinner.ecore#//Dessert/item"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" eClass="Dinner.ecore#//Dessert">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="9.000000" eAttribute="Dinner.ecore#//Dessert/price"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="souffle" eAttribute="Dinner.ecore#//Dessert/item"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Dinner.ecore#//Coffee">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2.000000" eAttribute="Dinner.ecore#//Coffee/price"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="regular" eAttribute="Dinner.ecore#//Coffee/item"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" eClass="Dinner.ecore#//Coffee">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.500000" eAttribute="Dinner.ecore#//Coffee/price"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="decaf" eAttribute="Dinner.ecore#//Coffee/item"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" eClass="Dinner.ecore#//Coffee">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.000000" eAttribute="Dinner.ecore#//Coffee/price"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="no coffee" eAttribute="Dinner.ecore#//Coffee/item"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" eClass="Dinner.ecore#//Dessert">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.000000" eAttribute="Dinner.ecore#//Dessert/price"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="no dessert" eAttribute="Dinner.ecore#//Dessert/item"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="189" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.80" eClass="Dinner.ecore#//Dinner">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="salad" eAttribute="Dinner.ecore#//Dinner/starter"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="fries" eAttribute="Dinner.ecore#//Dinner/side2"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="carrots" eAttribute="Dinner.ecore#//Dinner/side1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="18.500000" eAttribute="Dinner.ecore#//Dinner/price"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="chicken" eAttribute="Dinner.ecore#//Dinner/entree"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="no dessert" eAttribute="Dinner.ecore#//Dinner/dessert"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="no coffee" eAttribute="Dinner.ecore#//Dinner/coffee"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.7"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.8"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.9"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.10"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.11"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.12"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.13"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.14"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.15"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.16"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.17"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.18"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.19"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.20"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.21"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.22"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.23"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.24"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.25"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.26"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.27"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.28"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.29"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.30"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.31"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.32"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.33"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.34"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.35"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.36"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.37"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.38"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.39"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.40"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.41"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.42"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.43"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.44"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.45"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.46"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.47"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.48"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.49"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.50"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.51"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.52"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.53"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.54"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.55"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.56"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.57"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.58"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.59"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.60"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.61"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.62"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.63"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.64"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.65"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.66"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.67"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.68"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.69"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.70"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.71"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.72"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.73"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.74"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.75"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.76"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.77"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.78"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.79"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.80" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.14"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.81"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.82"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.83"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.84"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.85"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.86"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.87"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.88"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.89"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.90"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.91"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.92"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.93"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.94"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.95"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.96"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.97"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.98"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.99"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.100"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.101"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.102"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.103"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.104"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.105"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.106"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.107"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.108"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.109"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.110"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.111"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.112"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.113"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.114"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.115"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.116"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.117"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.118"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.119"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.120"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.121"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.122"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.123"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.124"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.125"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.126"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.127"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.128"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.129"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.130"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.131"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.132"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.133"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.134"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.135"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.136"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.137"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.138"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.139"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.140"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.141"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.142"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.143"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.144"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.145"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.146"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.147"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.148"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.149"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.150"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.151"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.152"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.153"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.154"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.155"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.156"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.157"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.158"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.159"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.160"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.161"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.162"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.163"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.164"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.165"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.166"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.167"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.168"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.169"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.170"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.171"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.172"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.173"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.174"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.175"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.176"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.177"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.178"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.179"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.180"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.181"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.182"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.183"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.184"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.185"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.186"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.187"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.188"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.189"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.190"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.191"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.192"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.193"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.194"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.195"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.196"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.197"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.198"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.199"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.200"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.201"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.202"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.203"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.204"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.205"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.206"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.207"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.208"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.209"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.210"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.211"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.212"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.213"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.214"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.215"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Dinner.ecore#//Coffee">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="regular" eAttribute="Dinner.ecore#//Coffee/item"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2.000000" eAttribute="Dinner.ecore#//Coffee/price"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="Dinner.ecore#//Coffee">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="decaf" eAttribute="Dinner.ecore#//Coffee/item"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="1.500000" eAttribute="Dinner.ecore#//Coffee/price"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" eClass="Dinner.ecore#//Coffee">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="no coffee" eAttribute="Dinner.ecore#//Coffee/item"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="0.000000" eAttribute="Dinner.ecore#//Coffee/price"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Dinner.ecore#//Dessert">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="ice cream" eAttribute="Dinner.ecore#//Dessert/item"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="3.000000" eAttribute="Dinner.ecore#//Dessert/price"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="Dinner.ecore#//Dessert">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="souffle" eAttribute="Dinner.ecore#//Dessert/item"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="9.000000" eAttribute="Dinner.ecore#//Dessert/price"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" eClass="Dinner.ecore#//Dessert">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="no dessert" eAttribute="Dinner.ecore#//Dessert/item"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="0.000000" eAttribute="Dinner.ecore#//Dessert/price"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="59" newOrModified="true" manuallyCreated="true" eClass="Dinner.ecore#//Dinner">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="no coffee" eAttribute="Dinner.ecore#//Dinner/coffee"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="no dessert" eAttribute="Dinner.ecore#//Dinner/dessert"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="chicken" eAttribute="Dinner.ecore#//Dinner/entree"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="18.500000" eAttribute="Dinner.ecore#//Dinner/price"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="carrots" eAttribute="Dinner.ecore#//Dinner/side1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="fries" eAttribute="Dinner.ecore#//Dinner/side2"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="salad" eAttribute="Dinner.ecore#//Dinner/starter"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Dinner.ecore#//Entree">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="chicken" eAttribute="Dinner.ecore#//Entree/item"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="13.500000" eAttribute="Dinner.ecore#//Entree/price"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="Dinner.ecore#//Entree">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="beef" eAttribute="Dinner.ecore#//Entree/item"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="18.500000" eAttribute="Dinner.ecore#//Entree/price"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Dinner.ecore#//Side">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="fries" eAttribute="Dinner.ecore#//Side/item"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="0.500000" eAttribute="Dinner.ecore#//Side/price"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="Dinner.ecore#//Side">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="carrots" eAttribute="Dinner.ecore#//Side/item"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="1.000000" eAttribute="Dinner.ecore#//Side/price"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" eClass="Dinner.ecore#//Side">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="peas" eAttribute="Dinner.ecore#//Side/item"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="1.250000" eAttribute="Dinner.ecore#//Side/price"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" manuallyCreated="true" eClass="Dinner.ecore#//Side">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="broccoli" eAttribute="Dinner.ecore#//Side/item"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="1.750000" eAttribute="Dinner.ecore#//Side/price"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Dinner.ecore#//Starter">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="soup" eAttribute="Dinner.ecore#//Starter/item"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="7.000000" eAttribute="Dinner.ecore#//Starter/price"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="Dinner.ecore#//Starter">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="salad" eAttribute="Dinner.ecore#//Starter/item"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="3.500000" eAttribute="Dinner.ecore#//Starter/price"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_xRosMANQEeKyU9JVs7c2sw" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="Dinner.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="Dinner"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

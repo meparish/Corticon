@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_rn2suGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_lIJeQGqnEeGMCd15vaZIXw" vocabulary="Edges.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="p+=Path.new[start=e.start,end=e.end,distance=e.distance,hops=1,name=e.start.concat(e.end)]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p += Path.new [ Path.start = e.start , Path.name = e.start.concat ( e.end ) , Path.hops = 1 , Path.end = e.end , Path.distance = e.distance ]" datatype="Path" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="p" datatype="Path" termtype="ENTITY" fulltext="p">
+                <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="concat" datatype="String" termtype="METHOD" fulltext="e.start.concat">
+                <parentTerm text="start" datatype="String" termtype="ATTRIBUTE" fulltext="e.start">
+                  <parentTerm text="e" datatype="Edge" termtype="ENTITY" fulltext="e" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="e.end">
+                <parentTerm text="e" datatype="Edge" termtype="ENTITY" fulltext="e" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="e.distance">
+                <parentTerm text="e" datatype="Edge" termtype="ENTITY" fulltext="e" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="e.start">
+                <parentTerm text="e" datatype="Edge" termtype="ENTITY" fulltext="e" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable explicit="true" entity="Edges.ecore#//Graph">
+      <alias value="g"/>
+      <extension explicit="true" association="true" entity="Edges.ecore#//Edge" traversedAssocRole="Edges.ecore#//Graph/edge">
+        <alias value="e"/>
+        <referencedAttributes attribute="Edges.ecore#//Edge/start"/>
+        <referencedAttributes attribute="Edges.ecore#//Edge/end"/>
+        <referencedAttributes attribute="Edges.ecore#//Edge/distance"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Edges.ecore#//Path" traversedAssocRole="Edges.ecore#//Graph/path">
+        <alias value="p"/>
+      </extension>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="p+=Path.new[start=e.start,end=e.end,distance=e.distance,hops=1,name=e.start.concat(e.end)]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p += Path.new [ Path.start = e.start , Path.name = e.start.concat ( e.end ) , Path.hops = 1 , Path.end = e.end , Path.distance = e.distance ]" datatype="Path" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="p" datatype="Path" termtype="ENTITY" fulltext="p">
+                <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="concat" datatype="String" termtype="METHOD" fulltext="e.start.concat">
+                <parentTerm text="start" datatype="String" termtype="ATTRIBUTE" fulltext="e.start">
+                  <parentTerm text="e" datatype="Edge" termtype="ENTITY" fulltext="e" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="e.end">
+                <parentTerm text="e" datatype="Edge" termtype="ENTITY" fulltext="e" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="e.distance">
+                <parentTerm text="e" datatype="Edge" termtype="ENTITY" fulltext="e" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="e.start">
+                <parentTerm text="e" datatype="Edge" termtype="ENTITY" fulltext="e" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.2"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

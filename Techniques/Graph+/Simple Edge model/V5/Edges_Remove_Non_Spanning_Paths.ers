@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_rfXfP2qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_lG6IIGqnEeGMCd15vaZIXw" vocabulary="Edges.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(p.hops=v->size-1)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( p.hops = v->size - 1 ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hops" datatype="Integer" termtype="ATTRIBUTE" fulltext="p.hops">
+                <parentTerm text="p" datatype="Path" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="v" datatype="Integer" termtype="COLLECTION" fulltext="v->size">
+                <parentTerm text="v" datatype="Vertex" termtype="ENTITY" fulltext="v" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="p.hops=v->size-1" rhs="F"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="p.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="p.remove">
+                <parentTerm text="p" datatype="Path" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+      <text expression="Removing path {p.name} since it does not span all the vertices">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Removing path  + p.name +  since it does not span all the vertices" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p.name">
+              <parentTerm text="p" datatype="Path" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="Edges.ecore#//Graph">
+      <alias value="g"/>
+      <extension explicit="true" association="true" entity="Edges.ecore#//Path" traversedAssocRole="Edges.ecore#//Graph/path" ruleStatements="#//@ruleset/@ruleStatements.0">
+        <alias value="p"/>
+        <referencedAttributes attribute="Edges.ecore#//Path/hops"/>
+        <referencedAttributes attribute="Edges.ecore#//Path/name"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Edges.ecore#//Vertex" traversedAssocRole="Edges.ecore#//Graph/vertex">
+        <alias value="v"/>
+      </extension>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightConditionsActions="31" sashWeightConditionsIf="27">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="p.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="p.remove">
+                <parentTerm text="p" datatype="Path" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="Removing path {p.name} since it does not span all the vertices">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Removing path  + p.name +  since it does not span all the vertices" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p.name">
+                <parentTerm text="p" datatype="Path" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="p.hops=v->size-1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p.hops = v->size - 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hops" datatype="Integer" termtype="ATTRIBUTE" fulltext="p.hops">
+                <parentTerm text="p" datatype="Path" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="v" datatype="Integer" termtype="COLLECTION" fulltext="v->size">
+                <parentTerm text="v" datatype="Vertex" termtype="ENTITY" fulltext="v" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="g" datatype="Graph" termtype="ENTITY" fulltext="g" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

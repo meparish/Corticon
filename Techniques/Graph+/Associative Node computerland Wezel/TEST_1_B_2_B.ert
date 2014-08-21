@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_wuM7amqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_wuM70WqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_rR6442qnEeGMCd15vaZIXw" ruleActivity="RULE_1_B_2_B.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="redundant path removed"/>
+        <PostedMessage severity="Info" text="redundant path removed"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="opt4_full_onlynext.ecore#//Wezel">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="i" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" eClass="opt4_full_onlynext.ecore#//Wezel">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="b" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" manuallyCreated="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" eClass="opt4_full_onlynext.ecore#//Wezel">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="b" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" manuallyCreated="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.1"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.4/@children.4 #//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.5/@children.4" eClass="opt4_full_onlynext.ecore#//Wezel">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="f" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="opt4_full_onlynext.ecore#//Wezel">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="i" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="optimal" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" eClass="opt4_full_onlynext.ecore#//Wezel">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.650000" eAttribute="opt4_full_onlynext.ecore#//Wezel/id"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="b" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="removable" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" eClass="opt4_full_onlynext.ecore#//Wezel">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.830000" eAttribute="opt4_full_onlynext.ecore#//Wezel/id"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="b" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="optimal" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4/@children.5 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.5/@children.5" eClass="opt4_full_onlynext.ecore#//Wezel">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="f" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="optimal" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="opt4_full_onlynext.ecore#//Wezel">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="i" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="optimal" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" eClass="opt4_full_onlynext.ecore#//Wezel">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="0.650000" eAttribute="opt4_full_onlynext.ecore#//Wezel/id"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="b" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="removable" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" manuallyCreated="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" eClass="opt4_full_onlynext.ecore#//Wezel">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="0.830000" eAttribute="opt4_full_onlynext.ecore#//Wezel/id"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="b" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="optimal" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" manuallyCreated="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.4/@children.5 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.5/@children.5" eClass="opt4_full_onlynext.ecore#//Wezel">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="f" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="optimal" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_wuM70mqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet cascade="true" ruleActivityUpdateStamp="_rR6442qnEeGMCd15vaZIXw" ruleActivity="RULE_1_B_2_B.erf#//@ruleflow">
+      <input/>
+      <output/>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" eClass="opt4_full_onlynext.ecore#//Wezel">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="i" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="optimal" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" eClass="opt4_full_onlynext.ecore#//Wezel">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.650000" eAttribute="opt4_full_onlynext.ecore#//Wezel/id"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="b" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="removable" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@inputRoot/@children.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" eClass="opt4_full_onlynext.ecore#//Wezel">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.830000" eAttribute="opt4_full_onlynext.ecore#//Wezel/id"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="b" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="optimal" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@inputRoot/@children.1"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" referencingHrefs="#//@testsheetAssets.1/@testsheetViewList.0/@inputRoot/@children.0/@children.4/@children.5 #//@testsheetAssets.1/@testsheetViewList.0/@inputRoot/@children.0/@children.5/@children.5" eClass="opt4_full_onlynext.ecore#//Wezel">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="f" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="optimal" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+        </children>
+      </inputRoot>
+      <outputRoot/>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_wuM71GqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet cascade="true" ruleActivityUpdateStamp="_rR6442qnEeGMCd15vaZIXw" ruleActivity="RULE_1_B_2_B.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="redundant path removed"/>
+        <PostedMessage severity="Info" text="redundant path removed"/>
+        <PostedMessage severity="Info" text="redundant path removed"/>
+        <PostedMessage severity="Info" text="redundant path removed"/>
+        <PostedMessage severity="Info" text="redundant path removed"/>
+        <PostedMessage severity="Info" text="redundant path removed"/>
+        <PostedMessage severity="Info" text="redundant path removed"/>
+        <PostedMessage severity="Info" text="redundant path removed"/>
+        <PostedMessage severity="Info" text="redundant path removed"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="opt4_full_onlynext.ecore#//Wezel">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="i" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" manuallyCreated="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" eClass="opt4_full_onlynext.ecore#//Wezel">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="b" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" manuallyCreated="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" eClass="opt4_full_onlynext.ecore#//Wezel">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="b" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" manuallyCreated="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" eClass="opt4_full_onlynext.ecore#//Wezel">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="b" eAttribute="opt4_full_onlynext.ecore#//Wezel/name">
+              <comments>superfluous! </comments>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="11" manuallyCreated="true" eClass="opt4_full_onlynext.ecore#//Wezel">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="f" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" eClass="opt4_full_onlynext.ecore#//Wezel">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="i" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="optimal" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.2 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" eClass="opt4_full_onlynext.ecore#//Wezel">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.620000" eAttribute="opt4_full_onlynext.ecore#//Wezel/id"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="b" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="removable" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="11" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.5 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.6 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.7 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.8" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" eClass="opt4_full_onlynext.ecore#//Wezel">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.480000" eAttribute="opt4_full_onlynext.ecore#//Wezel/id"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="b" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="removable" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="11" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" newOrModified="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" eClass="opt4_full_onlynext.ecore#//Wezel">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.840000" eAttribute="opt4_full_onlynext.ecore#//Wezel/id"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="b" eAttribute="opt4_full_onlynext.ecore#//Wezel/name">
+              <comments>superfluous! </comments>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="optimal" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="11" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.1"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="11" newOrModified="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0/@children.4/@children.5 #//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0/@children.5/@children.5 #//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0/@children.6/@children.5" eClass="opt4_full_onlynext.ecore#//Wezel">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="f" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="optimal" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.8" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0/@children.5"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" manuallyCreated="true" eClass="opt4_full_onlynext.ecore#//Wezel">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="i" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="optimal" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" newOrModified="true" manuallyCreated="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" eClass="opt4_full_onlynext.ecore#//Wezel">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="0.620000" eAttribute="opt4_full_onlynext.ecore#//Wezel/id"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="b" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="removable" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="11" manuallyCreated="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" newOrModified="true" manuallyCreated="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" eClass="opt4_full_onlynext.ecore#//Wezel">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="0.480000" eAttribute="opt4_full_onlynext.ecore#//Wezel/id"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="b" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="removable" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="11" manuallyCreated="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" newOrModified="true" manuallyCreated="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" eClass="opt4_full_onlynext.ecore#//Wezel">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="0.840000" eAttribute="opt4_full_onlynext.ecore#//Wezel/id"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="b" eAttribute="opt4_full_onlynext.ecore#//Wezel/name">
+              <comments>superfluous! </comments>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="optimal" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="11" manuallyCreated="true" eReference="opt4_full_onlynext.ecore#//Wezel/nextWezel" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.1"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="11" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.0/@children.4/@children.5 #//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.0/@children.5/@children.5 #//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.0/@children.6/@children.5" eClass="opt4_full_onlynext.ecore#//Wezel">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/addInfo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="f" eAttribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="optimal" eAttribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="opt4_full_onlynext.ecore#//Wezel/zlecenie"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_lEPO2WqnEeGMCd15vaZIXw" testsheets="#//@testsheetAssets.0/@testsheet #//@testsheetAssets.1/@testsheet #//@testsheetAssets.2/@testsheet" vocabulary="opt4_full_onlynext.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="TEST_1_B_2_B"/>
+    <testTabList name="Result"/>
+    <testTabList name="TEST_1_B_2_B_3_B"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

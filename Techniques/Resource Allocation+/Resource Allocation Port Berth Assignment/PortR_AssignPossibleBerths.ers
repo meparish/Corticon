@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" majorServiceNumber="3" buildNumber="5565" updateStamp="_jRb5MhHqEeSCa8EyA_wMEQ" externalChecksum="3054974779:507989954:371640521">
+  <languageCode>en_US</languageCode>
+  <ruleset operationMode="ProcessAllLogicalLoops" vocabularyUpdateStamp="_4VBtEKACEeOiCKPtlZjiRw" vocabulary="PortV.ecore#/">
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition/>
+      <condition/>
+      <action>
+        <opaqueExpression expression="requirement.satisfied = false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="requirement.satisfied = false" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="satisfied" datatype="Boolean" termtype="ATTRIBUTE" fulltext="requirement.satisfied">
+                <parentTerm text="requirement" datatype="Requirement" termtype="ENTITY" fulltext="requirement">
+                  <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="requirement" datatype="Requirement" termtype="ENTITY" fulltext="requirement" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="aBerth.capabilityCount = capability->size">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aBerth.capabilityCount = capability->size" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="capabilityCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="aBerth.capabilityCount">
+                <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+              <terms text="capability" datatype="Integer" termtype="COLLECTION" fulltext="capability->size">
+                <parentTerm text="capability" datatype="Capability" termtype="ENTITY" fulltext="capability" variable="#//@ruleset/@logicalVariables.2/@extension.0">
+                  <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="aShip.requirementCount = requirement->size">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aShip.requirementCount = requirement->size" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="requirementCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="aShip.requirementCount">
+                <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="requirement" datatype="Integer" termtype="COLLECTION" fulltext="requirement->size">
+                <parentTerm text="requirement" datatype="Requirement" termtype="ENTITY" fulltext="requirement" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="(requirement.name = capability.name)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( requirement.name = capability.name ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="capability.name">
+                <parentTerm text="capability" datatype="Capability" termtype="ENTITY" fulltext="capability" variable="#//@ruleset/@logicalVariables.2/@extension.0">
+                  <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="requirement.name">
+                <parentTerm text="requirement" datatype="Requirement" termtype="ENTITY" fulltext="requirement" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="requirement.name = capability.name" rhs="T"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="requirement.satisfied = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="requirement.satisfied = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="satisfied" datatype="Boolean" termtype="ATTRIBUTE" fulltext="requirement.satisfied">
+                <parentTerm text="requirement" datatype="Requirement" termtype="ENTITY" fulltext="requirement">
+                  <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="requirement" datatype="Requirement" termtype="ENTITY" fulltext="requirement" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(requirement -> forAll(satisfied))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( requirement [ not requirement.satisfied ]->isEmpty ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="requirement" datatype="Boolean" termtype="COLLECTION" fulltext="requirement->isEmpty">
+                <parentTerm text="requirement" datatype="Requirement" termtype="ENTITY" fulltext="requirement" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="satisfied" datatype="Boolean" termtype="ATTRIBUTE" fulltext="requirement.satisfied">
+                <parentTerm text="requirement" datatype="Requirement" termtype="ENTITY" fulltext="requirement" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="requirement -> forAll(satisfied)" rhs="T"/>
+      </condition>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Assignment.new[berth=aBerth,ship=aShip]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assignment.new [ Assignment.ship = aShip , Assignment.berth = aBerth ]" datatype="Assignment" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Assignment" datatype="Assignment" termtype="ENTITY" fulltext="Assignment"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+              <terms text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="new" datatype="Assignment" termtype="NEW" fulltext="Assignment.new">
+                <parentTerm text="Assignment" datatype="Assignment" termtype="ENTITY" fulltext="Assignment" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(requirement -> forAll(satisfied))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( requirement [ not requirement.satisfied ]->isEmpty ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="requirement" datatype="Boolean" termtype="COLLECTION" fulltext="requirement->isEmpty">
+                <parentTerm text="requirement" datatype="Requirement" termtype="ENTITY" fulltext="requirement" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="satisfied" datatype="Boolean" termtype="ATTRIBUTE" fulltext="requirement.satisfied">
+                <parentTerm text="requirement" datatype="Requirement" termtype="ENTITY" fulltext="requirement" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="requirement -> forAll(satisfied)" rhs="F"/>
+      </condition>
+    </rule>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.2">
+      <opaqueExpression expression="aBerth->next">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aBerth->next" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="aBerth" datatype="Boolean" termtype="COLLECTION" fulltext="aBerth->next">
+              <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.2 #//@ruleset/@logicalVariables.0">
+      <opaqueExpression expression="aBerth.length >aShip.length">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aBerth.length > aShip.length" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="length" datatype="Integer" termtype="ATTRIBUTE" fulltext="aBerth.length">
+              <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+            </terms>
+            <terms text="length" datatype="Integer" termtype="ATTRIBUTE" fulltext="aShip.length">
+              <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.2">
+      <opaqueExpression expression="aBerth.depth >aShip.draft">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aBerth.depth > aShip.draft" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="draft" datatype="Integer" termtype="ATTRIBUTE" fulltext="aShip.draft">
+              <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="depth" datatype="Integer" termtype="ATTRIBUTE" fulltext="aBerth.depth">
+              <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.2">
+      <opaqueExpression expression="aBerth.inService">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aBerth.inService" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="inService" datatype="Boolean" termtype="ATTRIBUTE" fulltext="aBerth.inService">
+              <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.4">
+      <text expression="Assignment of ships is done on a first come first served basis, but the berths are considered in order from smallest to largest">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assignment of ships is done on a first come first served basis, but the berths are considered in order from smallest to largest" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.1">
+      <text expression="{aShip.name}-{aBerth.name}: check each ship requirement against each berth capability and mark the requirement as satisfied if the berth has that capability">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aShip.name + - + aBerth.name + : check each ship requirement against each berth capability and mark the requirement as satisfied if the berth has that capability" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aShip.name">
+              <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aBerth.name">
+              <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="{aShip.name}: Berth {aBerth.name} has all the capabilities required by the ship">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aShip.name + : Berth  + aBerth.name +  has all the capabilities required by the ship" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aShip.name">
+              <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aBerth.name">
+              <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Violation" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.2">
+      <text expression="{aBerth.name}: Berth does not have all the capabilities required by {aShip.name}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aBerth.name + : Berth does not have all the capabilities required by  + aShip.name" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aShip.name">
+              <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aBerth.name">
+              <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="PortV.ecore#//Ship" ruleStatements="#//@ruleset/@ruleStatements.2" filters="#//@ruleset/@filters.1 #//@ruleset/@filters.2">
+      <alias value="aShip"/>
+      <extension explicit="true" association="true" entity="PortV.ecore#//Requirement" traversedAssocRole="PortV.ecore#//Ship/requirements">
+        <alias value="requirement"/>
+        <referencedAttributes attribute="PortV.ecore#//Requirement/satisfied"/>
+        <referencedAttributes attribute="PortV.ecore#//Requirement/name"/>
+      </extension>
+      <referencedAttributes attribute="PortV.ecore#//Ship/length"/>
+      <referencedAttributes attribute="PortV.ecore#//Ship/draft"/>
+      <referencedAttributes attribute="PortV.ecore#//Ship/requirementCount"/>
+      <referencedAttributes attribute="PortV.ecore#//Ship/name"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="PortV.ecore#//Berth">
+      <alias value="unsortedBerths"/>
+      <referencedAttributes attribute="PortV.ecore#//Berth/length"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" sortedAliasAttributeName="length" entity="PortV.ecore#//Berth" ruleStatements="#//@ruleset/@ruleStatements.3" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.1 #//@ruleset/@filters.2 #//@ruleset/@filters.3">
+      <alias value="aBerth"/>
+      <extension explicit="true" association="true" entity="PortV.ecore#//Capability" traversedAssocRole="PortV.ecore#//Berth/capabilities">
+        <alias value="capability"/>
+        <referencedAttributes attribute="PortV.ecore#//Capability/name"/>
+      </extension>
+      <referencedAttributes attribute="PortV.ecore#//Berth/length"/>
+      <referencedAttributes attribute="PortV.ecore#//Berth/depth"/>
+      <referencedAttributes attribute="PortV.ecore#//Berth/inService"/>
+      <referencedAttributes attribute="PortV.ecore#//Berth/capabilityCount"/>
+      <referencedAttributes attribute="PortV.ecore#//Berth/name"/>
+    </logicalVariable>
+    <logicalVariable entity="PortV.ecore#//Assignment"/>
+    <logicalVariable entity="PortV.ecore#//Port" ruleStatements="#//@ruleset/@ruleStatements.0"/>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightScope="79" sashWeightConditionsActions="24" sashWeightConditionsIf="33">
+    <actionSection rowCount="48" columnWidthFactor="0.5">
+      <actionItemList>
+        <naturalLanguageText value="initially mark each of the ship's requirements as NOT satisfied"/>
+        <valueSetCell/>
+        <expressionCell external="requirement.satisfied = false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="requirement.satisfied = false" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="satisfied" datatype="Boolean" termtype="ATTRIBUTE" fulltext="requirement.satisfied">
+                <parentTerm text="requirement" datatype="Requirement" termtype="ENTITY" fulltext="requirement">
+                  <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="requirement" datatype="Requirement" termtype="ENTITY" fulltext="requirement" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="count the number of capabilities that each berth provides"/>
+        <valueSetCell/>
+        <expressionCell external="aBerth.capabilityCount = capability->size">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aBerth.capabilityCount = capability->size" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="capabilityCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="aBerth.capabilityCount">
+                <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+              <terms text="capability" datatype="Integer" termtype="COLLECTION" fulltext="capability->size">
+                <parentTerm text="capability" datatype="Capability" termtype="ENTITY" fulltext="capability" variable="#//@ruleset/@logicalVariables.2/@extension.0">
+                  <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="count the number of requirements for each ship"/>
+        <valueSetCell/>
+        <expressionCell external="aShip.requirementCount = requirement->size">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aShip.requirementCount = requirement->size" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="requirementCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="aShip.requirementCount">
+                <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="requirement" datatype="Integer" termtype="COLLECTION" fulltext="requirement->size">
+                <parentTerm text="requirement" datatype="Requirement" termtype="ENTITY" fulltext="requirement" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="flag this requirement as satisfied"/>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="requirement.satisfied">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="requirement.satisfied" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="satisfied" datatype="Boolean" termtype="ATTRIBUTE" fulltext="requirement.satisfied">
+                <parentTerm text="requirement" datatype="Requirement" termtype="ENTITY" fulltext="requirement" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="create a new assignment of the ship to the berth"/>
+        <valueSetCell/>
+        <expressionCell external="Assignment.new[berth=aBerth,ship=aShip]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assignment.new [ Assignment.ship = aShip , Assignment.berth = aBerth ]" datatype="Assignment" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Assignment" datatype="Assignment" termtype="ENTITY" fulltext="Assignment"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+              <terms text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="new" datatype="Assignment" termtype="NEW" fulltext="Assignment.new">
+                <parentTerm text="Assignment" datatype="Assignment" termtype="ENTITY" fulltext="Assignment" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="aBerth.length >aShip.length" filter="#//@ruleset/@filters.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="aBerth.depth >aShip.draft" filter="#//@ruleset/@filters.2"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" expanded="true" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeSortedAlias" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.2" operatorID="com.corticon.operations.EntityAssocOperators.Collection.sortedBy">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="aBerth->next" filter="#//@ruleset/@filters.0"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="aBerth.inService" filter="#//@ruleset/@filters.3"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="aBerth.length >aShip.length" filter="#//@ruleset/@filters.1"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="aBerth.depth >aShip.draft" filter="#//@ruleset/@filters.2"/>
+              </children>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.2/@extension.0">
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@extension.0/@referencedAttributes.0"/>
+              </children>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.1"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.2"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.3"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.4"/>
+            </children>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.3"/>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.4"/>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="aBerth->next">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aBerth->next" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="aBerth" datatype="Boolean" termtype="COLLECTION" fulltext="aBerth->next">
+                <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.1">
+        <expressionCell external="aBerth.length >aShip.length">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aBerth.length > aShip.length" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="length" datatype="Integer" termtype="ATTRIBUTE" fulltext="aBerth.length">
+                <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="length" datatype="Integer" termtype="ATTRIBUTE" fulltext="aShip.length">
+                <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.2">
+        <expressionCell external="aBerth.depth >aShip.draft">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aBerth.depth > aShip.draft" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="draft" datatype="Integer" termtype="ATTRIBUTE" fulltext="aShip.draft">
+                <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="depth" datatype="Integer" termtype="ATTRIBUTE" fulltext="aBerth.depth">
+                <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.3">
+        <expressionCell external="aBerth.inService">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aBerth.inService" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="inService" datatype="Boolean" termtype="ATTRIBUTE" fulltext="aBerth.inService">
+                <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="496" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList rowHeight="31" ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="0"/>
+        <text external="Assignment of ships is done on a first come first served basis, but the berths are considered in order from smallest to largest">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assignment of ships is done on a first come first served basis, but the berths are considered in order from smallest to largest" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList rowHeight="33" ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="1"/>
+        <text external="{aShip.name}-{aBerth.name}: check each ship requirement against each berth capability and mark the requirement as satisfied if the berth has that capability">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aShip.name + - + aBerth.name + : check each ship requirement against each berth capability and mark the requirement as satisfied if the berth has that capability" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aShip.name">
+                <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aBerth.name">
+                <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList rowHeight="24" ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="2"/>
+        <text external="{aShip.name}: Berth {aBerth.name} has all the capabilities required by the ship">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aShip.name + : Berth  + aBerth.name +  has all the capabilities required by the ship" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aShip.name">
+                <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aBerth.name">
+                <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="3"/>
+        <text external="{aBerth.name}: Berth does not have all the capabilities required by {aShip.name}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aBerth.name + : Berth does not have all the capabilities required by  + aShip.name" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aShip.name">
+                <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aBerth.name">
+                <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList rowHeight="39">
+        <naturalLanguageText value="is this particular ship requirement satisfied by one of the berth's capabilities?"/>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="requirement.name = capability.name">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="requirement.name = capability.name" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="capability.name">
+                <parentTerm text="capability" datatype="Capability" termtype="ENTITY" fulltext="capability" variable="#//@ruleset/@logicalVariables.2/@extension.0">
+                  <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="requirement.name">
+                <parentTerm text="requirement" datatype="Requirement" termtype="ENTITY" fulltext="requirement" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <naturalLanguageText value="are all the ships requirements satisfied"/>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="requirement -> forAll(satisfied)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="requirement [ not requirement.satisfied ]->isEmpty" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="requirement" datatype="Boolean" termtype="COLLECTION" fulltext="requirement->isEmpty">
+                <parentTerm text="requirement" datatype="Requirement" termtype="ENTITY" fulltext="requirement" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="satisfied" datatype="Boolean" termtype="ATTRIBUTE" fulltext="requirement.satisfied">
+                <parentTerm text="requirement" datatype="Requirement" termtype="ENTITY" fulltext="requirement" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="47" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet=""/>
+        <conditionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="48" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="T"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="50" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="41" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="F"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

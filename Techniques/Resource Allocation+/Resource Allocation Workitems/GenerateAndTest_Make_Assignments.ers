@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_tFgWyWqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_ladWQGqnEeGMCd15vaZIXw" vocabulary="ResourceAllocation.ecore#/">
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0"/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="(skill->exists(description=w.type))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( skill ->exists( skill.description = w.type ) ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="skill" datatype="Boolean" termtype="COLLECTION" fulltext="skill->notEmpty">
+                <parentTerm text="skill" datatype="Skills" termtype="ENTITY" fulltext="skill" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="skill.description">
+                <parentTerm text="skill" datatype="Skills" termtype="ENTITY" fulltext="skill" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="w.type">
+                <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="skill->exists(description=w.type)" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(permission->exists(description=w.type))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( permission ->exists( permission.description = w.type ) ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="permission" datatype="Boolean" termtype="COLLECTION" fulltext="permission->notEmpty">
+                <parentTerm text="permission" datatype="Permissions" termtype="ENTITY" fulltext="permission" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="permission.description">
+                <parentTerm text="permission" datatype="Permissions" termtype="ENTITY" fulltext="permission" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="w.type">
+                <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="permission->exists(description=w.type)" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Assignments.new[person=p,workitem=w]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assignments.new [ Assignments.workitem = w , Assignments.person = p ]" datatype="Assignments" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Assignments" datatype="Assignments" termtype="ENTITY" fulltext="Assignments"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="new" datatype="Assignments" termtype="NEW" fulltext="Assignments.new">
+                <parentTerm text="Assignments" datatype="Assignments" termtype="ENTITY" fulltext="Assignments" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="work+=w">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="work += w" datatype="Workitem" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="work" datatype="Workitem" termtype="ENTITY" fulltext="work">
+                <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="(skill->exists(description=w.type))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( skill ->exists( skill.description = w.type ) ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="skill" datatype="Boolean" termtype="COLLECTION" fulltext="skill->notEmpty">
+                <parentTerm text="skill" datatype="Skills" termtype="ENTITY" fulltext="skill" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="skill.description">
+                <parentTerm text="skill" datatype="Skills" termtype="ENTITY" fulltext="skill" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="w.type">
+                <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="skill->exists(description=w.type)" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(permission->exists(description=w.type))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( permission ->exists( permission.description = w.type ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="permission" datatype="Boolean" termtype="COLLECTION" fulltext="permission->notEmpty">
+                <parentTerm text="permission" datatype="Permissions" termtype="ENTITY" fulltext="permission" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="permission.description">
+                <parentTerm text="permission" datatype="Permissions" termtype="ENTITY" fulltext="permission" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="w.type">
+                <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="permission->exists(description=w.type)" rhs="F"/>
+      </condition>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition>
+        <opaqueExpression expression="(skill->exists(description=w.type))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( skill ->exists( skill.description = w.type ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="skill" datatype="Boolean" termtype="COLLECTION" fulltext="skill->notEmpty">
+                <parentTerm text="skill" datatype="Skills" termtype="ENTITY" fulltext="skill" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="skill.description">
+                <parentTerm text="skill" datatype="Skills" termtype="ENTITY" fulltext="skill" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="w.type">
+                <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="skill->exists(description=w.type)" rhs="F"/>
+      </condition>
+      <condition/>
+    </rule>
+    <filter>
+      <opaqueExpression expression="p.onVacation = false">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p.onVacation = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="onVacation" datatype="Boolean" termtype="ATTRIBUTE" fulltext="p.onVacation">
+              <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.3">
+      <text expression="Rulesheet &quot;Make_Assigments&quot;: Generate all possible assignments of workitems to persons where they have the skill and permission">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rulesheet  + \&quot; + Make_Assigments + \&quot; + : Generate all possible assignments of workitems to persons where they have the skill and permission" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="{p.name} can perform task {w.name} (has the skill and permission)">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p.name +  can perform task  + w.name +  (has the skill and permission)" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="w.name">
+              <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p.name">
+              <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="{p.name} has the skill but not the permission to perform {w.name} ({w.type})">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p.name +  has the skill but not the permission to perform  + w.name +  ( + w.type + )" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="w.name">
+              <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="w.type">
+              <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p.name">
+              <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="{p.name} does not have the skill to perform {w.name} ({w.type})">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p.name +  does not have the skill to perform  + w.name +  ( + w.type + )" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="w.name">
+              <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="w.type">
+              <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p.name">
+              <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="ResourceAllocation.ecore#//Person" ruleStatements="#//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2 #//@ruleset/@ruleStatements.3">
+      <alias value="p"/>
+      <extension explicit="true" association="true" entity="ResourceAllocation.ecore#//Skills" traversedAssocRole="ResourceAllocation.ecore#//Person/skills">
+        <alias value="skill"/>
+        <referencedAttributes attribute="ResourceAllocation.ecore#//Skills/description"/>
+      </extension>
+      <extension explicit="true" association="true" entity="ResourceAllocation.ecore#//Permissions" traversedAssocRole="ResourceAllocation.ecore#//Person/permissions">
+        <alias value="permission"/>
+        <referencedAttributes attribute="ResourceAllocation.ecore#//Permissions/description"/>
+      </extension>
+      <extension explicit="true" association="true" entity="ResourceAllocation.ecore#//Workitem" traversedAssocRole="ResourceAllocation.ecore#//Person/workitem">
+        <alias value="work"/>
+      </extension>
+      <referencedAttributes attribute="ResourceAllocation.ecore#//Person/onVacation"/>
+      <referencedAttributes attribute="ResourceAllocation.ecore#//Person/name"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="ResourceAllocation.ecore#//Workitem">
+      <alias value="w"/>
+      <referencedAttributes attribute="ResourceAllocation.ecore#//Workitem/type"/>
+      <referencedAttributes attribute="ResourceAllocation.ecore#//Workitem/name"/>
+    </logicalVariable>
+    <logicalVariable entity="ResourceAllocation.ecore#//Assignments"/>
+    <logicalVariable entity="ResourceAllocation.ecore#//Sheet" ruleStatements="#//@ruleset/@ruleStatements.0"/>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="48" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Assignments.new[person=p,workitem=w]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Assignments.new [ Assignments.workitem = w , Assignments.person = p ]" datatype="Assignments" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Assignments" datatype="Assignments" termtype="ENTITY" fulltext="Assignments"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="new" datatype="Assignments" termtype="NEW" fulltext="Assignments.new">
+                <parentTerm text="Assignments" datatype="Assignments" termtype="ENTITY" fulltext="Assignments"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="work+=w">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="work += w" datatype="Workitem" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="work" datatype="Workitem" termtype="ENTITY" fulltext="work">
+                <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="p.onVacation = false" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2"/>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.3"/>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="p.onVacation = false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p.onVacation = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="onVacation" datatype="Boolean" termtype="ATTRIBUTE" fulltext="p.onVacation">
+                <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="0"/>
+        <text external="Rulesheet &quot;Make_Assigments&quot;: Generate all possible assignments of workitems to persons where they have the skill and permission">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rulesheet  + \&quot; + Make_Assigments + \&quot; + : Generate all possible assignments of workitems to persons where they have the skill and permission" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="1"/>
+        <text external="{p.name} can perform task {w.name} (has the skill and permission)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p.name +  can perform task  + w.name +  (has the skill and permission)" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="w.name">
+                <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p.name">
+                <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="2"/>
+        <text external="{p.name} has the skill but not the permission to perform {w.name} ({w.type})">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p.name +  has the skill but not the permission to perform  + w.name +  ( + w.type + )" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="w.name">
+                <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="w.type">
+                <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p.name">
+                <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="3"/>
+        <text external="{p.name} does not have the skill to perform {w.name} ({w.type})">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p.name +  does not have the skill to perform  + w.name +  ( + w.type + )" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="w.name">
+                <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="w.type">
+                <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p.name">
+                <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="skill->exists(description=w.type)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="skill ->exists( skill.description = w.type )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="skill" datatype="Boolean" termtype="COLLECTION" fulltext="skill->notEmpty">
+                <parentTerm text="skill" datatype="Skills" termtype="ENTITY" fulltext="skill" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="skill.description">
+                <parentTerm text="skill" datatype="Skills" termtype="ENTITY" fulltext="skill" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="w.type">
+                <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="permission->exists(description=w.type)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="permission ->exists( permission.description = w.type )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="permission" datatype="Boolean" termtype="COLLECTION" fulltext="permission->notEmpty">
+                <parentTerm text="permission" datatype="Permissions" termtype="ENTITY" fulltext="permission" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="permission.description">
+                <parentTerm text="permission" datatype="Permissions" termtype="ENTITY" fulltext="permission" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="w.type">
+                <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="F"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

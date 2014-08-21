@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" majorServiceNumber="3" buildNumber="5565" updateStamp="_-cHO7ycHEeSLStJy1PZoRg" externalChecksum="3054974779:507989954:1410878994">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_Kg38UCdkEeSLStJy1PZoRg" vocabulary="Iteration.ecore#/">
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.4 #//@ruleset/@ruleStatements.5 #//@ruleset/@ruleStatements.6 #//@ruleset/@ruleStatements.7">
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="unsortedThing.color = 'red'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="unsortedThing.color = 'red'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="color" datatype="String" termtype="ATTRIBUTE" fulltext="unsortedThing.color">
+                <parentTerm text="unsortedThing" datatype="Thing" termtype="ENTITY" fulltext="unsortedThing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="unsortedThing.color" rhs="'red'"/>
+      </condition>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="unsortedThing.color = 'green'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="unsortedThing.color = 'green'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="color" datatype="String" termtype="ATTRIBUTE" fulltext="unsortedThing.color">
+                <parentTerm text="unsortedThing" datatype="Thing" termtype="ENTITY" fulltext="unsortedThing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="unsortedThing.color" rhs="'green'"/>
+      </condition>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="not (unsortedThing.color = 'green' or unsortedThing.color = 'red' or unsortedThing.color = null) or unsortedThing.color = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( unsortedThing.color = 'green' or unsortedThing.color = 'red' or unsortedThing.color = null ) or unsortedThing.color = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="color" datatype="String" termtype="ATTRIBUTE" fulltext="unsortedThing.color">
+                <parentTerm text="unsortedThing" datatype="Thing" termtype="ENTITY" fulltext="unsortedThing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="unsortedThing.color" rhs="other"/>
+      </condition>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Found a red {unsortedThing.name}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Found a red  + unsortedThing.name" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="unsortedThing.name">
+              <parentTerm text="unsortedThing" datatype="Thing" termtype="ENTITY" fulltext="unsortedThing" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Found a green {unsortedThing.name}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Found a green  + unsortedThing.name" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="unsortedThing.name">
+              <parentTerm text="unsortedThing" datatype="Thing" termtype="ENTITY" fulltext="unsortedThing" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Found a {unsortedThing.name} that's not red or green">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Found a  + unsortedThing.name +  that's not red or green" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="unsortedThing.name">
+              <parentTerm text="unsortedThing" datatype="Thing" termtype="ENTITY" fulltext="unsortedThing" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement/>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.1">
+      <text expression="Default behavior - Sheet executes ONCE but processes all items in the collection">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Default behavior - Sheet executes ONCE but processes all items in the collection" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.1">
+      <text expression="EACH rule is applied in order to ALL things but within each rule the order of the Things is arbitrary">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="EACH rule is applied in order to ALL things but within each rule the order of the Things is arbitrary" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.1">
+      <text expression="Run the test several times to see this">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Run the test several times to see this" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.1">
+      <text expression="The order of applying the rules is also determined automatically by Corticon - see Rulesheet..LogicalAnalysis..Execution Sequence Diuagram">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The order of applying the rules is also determined automatically by Corticon - see Rulesheet..LogicalAnalysis..Execution Sequence Diuagram" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="Iteration.ecore#//Thing" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2">
+      <alias value="unsortedThing"/>
+      <referencedAttributes attribute="Iteration.ecore#//Thing/color"/>
+      <referencedAttributes attribute="Iteration.ecore#//Thing/name"/>
+    </logicalVariable>
+    <logicalVariable entity="Iteration.ecore#//Note" ruleStatements="#//@ruleset/@ruleStatements.5 #//@ruleset/@ruleStatements.6 #//@ruleset/@ruleStatements.4 #//@ruleset/@ruleStatements.7"/>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="24" sashWeightConditionsIf="30">
+    <actionSection rowCount="50" columnWidthFactor="0.5"/>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" expanded="true" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1"/>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="51" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="Found a red {unsortedThing.name}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Found a red  + unsortedThing.name" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="unsortedThing.name">
+                <parentTerm text="unsortedThing" datatype="Thing" termtype="ENTITY" fulltext="unsortedThing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="Found a green {unsortedThing.name}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Found a green  + unsortedThing.name" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="unsortedThing.name">
+                <parentTerm text="unsortedThing" datatype="Thing" termtype="ENTITY" fulltext="unsortedThing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="Found a {unsortedThing.name} that's not red or green">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Found a  + unsortedThing.name +  that's not red or green" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="unsortedThing.name">
+                <parentTerm text="unsortedThing" datatype="Thing" termtype="ENTITY" fulltext="unsortedThing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference/>
+        <text/>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.4">
+        <reference external="0"/>
+        <text external="Default behavior - Sheet executes ONCE but processes all items in the collection">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Default behavior - Sheet executes ONCE but processes all items in the collection" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList rowHeight="17" ruleStatement="#//@ruleset/@ruleStatements.5">
+        <reference external="0"/>
+        <text external="EACH rule is applied in order to ALL things but within each rule the order of the Things is arbitrary">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="EACH rule is applied in order to ALL things but within each rule the order of the Things is arbitrary" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.6">
+        <reference external="0"/>
+        <text external="Run the test several times to see this">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Run the test several times to see this" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.7">
+        <reference external="0"/>
+        <text external="The order of applying the rules is also determined automatically by Corticon - see Rulesheet..LogicalAnalysis..Execution Sequence Diuagram">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The order of applying the rules is also determined automatically by Corticon - see Rulesheet..LogicalAnalysis..Execution Sequence Diuagram" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell/>
+        <expressionCell external="unsortedThing.color">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="unsortedThing.color" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="color" datatype="String" termtype="ATTRIBUTE" fulltext="unsortedThing.color">
+                <parentTerm text="unsortedThing" datatype="Thing" termtype="ENTITY" fulltext="unsortedThing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="25" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="'red'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="'green'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="other"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

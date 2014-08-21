@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_mK91ygXtEeKtsrLVmbYmdw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_ubtbMAWxEeKwnuukqkHiYA" vocabulary="Integrity.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(thing->forAll(eligible))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( thing [ not thing.eligible ]->isEmpty ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="thing" datatype="Boolean" termtype="COLLECTION" fulltext="thing->isEmpty">
+                <parentTerm text="thing" datatype="Thing" termtype="ENTITY" fulltext="thing" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Group" datatype="Group" termtype="ENTITY" fulltext="Group" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="eligible" datatype="Boolean" termtype="ATTRIBUTE" fulltext="thing.eligible">
+                <parentTerm text="thing" datatype="Thing" termtype="ENTITY" fulltext="thing" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Group" datatype="Group" termtype="ENTITY" fulltext="Group" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="thing->forAll(eligible)" rhs="T"/>
+      </condition>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="(thing->forAll(eligible))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( thing [ not thing.eligible ]->isEmpty ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="thing" datatype="Boolean" termtype="COLLECTION" fulltext="thing->isEmpty">
+                <parentTerm text="thing" datatype="Thing" termtype="ENTITY" fulltext="thing" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Group" datatype="Group" termtype="ENTITY" fulltext="Group" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="eligible" datatype="Boolean" termtype="ATTRIBUTE" fulltext="thing.eligible">
+                <parentTerm text="thing" datatype="Thing" termtype="ENTITY" fulltext="thing" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Group" datatype="Group" termtype="ENTITY" fulltext="Group" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="thing->forAll(eligible)" rhs="F"/>
+      </condition>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If all things in the group are eligible then so is the group">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If all things in the group are eligible then so is the group" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If any thing in the group is not eligible then the group is not eligible">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If any thing in the group is not eligible then the group is not eligible" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="Integrity.ecore#//Group" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1">
+      <extension explicit="true" association="true" entity="Integrity.ecore#//Thing" traversedAssocRole="Integrity.ecore#//Group/things">
+        <alias value="thing"/>
+        <referencedAttributes attribute="Integrity.ecore#//Thing/eligible"/>
+      </extension>
+      <referencedAttributes attribute="Integrity.ecore#//Group/eligible"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true">
+    <actionSection rowCount="50" columnWidthFactor="0.5"/>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="If all things in the group are eligible then so is the group">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If all things in the group are eligible then so is the group" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="If any thing in the group is not eligible then the group is not eligible">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If any thing in the group is not eligible then the group is not eligible" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="thing->forAll(eligible)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="thing [ not thing.eligible ]->isEmpty" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="thing" datatype="Boolean" termtype="COLLECTION" fulltext="thing->isEmpty">
+                <parentTerm text="thing" datatype="Thing" termtype="ENTITY" fulltext="thing" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Group" datatype="Group" termtype="ENTITY" fulltext="Group" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="eligible" datatype="Boolean" termtype="ATTRIBUTE" fulltext="thing.eligible">
+                <parentTerm text="thing" datatype="Thing" termtype="ENTITY" fulltext="thing" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Group" datatype="Group" termtype="ENTITY" fulltext="Group" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="F"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

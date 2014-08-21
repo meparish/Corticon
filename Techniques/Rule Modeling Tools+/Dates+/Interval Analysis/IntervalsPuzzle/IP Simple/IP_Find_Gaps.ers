@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" majorServiceNumber="3" buildNumber="5565" updateStamp="_fW4FEIoXEeO3YIGvhvl1jQ" externalChecksum="3054974779:507989954:1410878994">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_efWnMIoXEeO3YIGvhvl1jQ" vocabulary="IP.ecore#/">
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(R1->exists(start>X.end,start&lt;Y.start))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( R1 ->exists( R1.start > X.end , R1.start &lt; Y.start ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="R1" datatype="Boolean" termtype="COLLECTION" fulltext="R1->notEmpty">
+                <parentTerm text="R1" datatype="Interval" termtype="ENTITY" fulltext="R1" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="start" datatype="DateTime" termtype="ATTRIBUTE" fulltext="R1.start">
+                <parentTerm text="R1" datatype="Interval" termtype="ENTITY" fulltext="R1" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="X.end">
+                <parentTerm text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="start" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Y.start">
+                <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="R1->exists(start>X.end,start&lt;Y.start)" rhs="F"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(R2->exists(end>X.end, end&lt;= Y.start,name&lt;>Y.name))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( R2 ->exists( R2.end > X.end , R2.end &lt;= Y.start , R2.name &lt;> Y.name ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="R2" datatype="Boolean" termtype="COLLECTION" fulltext="R2->notEmpty">
+                <parentTerm text="R2" datatype="Interval" termtype="ENTITY" fulltext="R2" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="X.end">
+                <parentTerm text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="R2.end">
+                <parentTerm text="R2" datatype="Interval" termtype="ENTITY" fulltext="R2" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="R2.name">
+                <parentTerm text="R2" datatype="Interval" termtype="ENTITY" fulltext="R2" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="start" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Y.start">
+                <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Y.name">
+                <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="R2->exists(end>X.end, end&lt;= Y.start,name&lt;>Y.name)" rhs="F"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(R3->exists(start&lt;=X.end,end>=Y.start,name&lt;>Y.name))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( R3 ->exists( R3.start &lt;= X.end , R3.end >= Y.start , R3.name &lt;> Y.name ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="R3" datatype="Boolean" termtype="COLLECTION" fulltext="R3->notEmpty">
+                <parentTerm text="R3" datatype="Interval" termtype="ENTITY" fulltext="R3" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="R3.name">
+                <parentTerm text="R3" datatype="Interval" termtype="ENTITY" fulltext="R3" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="R3.end">
+                <parentTerm text="R3" datatype="Interval" termtype="ENTITY" fulltext="R3" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="start" datatype="DateTime" termtype="ATTRIBUTE" fulltext="R3.start">
+                <parentTerm text="R3" datatype="Interval" termtype="ENTITY" fulltext="R3" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="X.end">
+                <parentTerm text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="start" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Y.start">
+                <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Y.name">
+                <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="R3->exists(start&lt;=X.end,end>=Y.start,name&lt;>Y.name)" rhs="F"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Gap.new[start=X.end,end=Y.start,name=X.name+'-'+Y.name,gapDurationSeconds = X.end.secsBetween(Y.start)]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Gap.new [ Gap.start = X.end , Gap.name = X.name + '-' + Y.name , Gap.gapDurationSeconds = X.end.secsBetween ( Y.start ) , Gap.end = Y.start ]" datatype="Gap" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Gap" datatype="Gap" termtype="ENTITY" fulltext="Gap"/>
+              <terms text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Gap.end">
+                <parentTerm text="Gap" datatype="Gap" termtype="ENTITY" fulltext="Gap"/>
+              </terms>
+              <terms text="start" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Gap.start">
+                <parentTerm text="Gap" datatype="Gap" termtype="ENTITY" fulltext="Gap"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Gap.name">
+                <parentTerm text="Gap" datatype="Gap" termtype="ENTITY" fulltext="Gap"/>
+              </terms>
+              <terms text="gapDurationSeconds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Gap.gapDurationSeconds">
+                <parentTerm text="Gap" datatype="Gap" termtype="ENTITY" fulltext="Gap"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="secsBetween" datatype="Integer" termtype="METHOD" fulltext="X.end.secsBetween">
+                <parentTerm text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="X.end">
+                  <parentTerm text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="new" datatype="Gap" termtype="NEW" fulltext="Gap.new">
+                <parentTerm text="Gap" datatype="Gap" termtype="ENTITY" fulltext="Gap" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="X.end">
+                <parentTerm text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="start" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Y.start">
+                <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="X.name">
+                <parentTerm text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Y.name">
+                <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.1">
+      <opaqueExpression expression="X.end &lt; Y.start">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="X.end &lt; Y.start" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="X.end">
+              <parentTerm text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="start" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Y.start">
+              <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If there's nothing that starts or ends in between {X.name} and {Y.name} then there's a gap">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If there's nothing that starts or ends in between  + X.name +  and  + Y.name +  then there's a gap" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Y.name">
+              <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="X.name">
+              <parentTerm text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="IP.ecore#//Interval" ruleStatements="#//@ruleset/@ruleStatements.0" filters="#//@ruleset/@filters.0">
+      <alias value="X"/>
+      <referencedAttributes attribute="IP.ecore#//Interval/end"/>
+      <referencedAttributes attribute="IP.ecore#//Interval/name"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="IP.ecore#//Interval" filters="#//@ruleset/@filters.0">
+      <alias value="Y"/>
+      <referencedAttributes attribute="IP.ecore#//Interval/start"/>
+      <referencedAttributes attribute="IP.ecore#//Interval/name"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="IP.ecore#//Interval">
+      <alias value="R1"/>
+      <referencedAttributes attribute="IP.ecore#//Interval/start"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="IP.ecore#//Interval">
+      <alias value="R2"/>
+      <referencedAttributes attribute="IP.ecore#//Interval/name"/>
+      <referencedAttributes attribute="IP.ecore#//Interval/end"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="IP.ecore#//Interval">
+      <alias value="R3"/>
+      <referencedAttributes attribute="IP.ecore#//Interval/name"/>
+      <referencedAttributes attribute="IP.ecore#//Interval/end"/>
+      <referencedAttributes attribute="IP.ecore#//Interval/start"/>
+    </logicalVariable>
+    <logicalVariable entity="IP.ecore#//Gap">
+      <referencedAttributes attribute="IP.ecore#//Gap/end"/>
+      <referencedAttributes attribute="IP.ecore#//Gap/start"/>
+      <referencedAttributes attribute="IP.ecore#//Gap/name"/>
+      <referencedAttributes attribute="IP.ecore#//Gap/gapDurationSeconds"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightScope="65" sashWeightConditionsActions="37" sashWeightConditionsIf="49">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList rowHeight="58">
+        <naturalLanguageText value="Create a GAP record (from the end of X to the start of Y) and calculate its duration. Name it X-Y"/>
+        <valueSetCell valueSet=""/>
+        <expressionCell external="Gap.new[start=X.end,end=Y.start,name=X.name+'-'+Y.name,gapDurationSeconds = X.end.secsBetween(Y.start)]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Gap.new [ Gap.start = X.end , Gap.name = X.name + '-' + Y.name , Gap.gapDurationSeconds = X.end.secsBetween ( Y.start ) , Gap.end = Y.start ]" datatype="Gap" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="Gap" datatype="Gap" termtype="ENTITY" fulltext="Gap"/>
+              <terms text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Gap.end">
+                <parentTerm text="Gap" datatype="Gap" termtype="ENTITY" fulltext="Gap"/>
+              </terms>
+              <terms text="start" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Gap.start">
+                <parentTerm text="Gap" datatype="Gap" termtype="ENTITY" fulltext="Gap"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Gap.name">
+                <parentTerm text="Gap" datatype="Gap" termtype="ENTITY" fulltext="Gap"/>
+              </terms>
+              <terms text="gapDurationSeconds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Gap.gapDurationSeconds">
+                <parentTerm text="Gap" datatype="Gap" termtype="ENTITY" fulltext="Gap"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="secsBetween" datatype="Integer" termtype="METHOD" fulltext="X.end.secsBetween">
+                <parentTerm text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="X.end">
+                  <parentTerm text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="new" datatype="Gap" termtype="NEW" fulltext="Gap.new">
+                <parentTerm text="Gap" datatype="Gap" termtype="ENTITY" fulltext="Gap" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="X.end">
+                <parentTerm text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="start" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Y.start">
+                <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="X.name">
+                <parentTerm text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Y.name">
+                <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="X.end &lt; Y.start" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="X.end &lt; Y.start" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.2">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.3">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.4">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.4/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.4/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.4/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.5">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.5/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.5/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.5/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.5/@referencedAttributes.3"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="X.end &lt; Y.start">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="X.end &lt; Y.start" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="X.end">
+                <parentTerm text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="start" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Y.start">
+                <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="If there's nothing that starts or ends in between {X.name} and {Y.name} then there's a gap">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If there's nothing that starts or ends in between  + X.name +  and  + Y.name +  then there's a gap" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Y.name">
+                <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="X.name">
+                <parentTerm text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList rowHeight="46">
+        <naturalLanguageText value="Case 1: For all intervals X and Y (X ends before Y starts) is there an interval that starts after X ends but before Y starts (overlaps X but not Y)"/>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="R1->exists(start>X.end,start&lt;Y.start)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="R1 ->exists( R1.start > X.end , R1.start &lt; Y.start )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="R1" datatype="Boolean" termtype="COLLECTION" fulltext="R1->notEmpty">
+                <parentTerm text="R1" datatype="Interval" termtype="ENTITY" fulltext="R1" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="start" datatype="DateTime" termtype="ATTRIBUTE" fulltext="R1.start">
+                <parentTerm text="R1" datatype="Interval" termtype="ENTITY" fulltext="R1" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="X.end">
+                <parentTerm text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="start" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Y.start">
+                <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList rowHeight="45">
+        <naturalLanguageText value="Case2: For all intervals X and Y (X ends before Y starts) is there an interval (other than X or Y) that ends after X ends but  before Y starts (overlaps Y but not X)"/>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="R2->exists(end>X.end, end&lt;= Y.start,name&lt;>Y.name)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="R2 ->exists( R2.end > X.end , R2.end &lt;= Y.start , R2.name &lt;> Y.name )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="R2" datatype="Boolean" termtype="COLLECTION" fulltext="R2->notEmpty">
+                <parentTerm text="R2" datatype="Interval" termtype="ENTITY" fulltext="R2" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="X.end">
+                <parentTerm text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="R2.end">
+                <parentTerm text="R2" datatype="Interval" termtype="ENTITY" fulltext="R2" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="R2.name">
+                <parentTerm text="R2" datatype="Interval" termtype="ENTITY" fulltext="R2" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="start" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Y.start">
+                <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Y.name">
+                <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList rowHeight="48">
+        <naturalLanguageText value="Case 3: For all intervals X and Y (X ends before Y starts) is there an interval (other than X or Y) that starts before X ends and ends after Y starts (Surrounds both X and Y)"/>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="R3->exists(start&lt;=X.end,end>=Y.start,name&lt;>Y.name)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="R3 ->exists( R3.start &lt;= X.end , R3.end >= Y.start , R3.name &lt;> Y.name )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="R3" datatype="Boolean" termtype="COLLECTION" fulltext="R3->notEmpty">
+                <parentTerm text="R3" datatype="Interval" termtype="ENTITY" fulltext="R3" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="R3.name">
+                <parentTerm text="R3" datatype="Interval" termtype="ENTITY" fulltext="R3" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="R3.end">
+                <parentTerm text="R3" datatype="Interval" termtype="ENTITY" fulltext="R3" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="start" datatype="DateTime" termtype="ATTRIBUTE" fulltext="R3.start">
+                <parentTerm text="R3" datatype="Interval" termtype="ENTITY" fulltext="R3" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="end" datatype="DateTime" termtype="ATTRIBUTE" fulltext="X.end">
+                <parentTerm text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="start" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Y.start">
+                <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Y.name">
+                <parentTerm text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Y" datatype="Interval" termtype="ENTITY" fulltext="Y" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="X" datatype="Interval" termtype="ENTITY" fulltext="X" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet=""/>
+        <conditionValueSetCellList valueSet=""/>
+        <conditionValueSetCellList valueSet=""/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

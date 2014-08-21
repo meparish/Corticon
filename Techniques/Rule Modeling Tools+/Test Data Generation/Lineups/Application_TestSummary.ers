@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_t12132qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_lrbxgGqnEeGMCd15vaZIXw" vocabulary="Application.ecore#/">
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2 #//@ruleset/@ruleStatements.3"/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.4">
+      <condition>
+        <opaqueExpression expression="(Control.count = Control.invalid + Control.unknown + Control.vallid)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Control.count = Control.invalid + Control.unknown + Control.vallid ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.count">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="unknown" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.unknown">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="vallid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.vallid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Control.count = Control.invalid + Control.unknown + Control.vallid" rhs="T"/>
+      </condition>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.5">
+      <condition>
+        <opaqueExpression expression="(Control.count = Control.invalid + Control.unknown + Control.vallid)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Control.count = Control.invalid + Control.unknown + Control.vallid ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.count">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="unknown" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.unknown">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="vallid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.vallid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Control.count = Control.invalid + Control.unknown + Control.vallid" rhs="F"/>
+      </condition>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Valid {Control.vallid}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Valid  + Control.vallid" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="vallid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.vallid">
+              <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Invallid {Control.invalid}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Invallid  + Control.invalid" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+              <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Unknown {Control.unknown}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Unknown  + Control.unknown" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="unknown" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.unknown">
+              <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Total {Control.count}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Total  + Control.count" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.count">
+              <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Totals are consistent">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Totals are consistent" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Totals do not match - thtis suggests the rules contain ambiguities">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Totals do not match - thtis suggests the rules contain ambiguities" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="Application.ecore#//Control" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2 #//@ruleset/@ruleStatements.3 #//@ruleset/@ruleStatements.4 #//@ruleset/@ruleStatements.5">
+      <referencedAttributes attribute="Application.ecore#//Control/unknown"/>
+      <referencedAttributes attribute="Application.ecore#//Control/count"/>
+      <referencedAttributes attribute="Application.ecore#//Control/vallid"/>
+      <referencedAttributes attribute="Application.ecore#//Control/invalid"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5"/>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="0"/>
+        <text external="Valid {Control.vallid}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Valid  + Control.vallid" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="vallid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.vallid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="0"/>
+        <text external="Invallid {Control.invalid}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Invallid  + Control.invalid" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="0"/>
+        <text external="Unknown {Control.unknown}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Unknown  + Control.unknown" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="unknown" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.unknown">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="0"/>
+        <text external="Total {Control.count}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Total  + Control.count" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.count">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.4">
+        <reference external="1"/>
+        <text external="Totals are consistent">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Totals are consistent" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.5">
+        <reference external="2"/>
+        <text external="Totals do not match - thtis suggests the rules contain ambiguities">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Totals do not match - thtis suggests the rules contain ambiguities" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="Control.count = Control.invalid + Control.unknown + Control.vallid">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Control.count = Control.invalid + Control.unknown + Control.vallid" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="unknown" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.unknown">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.count">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="vallid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.vallid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="invalid" datatype="Integer" termtype="ATTRIBUTE" fulltext="Control.invalid">
+                <parentTerm text="Control" datatype="Control" termtype="ENTITY" fulltext="Control" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="F"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

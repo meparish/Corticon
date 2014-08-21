@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_tJ_N8GqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_ladWQGqnEeGMCd15vaZIXw" vocabulary="ResourceAllocation.ecore#/">
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0"/>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+      <text expression="ASSIGNED: Workitem {w.name} type={w.type}, effort= {w.workEffort}, priority={w.priority} is assigned to {p.name}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ASSIGNED: Workitem  + w.name +  type= + w.type + , effort=  + w.workEffort + , priority= + w.priority +  is assigned to  + p.name" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="priority" datatype="Integer" termtype="ATTRIBUTE" fulltext="w.priority">
+              <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="workEffort" datatype="Integer" termtype="ATTRIBUTE" fulltext="w.workEffort">
+              <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="w.name">
+              <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="w.type">
+              <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p.name">
+              <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="ResourceAllocation.ecore#//Person">
+      <alias value="p"/>
+      <extension explicit="true" association="true" entity="ResourceAllocation.ecore#//Workitem" traversedAssocRole="ResourceAllocation.ecore#//Person/workitem" ruleStatements="#//@ruleset/@ruleStatements.0">
+        <alias value="w"/>
+        <referencedAttributes attribute="ResourceAllocation.ecore#//Workitem/priority"/>
+        <referencedAttributes attribute="ResourceAllocation.ecore#//Workitem/workEffort"/>
+        <referencedAttributes attribute="ResourceAllocation.ecore#//Workitem/name"/>
+        <referencedAttributes attribute="ResourceAllocation.ecore#//Workitem/type"/>
+      </extension>
+      <referencedAttributes attribute="ResourceAllocation.ecore#//Person/name"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5"/>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.3"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="0"/>
+        <text external="ASSIGNED: Workitem {w.name} type={w.type}, effort= {w.workEffort}, priority={w.priority} is assigned to {p.name}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ASSIGNED: Workitem  + w.name +  type= + w.type + , effort=  + w.workEffort + , priority= + w.priority +  is assigned to  + p.name" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="priority" datatype="Integer" termtype="ATTRIBUTE" fulltext="w.priority">
+                <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="workEffort" datatype="Integer" termtype="ATTRIBUTE" fulltext="w.workEffort">
+                <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="w.name">
+                <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="w.type">
+                <parentTerm text="w" datatype="Workitem" termtype="ENTITY" fulltext="w" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p.name">
+                <parentTerm text="p" datatype="Person" termtype="ENTITY" fulltext="p" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

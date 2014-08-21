@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_wwL4Il9qEeK5X6DgK8LYSA" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_lIJeQGqnEeGMCd15vaZIXw" vocabulary="Edges.ecore#/">
+    <rule/>
+    <rule>
+      <condition>
+        <opaqueExpression expression="(e1.end = e2.start)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( e1.end = e2.start ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="e1.end">
+                <parentTerm text="e1" datatype="Edge" termtype="ENTITY" fulltext="e1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="e2.start">
+                <parentTerm text="e2" datatype="Edge" termtype="ENTITY" fulltext="e2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="e1.end = e2.start" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(e2.end = e3.start)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( e2.end = e3.start ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="e2.end">
+                <parentTerm text="e2" datatype="Edge" termtype="ENTITY" fulltext="e2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="e3.start">
+                <parentTerm text="e3" datatype="Edge" termtype="ENTITY" fulltext="e3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="e2.end = e3.start" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(e3.end = e1.start)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( e3.end = e1.start ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="e3.end">
+                <parentTerm text="e3" datatype="Edge" termtype="ENTITY" fulltext="e3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="e1.start">
+                <parentTerm text="e1" datatype="Edge" termtype="ENTITY" fulltext="e1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="e3.end = e1.start" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Triangle.new[&#xD;&#xA;node1=e1.start,&#xD;&#xA;node2=e2.start,&#xD;&#xA;node3=e3.start,&#xD;&#xA;length=e1.distance+e2.distance+e3.distance&#xD;&#xA;]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Triangle.new [ Triangle.node3 = e3.start , Triangle.node2 = e2.start , Triangle.node1 = e1.start , Triangle.length = e1.distance + e2.distance + e3.distance ]" datatype="Triangle" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="node3" datatype="String" termtype="ATTRIBUTE" fulltext="Triangle.node3">
+                <parentTerm text="Triangle" datatype="Triangle" termtype="ENTITY" fulltext="Triangle"/>
+              </terms>
+              <terms text="Triangle" datatype="Triangle" termtype="ENTITY" fulltext="Triangle"/>
+              <terms text="node2" datatype="String" termtype="ATTRIBUTE" fulltext="Triangle.node2">
+                <parentTerm text="Triangle" datatype="Triangle" termtype="ENTITY" fulltext="Triangle"/>
+              </terms>
+              <terms text="node1" datatype="String" termtype="ATTRIBUTE" fulltext="Triangle.node1">
+                <parentTerm text="Triangle" datatype="Triangle" termtype="ENTITY" fulltext="Triangle"/>
+              </terms>
+              <terms text="length" datatype="Integer" termtype="ATTRIBUTE" fulltext="Triangle.length">
+                <parentTerm text="Triangle" datatype="Triangle" termtype="ENTITY" fulltext="Triangle"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="e2.distance">
+                <parentTerm text="e2" datatype="Edge" termtype="ENTITY" fulltext="e2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="new" datatype="Triangle" termtype="NEW" fulltext="Triangle.new">
+                <parentTerm text="Triangle" datatype="Triangle" termtype="ENTITY" fulltext="Triangle" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="e1.distance">
+                <parentTerm text="e1" datatype="Edge" termtype="ENTITY" fulltext="e1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="e3.start">
+                <parentTerm text="e3" datatype="Edge" termtype="ENTITY" fulltext="e3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="e3.distance">
+                <parentTerm text="e3" datatype="Edge" termtype="ENTITY" fulltext="e3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="e2.start">
+                <parentTerm text="e2" datatype="Edge" termtype="ENTITY" fulltext="e2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="e1.start">
+                <parentTerm text="e1" datatype="Edge" termtype="ENTITY" fulltext="e1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter>
+      <opaqueExpression expression="e1&lt;>e2">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="e1 &lt;> e2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="e1" datatype="Edge" termtype="ENTITY" fulltext="e1" variable="#//@ruleset/@logicalVariables.0"/>
+            <terms text="e2" datatype="Edge" termtype="ENTITY" fulltext="e2" variable="#//@ruleset/@logicalVariables.1"/>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter>
+      <opaqueExpression expression="e2&lt;>e3">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="e2 &lt;> e3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="e3" datatype="Edge" termtype="ENTITY" fulltext="e3" variable="#//@ruleset/@logicalVariables.2"/>
+            <terms text="e2" datatype="Edge" termtype="ENTITY" fulltext="e2" variable="#//@ruleset/@logicalVariables.1"/>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter>
+      <opaqueExpression expression="e1&lt;>e3">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="e1 &lt;> e3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="e3" datatype="Edge" termtype="ENTITY" fulltext="e3" variable="#//@ruleset/@logicalVariables.2"/>
+            <terms text="e1" datatype="Edge" termtype="ENTITY" fulltext="e1" variable="#//@ruleset/@logicalVariables.0"/>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement>
+      <text expression="when you find three different edges that make up a triangle create a new triangle object">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="when you find three different edges that make up a triangle create a new triangle object" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="Edges.ecore#//Edge">
+      <alias value="e1"/>
+      <referencedAttributes attribute="Edges.ecore#//Edge/end"/>
+      <referencedAttributes attribute="Edges.ecore#//Edge/start"/>
+      <referencedAttributes attribute="Edges.ecore#//Edge/distance"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="Edges.ecore#//Edge">
+      <alias value="e2"/>
+      <referencedAttributes attribute="Edges.ecore#//Edge/start"/>
+      <referencedAttributes attribute="Edges.ecore#//Edge/end"/>
+      <referencedAttributes attribute="Edges.ecore#//Edge/distance"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="Edges.ecore#//Edge">
+      <alias value="e3"/>
+      <referencedAttributes attribute="Edges.ecore#//Edge/start"/>
+      <referencedAttributes attribute="Edges.ecore#//Edge/end"/>
+      <referencedAttributes attribute="Edges.ecore#//Edge/distance"/>
+    </logicalVariable>
+    <logicalVariable entity="Edges.ecore#//Triangle">
+      <referencedAttributes attribute="Edges.ecore#//Triangle/node3"/>
+      <referencedAttributes attribute="Edges.ecore#//Triangle/node2"/>
+      <referencedAttributes attribute="Edges.ecore#//Triangle/node1"/>
+      <referencedAttributes attribute="Edges.ecore#//Triangle/length"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightConditionsActions="16" sashWeightConditionsIf="26">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList rowHeight="94">
+        <valueSetCell/>
+        <expressionCell external="Triangle.new[&#xD;&#xA;node1=e1.start,&#xD;&#xA;node2=e2.start,&#xD;&#xA;node3=e3.start,&#xD;&#xA;length=e1.distance+e2.distance+e3.distance&#xD;&#xA;]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Triangle.new [ Triangle.node3 = e3.start , Triangle.node2 = e2.start , Triangle.node1 = e1.start , Triangle.length = e1.distance + e2.distance + e3.distance ]" datatype="Triangle" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="node3" datatype="String" termtype="ATTRIBUTE" fulltext="Triangle.node3">
+                <parentTerm text="Triangle" datatype="Triangle" termtype="ENTITY" fulltext="Triangle"/>
+              </terms>
+              <terms text="Triangle" datatype="Triangle" termtype="ENTITY" fulltext="Triangle"/>
+              <terms text="node2" datatype="String" termtype="ATTRIBUTE" fulltext="Triangle.node2">
+                <parentTerm text="Triangle" datatype="Triangle" termtype="ENTITY" fulltext="Triangle"/>
+              </terms>
+              <terms text="node1" datatype="String" termtype="ATTRIBUTE" fulltext="Triangle.node1">
+                <parentTerm text="Triangle" datatype="Triangle" termtype="ENTITY" fulltext="Triangle"/>
+              </terms>
+              <terms text="length" datatype="Integer" termtype="ATTRIBUTE" fulltext="Triangle.length">
+                <parentTerm text="Triangle" datatype="Triangle" termtype="ENTITY" fulltext="Triangle"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="e2.distance">
+                <parentTerm text="e2" datatype="Edge" termtype="ENTITY" fulltext="e2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="new" datatype="Triangle" termtype="NEW" fulltext="Triangle.new">
+                <parentTerm text="Triangle" datatype="Triangle" termtype="ENTITY" fulltext="Triangle" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="e1.distance">
+                <parentTerm text="e1" datatype="Edge" termtype="ENTITY" fulltext="e1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="e3.start">
+                <parentTerm text="e3" datatype="Edge" termtype="ENTITY" fulltext="e3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="e3.distance">
+                <parentTerm text="e3" datatype="Edge" termtype="ENTITY" fulltext="e3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="e2.start">
+                <parentTerm text="e2" datatype="Edge" termtype="ENTITY" fulltext="e2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="e1.start">
+                <parentTerm text="e1" datatype="Edge" termtype="ENTITY" fulltext="e1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="e1&lt;>e2" filter="#//@ruleset/@filters.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="e1&lt;>e3" filter="#//@ruleset/@filters.2"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="e1&lt;>e2" filter="#//@ruleset/@filters.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="e2&lt;>e3" filter="#//@ruleset/@filters.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="e2&lt;>e3" filter="#//@ruleset/@filters.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="e1&lt;>e3" filter="#//@ruleset/@filters.2"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.3">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.3"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="e1&lt;>e2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="e1 &lt;> e2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="e1" datatype="Edge" termtype="ENTITY" fulltext="e1" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="e2" datatype="Edge" termtype="ENTITY" fulltext="e2" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.1">
+        <expressionCell external="e2&lt;>e3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="e2 &lt;> e3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="e3" datatype="Edge" termtype="ENTITY" fulltext="e3" variable="#//@ruleset/@logicalVariables.2"/>
+              <terms text="e2" datatype="Edge" termtype="ENTITY" fulltext="e2" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.2">
+        <expressionCell external="e1&lt;>e3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="e1 &lt;> e3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="e3" datatype="Edge" termtype="ENTITY" fulltext="e3" variable="#//@ruleset/@logicalVariables.2"/>
+              <terms text="e1" datatype="Edge" termtype="ENTITY" fulltext="e1" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference/>
+        <text external="when you find three different edges that make up a triangle create a new triangle object">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="when you find three different edges that make up a triangle create a new triangle object" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="e1.end = e2.start">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="e1.end = e2.start" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="e1.end">
+                <parentTerm text="e1" datatype="Edge" termtype="ENTITY" fulltext="e1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="e2.start">
+                <parentTerm text="e2" datatype="Edge" termtype="ENTITY" fulltext="e2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="e2.end = e3.start">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="e2.end = e3.start" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="e2.end">
+                <parentTerm text="e2" datatype="Edge" termtype="ENTITY" fulltext="e2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="e3.start">
+                <parentTerm text="e3" datatype="Edge" termtype="ENTITY" fulltext="e3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="e3.end = e1.start">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="e3.end = e1.start" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="e3.end">
+                <parentTerm text="e3" datatype="Edge" termtype="ENTITY" fulltext="e3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="e1.start">
+                <parentTerm text="e1" datatype="Edge" termtype="ENTITY" fulltext="e1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

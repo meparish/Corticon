@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_p2FNGWqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:876836273">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_k4aZIWqnEeGMCd15vaZIXw" vocabulary="GWLBusinessDaysCalculator.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="Holiday.new[name='New years day',date='1/1/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'New years day' , Holiday.date = '1/1/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Holiday.new[name='MLK day',date='1/21/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'MLK day' , Holiday.date = '1/21/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Holiday.new[name='Washingtons birthday',date='2/18/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Washingtons birthday' , Holiday.date = '2/18/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Holiday.new[name='Good Friday',date='3/21/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Good Friday' , Holiday.date = '3/21/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="Holiday.new[name='Memorial day',date='5/26/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Memorial day' , Holiday.date = '5/26/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Holiday.new[name='Day before Independence day',date='7/3/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Day before Independence day' , Holiday.date = '7/3/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Holiday.new[name='Independence day',date='7/4/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Independence day' , Holiday.date = '7/4/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Holiday.new[name='Labor day',date='9/1/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Labor day' , Holiday.date = '9/1/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Holiday.new[name='Columbus day',date='10/13/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Columbus day' , Holiday.date = '10/13/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Holiday.new[name='Veterans day',date='11/11/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Veterans day' , Holiday.date = '11/11/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Holiday.new[name='Thanksgiving day',date='11/27/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Thanksgiving day' , Holiday.date = '11/27/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Holiday.new[name='Day after thanksgiving',date='11/28/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Day after thanksgiving' , Holiday.date = '11/28/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Holiday.new[name='Christmas eve',date='12/24/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Christmas eve' , Holiday.date = '12/24/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Holiday.new[name='Christmas day',date='12/25/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Christmas day' , Holiday.date = '12/25/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Holiday.new[name='New years day',date='1/1/2009']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'New years day' , Holiday.date = '1/1/2009' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.0/@actions.4">
+      <text expression="Memorial day is the last Monday in May">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Memorial day is the last Monday in May" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="GWLBusinessDaysCalculator.ecore#//Holiday">
+      <referencedAttributes attribute="GWLBusinessDaysCalculator.ecore#//Holiday/name"/>
+      <referencedAttributes attribute="GWLBusinessDaysCalculator.ecore#//Holiday/date"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightConditionsActions="27" sashWeightConditionsIf="73">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Holiday.new[name='New years day',date='1/1/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'New years day' , Holiday.date = '1/1/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Holiday.new[name='MLK day',date='1/21/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'MLK day' , Holiday.date = '1/21/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Holiday.new[name='Washingtons birthday',date='2/18/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Washingtons birthday' , Holiday.date = '2/18/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Holiday.new[name='Good Friday',date='3/21/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Good Friday' , Holiday.date = '3/21/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Holiday.new[name='Memorial day',date='5/26/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Memorial day' , Holiday.date = '5/26/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Holiday.new[name='Day before Independence day',date='7/3/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Day before Independence day' , Holiday.date = '7/3/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Holiday.new[name='Independence day',date='7/4/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Independence day' , Holiday.date = '7/4/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Holiday.new[name='Labor day',date='9/1/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Labor day' , Holiday.date = '9/1/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Holiday.new[name='Columbus day',date='10/13/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Columbus day' , Holiday.date = '10/13/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Holiday.new[name='Veterans day',date='11/11/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Veterans day' , Holiday.date = '11/11/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Holiday.new[name='Thanksgiving day',date='11/27/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Thanksgiving day' , Holiday.date = '11/27/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Holiday.new[name='Day after thanksgiving',date='11/28/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Day after thanksgiving' , Holiday.date = '11/28/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Holiday.new[name='Christmas eve',date='12/24/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Christmas eve' , Holiday.date = '12/24/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Holiday.new[name='Christmas day',date='12/25/2008']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'Christmas day' , Holiday.date = '12/25/2008' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Holiday.new[name='New years day',date='1/1/2009']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Holiday.new [ Holiday.name = 'New years day' , Holiday.date = '1/1/2009' ]" datatype="Holiday" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Holiday.name">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="date" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.date">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+              </terms>
+              <terms text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Holiday" termtype="NEW" fulltext="Holiday.new">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="E0"/>
+        <text external="Memorial day is the last Monday in May">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Memorial day is the last Monday in May" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

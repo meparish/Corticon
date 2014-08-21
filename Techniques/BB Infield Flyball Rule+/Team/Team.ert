@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_urW56GqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_urvUtmqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_mBdr4WqnEeGMCd15vaZIXw" ruleActivity="Team.erf#//@ruleflow">
+      <input/>
+      <output/>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Team.ecore#//Team">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="A" eAttribute="Team.ecore#//Team/name"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Team.ecore#//Team">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="B" eAttribute="Team.ecore#//Team/name"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Team.ecore#//Team">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="C" eAttribute="Team.ecore#//Team/name"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Team.ecore#//Team">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="D" eAttribute="Team.ecore#//Team/name"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="AC" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.2/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.4/@children.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.5/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.7/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.11/@children.1" eReference="Team.ecore#//Game/awayTeam" eClass="Team.ecore#//Team">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="C" eAttribute="Team.ecore#//Team/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.6/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.7/@children.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.8/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.10/@children.1" eReference="Team.ecore#//Game/homeTeam" eClass="Team.ecore#//Team">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="A" eAttribute="Team.ecore#//Team/name"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="DA" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.2/@children.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.4/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.6/@children.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.9/@children.1" eReference="Team.ecore#//Game/homeTeam" eClass="Team.ecore#//Team">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="D" eAttribute="Team.ecore#//Team/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="CD" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="DB" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.5/@children.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.8/@children.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.9/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.10/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.11/@children.2" eReference="Team.ecore#//Game/awayTeam" eClass="Team.ecore#//Team">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="B" eAttribute="Team.ecore#//Team/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="DC" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="CB" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="AD" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="8" newOrModified="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="CA" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="9" newOrModified="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="AB" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="10" newOrModified="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="BD" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="11" newOrModified="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="BA" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="12" newOrModified="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="BC" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3/@children.1"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="AC" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.2/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.4/@children.1 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.5/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.7/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.11/@children.1" eReference="Team.ecore#//Game/awayTeam" eClass="Team.ecore#//Team">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="C" eAttribute="Team.ecore#//Team/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.6/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.7/@children.1 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.8/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.10/@children.1" eReference="Team.ecore#//Game/homeTeam" eClass="Team.ecore#//Team">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="A" eAttribute="Team.ecore#//Team/name"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="DA" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.2/@children.1 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.3/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.4/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.6/@children.1 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.9/@children.1" eReference="Team.ecore#//Game/homeTeam" eClass="Team.ecore#//Team">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="D" eAttribute="Team.ecore#//Team/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="CD" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" manuallyCreated="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="DB" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.5/@children.1 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.8/@children.1 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.9/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.10/@children.2 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.11/@children.2" eReference="Team.ecore#//Game/awayTeam" eClass="Team.ecore#//Team">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="B" eAttribute="Team.ecore#//Team/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" manuallyCreated="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="DC" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" manuallyCreated="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="CB" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.3/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" manuallyCreated="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="AD" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="8" newOrModified="true" manuallyCreated="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="CA" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="9" newOrModified="true" manuallyCreated="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="AB" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.3/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="10" newOrModified="true" manuallyCreated="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="BD" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.3/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="11" newOrModified="true" manuallyCreated="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="BA" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.3/@children.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="12" newOrModified="true" manuallyCreated="true" eClass="Team.ecore#//Game">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="BC" eAttribute="Team.ecore#//Game/gameName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/awayTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="Team.ecore#//Game/homeTeam" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.3/@children.1"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_keqcYGqnEeGMCd15vaZIXw" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="Team.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="Team_1"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

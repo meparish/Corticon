@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_ri5UO2qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_lHk2gGqnEeGMCd15vaZIXw" vocabulary="Edges.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(path.end=connector.start)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( path.end = connector.start ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="connector.start">
+                <parentTerm text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="path.end">
+                <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="path.end=connector.start" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(path.start = connector.end)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( path.start = connector.end ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="connector.end">
+                <parentTerm text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="path.start">
+                <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="path.start = connector.end" rhs="F"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(path.name.contains(connector.end))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( path.name.contains ( connector.end ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="connector.end">
+                <parentTerm text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="contains" datatype="boolean" termtype="METHOD" fulltext="path.name.contains">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="path.name">
+                  <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="path.name.contains(connector.end)" rhs="F"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(anyPath->exists(name.startsWith(path.name), name.endsWith(connector.end)))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( anyPath ->exists( anyPath.name.startsWith ( path.name ) , anyPath.name.endsWith ( connector.end ) ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="anyPath" datatype="Boolean" termtype="COLLECTION" fulltext="anyPath->notEmpty">
+                <parentTerm text="anyPath" datatype="Path" termtype="ENTITY" fulltext="anyPath" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="connector.end">
+                <parentTerm text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="endsWith" datatype="boolean" termtype="METHOD" fulltext="anyPath.name.endsWith">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="anyPath.name">
+                  <parentTerm text="anyPath" datatype="Path" termtype="ENTITY" fulltext="anyPath" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                    <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="startsWith" datatype="boolean" termtype="METHOD" fulltext="anyPath.name.startsWith">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="anyPath.name">
+                  <parentTerm text="anyPath" datatype="Path" termtype="ENTITY" fulltext="anyPath" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                    <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="path.name">
+                <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="anyPath->exists(name.startsWith(path.name), name.endsWith(connector.end))" rhs="F"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="workflow.paths+=Path.newUnique[start=path.start,end=connector.end,distance=path.distance+connector.distance,hops=path.hops+1,name=path.name.concat(connector.end)]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="workflow.paths += Path.newUnique [ Path.start = path.start , Path.name = path.name.concat ( connector.end ) , Path.hops = path.hops + 1 , Path.end = connector.end , Path.distance = path.distance + connector.distance ]" datatype="Path" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="paths" datatype="Path" termtype="ENTITY" fulltext="workflow.paths">
+                <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="connector.end">
+                <parentTerm text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="path.start">
+                <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="hops" datatype="Integer" termtype="ATTRIBUTE" fulltext="path.hops">
+                <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="path.distance">
+                <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="connector.distance">
+                <parentTerm text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="concat" datatype="String" termtype="METHOD" fulltext="path.name.concat">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="path.name">
+                  <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+      <text expression="Adding edge {connector.start}{connector.end} to path {path.name} giving {path.name}{connector.end}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Adding edge  + connector.start + connector.end +  to path  + path.name +  giving  + path.name + connector.end" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="connector.end">
+              <parentTerm text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="connector.start">
+              <parentTerm text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="path.name">
+              <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="Edges.ecore#//Workflow">
+      <alias value="workflow"/>
+      <extension explicit="true" association="true" entity="Edges.ecore#//Path" traversedAssocRole="Edges.ecore#//Workflow/paths">
+        <alias value="path"/>
+        <referencedAttributes attribute="Edges.ecore#//Path/end"/>
+        <referencedAttributes attribute="Edges.ecore#//Path/start"/>
+        <referencedAttributes attribute="Edges.ecore#//Path/name"/>
+        <referencedAttributes attribute="Edges.ecore#//Path/hops"/>
+        <referencedAttributes attribute="Edges.ecore#//Path/distance"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Edges.ecore#//Edge" traversedAssocRole="Edges.ecore#//Workflow/edges" ruleStatements="#//@ruleset/@ruleStatements.0">
+        <alias value="connector"/>
+        <referencedAttributes attribute="Edges.ecore#//Edge/start"/>
+        <referencedAttributes attribute="Edges.ecore#//Edge/end"/>
+        <referencedAttributes attribute="Edges.ecore#//Edge/distance"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Edges.ecore#//Path" traversedAssocRole="Edges.ecore#//Workflow/paths">
+        <alias value="anyPath"/>
+        <referencedAttributes attribute="Edges.ecore#//Path/name"/>
+      </extension>
+      <extension association="true" entity="Edges.ecore#//Path" traversedAssocRole="Edges.ecore#//Workflow/paths"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="workflow.paths+=Path.newUnique[start=path.start,end=connector.end,distance=path.distance+connector.distance,hops=path.hops+1,name=path.name.concat(connector.end)]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="workflow.paths += Path.newUnique [ Path.start = path.start , Path.name = path.name.concat ( connector.end ) , Path.hops = path.hops + 1 , Path.end = connector.end , Path.distance = path.distance + connector.distance ]" datatype="Path" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="paths" datatype="Path" termtype="ENTITY" fulltext="workflow.paths">
+                <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="connector.end">
+                <parentTerm text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="path.start">
+                <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="hops" datatype="Integer" termtype="ATTRIBUTE" fulltext="path.hops">
+                <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="path.distance">
+                <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="connector.distance">
+                <parentTerm text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="concat" datatype="String" termtype="METHOD" fulltext="path.name.concat">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="path.name">
+                  <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.3"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.4"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.2"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.2">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.2/@referencedAttributes.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.3"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="Adding edge {connector.start}{connector.end} to path {path.name} giving {path.name}{connector.end}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Adding edge  + connector.start + connector.end +  to path  + path.name +  giving  + path.name + connector.end" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="connector.end">
+                <parentTerm text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="connector.start">
+                <parentTerm text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="path.name">
+                <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="path.end=connector.start">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="path.end = connector.start" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="connector.start">
+                <parentTerm text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="path.end">
+                <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="path.start = connector.end">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="path.start = connector.end" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="connector.end">
+                <parentTerm text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="start" datatype="String" termtype="ATTRIBUTE" fulltext="path.start">
+                <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="path.name.contains(connector.end)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="path.name.contains ( connector.end )" datatype="boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="connector.end">
+                <parentTerm text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="contains" datatype="boolean" termtype="METHOD" fulltext="path.name.contains">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="path.name">
+                  <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="anyPath->exists(name.startsWith(path.name), name.endsWith(connector.end))">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="anyPath ->exists( anyPath.name.startsWith ( path.name ) , anyPath.name.endsWith ( connector.end ) )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="anyPath" datatype="Boolean" termtype="COLLECTION" fulltext="anyPath->notEmpty">
+                <parentTerm text="anyPath" datatype="Path" termtype="ENTITY" fulltext="anyPath" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="end" datatype="String" termtype="ATTRIBUTE" fulltext="connector.end">
+                <parentTerm text="connector" datatype="Edge" termtype="ENTITY" fulltext="connector" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="endsWith" datatype="boolean" termtype="METHOD" fulltext="anyPath.name.endsWith">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="anyPath.name">
+                  <parentTerm text="anyPath" datatype="Path" termtype="ENTITY" fulltext="anyPath" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                    <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="startsWith" datatype="boolean" termtype="METHOD" fulltext="anyPath.name.startsWith">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="anyPath.name">
+                  <parentTerm text="anyPath" datatype="Path" termtype="ENTITY" fulltext="anyPath" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                    <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="path.name">
+                <parentTerm text="path" datatype="Path" termtype="ENTITY" fulltext="path" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="workflow" datatype="Workflow" termtype="ENTITY" fulltext="workflow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

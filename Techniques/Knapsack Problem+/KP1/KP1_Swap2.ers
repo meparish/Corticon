@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_peXrYBuSEeKdf77hcJeZKQ" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_lO60oGqnEeGMCd15vaZIXw" vocabulary="KP1.ecore#/">
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0"/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="(thing1.value &lt; thing2.value)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( thing1.value &lt; thing2.value ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="value" datatype="Integer" termtype="ATTRIBUTE" fulltext="thing1.value">
+                <parentTerm text="thing1" datatype="Things" termtype="ENTITY" fulltext="thing1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="value" datatype="Integer" termtype="ATTRIBUTE" fulltext="thing2.value">
+                <parentTerm text="thing2" datatype="Things" termtype="ENTITY" fulltext="thing2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="thing1.value &lt; thing2.value" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="thing1.container.contents += thing2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="thing1.container.contents += thing2" datatype="Things" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="contents" datatype="Things" termtype="ENTITY" fulltext="thing1.container.contents">
+                <parentTerm text="container" datatype="Containers" termtype="ENTITY" fulltext="thing1.container">
+                  <parentTerm text="thing1" datatype="Things" termtype="ENTITY" fulltext="thing1"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="container" datatype="Containers" termtype="ENTITY" fulltext="thing1.container" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="thing1" datatype="Things" termtype="ENTITY" fulltext="thing1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="thing2" datatype="Things" termtype="ENTITY" fulltext="thing2" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="thing1.container.contents -= thing1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="thing1.container.contents -= thing1" datatype="Things" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList/>
+            <referencedTermList>
+              <terms text="container" datatype="Containers" termtype="ENTITY" fulltext="thing1.container" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="thing1" datatype="Things" termtype="ENTITY" fulltext="thing1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="thing1" datatype="Things" termtype="ENTITY" fulltext="thing1" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter>
+      <opaqueExpression expression="thing1.inabox">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="thing1.inabox" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="inabox" datatype="Boolean" termtype="ATTRIBUTE" fulltext="thing1.inabox">
+              <parentTerm text="thing1" datatype="Things" termtype="ENTITY" fulltext="thing1" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter>
+      <opaqueExpression expression="not thing2.inabox">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not thing2.inabox" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="inabox" datatype="Boolean" termtype="ATTRIBUTE" fulltext="thing2.inabox">
+              <parentTerm text="thing2" datatype="Things" termtype="ENTITY" fulltext="thing2" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.2">
+      <text expression="**** SWAP2: Try to replace a thing in a container with one of higher value that is not in a container****">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="**** SWAP2: Try to replace a thing in a container with one of higher value that is not in a container****" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+      <text expression="The {thing1.name} which is in the {thing1.container.name} is of less value than the {thing2.name} which is not in any container so switch them.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The  + thing1.name +  which is in the  + thing1_container.name +  is of less value than the  + thing2.name +  which is not in any container so switch them." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="thing2.name">
+              <parentTerm text="thing2" datatype="Things" termtype="ENTITY" fulltext="thing2" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="thing1.name">
+              <parentTerm text="thing1" datatype="Things" termtype="ENTITY" fulltext="thing1" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="thing1.container.name">
+              <parentTerm text="container" datatype="Containers" termtype="ENTITY" fulltext="thing1.container" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="thing1" datatype="Things" termtype="ENTITY" fulltext="thing1" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="KP1.ecore#//Things">
+      <alias value="thing1"/>
+      <extension association="true" entity="KP1.ecore#//Containers" traversedAssocRole="KP1.ecore#//Things/container" ruleStatements="#//@ruleset/@ruleStatements.1">
+        <extension association="true" entity="KP1.ecore#//Things" traversedAssocRole="KP1.ecore#//Containers/contents"/>
+        <referencedAttributes attribute="KP1.ecore#//Containers/name"/>
+      </extension>
+      <referencedAttributes attribute="KP1.ecore#//Things/inabox"/>
+      <referencedAttributes attribute="KP1.ecore#//Things/value"/>
+      <referencedAttributes attribute="KP1.ecore#//Things/name"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="KP1.ecore#//Things">
+      <alias value="thing2"/>
+      <referencedAttributes attribute="KP1.ecore#//Things/inabox"/>
+      <referencedAttributes attribute="KP1.ecore#//Things/value"/>
+      <referencedAttributes attribute="KP1.ecore#//Things/name"/>
+    </logicalVariable>
+    <logicalVariable entity="KP1.ecore#//One" ruleStatements="#//@ruleset/@ruleStatements.0"/>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true">
+    <actionSection rowCount="49" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="thing1.container.contents += thing2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="thing1.container.contents += thing2" datatype="Things" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="contents" datatype="Things" termtype="ENTITY" fulltext="thing1.container.contents">
+                <parentTerm text="container" datatype="Containers" termtype="ENTITY" fulltext="thing1.container">
+                  <parentTerm text="thing1" datatype="Things" termtype="ENTITY" fulltext="thing1"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="container" datatype="Containers" termtype="ENTITY" fulltext="thing1.container">
+                <parentTerm text="thing1" datatype="Things" termtype="ENTITY" fulltext="thing1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="thing2" datatype="Things" termtype="ENTITY" fulltext="thing2" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="thing1.container.contents -= thing1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="thing1.container.contents -= thing1" datatype="Things" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList/>
+            <referencedTermList>
+              <terms text="container" datatype="Containers" termtype="ENTITY" fulltext="thing1.container">
+                <parentTerm text="thing1" datatype="Things" termtype="ENTITY" fulltext="thing1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="thing1" datatype="Things" termtype="ENTITY" fulltext="thing1" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="thing1.inabox" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="not thing2.inabox" filter="#//@ruleset/@filters.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2"/>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="thing1.inabox">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="thing1.inabox" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="inabox" datatype="Boolean" termtype="ATTRIBUTE" fulltext="thing1.inabox">
+                <parentTerm text="thing1" datatype="Things" termtype="ENTITY" fulltext="thing1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.1">
+        <expressionCell external="not thing2.inabox">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not thing2.inabox" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="inabox" datatype="Boolean" termtype="ATTRIBUTE" fulltext="thing2.inabox">
+                <parentTerm text="thing2" datatype="Things" termtype="ENTITY" fulltext="thing2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="0"/>
+        <text external="**** SWAP2: Try to replace a thing in a container with one of higher value that is not in a container****">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="**** SWAP2: Try to replace a thing in a container with one of higher value that is not in a container****" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="1"/>
+        <text external="The {thing1.name} which is in the {thing1.container.name} is of less value than the {thing2.name} which is not in any container so switch them.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The  + thing1.name +  which is in the  + thing1_container.name +  is of less value than the  + thing2.name +  which is not in any container so switch them." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="thing2.name">
+                <parentTerm text="thing2" datatype="Things" termtype="ENTITY" fulltext="thing2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="thing1.name">
+                <parentTerm text="thing1" datatype="Things" termtype="ENTITY" fulltext="thing1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="thing1.container.name">
+                <parentTerm text="container" datatype="Containers" termtype="ENTITY" fulltext="thing1.container">
+                  <parentTerm text="thing1" datatype="Things" termtype="ENTITY" fulltext="thing1" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="thing1.value &lt; thing2.value">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="thing1.value &lt; thing2.value" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="value" datatype="Integer" termtype="ATTRIBUTE" fulltext="thing1.value">
+                <parentTerm text="thing1" datatype="Things" termtype="ENTITY" fulltext="thing1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="value" datatype="Integer" termtype="ATTRIBUTE" fulltext="thing2.value">
+                <parentTerm text="thing2" datatype="Things" termtype="ENTITY" fulltext="thing2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

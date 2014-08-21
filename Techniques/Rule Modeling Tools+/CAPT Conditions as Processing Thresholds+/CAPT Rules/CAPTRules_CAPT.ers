@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" majorServiceNumber="3" buildNumber="5565" updateStamp="_z4ZKehgSEeSZCoptyRUNug" externalChecksum="3054974779:507989954:1410878994">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_z3WocBgSEeSZCoptyRUNug" vocabulary="CAPTRules.ecore#/">
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(Rulesheet.stopCondition)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Rulesheet.stopCondition ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="stopCondition" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Rulesheet.stopCondition">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Rulesheet.stopCondition" rhs="F"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Rulesheet.scenario = '0'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rulesheet.scenario = '0'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="scenario" datatype="String" termtype="ATTRIBUTE" fulltext="Rulesheet.scenario">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="(Rulesheet.stopCondition)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Rulesheet.stopCondition ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="stopCondition" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Rulesheet.stopCondition">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Rulesheet.stopCondition" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Rulesheet.stopAttribute = 'local'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rulesheet.stopAttribute = 'local'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="stopAttribute" datatype="String" termtype="ATTRIBUTE" fulltext="Rulesheet.stopAttribute">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Rulesheet.stopAttribute" rhs="'local'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Rulesheet.captEnabled)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Rulesheet.captEnabled ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="captEnabled" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Rulesheet.captEnabled">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Rulesheet.captEnabled" rhs="F"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Rulesheet.scenario = '3'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rulesheet.scenario = '3'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="scenario" datatype="String" termtype="ATTRIBUTE" fulltext="Rulesheet.scenario">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="(Rulesheet.stopCondition)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Rulesheet.stopCondition ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="stopCondition" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Rulesheet.stopCondition">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Rulesheet.stopCondition" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Rulesheet.stopAttribute = 'local'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rulesheet.stopAttribute = 'local'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="stopAttribute" datatype="String" termtype="ATTRIBUTE" fulltext="Rulesheet.stopAttribute">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Rulesheet.stopAttribute" rhs="'local'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Rulesheet.captEnabled)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Rulesheet.captEnabled ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="captEnabled" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Rulesheet.captEnabled">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Rulesheet.captEnabled" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Rulesheet.scenario = '4'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rulesheet.scenario = '4'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="scenario" datatype="String" termtype="ATTRIBUTE" fulltext="Rulesheet.scenario">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition>
+        <opaqueExpression expression="(Rulesheet.stopCondition)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Rulesheet.stopCondition ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="stopCondition" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Rulesheet.stopCondition">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Rulesheet.stopCondition" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Rulesheet.stopAttribute = 'global'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rulesheet.stopAttribute = 'global'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="stopAttribute" datatype="String" termtype="ATTRIBUTE" fulltext="Rulesheet.stopAttribute">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Rulesheet.stopAttribute" rhs="'global'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Rulesheet.captEnabled)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Rulesheet.captEnabled ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="captEnabled" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Rulesheet.captEnabled">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Rulesheet.captEnabled" rhs="F"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Rulesheet.scenario = '5'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rulesheet.scenario = '5'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="scenario" datatype="String" termtype="ATTRIBUTE" fulltext="Rulesheet.scenario">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.4">
+      <condition>
+        <opaqueExpression expression="(Rulesheet.stopCondition)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Rulesheet.stopCondition ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="stopCondition" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Rulesheet.stopCondition">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Rulesheet.stopCondition" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Rulesheet.stopAttribute = 'global'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rulesheet.stopAttribute = 'global'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="stopAttribute" datatype="String" termtype="ATTRIBUTE" fulltext="Rulesheet.stopAttribute">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Rulesheet.stopAttribute" rhs="'global'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Rulesheet.captEnabled)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Rulesheet.captEnabled ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="captEnabled" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Rulesheet.captEnabled">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Rulesheet.captEnabled" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Rulesheet.scenario = '6'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rulesheet.scenario = '6'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="scenario" datatype="String" termtype="ATTRIBUTE" fulltext="Rulesheet.scenario">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If rules have no stop condition then the rules will be applied against all instances and all matches will cause the rules to fire - CAPT has no effect">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If rules have no stop condition then the rules will be applied against all instances and all matches will cause the rules to fire - CAPT has no effect" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If rules have a stop condition that IS an attribute of Thing and does NOT use CaPT on each rule then each rule is free to match multiple instances of Thing">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If rules have a stop condition that IS an attribute of Thing and does NOT use CaPT on each rule then each rule is free to match multiple instances of Thing" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If rules have a stop condition that IS an attribute of Thing and uses CaPT on each rule then will find the FIRST matching instance for EVERY rule">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If rules have a stop condition that IS an attribute of Thing and uses CaPT on each rule then will find the FIRST matching instance for EVERY rule" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If rules have a stop condition that is NOT an attribute of Thing and does NOT use CaPT on each rule then will select ALL instances that match ONE of the rules">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If rules have a stop condition that is NOT an attribute of Thing and does NOT use CaPT on each rule then will select ALL instances that match ONE of the rules" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.5" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If rules have a stop condition that is NOT an attribute of Thing combined with CaPT on each rule then will find the FIRST instance that matches ONE of the rules">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If rules have a stop condition that is NOT an attribute of Thing combined with CaPT on each rule then will find the FIRST instance that matches ONE of the rules" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="CAPTRules.ecore#//Rulesheet" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2 #//@ruleset/@ruleStatements.3 #//@ruleset/@ruleStatements.4">
+      <referencedAttributes attribute="CAPTRules.ecore#//Rulesheet/stopCondition"/>
+      <referencedAttributes attribute="CAPTRules.ecore#//Rulesheet/stopAttribute"/>
+      <referencedAttributes attribute="CAPTRules.ecore#//Rulesheet/captEnabled"/>
+      <referencedAttributes attribute="CAPTRules.ecore#//Rulesheet/scenario"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightConditionsIf="27">
+    <actionSection rowCount="49" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell valueSet="{'0', '1', '2', '3', '4', '5', '6', '7', '8'}"/>
+        <expressionCell external="Rulesheet.scenario">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rulesheet.scenario" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="scenario" datatype="String" termtype="ATTRIBUTE" fulltext="Rulesheet.scenario">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="43" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="If rules have no stop condition then the rules will be applied against all instances and all matches will cause the rules to fire - CAPT has no effect">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If rules have no stop condition then the rules will be applied against all instances and all matches will cause the rules to fire - CAPT has no effect" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="If rules have a stop condition that IS an attribute of Thing and does NOT use CaPT on each rule then each rule is free to match multiple instances of Thing">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If rules have a stop condition that IS an attribute of Thing and does NOT use CaPT on each rule then each rule is free to match multiple instances of Thing" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="If rules have a stop condition that IS an attribute of Thing and uses CaPT on each rule then will find the FIRST matching instance for EVERY rule">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If rules have a stop condition that IS an attribute of Thing and uses CaPT on each rule then will find the FIRST matching instance for EVERY rule" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="4"/>
+        <text external="If rules have a stop condition that is NOT an attribute of Thing and does NOT use CaPT on each rule then will select ALL instances that match ONE of the rules">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If rules have a stop condition that is NOT an attribute of Thing and does NOT use CaPT on each rule then will select ALL instances that match ONE of the rules" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.4">
+        <reference external="5"/>
+        <text external="If rules have a stop condition that is NOT an attribute of Thing combined with CaPT on each rule then will find the FIRST instance that matches ONE of the rules">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If rules have a stop condition that is NOT an attribute of Thing combined with CaPT on each rule then will find the FIRST instance that matches ONE of the rules" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="Rulesheet.stopCondition">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rulesheet.stopCondition" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="stopCondition" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Rulesheet.stopCondition">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'local', 'global'}"/>
+        <expressionCell external="Rulesheet.stopAttribute">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rulesheet.stopAttribute" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="stopAttribute" datatype="String" termtype="ATTRIBUTE" fulltext="Rulesheet.stopAttribute">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="Rulesheet.captEnabled">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Rulesheet.captEnabled" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="captEnabled" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Rulesheet.captEnabled">
+                <parentTerm text="Rulesheet" datatype="Rulesheet" termtype="ENTITY" fulltext="Rulesheet" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet=""/>
+        <conditionValueSetCellList valueSet=""/>
+        <conditionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="'0'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="'local'"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList valueSet="'3'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="'local'"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="'4'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="'global'"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList valueSet="'5'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="'global'"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="'6'"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

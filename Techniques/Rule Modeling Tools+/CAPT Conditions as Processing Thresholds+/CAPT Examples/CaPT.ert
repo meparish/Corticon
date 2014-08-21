@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_D9QoELaVEeGU39-PZxk6cQ" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_EA4kGraVEeGU39-PZxk6cQ" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_D1WCMLaVEeGU39-PZxk6cQ" ruleActivity="CaPT.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Found an A with x > 1, y > 10, z > 100. x=30 y=15 z=120"/>
+        <PostedMessage severity="Info" text="Found an A with x > 1, y > 10, z > 100. x=3 y=20 z=150"/>
+        <PostedMessage severity="Info" text="Found an A with x > 1, y > 10, z > 100. x=30 y=20 z=110"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.4/@children.1" eClass="CasPT.ecore#//A">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="3" eAttribute="CasPT.ecore#//A/x"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20" eAttribute="CasPT.ecore#//A/y"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="150" eAttribute="CasPT.ecore#//A/z"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.4/@children.2" eClass="CasPT.ecore#//A">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="CasPT.ecore#//A/x"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="CasPT.ecore#//A/y"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="CasPT.ecore#//A/z"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.4/@children.3" eClass="CasPT.ecore#//A">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="30" eAttribute="CasPT.ecore#//A/x"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20" eAttribute="CasPT.ecore#//A/y"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="110" eAttribute="CasPT.ecore#//A/z"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.4/@children.4" eClass="CasPT.ecore#//A">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="30" eAttribute="CasPT.ecore#//A/x"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="15" eAttribute="CasPT.ecore#//A/y"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="120" eAttribute="CasPT.ecore#//A/z"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="CasPT.ecore#//Result">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="false" eAttribute="CasPT.ecore#//Result/found"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" manuallyCreated="true" eReference="CasPT.ecore#//Result/a" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" manuallyCreated="true" eReference="CasPT.ecore#//Result/a" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" manuallyCreated="true" eReference="CasPT.ecore#//Result/a" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" manuallyCreated="true" eReference="CasPT.ecore#//Result/a" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.3"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.4/@children.1" eClass="CasPT.ecore#//A">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="CasPT.ecore#//A/x"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20" eAttribute="CasPT.ecore#//A/y"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="150" eAttribute="CasPT.ecore#//A/z"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.4/@children.2" eClass="CasPT.ecore#//A">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="CasPT.ecore#//A/x"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="CasPT.ecore#//A/y"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="CasPT.ecore#//A/z"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.4/@children.3" eClass="CasPT.ecore#//A">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="30" eAttribute="CasPT.ecore#//A/x"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20" eAttribute="CasPT.ecore#//A/y"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="110" eAttribute="CasPT.ecore#//A/z"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.4/@children.4" eClass="CasPT.ecore#//A">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="30" eAttribute="CasPT.ecore#//A/x"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="15" eAttribute="CasPT.ecore#//A/y"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="120" eAttribute="CasPT.ecore#//A/z"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eClass="CasPT.ecore#//Result">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="CasPT.ecore#//Result/found"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="CasPT.ecore#//Result/a" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" eReference="CasPT.ecore#//Result/a" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" eReference="CasPT.ecore#//Result/a" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" eReference="CasPT.ecore#//Result/a" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.4"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.4/@children.1" eClass="CasPT.ecore#//A">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="3" eAttribute="CasPT.ecore#//A/x"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20" eAttribute="CasPT.ecore#//A/y"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="150" eAttribute="CasPT.ecore#//A/z"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.4/@children.2" eClass="CasPT.ecore#//A">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="CasPT.ecore#//A/x"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="CasPT.ecore#//A/y"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="CasPT.ecore#//A/z"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.4/@children.3" eClass="CasPT.ecore#//A">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="30" eAttribute="CasPT.ecore#//A/x"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20" eAttribute="CasPT.ecore#//A/y"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="110" eAttribute="CasPT.ecore#//A/z"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.4/@children.4" eClass="CasPT.ecore#//A">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="30" eAttribute="CasPT.ecore#//A/x"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="15" eAttribute="CasPT.ecore#//A/y"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="120" eAttribute="CasPT.ecore#//A/z"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="CasPT.ecore#//Result">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="true" eAttribute="CasPT.ecore#//Result/found"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" manuallyCreated="true" eReference="CasPT.ecore#//Result/a" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" manuallyCreated="true" eReference="CasPT.ecore#//Result/a" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" manuallyCreated="true" eReference="CasPT.ecore#//Result/a" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" manuallyCreated="true" eReference="CasPT.ecore#//Result/a" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.3"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_D0lNMLaVEeGU39-PZxk6cQ" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="CasPT.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="CaPT"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

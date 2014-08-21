@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_tm-sL2qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset operationMode="ProcessAllLogicalLoops" vocabularyUpdateStamp="_loMQQGqnEeGMCd15vaZIXw" vocabulary="Duplicates.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(Input.codelist.startsWith(Input.separator))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Input.codelist.startsWith ( Input.separator ) ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="separator" datatype="String" termtype="ATTRIBUTE" fulltext="Input.separator">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="startsWith" datatype="boolean" termtype="METHOD" fulltext="Input.codelist.startsWith">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Input.codelist.startsWith(Input.separator)" rhs="T"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Input.codelist = Input.codelist.substring(2,Input.codelist.size)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.codelist = Input.codelist.substring ( 2 , Input.codelist.size )" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="size" datatype="Integer" termtype="METHOD" fulltext="Input.codelist.size">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Input.codelist.substring">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(Input.codelist.endsWith(Input.separator))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Input.codelist.endsWith ( Input.separator ) ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="separator" datatype="String" termtype="ATTRIBUTE" fulltext="Input.separator">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="endsWith" datatype="boolean" termtype="METHOD" fulltext="Input.codelist.endsWith">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Input.codelist.endsWith(Input.separator)" rhs="T"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Input.codelist = Input.codelist.substring(1,Input.codelist.size-1)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.codelist = Input.codelist.substring ( 1 , Input.codelist.size - 1 )" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="size" datatype="Integer" termtype="METHOD" fulltext="Input.codelist.size">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Input.codelist.substring">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="(Input.codelist.startsWith(Input.separator))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Input.codelist.startsWith ( Input.separator ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="separator" datatype="String" termtype="ATTRIBUTE" fulltext="Input.separator">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="startsWith" datatype="boolean" termtype="METHOD" fulltext="Input.codelist.startsWith">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Input.codelist.startsWith(Input.separator)" rhs="F"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Input.codelist.endsWith(Input.separator))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Input.codelist.endsWith ( Input.separator ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="separator" datatype="String" termtype="ATTRIBUTE" fulltext="Input.separator">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="endsWith" datatype="boolean" termtype="METHOD" fulltext="Input.codelist.endsWith">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Input.codelist.endsWith(Input.separator)" rhs="F"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Input.codelist.contains(Input.separator))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Input.codelist.contains ( Input.separator ) ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="separator" datatype="String" termtype="ATTRIBUTE" fulltext="Input.separator">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="contains" datatype="boolean" termtype="METHOD" fulltext="Input.codelist.contains">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Input.codelist.contains(Input.separator)" rhs="T"/>
+      </condition>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Input.separatorIndex = Input.codelist.indexOf (Input.separator )">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.separatorIndex = Input.codelist.indexOf ( Input.separator )" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="separatorIndex" datatype="Integer" termtype="ATTRIBUTE" fulltext="Input.separatorIndex">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="separator" datatype="String" termtype="ATTRIBUTE" fulltext="Input.separator">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="indexOf" datatype="Integer" termtype="METHOD" fulltext="Input.codelist.indexOf">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Input.firstCode = Input.codelist.substring ( 1, Input.separatorIndex-1 )">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.firstCode = Input.codelist.substring ( 1 , Input.separatorIndex - 1 )" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="firstCode" datatype="String" termtype="ATTRIBUTE" fulltext="Input.firstCode">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="separatorIndex" datatype="Integer" termtype="ATTRIBUTE" fulltext="Input.separatorIndex">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Input.codelist.substring">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Input.remainingCodes = Input.codelist.substring (Input.separatorIndex+1, Input.codelist.size )">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.remainingCodes = Input.codelist.substring ( Input.separatorIndex + 1 , Input.codelist.size )" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="remainingCodes" datatype="String" termtype="ATTRIBUTE" fulltext="Input.remainingCodes">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="size" datatype="Integer" termtype="METHOD" fulltext="Input.codelist.size">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="separatorIndex" datatype="Integer" termtype="ATTRIBUTE" fulltext="Input.separatorIndex">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Input.codelist.substring">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Codes.new[code=Input.firstCode,count=1]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Codes.new [ Codes.count = 1 , Codes.code = Input.firstCode ]" datatype="Codes" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="code" datatype="String" termtype="ATTRIBUTE" fulltext="Codes.code">
+                <parentTerm text="Codes" datatype="Codes" termtype="ENTITY" fulltext="Codes"/>
+              </terms>
+              <terms text="Codes" datatype="Codes" termtype="ENTITY" fulltext="Codes"/>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Codes.count">
+                <parentTerm text="Codes" datatype="Codes" termtype="ENTITY" fulltext="Codes"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Codes" termtype="NEW" fulltext="Codes.new">
+                <parentTerm text="Codes" datatype="Codes" termtype="ENTITY" fulltext="Codes" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="firstCode" datatype="String" termtype="ATTRIBUTE" fulltext="Input.firstCode">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Input.codelist = Input.remainingCodes">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.codelist = Input.remainingCodes" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="remainingCodes" datatype="String" termtype="ATTRIBUTE" fulltext="Input.remainingCodes">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition>
+        <opaqueExpression expression="(Input.codelist.startsWith(Input.separator))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Input.codelist.startsWith ( Input.separator ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="separator" datatype="String" termtype="ATTRIBUTE" fulltext="Input.separator">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="startsWith" datatype="boolean" termtype="METHOD" fulltext="Input.codelist.startsWith">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Input.codelist.startsWith(Input.separator)" rhs="F"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Input.codelist.endsWith(Input.separator))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Input.codelist.endsWith ( Input.separator ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="separator" datatype="String" termtype="ATTRIBUTE" fulltext="Input.separator">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="endsWith" datatype="boolean" termtype="METHOD" fulltext="Input.codelist.endsWith">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Input.codelist.endsWith(Input.separator)" rhs="F"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Input.codelist.contains(Input.separator))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Input.codelist.contains ( Input.separator ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="separator" datatype="String" termtype="ATTRIBUTE" fulltext="Input.separator">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="contains" datatype="boolean" termtype="METHOD" fulltext="Input.codelist.contains">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Input.codelist.contains(Input.separator)" rhs="F"/>
+      </condition>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Codes.new[code=Input.remainingCodes,count=1]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Codes.new [ Codes.count = 1 , Codes.code = Input.remainingCodes ]" datatype="Codes" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="code" datatype="String" termtype="ATTRIBUTE" fulltext="Codes.code">
+                <parentTerm text="Codes" datatype="Codes" termtype="ENTITY" fulltext="Codes"/>
+              </terms>
+              <terms text="Codes" datatype="Codes" termtype="ENTITY" fulltext="Codes"/>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Codes.count">
+                <parentTerm text="Codes" datatype="Codes" termtype="ENTITY" fulltext="Codes"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Codes" termtype="NEW" fulltext="Codes.new">
+                <parentTerm text="Codes" datatype="Codes" termtype="ENTITY" fulltext="Codes" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="remainingCodes" datatype="String" termtype="ATTRIBUTE" fulltext="Input.remainingCodes">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Input.codelist = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.codelist =null" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter>
+      <opaqueExpression expression="Input.codelist.size > 0">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.codelist.size > 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="size" datatype="Integer" termtype="METHOD" fulltext="Input.codelist.size">
+              <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Remove leading separator from '{Input.codelist}'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Remove leading separator from ' + Input.codelist + '" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+              <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Remove trailing separator from '{Input.codelist}'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Remove trailing separator from ' + Input.codelist + '" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+              <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="snip off the string '{Input.firstCode}' up to the first separator">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="snip off the string ' + Input.firstCode + ' up to the first separator" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="firstCode" datatype="String" termtype="ATTRIBUTE" fulltext="Input.firstCode">
+              <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="deal with the last code '{Input.remainingCodes}'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="deal with the last code ' + Input.remainingCodes + '" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="remainingCodes" datatype="String" termtype="ATTRIBUTE" fulltext="Input.remainingCodes">
+              <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="Duplicates.ecore#//Input" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2 #//@ruleset/@ruleStatements.3">
+      <referencedAttributes attribute="Duplicates.ecore#//Input/codelist"/>
+      <referencedAttributes attribute="Duplicates.ecore#//Input/separator"/>
+      <referencedAttributes attribute="Duplicates.ecore#//Input/separatorIndex"/>
+      <referencedAttributes attribute="Duplicates.ecore#//Input/firstCode"/>
+      <referencedAttributes attribute="Duplicates.ecore#//Input/remainingCodes"/>
+    </logicalVariable>
+    <logicalVariable entity="Duplicates.ecore#//Codes">
+      <referencedAttributes attribute="Duplicates.ecore#//Codes/code"/>
+      <referencedAttributes attribute="Duplicates.ecore#//Codes/count"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="49" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Input.codelist = Input.codelist.substring(2,Input.codelist.size)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.codelist = Input.codelist.substring ( 2 , Input.codelist.size )" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="size" datatype="Integer" termtype="METHOD" fulltext="Input.codelist.size">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Input.codelist.substring">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Input.codelist = Input.codelist.substring(1,Input.codelist.size-1)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.codelist = Input.codelist.substring ( 1 , Input.codelist.size - 1 )" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="size" datatype="Integer" termtype="METHOD" fulltext="Input.codelist.size">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Input.codelist.substring">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Input.separatorIndex = Input.codelist.indexOf (Input.separator )">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.separatorIndex = Input.codelist.indexOf ( Input.separator )" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="separatorIndex" datatype="Integer" termtype="ATTRIBUTE" fulltext="Input.separatorIndex">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="separator" datatype="String" termtype="ATTRIBUTE" fulltext="Input.separator">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="indexOf" datatype="Integer" termtype="METHOD" fulltext="Input.codelist.indexOf">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Input.firstCode = Input.codelist.substring ( 1, Input.separatorIndex-1 )">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.firstCode = Input.codelist.substring ( 1 , Input.separatorIndex - 1 )" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="firstCode" datatype="String" termtype="ATTRIBUTE" fulltext="Input.firstCode">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="separatorIndex" datatype="Integer" termtype="ATTRIBUTE" fulltext="Input.separatorIndex">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Input.codelist.substring">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Input.remainingCodes = Input.codelist.substring (Input.separatorIndex+1, Input.codelist.size )">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.remainingCodes = Input.codelist.substring ( Input.separatorIndex + 1 , Input.codelist.size )" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="remainingCodes" datatype="String" termtype="ATTRIBUTE" fulltext="Input.remainingCodes">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="size" datatype="Integer" termtype="METHOD" fulltext="Input.codelist.size">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="separatorIndex" datatype="Integer" termtype="ATTRIBUTE" fulltext="Input.separatorIndex">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="substring" datatype="String" termtype="METHOD" fulltext="Input.codelist.substring">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet="{Input.firstCode, Input.remainingCodes}"/>
+        <expressionCell external="Codes.new[code=cellValue,count=1]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Codes.new [ Codes.count = 1 , Codes.code = cellValue ]" datatype="Codes" expressiontype="EXPRESSION" cellValue="true">
+            <modifiedTermList>
+              <terms text="code" datatype="String" termtype="ATTRIBUTE" fulltext="Codes.code">
+                <parentTerm text="Codes" datatype="Codes" termtype="ENTITY" fulltext="Codes"/>
+              </terms>
+              <terms text="Codes" datatype="Codes" termtype="ENTITY" fulltext="Codes"/>
+              <terms text="count" datatype="Integer" termtype="ATTRIBUTE" fulltext="Codes.count">
+                <parentTerm text="Codes" datatype="Codes" termtype="ENTITY" fulltext="Codes"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Codes" termtype="NEW" fulltext="Codes.new">
+                <parentTerm text="Codes" datatype="Codes" termtype="ENTITY" fulltext="Codes"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet="{Input.remainingCodes, null}"/>
+        <expressionCell external="Input.codelist">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.codelist" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Input.codelist.size > 0" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.4"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="Input.codelist.size > 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.codelist.size > 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="size" datatype="Integer" termtype="METHOD" fulltext="Input.codelist.size">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="Remove leading separator from '{Input.codelist}'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Remove leading separator from ' + Input.codelist + '" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="Remove trailing separator from '{Input.codelist}'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Remove trailing separator from ' + Input.codelist + '" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="snip off the string '{Input.firstCode}' up to the first separator">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="snip off the string ' + Input.firstCode + ' up to the first separator" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="firstCode" datatype="String" termtype="ATTRIBUTE" fulltext="Input.firstCode">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="4"/>
+        <text external="deal with the last code '{Input.remainingCodes}'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="deal with the last code ' + Input.remainingCodes + '" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="remainingCodes" datatype="String" termtype="ATTRIBUTE" fulltext="Input.remainingCodes">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="Input.codelist.startsWith(Input.separator)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.codelist.startsWith ( Input.separator )" datatype="boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="separator" datatype="String" termtype="ATTRIBUTE" fulltext="Input.separator">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="startsWith" datatype="boolean" termtype="METHOD" fulltext="Input.codelist.startsWith">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="Input.codelist.endsWith(Input.separator)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.codelist.endsWith ( Input.separator )" datatype="boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="separator" datatype="String" termtype="ATTRIBUTE" fulltext="Input.separator">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="endsWith" datatype="boolean" termtype="METHOD" fulltext="Input.codelist.endsWith">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="Input.codelist.contains(Input.separator)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Input.codelist.contains ( Input.separator )" datatype="boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="separator" datatype="String" termtype="ATTRIBUTE" fulltext="Input.separator">
+                <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="contains" datatype="boolean" termtype="METHOD" fulltext="Input.codelist.contains">
+                <parentTerm text="codelist" datatype="String" termtype="ATTRIBUTE" fulltext="Input.codelist">
+                  <parentTerm text="Input" datatype="Input" termtype="ENTITY" fulltext="Input" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="Input.firstCode"/>
+        <actionValueSetCellList valueSet="Input.remainingCodes"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="Input.remainingCodes"/>
+        <actionValueSetCellList valueSet="null"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

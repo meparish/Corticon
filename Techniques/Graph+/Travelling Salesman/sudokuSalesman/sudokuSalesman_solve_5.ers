@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_uRUpZ2qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_lwrd4GqnEeGMCd15vaZIXw" vocabulary="SudokuSalesman.ecore#/">
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0"/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="(c1&lt;>c2)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( c1 &lt;> c2 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="c1&lt;>c2" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(c1&lt;>c3)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( c1 &lt;> c3 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="c1&lt;>c3" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(c1&lt;>c4)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( c1 &lt;> c4 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="c1&lt;>c4" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(c1&lt;>c5)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( c1 &lt;> c5 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="c1&lt;>c5" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(c2&lt;>c3)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( c2 &lt;> c3 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="c2&lt;>c3" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(c2&lt;>c4)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( c2 &lt;> c4 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="c2&lt;>c4" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(c2&lt;>c5)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( c2 &lt;> c5 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="c2&lt;>c5" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(c3&lt;>c4)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( c3 &lt;> c4 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+              <terms text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="c3&lt;>c4" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(c3&lt;>c5)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( c3 &lt;> c5 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+              <terms text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="c3&lt;>c5" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(c4&lt;>c5)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( c4 &lt;> c5 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+              <terms text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="c4&lt;>c5" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="((((c1.x-c2.x)*(c1.x-c2.x)+(c1.y-c2.y)*(c1.y-c2.y))**0.5)+ (((c2.x-c3.x)*(c2.x-c3.x)+(c2.y-c3.y)*(c2.y-c3.y))**0.5)+ (((c3.x-c4.x)*(c3.x-c4.x)+(c3.y-c4.y)*(c3.y-c4.y))**0.5)+ (((c4.x-c5.x)*(c4.x-c5.x)+(c4.y-c5.y)*(c4.y-c5.y))**0.5) &lt; Route.distance)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( ( ( ( c1.x - c2.x ) * ( c1.x - c2.x ) + ( c1.y - c2.y ) * ( c1.y - c2.y ) ) ** 0.5 ) + ( ( ( c2.x - c3.x ) * ( c2.x - c3.x ) + ( c2.y - c3.y ) * ( c2.y - c3.y ) ) ** 0.5 ) + ( ( ( c3.x - c4.x ) * ( c3.x - c4.x ) + ( c3.y - c4.y ) * ( c3.y - c4.y ) ) ** 0.5 ) + ( ( ( c4.x - c5.x ) * ( c4.x - c5.x ) + ( c4.y - c5.y ) * ( c4.y - c5.y ) ) ** 0.5 ) &lt; Route.distance ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c4.x">
+                <parentTerm text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c3.y">
+                <parentTerm text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c3.x">
+                <parentTerm text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c4.y">
+                <parentTerm text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="distance" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Route.distance">
+                <parentTerm text="Route" datatype="Route" termtype="ENTITY" fulltext="Route" variable="#//@ruleset/@logicalVariables.6"/>
+              </terms>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c5.x">
+                <parentTerm text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c5.y">
+                <parentTerm text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c2.x">
+                <parentTerm text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c1.y">
+                <parentTerm text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c1.x">
+                <parentTerm text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c2.y">
+                <parentTerm text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="(((c1.x-c2.x)*(c1.x-c2.x)+(c1.y-c2.y)*(c1.y-c2.y))**0.5)+ (((c2.x-c3.x)*(c2.x-c3.x)+(c2.y-c3.y)*(c2.y-c3.y))**0.5)+ (((c3.x-c4.x)*(c3.x-c4.x)+(c3.y-c4.y)*(c3.y-c4.y))**0.5)+ (((c4.x-c5.x)*(c4.x-c5.x)+(c4.y-c5.y)*(c4.y-c5.y))**0.5) &lt; Route.distance" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Route.distance = (((c1.x-c2.x)*(c1.x-c2.x)+(c1.y-c2.y)*(c1.y-c2.y))**0.5)+ (((c2.x-c3.x)*(c2.x-c3.x)+(c2.y-c3.y)*(c2.y-c3.y))**0.5) + (((c3.x-c4.x)*(c3.x-c4.x)+(c3.y-c4.y)*(c3.y-c4.y))**0.5)+ (((c4.x-c5.x)*(c4.x-c5.x)+(c4.y-c5.y)*(c4.y-c5.y))**0.5)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Route.distance = ( ( ( c1.x - c2.x ) * ( c1.x - c2.x ) + ( c1.y - c2.y ) * ( c1.y - c2.y ) ) ** 0.5 ) + ( ( ( c2.x - c3.x ) * ( c2.x - c3.x ) + ( c2.y - c3.y ) * ( c2.y - c3.y ) ) ** 0.5 ) + ( ( ( c3.x - c4.x ) * ( c3.x - c4.x ) + ( c3.y - c4.y ) * ( c3.y - c4.y ) ) ** 0.5 ) + ( ( ( c4.x - c5.x ) * ( c4.x - c5.x ) + ( c4.y - c5.y ) * ( c4.y - c5.y ) ) ** 0.5 )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="distance" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Route.distance">
+                <parentTerm text="Route" datatype="Route" termtype="ENTITY" fulltext="Route"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c4.x">
+                <parentTerm text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c3.y">
+                <parentTerm text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c3.x">
+                <parentTerm text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c4.y">
+                <parentTerm text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c5.x">
+                <parentTerm text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c5.y">
+                <parentTerm text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c2.x">
+                <parentTerm text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Route" datatype="Route" termtype="ENTITY" fulltext="Route" variable="#//@ruleset/@logicalVariables.6"/>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c1.y">
+                <parentTerm text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c1.x">
+                <parentTerm text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c2.y">
+                <parentTerm text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Route.order=c1.name + '-' + c2.name + '-' + c3.name + '-' + c4.name + '-' + c5.name + '-' + c6.name">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Route.order = c1.name + '-' + c2.name + '-' + c3.name + '-' + c4.name + '-' + c5.name + '-' + c6.name" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="order" datatype="String" termtype="ATTRIBUTE" fulltext="Route.order">
+                <parentTerm text="Route" datatype="Route" termtype="ENTITY" fulltext="Route"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="c2.name">
+                <parentTerm text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="c5.name">
+                <parentTerm text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="c6.name">
+                <parentTerm text="c6" datatype="City" termtype="ENTITY" fulltext="c6" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="c1.name">
+                <parentTerm text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Route" datatype="Route" termtype="ENTITY" fulltext="Route" variable="#//@ruleset/@logicalVariables.6"/>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="c4.name">
+                <parentTerm text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="c3.name">
+                <parentTerm text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter>
+      <opaqueExpression expression="c1.name = 'A'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="c1.name = 'A'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="c1.name">
+              <parentTerm text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter>
+      <opaqueExpression expression="c6.name = 'A'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="c6.name = 'A'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="c6.name">
+              <parentTerm text="c6" datatype="City" termtype="ENTITY" fulltext="c6" variable="#//@ruleset/@logicalVariables.5"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.6">
+      <text expression="5 City case - to run the 9 city case make sure the appropriate rulesheet is enabled">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="5 City case - to run the 9 city case make sure the appropriate rulesheet is enabled" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.1">
+      <text expression="If the route passes through all the cities and the total length is less than the shortest so far then make this the new shortest route.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If the route passes through all the cities and the total length is less than the shortest so far then make this the new shortest route." expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="SudokuSalesman.ecore#//City">
+      <alias value="c1"/>
+      <referencedAttributes attribute="SudokuSalesman.ecore#//City/name"/>
+      <referencedAttributes attribute="SudokuSalesman.ecore#//City/y"/>
+      <referencedAttributes attribute="SudokuSalesman.ecore#//City/x"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="SudokuSalesman.ecore#//City">
+      <alias value="c2"/>
+      <referencedAttributes attribute="SudokuSalesman.ecore#//City/x"/>
+      <referencedAttributes attribute="SudokuSalesman.ecore#//City/y"/>
+      <referencedAttributes attribute="SudokuSalesman.ecore#//City/name"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="SudokuSalesman.ecore#//City">
+      <alias value="c3"/>
+      <referencedAttributes attribute="SudokuSalesman.ecore#//City/y"/>
+      <referencedAttributes attribute="SudokuSalesman.ecore#//City/x"/>
+      <referencedAttributes attribute="SudokuSalesman.ecore#//City/name"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="SudokuSalesman.ecore#//City">
+      <alias value="c4"/>
+      <referencedAttributes attribute="SudokuSalesman.ecore#//City/x"/>
+      <referencedAttributes attribute="SudokuSalesman.ecore#//City/y"/>
+      <referencedAttributes attribute="SudokuSalesman.ecore#//City/name"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="SudokuSalesman.ecore#//City">
+      <alias value="c5"/>
+      <referencedAttributes attribute="SudokuSalesman.ecore#//City/x"/>
+      <referencedAttributes attribute="SudokuSalesman.ecore#//City/y"/>
+      <referencedAttributes attribute="SudokuSalesman.ecore#//City/name"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="SudokuSalesman.ecore#//City">
+      <alias value="c6"/>
+      <referencedAttributes attribute="SudokuSalesman.ecore#//City/name"/>
+    </logicalVariable>
+    <logicalVariable entity="SudokuSalesman.ecore#//Route" ruleStatements="#//@ruleset/@ruleStatements.0">
+      <referencedAttributes attribute="SudokuSalesman.ecore#//Route/distance"/>
+      <referencedAttributes attribute="SudokuSalesman.ecore#//Route/order"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightConditionsActions="49" sashWeightConditionsIf="47">
+    <actionSection rowCount="50" columnWidthFactor="0.9253012048192771">
+      <actionItemList rowHeight="80">
+        <valueSetCell/>
+        <expressionCell external="Route.distance = (((c1.x-c2.x)*(c1.x-c2.x)+(c1.y-c2.y)*(c1.y-c2.y))**0.5)+ (((c2.x-c3.x)*(c2.x-c3.x)+(c2.y-c3.y)*(c2.y-c3.y))**0.5) + (((c3.x-c4.x)*(c3.x-c4.x)+(c3.y-c4.y)*(c3.y-c4.y))**0.5)+ (((c4.x-c5.x)*(c4.x-c5.x)+(c4.y-c5.y)*(c4.y-c5.y))**0.5)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Route.distance = ( ( ( c1.x - c2.x ) * ( c1.x - c2.x ) + ( c1.y - c2.y ) * ( c1.y - c2.y ) ) ** 0.5 ) + ( ( ( c2.x - c3.x ) * ( c2.x - c3.x ) + ( c2.y - c3.y ) * ( c2.y - c3.y ) ) ** 0.5 ) + ( ( ( c3.x - c4.x ) * ( c3.x - c4.x ) + ( c3.y - c4.y ) * ( c3.y - c4.y ) ) ** 0.5 ) + ( ( ( c4.x - c5.x ) * ( c4.x - c5.x ) + ( c4.y - c5.y ) * ( c4.y - c5.y ) ) ** 0.5 )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="distance" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Route.distance">
+                <parentTerm text="Route" datatype="Route" termtype="ENTITY" fulltext="Route"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c4.x">
+                <parentTerm text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c3.y">
+                <parentTerm text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c3.x">
+                <parentTerm text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c4.y">
+                <parentTerm text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c5.x">
+                <parentTerm text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c5.y">
+                <parentTerm text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c2.x">
+                <parentTerm text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Route" datatype="Route" termtype="ENTITY" fulltext="Route" variable="#//@ruleset/@logicalVariables.6"/>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c1.y">
+                <parentTerm text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c1.x">
+                <parentTerm text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c2.y">
+                <parentTerm text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList rowHeight="46">
+        <valueSetCell/>
+        <expressionCell external="Route.order=c1.name + '-' + c2.name + '-' + c3.name + '-' + c4.name + '-' + c5.name + '-' + c6.name">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Route.order = c1.name + '-' + c2.name + '-' + c3.name + '-' + c4.name + '-' + c5.name + '-' + c6.name" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="order" datatype="String" termtype="ATTRIBUTE" fulltext="Route.order">
+                <parentTerm text="Route" datatype="Route" termtype="ENTITY" fulltext="Route"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="c2.name">
+                <parentTerm text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="c5.name">
+                <parentTerm text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="c6.name">
+                <parentTerm text="c6" datatype="City" termtype="ENTITY" fulltext="c6" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="c1.name">
+                <parentTerm text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Route" datatype="Route" termtype="ENTITY" fulltext="Route" variable="#//@ruleset/@logicalVariables.6"/>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="c4.name">
+                <parentTerm text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="c3.name">
+                <parentTerm text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="c1.name = 'A'" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.3">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.4">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.4/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.4/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.4/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.5">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="c6.name = 'A'" filter="#//@ruleset/@filters.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.5/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.6">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.6/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.6/@referencedAttributes.1"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="c1.name = 'A'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="c1.name = 'A'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="c1.name">
+                <parentTerm text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.1">
+        <expressionCell external="c6.name = 'A'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="c6.name = 'A'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="c6.name">
+                <parentTerm text="c6" datatype="City" termtype="ENTITY" fulltext="c6" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="0"/>
+        <text external="5 City case - to run the 9 city case make sure the appropriate rulesheet is enabled">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="5 City case - to run the 9 city case make sure the appropriate rulesheet is enabled" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="1"/>
+        <text external="If the route passes through all the cities and the total length is less than the shortest so far then make this the new shortest route.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If the route passes through all the cities and the total length is less than the shortest so far then make this the new shortest route." expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.7348353552859619">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="c1&lt;>c2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="c1 &lt;> c2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="c1&lt;>c3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="c1 &lt;> c3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="c1&lt;>c4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="c1 &lt;> c4" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="c1&lt;>c5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="c1 &lt;> c5" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="c2&lt;>c3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="c2 &lt;> c3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="c2&lt;>c4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="c2 &lt;> c4" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="c2&lt;>c5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="c2 &lt;> c5" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="c3&lt;>c4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="c3 &lt;> c4" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+              <terms text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="c3&lt;>c5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="c3 &lt;> c5" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+              <terms text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="c4&lt;>c5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="c4 &lt;> c5" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+              <terms text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList rowHeight="65">
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="(((c1.x-c2.x)*(c1.x-c2.x)+(c1.y-c2.y)*(c1.y-c2.y))**0.5)+ (((c2.x-c3.x)*(c2.x-c3.x)+(c2.y-c3.y)*(c2.y-c3.y))**0.5)+ (((c3.x-c4.x)*(c3.x-c4.x)+(c3.y-c4.y)*(c3.y-c4.y))**0.5)+ (((c4.x-c5.x)*(c4.x-c5.x)+(c4.y-c5.y)*(c4.y-c5.y))**0.5) &lt; Route.distance">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( ( ( c1.x - c2.x ) * ( c1.x - c2.x ) + ( c1.y - c2.y ) * ( c1.y - c2.y ) ) ** 0.5 ) + ( ( ( c2.x - c3.x ) * ( c2.x - c3.x ) + ( c2.y - c3.y ) * ( c2.y - c3.y ) ) ** 0.5 ) + ( ( ( c3.x - c4.x ) * ( c3.x - c4.x ) + ( c3.y - c4.y ) * ( c3.y - c4.y ) ) ** 0.5 ) + ( ( ( c4.x - c5.x ) * ( c4.x - c5.x ) + ( c4.y - c5.y ) * ( c4.y - c5.y ) ) ** 0.5 ) &lt; Route.distance" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c4.x">
+                <parentTerm text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c3.y">
+                <parentTerm text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c3.x">
+                <parentTerm text="c3" datatype="City" termtype="ENTITY" fulltext="c3" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c4.y">
+                <parentTerm text="c4" datatype="City" termtype="ENTITY" fulltext="c4" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="distance" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Route.distance">
+                <parentTerm text="Route" datatype="Route" termtype="ENTITY" fulltext="Route" variable="#//@ruleset/@logicalVariables.6"/>
+              </terms>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c5.x">
+                <parentTerm text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c5.y">
+                <parentTerm text="c5" datatype="City" termtype="ENTITY" fulltext="c5" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c2.x">
+                <parentTerm text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c1.y">
+                <parentTerm text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="y" datatype="Integer" termtype="ATTRIBUTE" fulltext="c2.y">
+                <parentTerm text="c2" datatype="City" termtype="ENTITY" fulltext="c2" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="c1.x">
+                <parentTerm text="c1" datatype="City" termtype="ENTITY" fulltext="c1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

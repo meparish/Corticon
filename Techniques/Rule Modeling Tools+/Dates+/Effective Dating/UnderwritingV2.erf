@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuleflowAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicalrulemodel.ruleflow="http:///com/corticon/rulesemf/canonicalrulemodel/ruleflow.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram="http:///com/corticon/rulesemf/viewrulemodel/ruleflow/flowdiagram.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_qWaS42qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240" rulesheetAssets="UnderwritingV2_VERSION.ers#/ UnderwritingV2_RULESET.ers#/ UnderwritingV2_DetermineRiskV2.ers#/">
+  <ruleflow versionLabel="UW2" effectiveDate="2006-12-31T21:02:03.832-0800" description="TITLE: Underwriting&#xA;VERSION: 1&#xA;AUTHOR: MEP&#xA;PROJECTID: UW&#xA;DATE: 3/15/2006&#xA;DESCRIPTION: Initial Rule  Model&#xA;CHANGES:&#xA;6/1/2007 UW-123 Age limit lowered to 30 years" majorVersion="2" minorVersion="1" vocabularyUpdateStamp="_k72HoGqnEeGMCd15vaZIXw" vocabulary="Underwriting.ecore#/" workDocumentEntity="Underwriting.ecore#//Applicant">
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="VERSION" order="1" ruleActivityUpdateStamp="_qPi19GqnEeGMCd15vaZIXw" invokes="UnderwritingV2_VERSION.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="RULESET" order="2" ruleActivityUpdateStamp="_qVXKAmqnEeGMCd15vaZIXw" invokes="UnderwritingV2_RULESET.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="DetermineRiskV2" order="3" ruleActivityUpdateStamp="_qWH_WmqnEeGMCd15vaZIXw" invokes="UnderwritingV2_DetermineRiskV2.ers#//@ruleset"/>
+  </ruleflow>
+  <ruleflowViewList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:FlowDiagram">
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="30" y="30" width="160" height="60" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.0"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="250" y="30" width="160" height="60" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.1" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.1"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="470" y="30" width="160" height="60" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.1" activityNode="#//@ruleflow/@flowControlList.2"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.0" targetShape="#//@ruleflowViewList.0/@flowShapeList.1"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.1" targetShape="#//@ruleflowViewList.0/@flowShapeList.2"/>
+  </ruleflowViewList>
+</com.corticon.rulesemf.assetmodel:RuleflowAsset>

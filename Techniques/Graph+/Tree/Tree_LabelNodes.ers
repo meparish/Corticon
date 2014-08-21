@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_NI68DGohEeG5P4kWG-yizA" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_E_1U4GohEeG5P4kWG-yizA" vocabulary="Tree.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(subnodes->isEmpty)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( subnodes->isEmpty ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="subnodes" datatype="Boolean" termtype="COLLECTION" fulltext="subnodes->isEmpty">
+                <parentTerm text="subnodes" datatype="Node" termtype="ENTITY" fulltext="subnodes" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="subnodes->isEmpty" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(parentNode-> isEmpty)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( parentNode->isEmpty ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="parentNode" datatype="Boolean" termtype="COLLECTION" fulltext="parentNode->isEmpty">
+                <parentTerm text="parentNode" datatype="Node" termtype="ENTITY" fulltext="parentNode" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="parentNode-> isEmpty" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="node.terminalNode = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.terminalNode = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="terminalNode" datatype="Boolean" termtype="ATTRIBUTE" fulltext="node.terminalNode">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="node.rootNode = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.rootNode = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="rootNode" datatype="Boolean" termtype="ATTRIBUTE" fulltext="node.rootNode">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="(subnodes->isEmpty)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( subnodes->isEmpty ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="subnodes" datatype="Boolean" termtype="COLLECTION" fulltext="subnodes->isEmpty">
+                <parentTerm text="subnodes" datatype="Node" termtype="ENTITY" fulltext="subnodes" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="subnodes->isEmpty" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(parentNode-> isEmpty)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( parentNode->isEmpty ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="parentNode" datatype="Boolean" termtype="COLLECTION" fulltext="parentNode->isEmpty">
+                <parentTerm text="parentNode" datatype="Node" termtype="ENTITY" fulltext="parentNode" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="parentNode-> isEmpty" rhs="F"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="node.terminalNode = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.terminalNode = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="terminalNode" datatype="Boolean" termtype="ATTRIBUTE" fulltext="node.terminalNode">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="node.rootNode = F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.rootNode = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="rootNode" datatype="Boolean" termtype="ATTRIBUTE" fulltext="node.rootNode">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="(subnodes->isEmpty)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( subnodes->isEmpty ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="subnodes" datatype="Boolean" termtype="COLLECTION" fulltext="subnodes->isEmpty">
+                <parentTerm text="subnodes" datatype="Node" termtype="ENTITY" fulltext="subnodes" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="subnodes->isEmpty" rhs="F"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(parentNode-> isEmpty)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( parentNode->isEmpty ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="parentNode" datatype="Boolean" termtype="COLLECTION" fulltext="parentNode->isEmpty">
+                <parentTerm text="parentNode" datatype="Node" termtype="ENTITY" fulltext="parentNode" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="parentNode-> isEmpty" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="node.terminalNode = F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.terminalNode = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="terminalNode" datatype="Boolean" termtype="ATTRIBUTE" fulltext="node.terminalNode">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="node.rootNode = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.rootNode = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="rootNode" datatype="Boolean" termtype="ATTRIBUTE" fulltext="node.rootNode">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition>
+        <opaqueExpression expression="(subnodes->isEmpty)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( subnodes->isEmpty ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="subnodes" datatype="Boolean" termtype="COLLECTION" fulltext="subnodes->isEmpty">
+                <parentTerm text="subnodes" datatype="Node" termtype="ENTITY" fulltext="subnodes" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="subnodes->isEmpty" rhs="F"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(parentNode-> isEmpty)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( parentNode->isEmpty ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="parentNode" datatype="Boolean" termtype="COLLECTION" fulltext="parentNode->isEmpty">
+                <parentTerm text="parentNode" datatype="Node" termtype="ENTITY" fulltext="parentNode" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="parentNode-> isEmpty" rhs="F"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="node.terminalNode = F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.terminalNode = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="terminalNode" datatype="Boolean" termtype="ATTRIBUTE" fulltext="node.terminalNode">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="node.rootNode = F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.rootNode = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="rootNode" datatype="Boolean" termtype="ATTRIBUTE" fulltext="node.rootNode">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="{node.name} is the only node in the tree">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.name +  is the only node in the tree" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node.name">
+              <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="{node.name} is a terminal node">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.name +  is a terminal node" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node.name">
+              <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="{node.name} is the root node">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.name +  is the root node" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node.name">
+              <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="{node.name} is an intermediate node">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.name +  is an intermediate node" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node.name">
+              <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="Tree.ecore#//Node" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2 #//@ruleset/@ruleStatements.3">
+      <alias value="node"/>
+      <extension explicit="true" association="true" entity="Tree.ecore#//Node" traversedAssocRole="Tree.ecore#//Node/nodes">
+        <alias value="subnodes"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Tree.ecore#//Node" traversedAssocRole="Tree.ecore#//Node/parent">
+        <alias value="parentNode"/>
+      </extension>
+      <referencedAttributes attribute="Tree.ecore#//Node/terminalNode"/>
+      <referencedAttributes attribute="Tree.ecore#//Node/rootNode"/>
+      <referencedAttributes attribute="Tree.ecore#//Node/name"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="node.terminalNode">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.terminalNode" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="terminalNode" datatype="Boolean" termtype="ATTRIBUTE" fulltext="node.terminalNode">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="node.rootNode">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.rootNode" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="rootNode" datatype="Boolean" termtype="ATTRIBUTE" fulltext="node.rootNode">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="{node.name} is the only node in the tree">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.name +  is the only node in the tree" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node.name">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="{node.name} is a terminal node">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.name +  is a terminal node" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node.name">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="{node.name} is the root node">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.name +  is the root node" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node.name">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="4"/>
+        <text external="{node.name} is an intermediate node">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node.name +  is an intermediate node" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node.name">
+                <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="subnodes->isEmpty">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="subnodes->isEmpty" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="subnodes" datatype="Boolean" termtype="COLLECTION" fulltext="subnodes->isEmpty">
+                <parentTerm text="subnodes" datatype="Node" termtype="ENTITY" fulltext="subnodes" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="parentNode-> isEmpty">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="parentNode->isEmpty" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="parentNode" datatype="Boolean" termtype="COLLECTION" fulltext="parentNode->isEmpty">
+                <parentTerm text="parentNode" datatype="Node" termtype="ENTITY" fulltext="parentNode" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="node" datatype="Node" termtype="ENTITY" fulltext="node" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="T"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="F"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList valueSet="T"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList valueSet="F"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

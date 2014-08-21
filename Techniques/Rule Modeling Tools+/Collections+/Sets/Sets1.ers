@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_NdyWVxtiEeK04NcfTqKPdg" externalChecksum="3054974779:201531363:1292135240">
+  <languageCode>en_GB</languageCode>
+  <ruleset vocabularyUpdateStamp="_6J4kERteEeK04NcfTqKPdg" vocabulary="Sets.ecore#/">
+    <rule>
+      <condition/>
+      <action>
+        <opaqueExpression expression="S1.SwapCollection = F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="S1.SwapCollection = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="SwapCollection" datatype="Boolean" termtype="ATTRIBUTE" fulltext="S1.SwapCollection">
+                <parentTerm text="S1" datatype="Set" termtype="ENTITY" fulltext="S1"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="S1" datatype="Set" termtype="ENTITY" fulltext="S1" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="S1I.OriginalCollection = '2'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="S1I.OriginalCollection = '2'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="OriginalCollection" datatype="String" termtype="ATTRIBUTE" fulltext="S1I.OriginalCollection">
+                <parentTerm text="S1I" datatype="Item" termtype="ENTITY" fulltext="S1I">
+                  <parentTerm text="S1" datatype="Set" termtype="ENTITY" fulltext="S1"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="S1I" datatype="Item" termtype="ENTITY" fulltext="S1I" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="S1" datatype="Set" termtype="ENTITY" fulltext="S1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(S2I.Number&lt;S1I.Number->min)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( S2I.Number &lt; S1I.Number->min ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="S1I_Number" datatype="Integer" termtype="COLLECTION" fulltext="S1I.Number->min">
+                <parentTerm text="Number" datatype="Integer" termtype="ATTRIBUTE" fulltext="S1I.Number">
+                  <parentTerm text="S1I" datatype="Item" termtype="ENTITY" fulltext="S1I" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="S1" datatype="Set" termtype="ENTITY" fulltext="S1" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="Number" datatype="Integer" termtype="ATTRIBUTE" fulltext="S2I.Number">
+                <parentTerm text="S2I" datatype="Item" termtype="ENTITY" fulltext="S2I" variable="#//@ruleset/@logicalVariables.1/@extension.0">
+                  <parentTerm text="S2" datatype="Set" termtype="ENTITY" fulltext="S2" variable="#//@ruleset/@logicalVariables.1"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="S2I.Number&lt;S1I.Number->min" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="S1.SwapCollection = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="S1.SwapCollection = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="SwapCollection" datatype="Boolean" termtype="ATTRIBUTE" fulltext="S1.SwapCollection">
+                <parentTerm text="S1" datatype="Set" termtype="ENTITY" fulltext="S1"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="S1" datatype="Set" termtype="ENTITY" fulltext="S1" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="S1I.OriginalCollection = '1'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="S1I.OriginalCollection = '1'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="OriginalCollection" datatype="String" termtype="ATTRIBUTE" fulltext="S1I.OriginalCollection">
+                <parentTerm text="S1I" datatype="Item" termtype="ENTITY" fulltext="S1I">
+                  <parentTerm text="S1" datatype="Set" termtype="ENTITY" fulltext="S1"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="S1I" datatype="Item" termtype="ENTITY" fulltext="S1I" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="S1" datatype="Set" termtype="ENTITY" fulltext="S1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter>
+      <opaqueExpression expression="S1&lt;>S2">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="S1 &lt;> S2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="S2" datatype="Set" termtype="ENTITY" fulltext="S2" variable="#//@ruleset/@logicalVariables.1"/>
+            <terms text="S1" datatype="Set" termtype="ENTITY" fulltext="S1" variable="#//@ruleset/@logicalVariables.0"/>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="I2: {S2I.Number} - I1:{S1I.Number}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="I2:  + S2I.Number +  - I1: + S1I.Number" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="Number" datatype="Integer" termtype="ATTRIBUTE" fulltext="S2I.Number">
+              <parentTerm text="S2I" datatype="Item" termtype="ENTITY" fulltext="S2I" variable="#//@ruleset/@logicalVariables.1/@extension.0">
+                <parentTerm text="S2" datatype="Set" termtype="ENTITY" fulltext="S2" variable="#//@ruleset/@logicalVariables.1"/>
+              </parentTerm>
+            </terms>
+            <terms text="Number" datatype="Integer" termtype="ATTRIBUTE" fulltext="S1I.Number">
+              <parentTerm text="S1I" datatype="Item" termtype="ENTITY" fulltext="S1I" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="S1" datatype="Set" termtype="ENTITY" fulltext="S1" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="Sets.ecore#//Set" ruleStatements="#//@ruleset/@ruleStatements.0">
+      <alias value="S1"/>
+      <extension explicit="true" association="true" entity="Sets.ecore#//Item" traversedAssocRole="Sets.ecore#//Set/item">
+        <alias value="S1I"/>
+        <referencedAttributes attribute="Sets.ecore#//Item/Number"/>
+        <referencedAttributes attribute="Sets.ecore#//Item/OriginalCollection"/>
+      </extension>
+      <referencedAttributes attribute="Sets.ecore#//Set/SwapCollection"/>
+      <referencedAttributes attribute="Sets.ecore#//Set/Number"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="Sets.ecore#//Set">
+      <alias value="S2"/>
+      <extension explicit="true" association="true" entity="Sets.ecore#//Item" traversedAssocRole="Sets.ecore#//Set/item">
+        <alias value="S2I"/>
+        <referencedAttributes attribute="Sets.ecore#//Item/Number"/>
+        <referencedAttributes attribute="Sets.ecore#//Item/OriginalCollection"/>
+      </extension>
+      <referencedAttributes attribute="Sets.ecore#//Set/SwapCollection"/>
+      <referencedAttributes attribute="Sets.ecore#//Set/Number"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" sortedAliasAttributeName="SwapCollection" entity="Sets.ecore#//Set">
+      <alias value="Number"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="Sets.ecore#//Set">
+      <alias value="S"/>
+      <extension explicit="true" association="true" entity="Sets.ecore#//Item" traversedAssocRole="Sets.ecore#//Set/item">
+        <alias value="SI"/>
+      </extension>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="27" sashWeightScope="78" sashWeightConditionsActions="38" sashWeightConditionsIf="37">
+    <actionSection rowCount="49" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="S1.SwapCollection">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="S1.SwapCollection" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="SwapCollection" datatype="Boolean" termtype="ATTRIBUTE" fulltext="S1.SwapCollection">
+                <parentTerm text="S1" datatype="Set" termtype="ENTITY" fulltext="S1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="S1I.OriginalCollection">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="S1I.OriginalCollection" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="OriginalCollection" datatype="String" termtype="ATTRIBUTE" fulltext="S1I.OriginalCollection">
+                <parentTerm text="S1I" datatype="Item" termtype="ENTITY" fulltext="S1I" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="S1" datatype="Set" termtype="ENTITY" fulltext="S1" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="S1&lt;>S2" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" expanded="true" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" expanded="true" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="S1&lt;>S2" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" expanded="true" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeSortedAlias" logicalVariable="#//@ruleset/@logicalVariables.2" operatorID="com.corticon.operations.EntityAssocOperators.Collection.sortedBy"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.1/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" expanded="true" referencedAttribute="#//@ruleset/@logicalVariables.1/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@extension.0/@referencedAttributes.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.3">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.3/@extension.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="S1&lt;>S2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="S1 &lt;> S2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="S2" datatype="Set" termtype="ENTITY" fulltext="S2" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="S1" datatype="Set" termtype="ENTITY" fulltext="S1" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="I2: {S2I.Number} - I1:{S1I.Number}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="I2:  + S2I.Number +  - I1: + S1I.Number" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="Number" datatype="Integer" termtype="ATTRIBUTE" fulltext="S2I.Number">
+                <parentTerm text="S2I" datatype="Item" termtype="ENTITY" fulltext="S2I" variable="#//@ruleset/@logicalVariables.1/@extension.0">
+                  <parentTerm text="S2" datatype="Set" termtype="ENTITY" fulltext="S2" variable="#//@ruleset/@logicalVariables.1"/>
+                </parentTerm>
+              </terms>
+              <terms text="Number" datatype="Integer" termtype="ATTRIBUTE" fulltext="S1I.Number">
+                <parentTerm text="S1I" datatype="Item" termtype="ENTITY" fulltext="S1I" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="S1" datatype="Set" termtype="ENTITY" fulltext="S1" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.8530805687203792">
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="S2I.Number&lt;S1I.Number->min">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="S2I.Number &lt; S1I.Number->min" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="S1I_Number" datatype="Integer" termtype="COLLECTION" fulltext="S1I.Number->min">
+                <parentTerm text="Number" datatype="Integer" termtype="ATTRIBUTE" fulltext="S1I.Number">
+                  <parentTerm text="S1I" datatype="Item" termtype="ENTITY" fulltext="S1I" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="S1" datatype="Set" termtype="ENTITY" fulltext="S1" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="Number" datatype="Integer" termtype="ATTRIBUTE" fulltext="S2I.Number">
+                <parentTerm text="S2I" datatype="Item" termtype="ENTITY" fulltext="S2I" variable="#//@ruleset/@logicalVariables.1/@extension.0">
+                  <parentTerm text="S2" datatype="Set" termtype="ENTITY" fulltext="S2" variable="#//@ruleset/@logicalVariables.1"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList valueSet="'2'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="'1'"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

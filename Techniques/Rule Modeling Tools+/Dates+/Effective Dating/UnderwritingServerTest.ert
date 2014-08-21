@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_v9X7rWqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_v9eCJ2qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet remoteServerUri="http://localhost:8080/Corticon/services/Corticon" decisionServiceName="Underwriting">
+      <input/>
+      <output/>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="36" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="36" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" expanded="false" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="med" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" expanded="false" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="high" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" expanded="false" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="36" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="med" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" expanded="false" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="36" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="high" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.7/@children.7" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2006/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Initial version" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V1" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.7/@children.8" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW-123" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2007/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Age limit 30" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V2" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.7/@children.9" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW-456" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2008/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Age limit 28" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V3" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Underwriting.ecore#//Ruleset">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Dick" eAttribute="Underwriting.ecore#//Ruleset/approvedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Tom" eAttribute="Underwriting.ecore#//Ruleset/author"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Determine applicant risk based on age and whether they skydive" eAttribute="Underwriting.ecore#//Ruleset/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Underwriting" eAttribute="Underwriting.ecore#//Ruleset/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW" eAttribute="Underwriting.ecore#//Ruleset/projectID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Jenny" eAttribute="Underwriting.ecore#//Ruleset/reviewedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V1" eAttribute="Underwriting.ecore#//Ruleset/version"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.4"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.5"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.6"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" expanded="false" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="med" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" expanded="false" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="high" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" expanded="false" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="36" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="med" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" manuallyCreated="true" expanded="false" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="36" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="high" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.7/@children.7" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2006/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Initial version" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V1" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.7/@children.8" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW-123" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2007/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Age limit 30" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V2" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.7/@children.9" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW-456" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2008/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Age limit 28" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V3" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Underwriting.ecore#//Ruleset">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Dick" eAttribute="Underwriting.ecore#//Ruleset/approvedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Tom" eAttribute="Underwriting.ecore#//Ruleset/author"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Determine applicant risk based on age and whether they skydive" eAttribute="Underwriting.ecore#//Ruleset/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Underwriting" eAttribute="Underwriting.ecore#//Ruleset/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW" eAttribute="Underwriting.ecore#//Ruleset/projectID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Jenny" eAttribute="Underwriting.ecore#//Ruleset/reviewedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V1" eAttribute="Underwriting.ecore#//Ruleset/version"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.4"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.5"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.6"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_v9eCKGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet remoteServerUri="http://localhost:8080/Corticon/services/Corticon" decisionServiceName="U2">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="V2: Risk is me because applicant is 30 or over and not a skydiver"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="med" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" referencingHrefs="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.3/@children.7" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2006/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Initial version" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V1" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" referencingHrefs="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.3/@children.8" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW-123" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2007/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Age limit 30" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V2" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Underwriting.ecore#//Ruleset">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Dick" eAttribute="Underwriting.ecore#//Ruleset/approvedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Tom" eAttribute="Underwriting.ecore#//Ruleset/author"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Determine applicant risk based on age and whether they skydive" eAttribute="Underwriting.ecore#//Ruleset/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Underwriting" eAttribute="Underwriting.ecore#//Ruleset/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW" eAttribute="Underwriting.ecore#//Ruleset/projectID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Jenny" eAttribute="Underwriting.ecore#//Ruleset/reviewedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V2" eAttribute="Underwriting.ecore#//Ruleset/version"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.2"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="med" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.1/@testsheetViewList.0/@expectedRoot/@children.3/@children.7" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2006/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Initial version" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V1" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.1/@testsheetViewList.0/@expectedRoot/@children.3/@children.8" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW-123" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2007/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Age limit 30" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V2" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Underwriting.ecore#//Ruleset">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Dick" eAttribute="Underwriting.ecore#//Ruleset/approvedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Tom" eAttribute="Underwriting.ecore#//Ruleset/author"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Determine applicant risk based on age and whether they skydive" eAttribute="Underwriting.ecore#//Ruleset/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Underwriting" eAttribute="Underwriting.ecore#//Ruleset/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW" eAttribute="Underwriting.ecore#//Ruleset/projectID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Jenny" eAttribute="Underwriting.ecore#//Ruleset/reviewedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V2" eAttribute="Underwriting.ecore#//Ruleset/version"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@expectedRoot/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@expectedRoot/@children.2"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_v9eCKWqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet remoteServerUri="http://localhost:8080/Corticon/services/Corticon" decisionServiceName="UnderwritingV3">
+      <input/>
+      <output/>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="med" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="high" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.7" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Dick" eAttribute="Underwriting.ecore#//Changes/authorizedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2006/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Initial version using age limit 35" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V1" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.8" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Dick" eAttribute="Underwriting.ecore#//Changes/authorizedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW-123" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2007/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Change Age limit from 35 to 30" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V2" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.9" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Harry" eAttribute="Underwriting.ecore#//Changes/authorizedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW-456" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2008/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Change Age limit from 30 to 28" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V3" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Underwriting.ecore#//Ruleset">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Dick" eAttribute="Underwriting.ecore#//Ruleset/approvedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Tom" eAttribute="Underwriting.ecore#//Ruleset/author"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Determine applicant risk based on age and whether they skydive" eAttribute="Underwriting.ecore#//Ruleset/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Underwriting" eAttribute="Underwriting.ecore#//Ruleset/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW" eAttribute="Underwriting.ecore#//Ruleset/projectID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Jenny" eAttribute="Underwriting.ecore#//Ruleset/reviewedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V3" eAttribute="Underwriting.ecore#//Ruleset/version"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.4"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="med" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="high" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.5/@children.7" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Dick" eAttribute="Underwriting.ecore#//Changes/authorizedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2006/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Initial version using age limit 35" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V1" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.5/@children.8" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Dick" eAttribute="Underwriting.ecore#//Changes/authorizedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW-123" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2007/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Change Age limit from 35 to 30" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V2" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.5/@children.9" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Harry" eAttribute="Underwriting.ecore#//Changes/authorizedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW-456" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2008/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Change Age limit from 30 to 28" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V3" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Underwriting.ecore#//Ruleset">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Dick" eAttribute="Underwriting.ecore#//Ruleset/approvedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Tom" eAttribute="Underwriting.ecore#//Ruleset/author"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Determine applicant risk based on age and whether they skydive" eAttribute="Underwriting.ecore#//Ruleset/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Underwriting" eAttribute="Underwriting.ecore#//Ruleset/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW" eAttribute="Underwriting.ecore#//Ruleset/projectID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Jenny" eAttribute="Underwriting.ecore#//Ruleset/reviewedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V3" eAttribute="Underwriting.ecore#//Ruleset/version"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.4"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_v9eCKmqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet remoteServerUri="http://localhost:8080/Corticon/services/Corticon" decisionServiceName="Underwriting">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="V3: Risk is high because applicant is a skydiver"/>
+        <PostedMessage severity="Info" text="V3: Risk is med because applicant is 28 or over and not a skydiver"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="med" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="high" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" referencingHrefs="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.5/@children.7" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2006/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Initial version" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V1" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" referencingHrefs="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.5/@children.8" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW-123" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2007/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Age limit 30" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V2" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" referencingHrefs="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.5/@children.9" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW-456" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2008/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Age limit 28" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V3" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Underwriting.ecore#//Ruleset">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Dick" eAttribute="Underwriting.ecore#//Ruleset/approvedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Tom" eAttribute="Underwriting.ecore#//Ruleset/author"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Determine applicant risk based on age and whether they skydive" eAttribute="Underwriting.ecore#//Ruleset/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Underwriting" eAttribute="Underwriting.ecore#//Ruleset/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW" eAttribute="Underwriting.ecore#//Ruleset/projectID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Jenny" eAttribute="Underwriting.ecore#//Ruleset/reviewedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V1" eAttribute="Underwriting.ecore#//Ruleset/version"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.4"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="med" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="high" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.3/@testsheetViewList.0/@expectedRoot/@children.5/@children.7" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2006/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Initial version" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V1" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.3/@testsheetViewList.0/@expectedRoot/@children.5/@children.8" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW-123" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2007/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Age limit 30" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V2" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.3/@testsheetViewList.0/@expectedRoot/@children.5/@children.9" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW-456" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2008/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Age limit 28" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V3" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Underwriting.ecore#//Ruleset">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Dick" eAttribute="Underwriting.ecore#//Ruleset/approvedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Tom" eAttribute="Underwriting.ecore#//Ruleset/author"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Determine applicant risk based on age and whether they skydive" eAttribute="Underwriting.ecore#//Ruleset/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Underwriting" eAttribute="Underwriting.ecore#//Ruleset/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW" eAttribute="Underwriting.ecore#//Ruleset/projectID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Jenny" eAttribute="Underwriting.ecore#//Ruleset/reviewedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V1" eAttribute="Underwriting.ecore#//Ruleset/version"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.3/@testsheetViewList.0/@expectedRoot/@children.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.3/@testsheetViewList.0/@expectedRoot/@children.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.3/@testsheetViewList.0/@expectedRoot/@children.4"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_v9eCK2qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet remoteServerUri="http://localhost:8080/Corticon/services/Corticon" decisionServiceName="UX1">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="V1: Risk is high because applicant is a skydiver"/>
+        <PostedMessage severity="Info" text="V1: Risk is low because applicant is under 35 and not a skydiver"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="low" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="high" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" referencingHrefs="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.3/@children.7" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2006/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Initial Version" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V1" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Underwriting.ecore#//Ruleset">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Dick" eAttribute="Underwriting.ecore#//Ruleset/approvedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Tom" eAttribute="Underwriting.ecore#//Ruleset/author"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Determine applicant risk based on age and whether they skydive" eAttribute="Underwriting.ecore#//Ruleset/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Underwriting" eAttribute="Underwriting.ecore#//Ruleset/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW" eAttribute="Underwriting.ecore#//Ruleset/projectID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Jenny" eAttribute="Underwriting.ecore#//Ruleset/reviewedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V1" eAttribute="Underwriting.ecore#//Ruleset/version"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.2"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="low" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="high" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.4/@testsheetViewList.0/@expectedRoot/@children.3/@children.7" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2006/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Initial Version" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V1" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Underwriting.ecore#//Ruleset">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Dick" eAttribute="Underwriting.ecore#//Ruleset/approvedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Tom" eAttribute="Underwriting.ecore#//Ruleset/author"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Determine applicant risk based on age and whether they skydive" eAttribute="Underwriting.ecore#//Ruleset/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Underwriting" eAttribute="Underwriting.ecore#//Ruleset/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW" eAttribute="Underwriting.ecore#//Ruleset/projectID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Jenny" eAttribute="Underwriting.ecore#//Ruleset/reviewedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V1" eAttribute="Underwriting.ecore#//Ruleset/version"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.4/@testsheetViewList.0/@expectedRoot/@children.2"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_v9eCLWqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet remoteServerUri="http://localhost:8080/Corticon/services/Corticon" decisionServiceName="Underwriting">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="V2: Risk is high because applicant is a skydiver"/>
+        <PostedMessage severity="Info" text="V2: Risk is me because applicant is 30 or over and not a skydiver"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="low" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="high" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.5/@testsheetViewList.0/@inputRoot/@children.3/@children.7" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2006/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Initial Version" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V1" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Underwriting.ecore#//Ruleset">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Dick" eAttribute="Underwriting.ecore#//Ruleset/approvedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Tom" eAttribute="Underwriting.ecore#//Ruleset/author"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Determine applicant risk based on age and whether they skydive" eAttribute="Underwriting.ecore#//Ruleset/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Underwriting" eAttribute="Underwriting.ecore#//Ruleset/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW" eAttribute="Underwriting.ecore#//Ruleset/projectID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Jenny" eAttribute="Underwriting.ecore#//Ruleset/reviewedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V1" eAttribute="Underwriting.ecore#//Ruleset/version"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.5/@testsheetViewList.0/@inputRoot/@children.2"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" messageItem="#//@testsheetAssets.5/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="med" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" messageItem="#//@testsheetAssets.5/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="high" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" referencingHrefs="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.5/@children.7" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="UW" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2006/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Initial version" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="V1" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" referencingHrefs="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.5/@children.8" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="UW-123" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2007/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Age limit 30" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="V2" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" referencingHrefs="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.5/@children.9" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="UW-456" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2008/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Age limit 28" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="V3" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Underwriting.ecore#//Ruleset">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Dick" eAttribute="Underwriting.ecore#//Ruleset/approvedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tom" eAttribute="Underwriting.ecore#//Ruleset/author"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Determine applicant risk based on age and whether they skydive" eAttribute="Underwriting.ecore#//Ruleset/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Underwriting" eAttribute="Underwriting.ecore#//Ruleset/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="UW" eAttribute="Underwriting.ecore#//Ruleset/projectID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Jenny" eAttribute="Underwriting.ecore#//Ruleset/reviewedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="V1" eAttribute="Underwriting.ecore#//Ruleset/version"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.4"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="5" newOrModified="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.7"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="7" newOrModified="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.9"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" referencingHrefs="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.10/@children.7" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2006/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Initial version" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V1" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" referencingHrefs="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.5/@children.10" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2006/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Initial version" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V1" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" referencingHrefs="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.10/@children.8" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW-123" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2007/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Age limit 30" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V2" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" referencingHrefs="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.5/@children.11" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW-123" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2007/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Age limit 30" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V2" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" eClass="Underwriting.ecore#//Ruleset">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Dick" eAttribute="Underwriting.ecore#//Ruleset/approvedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Tom" eAttribute="Underwriting.ecore#//Ruleset/author"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Determine applicant risk based on age and whether they skydive" eAttribute="Underwriting.ecore#//Ruleset/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Underwriting" eAttribute="Underwriting.ecore#//Ruleset/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="UW" eAttribute="Underwriting.ecore#//Ruleset/projectID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Jenny" eAttribute="Underwriting.ecore#//Ruleset/reviewedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="V2" eAttribute="Underwriting.ecore#//Ruleset/version"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.6"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="6" newOrModified="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.8"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.5/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.5/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="med" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="no" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Underwriting.ecore#//Applicant">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="34" eAttribute="Underwriting.ecore#//Applicant/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="high" eAttribute="Underwriting.ecore#//Applicant/riskRating"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="yes" eAttribute="Underwriting.ecore#//Applicant/skydiver"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.5/@testsheetViewList.0/@expectedRoot/@children.5/@children.7" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="UW" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2006/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Initial version" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="V1" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.5/@testsheetViewList.0/@expectedRoot/@children.5/@children.8" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="UW-123" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2007/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Age limit 30" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="V2" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.5/@testsheetViewList.0/@expectedRoot/@children.5/@children.9" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="UW-456" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2008/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Age limit 28" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="V3" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Underwriting.ecore#//Ruleset">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Dick" eAttribute="Underwriting.ecore#//Ruleset/approvedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tom" eAttribute="Underwriting.ecore#//Ruleset/author"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Determine applicant risk based on age and whether they skydive" eAttribute="Underwriting.ecore#//Ruleset/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Underwriting" eAttribute="Underwriting.ecore#//Ruleset/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="UW" eAttribute="Underwriting.ecore#//Ruleset/projectID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Jenny" eAttribute="Underwriting.ecore#//Ruleset/reviewedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="V1" eAttribute="Underwriting.ecore#//Ruleset/version"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.5/@testsheetViewList.0/@expectedRoot/@children.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.5/@testsheetViewList.0/@expectedRoot/@children.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.5/@testsheetViewList.0/@expectedRoot/@children.4"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="5" newOrModified="true" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.5/@testsheetViewList.0/@expectedRoot/@children.7"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="7" newOrModified="true" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.5/@testsheetViewList.0/@expectedRoot/@children.9"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.5/@testsheetViewList.0/@expectedRoot/@children.10/@children.7" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2006/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Initial version" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V1" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.5/@testsheetViewList.0/@expectedRoot/@children.5/@children.10" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2006/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Initial version" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V1" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.5/@testsheetViewList.0/@expectedRoot/@children.10/@children.8" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW-123" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2007/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Age limit 30" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V2" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.5/@testsheetViewList.0/@expectedRoot/@children.5/@children.11" eClass="Underwriting.ecore#//Changes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW-123" eAttribute="Underwriting.ecore#//Changes/changeRequest"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2007/1/1" eAttribute="Underwriting.ecore#//Changes/date"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Age limit 30" eAttribute="Underwriting.ecore#//Changes/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V2" eAttribute="Underwriting.ecore#//Changes/version"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="Underwriting.ecore#//Ruleset">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Dick" eAttribute="Underwriting.ecore#//Ruleset/approvedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Tom" eAttribute="Underwriting.ecore#//Ruleset/author"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Determine applicant risk based on age and whether they skydive" eAttribute="Underwriting.ecore#//Ruleset/description"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Underwriting" eAttribute="Underwriting.ecore#//Ruleset/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="UW" eAttribute="Underwriting.ecore#//Ruleset/projectID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Jenny" eAttribute="Underwriting.ecore#//Ruleset/reviewedBy"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="V2" eAttribute="Underwriting.ecore#//Ruleset/version"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.5/@testsheetViewList.0/@expectedRoot/@children.6"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="6" newOrModified="true" manuallyCreated="true" eReference="Underwriting.ecore#//Ruleset/changes" targetTestNode="#//@testsheetAssets.5/@testsheetViewList.0/@expectedRoot/@children.8"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_k72HoGqnEeGMCd15vaZIXw" testsheets="#//@testsheetAssets.0/@testsheet #//@testsheetAssets.1/@testsheet #//@testsheetAssets.2/@testsheet #//@testsheetAssets.3/@testsheet #//@testsheetAssets.4/@testsheet #//@testsheetAssets.5/@testsheet" vocabulary="Underwriting.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="UnderwritingV1"/>
+    <testTabList name="UnderwritingV2"/>
+    <testTabList name="UnderwritingV3"/>
+    <testTabList name="ServerDefault"/>
+    <testTabList name="WebConsole"/>
+    <testTabList name="U2"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

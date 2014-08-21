@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_toFZALaYEeGU39-PZxk6cQ" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_ta1AILaYEeGU39-PZxk6cQ" vocabulary="PortV.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="goods.name = 'Cheap Tin Trays'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goods.name = 'Cheap Tin Trays'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="goods.name">
+                <parentTerm text="goods" datatype="Cargo" termtype="ENTITY" fulltext="goods" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="manifest" datatype="Manifest" termtype="ENTITY" fulltext="Ship.manifest" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Ship" datatype="Ship" termtype="ENTITY" fulltext="Ship" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="goods.name" rhs="'Cheap Tin Trays'"/>
+      </condition>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(goods.perishable)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( goods.perishable ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="perishable" datatype="Boolean" termtype="ATTRIBUTE" fulltext="goods.perishable">
+                <parentTerm text="goods" datatype="Cargo" termtype="ENTITY" fulltext="goods" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="manifest" datatype="Manifest" termtype="ENTITY" fulltext="Ship.manifest" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Ship" datatype="Ship" termtype="ENTITY" fulltext="Ship" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="goods.perishable" rhs="T"/>
+      </condition>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="not (goods.name = 'Cheap Tin Trays' or goods.name = 'Firewood' or goods.name = 'iron-ware' or goods.name = 'pig-lead' or goods.name = 'Road-rail' or goods.name = 'Tyne coal' or goods.name = null) or goods.name = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( goods.name = 'Cheap Tin Trays' or goods.name = 'Firewood' or goods.name = 'iron-ware' or goods.name = 'pig-lead' or goods.name = 'Road-rail' or goods.name = 'Tyne coal' or goods.name = null ) or goods.name = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="goods.name">
+                <parentTerm text="goods" datatype="Cargo" termtype="ENTITY" fulltext="goods" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="manifest" datatype="Manifest" termtype="ENTITY" fulltext="Ship.manifest" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Ship" datatype="Ship" termtype="ENTITY" fulltext="Ship" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="goods.name" rhs="other"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(goods.perishable)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( goods.perishable ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="perishable" datatype="Boolean" termtype="ATTRIBUTE" fulltext="goods.perishable">
+                <parentTerm text="goods" datatype="Cargo" termtype="ENTITY" fulltext="goods" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="manifest" datatype="Manifest" termtype="ENTITY" fulltext="Ship.manifest" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Ship" datatype="Ship" termtype="ENTITY" fulltext="Ship" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="goods.perishable" rhs="F"/>
+      </condition>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition>
+        <opaqueExpression expression="goods.name = 'Tyne coal'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goods.name = 'Tyne coal'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="goods.name">
+                <parentTerm text="goods" datatype="Cargo" termtype="ENTITY" fulltext="goods" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="manifest" datatype="Manifest" termtype="ENTITY" fulltext="Ship.manifest" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Ship" datatype="Ship" termtype="ENTITY" fulltext="Ship" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="goods.name" rhs="'Tyne coal'"/>
+      </condition>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.4">
+      <condition>
+        <opaqueExpression expression="goods.name = 'Road-rail'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goods.name = 'Road-rail'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="goods.name">
+                <parentTerm text="goods" datatype="Cargo" termtype="ENTITY" fulltext="goods" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="manifest" datatype="Manifest" termtype="ENTITY" fulltext="Ship.manifest" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Ship" datatype="Ship" termtype="ENTITY" fulltext="Ship" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="goods.name" rhs="'Road-rail'"/>
+      </condition>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.5">
+      <condition>
+        <opaqueExpression expression="goods.name = 'pig-lead'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goods.name = 'pig-lead'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="goods.name">
+                <parentTerm text="goods" datatype="Cargo" termtype="ENTITY" fulltext="goods" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="manifest" datatype="Manifest" termtype="ENTITY" fulltext="Ship.manifest" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Ship" datatype="Ship" termtype="ENTITY" fulltext="Ship" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="goods.name" rhs="'pig-lead'"/>
+      </condition>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.6">
+      <condition>
+        <opaqueExpression expression="goods.name = 'Firewood'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goods.name = 'Firewood'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="goods.name">
+                <parentTerm text="goods" datatype="Cargo" termtype="ENTITY" fulltext="goods" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="manifest" datatype="Manifest" termtype="ENTITY" fulltext="Ship.manifest" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Ship" datatype="Ship" termtype="ENTITY" fulltext="Ship" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="goods.name" rhs="'Firewood'"/>
+      </condition>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.7">
+      <condition>
+        <opaqueExpression expression="goods.name = 'iron-ware'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goods.name = 'iron-ware'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="goods.name">
+                <parentTerm text="goods" datatype="Cargo" termtype="ENTITY" fulltext="goods" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="manifest" datatype="Manifest" termtype="ENTITY" fulltext="Ship.manifest" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Ship" datatype="Ship" termtype="ENTITY" fulltext="Ship" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="goods.name" rhs="'iron-ware'"/>
+      </condition>
+      <condition/>
+    </rule>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Cheap Tin Trays are subject to an import tax of $1 per tray - must be manually counted before {Ship.name} can dock">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Cheap Tin Trays are subject to an import tax of $1 per tray - must be manually counted before  + Ship.name +  can dock" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Ship.name">
+              <parentTerm text="Ship" datatype="Ship" termtype="ENTITY" fulltext="Ship" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Perishable goods needs to be inspected by the FDA before {Ship.name} can dock">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Perishable goods needs to be inspected by the FDA before  + Ship.name +  can dock" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Ship.name">
+              <parentTerm text="Ship" datatype="Ship" termtype="ENTITY" fulltext="Ship" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="{Ship.name} is cleared for docking">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Ship.name +  is cleared for docking" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Ship.name">
+              <parentTerm text="Ship" datatype="Ship" termtype="ENTITY" fulltext="Ship" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Tyne coal is subject to EPA pollution tax">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Tyne coal is subject to EPA pollution tax" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.5" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Road rail imports need special clearance">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Road rail imports need special clearance" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.6" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Pig lead imports are limited to 1 million tonnes per year">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Pig lead imports are limited to 1 million tonnes per year" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.7" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Firewood may only be imported if it comes from non-endangered tree species">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Firewood may only be imported if it comes from non-endangered tree species" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.8" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Iron ware is subject to import tax">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Iron ware is subject to import tax" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="PortV.ecore#//Ship" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2 #//@ruleset/@ruleStatements.3 #//@ruleset/@ruleStatements.4 #//@ruleset/@ruleStatements.5 #//@ruleset/@ruleStatements.6 #//@ruleset/@ruleStatements.7">
+      <extension association="true" entity="PortV.ecore#//Manifest" traversedAssocRole="PortV.ecore#//Ship/manifest">
+        <extension explicit="true" association="true" entity="PortV.ecore#//Cargo" traversedAssocRole="PortV.ecore#//Manifest/cargo">
+          <alias value="goods"/>
+          <referencedAttributes attribute="PortV.ecore#//Cargo/name"/>
+          <referencedAttributes attribute="PortV.ecore#//Cargo/perishable"/>
+        </extension>
+      </extension>
+      <referencedAttributes attribute="PortV.ecore#//Ship/name"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5"/>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.0"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.1"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="Cheap Tin Trays are subject to an import tax of $1 per tray - must be manually counted before {Ship.name} can dock">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Cheap Tin Trays are subject to an import tax of $1 per tray - must be manually counted before  + Ship.name +  can dock" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Ship.name">
+                <parentTerm text="Ship" datatype="Ship" termtype="ENTITY" fulltext="Ship" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="Perishable goods needs to be inspected by the FDA before {Ship.name} can dock">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Perishable goods needs to be inspected by the FDA before  + Ship.name +  can dock" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Ship.name">
+                <parentTerm text="Ship" datatype="Ship" termtype="ENTITY" fulltext="Ship" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="{Ship.name} is cleared for docking">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Ship.name +  is cleared for docking" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Ship.name">
+                <parentTerm text="Ship" datatype="Ship" termtype="ENTITY" fulltext="Ship" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="4"/>
+        <text external="Tyne coal is subject to EPA pollution tax">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Tyne coal is subject to EPA pollution tax" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.4">
+        <reference external="5"/>
+        <text external="Road rail imports need special clearance">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Road rail imports need special clearance" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.5">
+        <reference external="6"/>
+        <text external="Pig lead imports are limited to 1 million tonnes per year">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Pig lead imports are limited to 1 million tonnes per year" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.6">
+        <reference external="7"/>
+        <text external="Firewood may only be imported if it comes from non-endangered tree species">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Firewood may only be imported if it comes from non-endangered tree species" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.7">
+        <reference external="8"/>
+        <text external="Iron ware is subject to import tax">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Iron ware is subject to import tax" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'Tyne coal', 'Road-rail', 'pig-lead', 'Firewood', 'iron-ware', 'Cheap Tin Trays', other}"/>
+        <expressionCell external="goods.name">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goods.name" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="goods.name">
+                <parentTerm text="goods" datatype="Cargo" termtype="ENTITY" fulltext="goods" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="manifest" datatype="Manifest" termtype="ENTITY" fulltext="Ship.manifest">
+                    <parentTerm text="Ship" datatype="Ship" termtype="ENTITY" fulltext="Ship" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="goods.perishable">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goods.perishable" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="perishable" datatype="Boolean" termtype="ATTRIBUTE" fulltext="goods.perishable">
+                <parentTerm text="goods" datatype="Cargo" termtype="ENTITY" fulltext="goods" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="manifest" datatype="Manifest" termtype="ENTITY" fulltext="Ship.manifest">
+                    <parentTerm text="Ship" datatype="Ship" termtype="ENTITY" fulltext="Ship" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="'Cheap Tin Trays'"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="T"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="other"/>
+        <conditionValueSetCellList valueSet="F"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="'Tyne coal'"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="'Road-rail'"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="6" columnWidth="100" pRule="#//@ruleset/@rules.6">
+        <conditionValueSetCellList valueSet="'pig-lead'"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="7" columnWidth="100" pRule="#//@ruleset/@rules.7">
+        <conditionValueSetCellList valueSet="'Firewood'"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="8" columnWidth="100" pRule="#//@ruleset/@rules.8">
+        <conditionValueSetCellList valueSet="'iron-ware'"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

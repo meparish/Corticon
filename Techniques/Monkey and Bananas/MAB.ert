@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_UxK0xBAnEeKZQ8lH_eGXKQ" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_UxK1QhAnEeKZQ8lH_eGXKQ" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_UofZ4BAnEeKZQ8lH_eGXKQ" ruleActivity="MAB.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="The monkey is on the floor which is at the door and he is holding nothing"/>
+        <PostedMessage severity="Info" text="His goal is to get to eat the bananas which are on the floor at the door"/>
+        <PostedMessage severity="Info" text="the stick is on null at null"/>
+        <PostedMessage severity="Info" text="EAT2: Goal: eat the bananas. The monkey is not holding the bananas but must do so before he can eat them. New Goal-> hold the bananas"/>
+        <PostedMessage severity="Info" text="HOLD1: Goal: hold the bananas. Monkey and the bananas are at the door on the floor. Monkey is empty handed and so may hold the bananas. Goal completed. Monkey now holds the bananas"/>
+        <PostedMessage severity="Info" text="EAT1: Goal: eat the bananas. SUCCESS: since the monkey is finally holding the bananas he can now eat them"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Monkey">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Monkey/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="nothing" eAttribute="MAB.ecore#//Monkey/holds"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Monkey/on"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="eat" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="pending" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="MAB.ecore#//Control/first"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Thing/name"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eClass="MAB.ecore#//Monkey">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the door" eAttribute="MAB.ecore#//Monkey/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the bananas" eAttribute="MAB.ecore#//Monkey/holds"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the floor" eAttribute="MAB.ecore#//Monkey/on"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" expanded="false" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="eat" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="hold" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the bananas" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="MAB.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="false" eAttribute="MAB.ecore#//Control/first"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the stick" eAttribute="MAB.ecore#//Thing/name"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="MAB.ecore#//Monkey">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Monkey/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Monkey/holds"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Monkey/on"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" manuallyCreated="true" expanded="false" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="eat" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="hold" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="MAB.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="false" eAttribute="MAB.ecore#//Control/first"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Thing/name"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_UxQ7YBAnEeKZQ8lH_eGXKQ" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_UofZ4BAnEeKZQ8lH_eGXKQ" ruleActivity="MAB.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="The monkey is on the black cushion which is at the door and he is holding the stick"/>
+        <PostedMessage severity="Info" text="His goal is to get to eat the bananas which are on the red cushion at the window"/>
+        <PostedMessage severity="Info" text="the chair is on the table at the window"/>
+        <PostedMessage severity="Info" text="the table is on the floor at the window"/>
+        <PostedMessage severity="Info" text="the stick is on null at null"/>
+        <PostedMessage severity="Info" text="the red cushion is on the chair at the window"/>
+        <PostedMessage severity="Info" text="the black cushion is on the green sofa at the door"/>
+        <PostedMessage severity="Info" text="the green sofa is on the floor at the door"/>
+        <PostedMessage severity="Info" text="EAT2: Goal: eat the bananas. The monkey is not holding the bananas but must do so before he can eat them. New Goal-> hold the bananas"/>
+        <PostedMessage severity="Info" text="HOLD4: Goal: hold the bananas. Monkey is at the door but the bananas is at the window so the monkey must walk to the window. New goal-> walk to the window"/>
+        <PostedMessage severity="Info" text="WALK2: Goal: walk to the window. Monkey is on the black cushion and must get to the floor before walking to the window. New goal-> jump to the floor"/>
+        <PostedMessage severity="Info" text="JUMP2: Goal: jump to the floor. Monkey is on the black cushion. the black cushion is on the green sofa so the monkey must first jump from the black cushion to the green sofa. New goal-> jump to the green sofa"/>
+        <PostedMessage severity="Info" text="JUMP1: Goal: jump to the green sofa. Monkey is on the black cushion. the black cushion is on the green sofa so the monkey jumps from the black cushion to the green sofa. Goal complete. Monkey is now on the green sofa"/>
+        <PostedMessage severity="Info" text="JUMP1: Goal: jump to the floor. Monkey is on the green sofa. the green sofa is on the floor so the monkey jumps from the green sofa to the floor. Goal complete. Monkey is now on the floor"/>
+        <PostedMessage severity="Info" text="WALK1: Goal: walk to the window. Monkey is now on the floor and can walk to the window. Goal complete. Monkey walks to the window"/>
+        <PostedMessage severity="Info" text="HOLD3: Goal: hold the bananas. Monkey is at the window and so is the bananas but the bananas is on the red cushion and the Monkey is on the floor. New goal-> get on the red cushion if there is no pending drop goal."/>
+        <PostedMessage severity="Info" text="GETON3: Goal: get on to the red cushion. Monkey is on the floor but the red cushion is on the chair so the monkey must first get on the chair. New goal-> get on the chair"/>
+        <PostedMessage severity="Info" text="GETON3: Goal: get on to the chair. Monkey is on the floor but the chair is on the table so the monkey must first get on the table. New goal-> get on the table"/>
+        <PostedMessage severity="Info" text="GETON2: Goal: get on to the table. Monkey and the table are both on the floor so the monkey climbs on to the table. Goal complete"/>
+        <PostedMessage severity="Info" text="GETON2: Goal: get on to the chair. Monkey and the chair are both on the table so the monkey climbs on to the chair. Goal complete"/>
+        <PostedMessage severity="Info" text="GETON2: Goal: get on to the red cushion. Monkey and the red cushion are both on the chair so the monkey climbs on to the red cushion. Goal complete"/>
+        <PostedMessage severity="Info" text="HOLD2: Goal: hold the bananas. Monkey and the bananas are at the window on the red cushion but the Monkey is holding the stick and must drop it before holding the bananas. New Goal -> drop the stick"/>
+        <PostedMessage severity="Info" text="DROP2: Goal: drop the stick. Since the Monkey is not on floor he must get there before he can drop the the stick. New goal -> jump to the floor"/>
+        <PostedMessage severity="Info" text="JUMP2: Goal: jump to the floor. Monkey is on the red cushion. the red cushion is on the chair so the monkey must first jump from the red cushion to the chair. New goal-> jump to the chair"/>
+        <PostedMessage severity="Info" text="JUMP1: Goal: jump to the chair. Monkey is on the red cushion. the red cushion is on the chair so the monkey jumps from the red cushion to the chair. Goal complete. Monkey is now on the chair"/>
+        <PostedMessage severity="Info" text="JUMP2: Goal: jump to the floor. Monkey is on the chair. the chair is on the table so the monkey must first jump from the chair to the table. New goal-> jump to the table"/>
+        <PostedMessage severity="Info" text="JUMP1: Goal: jump to the table. Monkey is on the chair. the chair is on the table so the monkey jumps from the chair to the table. Goal complete. Monkey is now on the table"/>
+        <PostedMessage severity="Info" text="JUMP1: Goal: jump to the floor. Monkey is on the table. the table is on the floor so the monkey jumps from the table to the floor. Goal complete. Monkey is now on the floor"/>
+        <PostedMessage severity="Info" text="DROP1: Goal: drop the stick. Since the Monkey is on the floor he can drop the stick. Goal complete. Monkey is now empty handed."/>
+        <PostedMessage severity="Info" text="HOLD3: Goal: hold the bananas. Monkey is at the window and so is the bananas but the bananas is on the red cushion and the Monkey is on the floor. New goal-> get on the red cushion if there is no pending drop goal."/>
+        <PostedMessage severity="Info" text="GETON3: Goal: get on to the red cushion. Monkey is on the floor but the red cushion is on the chair so the monkey must first get on the chair. New goal-> get on the chair"/>
+        <PostedMessage severity="Info" text="GETON3: Goal: get on to the chair. Monkey is on the floor but the chair is on the table so the monkey must first get on the table. New goal-> get on the table"/>
+        <PostedMessage severity="Info" text="GETON2: Goal: get on to the table. Monkey and the table are both on the floor so the monkey climbs on to the table. Goal complete"/>
+        <PostedMessage severity="Info" text="GETON2: Goal: get on to the chair. Monkey and the chair are both on the table so the monkey climbs on to the chair. Goal complete"/>
+        <PostedMessage severity="Info" text="GETON2: Goal: get on to the red cushion. Monkey and the red cushion are both on the chair so the monkey climbs on to the red cushion. Goal complete"/>
+        <PostedMessage severity="Info" text="HOLD1: Goal: hold the bananas. Monkey and the bananas are at the window on the red cushion. Monkey is empty handed and so may hold the bananas. Goal completed. Monkey now holds the bananas"/>
+        <PostedMessage severity="Info" text="EAT1: Goal: eat the bananas. SUCCESS: since the monkey is finally holding the bananas he can now eat them"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Monkey">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Monkey/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Monkey/holds"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the black cushion" eAttribute="MAB.ecore#//Monkey/on"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" expanded="false" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="eat" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="pending" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the red cushion" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the chair" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the red cushion" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the chair" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="MAB.ecore#//Control/first"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the green sofa" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the black cushion" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the green sofa" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Thing/name"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.8 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.9 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.10 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.11 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.12 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.13 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.14 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.15 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.16 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.17 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.18 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.19 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.20 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.21 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.22 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.23 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.24 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.25 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.26 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.27 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.28 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.29 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.30 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.31 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.32 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.33 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.34 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.35 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.36" eClass="MAB.ecore#//Monkey">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the window" eAttribute="MAB.ecore#//Monkey/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the bananas" eAttribute="MAB.ecore#//Monkey/holds"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the red cushion" eAttribute="MAB.ecore#//Monkey/on"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" expanded="false" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="eat" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="hold" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="walk" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the window" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="jump" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the floor" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="jump" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the green sofa" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the red cushion" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the chair" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the table" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="drop" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the stick" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="jump" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the floor" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="11" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="jump" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the chair" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="12" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="jump" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the table" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="13" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the red cushion" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="14" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the chair" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="15" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the table" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the bananas" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the red cushion" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the table" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the chair" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the table" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the red cushion" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the chair" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="MAB.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="false" eAttribute="MAB.ecore#//Control/first"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.7" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the green sofa" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.6" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the black cushion" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the green sofa" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the stick" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.8"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.7"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.8" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.9" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.10" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.11" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.12" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.13" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.14" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.15" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.16" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.17" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.18" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.19" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.20" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.21" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.22" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.23" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.24" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.25" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.26" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.27" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.28" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.29" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.30" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.31" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.32" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.33" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.34" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.35" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.36" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="MAB.ecore#//Monkey">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Monkey/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Monkey/holds"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the red cushion" eAttribute="MAB.ecore#//Monkey/on"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" manuallyCreated="true" expanded="false" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="eat" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="hold" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="walk" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="jump" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="jump" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the green sofa" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the red cushion" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the chair" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="drop" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="jump" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="11" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="jump" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the chair" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="12" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="jump" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="13" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the red cushion" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="14" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the chair" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="15" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the red cushion" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the chair" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the red cushion" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the chair" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="MAB.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="false" eAttribute="MAB.ecore#//Control/first"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the green sofa" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the black cushion" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the green sofa" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_UxQ7YRAnEeKZQ8lH_eGXKQ" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_UofZ4BAnEeKZQ8lH_eGXKQ" ruleActivity="MAB.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="The monkey is on the black cushion which is at the window and he is holding the stick"/>
+        <PostedMessage severity="Info" text="His goal is to get to eat the bananas which are on the red cushion at the window"/>
+        <PostedMessage severity="Info" text="the table is on the floor at the window"/>
+        <PostedMessage severity="Info" text="the black cushion is on the table at the window"/>
+        <PostedMessage severity="Info" text="the red cushion is on the table at the window"/>
+        <PostedMessage severity="Info" text="the stick is on null at null"/>
+        <PostedMessage severity="Info" text="EAT2: Goal: eat the bananas. The monkey is not holding the bananas but must do so before he can eat them. New Goal-> hold the bananas"/>
+        <PostedMessage severity="Info" text="HOLD3: Goal: hold the bananas. Monkey is at the window and so is the bananas but the bananas is on the red cushion and the Monkey is on the black cushion. New goal-> get on the red cushion if there is no pending drop goal."/>
+        <PostedMessage severity="Info" text="GETON3: Goal: get on to the red cushion. Monkey is on the black cushion but the red cushion is on the table so the monkey must first get on the table. New goal-> get on the table"/>
+        <PostedMessage severity="Info" text="GETON3: Goal: get on to the table. Monkey is on the black cushion but the table is on the floor so the monkey must first get on the floor. New goal-> get on the floor"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Monkey">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Monkey/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Monkey/holds"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the black cushion" eAttribute="MAB.ecore#//Monkey/on"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" expanded="false" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="eat" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="pending" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the red cushion" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the red cushion" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="MAB.ecore#//Control/first"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the black cushion" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Thing/name"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.6 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.7 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.8 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.9" eClass="MAB.ecore#//Monkey">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the window" eAttribute="MAB.ecore#//Monkey/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the stick" eAttribute="MAB.ecore#//Monkey/holds"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the black cushion" eAttribute="MAB.ecore#//Monkey/on"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" expanded="false" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="eat" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="pending" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="hold" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="pending" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the red cushion" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="pending" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the table" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="pending" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the floor" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="pending" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the bananas" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the red cushion" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the table" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the red cushion" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the table" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="MAB.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="false" eAttribute="MAB.ecore#//Control/first"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the black cushion" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the table" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the stick" eAttribute="MAB.ecore#//Thing/name"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.8" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.9" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="MAB.ecore#//Monkey">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Monkey/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Monkey/holds"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the black cushion" eAttribute="MAB.ecore#//Monkey/on"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" expanded="false" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="eat" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="pending" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="hold" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="pending" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the red cushion" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="pending" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="pending" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="pending" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the red cushion" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the red cushion" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="MAB.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="false" eAttribute="MAB.ecore#//Control/first"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the window" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the black cushion" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Thing/name"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_UxQ7YhAnEeKZQ8lH_eGXKQ" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_UofZ4BAnEeKZQ8lH_eGXKQ" ruleActivity="MAB.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="The monkey is on the floor which is at the door and he is holding the stick"/>
+        <PostedMessage severity="Info" text="His goal is to get to eat the bananas which are on the floor at the door"/>
+        <PostedMessage severity="Info" text="the stick is on null at null"/>
+        <PostedMessage severity="Info" text="EAT2: Goal: eat the bananas. The monkey is not holding the bananas but must do so before he can eat them. New Goal-> hold the bananas"/>
+        <PostedMessage severity="Info" text="HOLD2: Goal: hold the bananas. Monkey and the bananas are at the door on the floor but the Monkey is holding the stick and must drop it before holding the bananas. New Goal -> drop the stick"/>
+        <PostedMessage severity="Info" text="DROP1: Goal: drop the stick. Since the Monkey is on the floor he can drop the stick. Goal complete. Monkey is now empty handed."/>
+        <PostedMessage severity="Info" text="HOLD1: Goal: hold the bananas. Monkey and the bananas are at the door on the floor. Monkey is empty handed and so may hold the bananas. Goal completed. Monkey now holds the bananas"/>
+        <PostedMessage severity="Info" text="EAT1: Goal: eat the bananas. SUCCESS: since the monkey is finally holding the bananas he can now eat them"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Monkey">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Monkey/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Monkey/holds"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Monkey/on"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="eat" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="pending" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" expanded="false" eClass="MAB.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="MAB.ecore#//Control/first"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Thing/name"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.5 #//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.6 #//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.7" eClass="MAB.ecore#//Monkey">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the door" eAttribute="MAB.ecore#//Monkey/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the bananas" eAttribute="MAB.ecore#//Monkey/holds"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the floor" eAttribute="MAB.ecore#//Monkey/on"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="eat" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="hold" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="drop" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the stick" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" messageItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the bananas" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" expanded="false" eClass="MAB.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="false" eAttribute="MAB.ecore#//Control/first"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" messageItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the stick" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="MAB.ecore#//Monkey">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Monkey/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Monkey/holds"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Monkey/on"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="eat" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="hold" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="drop" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" expanded="false" eClass="MAB.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="false" eAttribute="MAB.ecore#//Control/first"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_UxQ7ZBAnEeKZQ8lH_eGXKQ" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_UofZ4BAnEeKZQ8lH_eGXKQ" ruleActivity="MAB.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="The monkey is on the floor which is at the door and he is holding the stick"/>
+        <PostedMessage severity="Info" text="His goal is to get to eat the bananas which are on the table at the door"/>
+        <PostedMessage severity="Info" text="the table is on the floor at the door"/>
+        <PostedMessage severity="Info" text="the stick is on the monkey at the door"/>
+        <PostedMessage severity="Info" text="EAT2: Goal: eat the bananas. The monkey is not holding the bananas but must do so before he can eat them. New Goal-> hold the bananas"/>
+        <PostedMessage severity="Info" text="HOLD3: Goal: hold the bananas. Monkey is at the door and so is the bananas but the bananas is on the table and the Monkey is on the floor. New goal-> get on the table if there is no pending drop goal."/>
+        <PostedMessage severity="Info" text="GETON2: Goal: get on to the table. Monkey and the table are both on the floor so the monkey climbs on to the table. Goal complete"/>
+        <PostedMessage severity="Info" text="HOLD2: Goal: hold the bananas. Monkey and the bananas are at the door on the table but the Monkey is holding the stick and must drop it before holding the bananas. New Goal -> drop the stick"/>
+        <PostedMessage severity="Info" text="DROP2: Goal: drop the stick. Since the Monkey is not on floor he must get there before he can drop the the stick. New goal -> jump to the floor"/>
+        <PostedMessage severity="Info" text="JUMP1: Goal: jump to the floor. Monkey is on the table. the table is on the floor so the monkey jumps from the table to the floor. Goal complete. Monkey is now on the floor"/>
+        <PostedMessage severity="Info" text="DROP1: Goal: drop the stick. Since the Monkey is on the floor he can drop the stick. Goal complete. Monkey is now empty handed."/>
+        <PostedMessage severity="Info" text="HOLD3: Goal: hold the bananas. Monkey is at the door and so is the bananas but the bananas is on the table and the Monkey is on the floor. New goal-> get on the table if there is no pending drop goal."/>
+        <PostedMessage severity="Info" text="GETON2: Goal: get on to the table. Monkey and the table are both on the floor so the monkey climbs on to the table. Goal complete"/>
+        <PostedMessage severity="Info" text="HOLD1: Goal: hold the bananas. Monkey and the bananas are at the door on the table. Monkey is empty handed and so may hold the bananas. Goal completed. Monkey now holds the bananas"/>
+        <PostedMessage severity="Info" text="EAT1: Goal: eat the bananas. SUCCESS: since the monkey is finally holding the bananas he can now eat them"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Monkey">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Monkey/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Monkey/holds"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Monkey/on"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="eat" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="pending" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" expanded="false" eClass="MAB.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="MAB.ecore#//Control/first"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the monkey" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.5 #//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.6 #//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.7 #//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.8 #//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.9 #//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.10 #//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.11 #//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.12 #//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.13 #//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.14" eClass="MAB.ecore#//Monkey">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the door" eAttribute="MAB.ecore#//Monkey/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the bananas" eAttribute="MAB.ecore#//Monkey/holds"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the table" eAttribute="MAB.ecore#//Monkey/on"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="eat" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="hold" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the table" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="drop" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the stick" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="jump" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the floor" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" newOrModified="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the table" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" messageItem="#//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the bananas" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the table" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" expanded="false" eClass="MAB.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="false" eAttribute="MAB.ecore#//Control/first"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the stick" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" messageItem="#//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the table" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.8" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.9" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.10" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.11" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.12" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.13" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.14" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="MAB.ecore#//Monkey">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Monkey/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Monkey/holds"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Monkey/on"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="eat" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="hold" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="drop" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="jump" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" newOrModified="true" manuallyCreated="true" eReference="MAB.ecore#//Monkey/goals" eClass="MAB.ecore#//Goal">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="get on" eAttribute="MAB.ecore#//Goal/action"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Goal/arg1"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="complete" eAttribute="MAB.ecore#//Goal/status"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the bananas" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" expanded="false" eClass="MAB.ecore#//Control">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="false" eAttribute="MAB.ecore#//Control/first"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the stick" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="MAB.ecore#//Thing">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the door" eAttribute="MAB.ecore#//Thing/at"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the table" eAttribute="MAB.ecore#//Thing/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="the floor" eAttribute="MAB.ecore#//Thing/on"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_Un6yIBAnEeKZQ8lH_eGXKQ" testsheets="#//@testsheetAssets.0/@testsheet #//@testsheetAssets.1/@testsheet #//@testsheetAssets.2/@testsheet #//@testsheetAssets.3/@testsheet #//@testsheetAssets.4/@testsheet" vocabulary="MAB.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="MAB"/>
+    <testTabList name="Monkey_and_the_Bananas"/>
+    <testTabList name="MAB_2"/>
+    <testTabList name="MAB_3"/>
+    <testTabList name="MAB_4"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

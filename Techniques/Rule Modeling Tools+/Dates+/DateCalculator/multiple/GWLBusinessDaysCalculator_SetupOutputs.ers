@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_p4Rlg2qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_p4LewmqnEeGMCd15vaZIXw" key="3" type="Validation" severity="Warning" invalidObjects="#//@ruleset/@logicalVariables.0/@alias.0" textKey="RulesheetTableModelAPIImpl.Validation.InvalidAlias" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Scope">
+    <textVariables>day</textVariables>
+    <locationVariables>Day</locationVariables>
+  </validationMessages>
+  <ruleset vocabularyUpdateStamp="_k4aZIWqnEeGMCd15vaZIXw" vocabulary="GWLBusinessDaysCalculator.ecore#/">
+    <rule/>
+    <rule>
+      <condition>
+        <opaqueExpression expression="day.description = 'Complete call with prior provider'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="day.description = 'Complete call with prior provider'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="day.description">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="day.description" rhs="'Complete call with prior provider'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Parms.completeCallWithPriorProvider = day.targetDate">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Parms.completeCallWithPriorProvider = day.targetDate" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="completeCallWithPriorProvider" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Parms.completeCallWithPriorProvider">
+                <parentTerm text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="day.targetDate">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="day.description = 'Generate Blackout Notice'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="day.description = 'Generate Blackout Notice'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="day.description">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="day.description" rhs="'Generate Blackout Notice'"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Parms.generateBlackoutNotice = day.targetDate">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Parms.generateBlackoutNotice = day.targetDate" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="generateBlackoutNotice" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Parms.generateBlackoutNotice">
+                <parentTerm text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="day.targetDate">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="day.description = 'Notify Plan Sponsor'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="day.description = 'Notify Plan Sponsor'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="day.description">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="day.description" rhs="'Notify Plan Sponsor'"/>
+      </condition>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Parms.notifyPlanSponsor = day.targetDate">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Parms.notifyPlanSponsor = day.targetDate" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="notifyPlanSponsor" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Parms.notifyPlanSponsor">
+                <parentTerm text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="day.targetDate">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="day.description = 'Receive Fund Mappings'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="day.description = 'Receive Fund Mappings'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="day.description">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="day.description" rhs="'Receive Fund Mappings'"/>
+      </condition>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Parms.receiptOfWire = day.targetDate">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Parms.receiptOfWire = day.targetDate" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="receiptOfWire" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Parms.receiptOfWire">
+                <parentTerm text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="day.targetDate">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="day.description = 'Service Effective Date'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="day.description = 'Service Effective Date'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="day.description">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="day.description" rhs="'Service Effective Date'"/>
+      </condition>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Parms.receiveFundMappings = day.targetDate">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Parms.receiveFundMappings = day.targetDate" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="receiveFundMappings" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Parms.receiveFundMappings">
+                <parentTerm text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="day.targetDate">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="day.description = 'Receipt of Wire'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="day.description = 'Receipt of Wire'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="day.description">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="day.description" rhs="'Receipt of Wire'"/>
+      </condition>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Parms.serviceEffectiveDate = day.targetDate">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Parms.serviceEffectiveDate = day.targetDate" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="serviceEffectiveDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Parms.serviceEffectiveDate">
+                <parentTerm text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="day.targetDate">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="day.description = 'Transition to Operations'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="day.description = 'Transition to Operations'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="day.description">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="day.description" rhs="'Transition to Operations'"/>
+      </condition>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Parms.transitionToOperations = day.targetDate">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Parms.transitionToOperations = day.targetDate" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="transitionToOperations" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Parms.transitionToOperations">
+                <parentTerm text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="day.targetDate">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable explicit="true" entity="GWLBusinessDaysCalculator.ecore#//Day">
+      <alias validationMessages="#//@validationMessages.0" value="day"/>
+      <referencedAttributes attribute="GWLBusinessDaysCalculator.ecore#//Day/description"/>
+      <referencedAttributes attribute="GWLBusinessDaysCalculator.ecore#//Day/targetDate"/>
+    </logicalVariable>
+    <logicalVariable entity="GWLBusinessDaysCalculator.ecore#//Parms">
+      <referencedAttributes attribute="GWLBusinessDaysCalculator.ecore#//Parms/completeCallWithPriorProvider"/>
+      <referencedAttributes attribute="GWLBusinessDaysCalculator.ecore#//Parms/generateBlackoutNotice"/>
+      <referencedAttributes attribute="GWLBusinessDaysCalculator.ecore#//Parms/notifyPlanSponsor"/>
+      <referencedAttributes attribute="GWLBusinessDaysCalculator.ecore#//Parms/receiptOfWire"/>
+      <referencedAttributes attribute="GWLBusinessDaysCalculator.ecore#//Parms/receiveFundMappings"/>
+      <referencedAttributes attribute="GWLBusinessDaysCalculator.ecore#//Parms/serviceEffectiveDate"/>
+      <referencedAttributes attribute="GWLBusinessDaysCalculator.ecore#//Parms/transitionToOperations"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Parms.completeCallWithPriorProvider = day.targetDate">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Parms.completeCallWithPriorProvider = day.targetDate" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="completeCallWithPriorProvider" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Parms.completeCallWithPriorProvider">
+                <parentTerm text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms"/>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="day.targetDate">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Parms.generateBlackoutNotice = day.targetDate">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Parms.generateBlackoutNotice = day.targetDate" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="generateBlackoutNotice" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Parms.generateBlackoutNotice">
+                <parentTerm text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="day.targetDate">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Parms.notifyPlanSponsor = day.targetDate">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Parms.notifyPlanSponsor = day.targetDate" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="notifyPlanSponsor" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Parms.notifyPlanSponsor">
+                <parentTerm text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="day.targetDate">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Parms.receiptOfWire = day.targetDate">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Parms.receiptOfWire = day.targetDate" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="receiptOfWire" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Parms.receiptOfWire">
+                <parentTerm text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="day.targetDate">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Parms.receiveFundMappings = day.targetDate">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Parms.receiveFundMappings = day.targetDate" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="receiveFundMappings" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Parms.receiveFundMappings">
+                <parentTerm text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="day.targetDate">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Parms.serviceEffectiveDate = day.targetDate">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Parms.serviceEffectiveDate = day.targetDate" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="serviceEffectiveDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Parms.serviceEffectiveDate">
+                <parentTerm text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="day.targetDate">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Parms.transitionToOperations = day.targetDate">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Parms.transitionToOperations = day.targetDate" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="transitionToOperations" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Parms.transitionToOperations">
+                <parentTerm text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Parms" datatype="Parms" termtype="ENTITY" fulltext="Parms" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="targetDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="day.targetDate">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.4"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.5"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.6"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'Complete call with prior provider', 'Generate Blackout Notice', 'Notify Plan Sponsor', 'Receive Fund Mappings', 'Service Effective Date', 'Receipt of Wire', 'Transition to Operations'}"/>
+        <expressionCell external="day.description">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="day.description" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="day.description">
+                <parentTerm text="day" datatype="Day" termtype="ENTITY" fulltext="day" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="'Complete call with prior provider'"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="'Generate Blackout Notice'"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="'Notify Plan Sponsor'"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="'Receive Fund Mappings'"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="'Service Effective Date'"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="6" columnWidth="100" pRule="#//@ruleset/@rules.6">
+        <conditionValueSetCellList valueSet="'Receipt of Wire'"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="7" columnWidth="100" pRule="#//@ruleset/@rules.7">
+        <conditionValueSetCellList valueSet="'Transition to Operations'"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

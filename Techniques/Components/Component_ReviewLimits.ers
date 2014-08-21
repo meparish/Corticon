@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_ms85KWqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_kria3GqnEeGMCd15vaZIXw" vocabulary="Component.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="(lim1->exists(type='max'))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( lim1 ->exists( lim1.type = 'max' ) ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lim1" datatype="Boolean" termtype="COLLECTION" fulltext="lim1->notEmpty">
+                <parentTerm text="lim1" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim1" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="lim1.type">
+                <parentTerm text="lim1" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim1" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lim1->exists(type='max')" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="limit.frequency = 'per day' or limit.frequency = 'per month' or limit.frequency = 'per year'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="limit.frequency = 'per day' or limit.frequency = 'per month' or limit.frequency = 'per year'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="frequency" datatype="String" termtype="ATTRIBUTE" fulltext="limit.frequency">
+                <parentTerm text="limit" datatype="LimitSpecification" termtype="ENTITY" fulltext="limit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="limit.frequency" rhs="{'per day', 'per month', 'per year'}"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="limit.quantity = 100 or limit.quantity = 150 or limit.quantity = 200 or limit.quantity = 250">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="limit.quantity = 100 or limit.quantity = 150 or limit.quantity = 200 or limit.quantity = 250" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="quantity" datatype="Decimal" termtype="ATTRIBUTE" fulltext="limit.quantity">
+                <parentTerm text="limit" datatype="LimitSpecification" termtype="ENTITY" fulltext="limit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="limit.quantity" rhs="{100, 150, 200, 250}"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="limit.units = 'dollars' or limit.units = 'visits' or limit.units = 'injections'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="limit.units = 'dollars' or limit.units = 'visits' or limit.units = 'injections'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="units" datatype="String" termtype="ATTRIBUTE" fulltext="limit.units">
+                <parentTerm text="limit" datatype="LimitSpecification" termtype="ENTITY" fulltext="limit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="limit.units" rhs="{'dollars', 'visits', 'injections'}"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(lim2->exists(type='combined max'))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( lim2 ->exists( lim2.type = 'combined max' ) ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lim2" datatype="Boolean" termtype="COLLECTION" fulltext="lim2->notEmpty">
+                <parentTerm text="lim2" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim2" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="lim2.type">
+                <parentTerm text="lim2" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim2" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lim2->exists(type='combined max')" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(lim3->exists(type='cummulative max'))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( lim3 ->exists( lim3.type = 'cummulative max' ) ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lim3" datatype="Boolean" termtype="COLLECTION" fulltext="lim3->notEmpty">
+                <parentTerm text="lim3" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim3" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="lim3.type">
+                <parentTerm text="lim3" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim3" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lim3->exists(type='cummulative max')" rhs="T"/>
+      </condition>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(lim5->exists(type='out of pocket'))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( lim5 ->exists( lim5.type = 'out of pocket' ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lim5" datatype="Boolean" termtype="COLLECTION" fulltext="lim5->notEmpty">
+                <parentTerm text="lim5" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim5" variable="#//@ruleset/@logicalVariables.0/@extension.5">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="lim5.type">
+                <parentTerm text="lim5" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim5" variable="#//@ruleset/@logicalVariables.0/@extension.5">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lim5->exists(type='out of pocket')" rhs="F"/>
+      </condition>
+      <condition/>
+      <condition/>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="(lim1->exists(type='max'))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( lim1 ->exists( lim1.type = 'max' ) ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lim1" datatype="Boolean" termtype="COLLECTION" fulltext="lim1->notEmpty">
+                <parentTerm text="lim1" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim1" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="lim1.type">
+                <parentTerm text="lim1" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim1" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lim1->exists(type='max')" rhs="T"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(lim4->exists(type='no evidence max'))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( lim4 ->exists( lim4.type = 'no evidence max' ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lim4" datatype="Boolean" termtype="COLLECTION" fulltext="lim4->notEmpty">
+                <parentTerm text="lim4" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim4" variable="#//@ruleset/@logicalVariables.0/@extension.4">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="lim4.type">
+                <parentTerm text="lim4" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim4" variable="#//@ruleset/@logicalVariables.0/@extension.4">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lim4->exists(type='no evidence max')" rhs="F"/>
+      </condition>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="limit.usageConstraint = 'must be included and may be changed'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="limit.usageConstraint = 'must be included and may be changed'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="usageConstraint" datatype="String" termtype="ATTRIBUTE" fulltext="limit.usageConstraint">
+                <parentTerm text="limit" datatype="LimitSpecification" termtype="ENTITY" fulltext="limit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="limit.usageConstraint" rhs="'must be included and may be changed'"/>
+      </condition>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(lim1->exists(type='max'))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( lim1 ->exists( lim1.type = 'max' ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lim1" datatype="Boolean" termtype="COLLECTION" fulltext="lim1->notEmpty">
+                <parentTerm text="lim1" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim1" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="lim1.type">
+                <parentTerm text="lim1" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim1" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lim1->exists(type='max')" rhs="F"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(lim4->exists(type='no evidence max'))=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( lim4 ->exists( lim4.type = 'no evidence max' ) ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lim4" datatype="Boolean" termtype="COLLECTION" fulltext="lim4->notEmpty">
+                <parentTerm text="lim4" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim4" variable="#//@ruleset/@logicalVariables.0/@extension.4">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="lim4.type">
+                <parentTerm text="lim4" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim4" variable="#//@ruleset/@logicalVariables.0/@extension.4">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="lim4->exists(type='no evidence max')" rhs="T"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+    </rule>
+    <filter disabled="true">
+      <opaqueExpression expression="product.name='Laser Eye Surgery'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="product.name = 'Laser Eye Surgery'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="product.name">
+              <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Violation" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="must have a max">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="must have a max" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="should not have 'no evidence max'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="should not have 'no evidence max'" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0"/>
+    <logicalVariable explicit="true" entity="Component.ecore#//ProductComponent" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2">
+      <alias value="product"/>
+      <extension explicit="true" association="true" entity="Component.ecore#//LimitSpecification" traversedAssocRole="Component.ecore#//ProductComponent/limitSpecification">
+        <alias value="limit"/>
+        <referencedAttributes attribute="Component.ecore#//LimitSpecification/frequency"/>
+        <referencedAttributes attribute="Component.ecore#//LimitSpecification/quantity"/>
+        <referencedAttributes attribute="Component.ecore#//LimitSpecification/units"/>
+        <referencedAttributes attribute="Component.ecore#//LimitSpecification/usageConstraint"/>
+        <referencedAttributes attribute="Component.ecore#//LimitSpecification/resolution"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Component.ecore#//LimitSpecification" traversedAssocRole="Component.ecore#//ProductComponent/limitSpecification">
+        <alias value="lim1"/>
+        <referencedAttributes attribute="Component.ecore#//LimitSpecification/type"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Component.ecore#//LimitSpecification" traversedAssocRole="Component.ecore#//ProductComponent/limitSpecification">
+        <alias value="lim2"/>
+        <referencedAttributes attribute="Component.ecore#//LimitSpecification/type"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Component.ecore#//LimitSpecification" traversedAssocRole="Component.ecore#//ProductComponent/limitSpecification">
+        <alias value="lim3"/>
+        <referencedAttributes attribute="Component.ecore#//LimitSpecification/type"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Component.ecore#//LimitSpecification" traversedAssocRole="Component.ecore#//ProductComponent/limitSpecification">
+        <alias value="lim4"/>
+        <referencedAttributes attribute="Component.ecore#//LimitSpecification/type"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Component.ecore#//LimitSpecification" traversedAssocRole="Component.ecore#//ProductComponent/limitSpecification">
+        <alias value="lim5"/>
+        <referencedAttributes attribute="Component.ecore#//LimitSpecification/type"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Component.ecore#//LimitSpecification" traversedAssocRole="Component.ecore#//ProductComponent/limitSpecification">
+        <alias value="lim6"/>
+      </extension>
+      <referencedAttributes attribute="Component.ecore#//ProductComponent/name"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5"/>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="product.name='Laser Eye Surgery'" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.3"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.4"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.2">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.2/@referencedAttributes.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.3">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.3/@referencedAttributes.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.4">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.4/@referencedAttributes.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.5">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.5/@referencedAttributes.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.6"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList disabled="true" filter="#//@ruleset/@filters.0">
+        <expressionCell external="product.name='Laser Eye Surgery'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="product.name = 'Laser Eye Surgery'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="product.name">
+                <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="3"/>
+        <text external="must have a max">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="must have a max" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="4"/>
+        <text external="should not have 'no evidence max'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="should not have 'no evidence max'" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="1"/>
+        <text/>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="lim1->exists(type='max')">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lim1 ->exists( lim1.type = 'max' )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lim1" datatype="Boolean" termtype="COLLECTION" fulltext="lim1->notEmpty">
+                <parentTerm text="lim1" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim1" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="lim1.type">
+                <parentTerm text="lim1" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim1" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'per day', 'per month', 'per year'}"/>
+        <expressionCell external="limit.frequency">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="limit.frequency" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="frequency" datatype="String" termtype="ATTRIBUTE" fulltext="limit.frequency">
+                <parentTerm text="limit" datatype="LimitSpecification" termtype="ENTITY" fulltext="limit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{100, 150, 200, 250}"/>
+        <expressionCell external="limit.quantity">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="limit.quantity" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="quantity" datatype="Decimal" termtype="ATTRIBUTE" fulltext="limit.quantity">
+                <parentTerm text="limit" datatype="LimitSpecification" termtype="ENTITY" fulltext="limit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'dollars', 'visits', 'injections'}"/>
+        <expressionCell external="limit.units">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="limit.units" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="units" datatype="String" termtype="ATTRIBUTE" fulltext="limit.units">
+                <parentTerm text="limit" datatype="LimitSpecification" termtype="ENTITY" fulltext="limit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="lim2->exists(type='combined max')">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lim2 ->exists( lim2.type = 'combined max' )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lim2" datatype="Boolean" termtype="COLLECTION" fulltext="lim2->notEmpty">
+                <parentTerm text="lim2" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim2" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="lim2.type">
+                <parentTerm text="lim2" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim2" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="lim3->exists(type='cummulative max')">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lim3 ->exists( lim3.type = 'cummulative max' )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lim3" datatype="Boolean" termtype="COLLECTION" fulltext="lim3->notEmpty">
+                <parentTerm text="lim3" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim3" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="lim3.type">
+                <parentTerm text="lim3" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim3" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="lim4->exists(type='no evidence max')">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lim4 ->exists( lim4.type = 'no evidence max' )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lim4" datatype="Boolean" termtype="COLLECTION" fulltext="lim4->notEmpty">
+                <parentTerm text="lim4" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim4" variable="#//@ruleset/@logicalVariables.0/@extension.4">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="lim4.type">
+                <parentTerm text="lim4" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim4" variable="#//@ruleset/@logicalVariables.0/@extension.4">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="lim5->exists(type='out of pocket')">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="lim5 ->exists( lim5.type = 'out of pocket' )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="lim5" datatype="Boolean" termtype="COLLECTION" fulltext="lim5->notEmpty">
+                <parentTerm text="lim5" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim5" variable="#//@ruleset/@logicalVariables.0/@extension.5">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="lim5.type">
+                <parentTerm text="lim5" datatype="LimitSpecification" termtype="ENTITY" fulltext="lim5" variable="#//@ruleset/@logicalVariables.0/@extension.5">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'NA', 'must not be included', 'must be included and may be changed', 'may be excluded', 'may be included'}"/>
+        <expressionCell external="limit.usageConstraint">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="limit.usageConstraint" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="usageConstraint" datatype="String" termtype="ATTRIBUTE" fulltext="limit.usageConstraint">
+                <parentTerm text="limit" datatype="LimitSpecification" termtype="ENTITY" fulltext="limit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{'not a bundle', 'all are to be applied', 'all are to be summed', 'combined limit', 'greatest', 'soonest', 'last', 'restrictive'}"/>
+        <expressionCell external="limit.resolution">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="limit.resolution" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="resolution" datatype="String" termtype="ATTRIBUTE" fulltext="limit.resolution">
+                <parentTerm text="limit" datatype="LimitSpecification" termtype="ENTITY" fulltext="limit" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="product" datatype="ProductComponent" termtype="ENTITY" fulltext="product" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="{'per day', 'per month', 'per year'}"/>
+        <conditionValueSetCellList valueSet="{100, 150, 200, 250}"/>
+        <conditionValueSetCellList valueSet="{'dollars', 'visits', 'injections'}"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="'must be included and may be changed'"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

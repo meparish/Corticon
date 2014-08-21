@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_tdupJ2qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_ljtY52qnEeGMCd15vaZIXw" vocabulary="Indexer.ecore#/">
+    <rule/>
+    <rule>
+      <condition>
+        <opaqueExpression expression="tx1.index = N.x - 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="tx1.index = N.x - 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="N.x">
+                <parentTerm text="N" datatype="N" termtype="ENTITY" fulltext="N"/>
+              </terms>
+              <terms text="index" datatype="Integer" termtype="ATTRIBUTE" fulltext="tx1.index">
+                <parentTerm text="tx1" datatype="TX" termtype="ENTITY" fulltext="tx1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="tx1.index" rhs="N.x - 1"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="tx2.index = N.x + 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="tx2.index = N.x + 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="N.x">
+                <parentTerm text="N" datatype="N" termtype="ENTITY" fulltext="N"/>
+              </terms>
+              <terms text="index" datatype="Integer" termtype="ATTRIBUTE" fulltext="tx2.index">
+                <parentTerm text="tx2" datatype="TX" termtype="ENTITY" fulltext="tx2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="tx2.index" rhs="N.x + 1"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(tx1.amount > tx2.amount)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( tx1.amount > tx2.amount ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="amount" datatype="Decimal" termtype="ATTRIBUTE" fulltext="tx1.amount">
+                <parentTerm text="tx1" datatype="TX" termtype="ENTITY" fulltext="tx1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="amount" datatype="Decimal" termtype="ATTRIBUTE" fulltext="tx2.amount">
+                <parentTerm text="tx2" datatype="TX" termtype="ENTITY" fulltext="tx2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="tx1.amount > tx2.amount" rhs="T"/>
+      </condition>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="tx1.index = N.x - 2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="tx1.index = N.x - 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="N.x">
+                <parentTerm text="N" datatype="N" termtype="ENTITY" fulltext="N"/>
+              </terms>
+              <terms text="index" datatype="Integer" termtype="ATTRIBUTE" fulltext="tx1.index">
+                <parentTerm text="tx1" datatype="TX" termtype="ENTITY" fulltext="tx1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="tx1.index" rhs="N.x - 2"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="tx2.index = N.x + 2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="tx2.index = N.x + 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="N.x">
+                <parentTerm text="N" datatype="N" termtype="ENTITY" fulltext="N"/>
+              </terms>
+              <terms text="index" datatype="Integer" termtype="ATTRIBUTE" fulltext="tx2.index">
+                <parentTerm text="tx2" datatype="TX" termtype="ENTITY" fulltext="tx2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="tx2.index" rhs="N.x + 2"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(tx1.amount > tx2.amount)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( tx1.amount > tx2.amount ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="amount" datatype="Decimal" termtype="ATTRIBUTE" fulltext="tx1.amount">
+                <parentTerm text="tx1" datatype="TX" termtype="ENTITY" fulltext="tx1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="amount" datatype="Decimal" termtype="ATTRIBUTE" fulltext="tx2.amount">
+                <parentTerm text="tx2" datatype="TX" termtype="ENTITY" fulltext="tx2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="tx1.amount > tx2.amount" rhs="T"/>
+      </condition>
+    </rule>
+    <logicalVariable explicit="true" entity="Indexer.ecore#//Customer">
+      <alias value="customer"/>
+      <extension explicit="true" association="true" entity="Indexer.ecore#//TX" traversedAssocRole="Indexer.ecore#//Customer/transactions">
+        <alias value="tx1"/>
+        <referencedAttributes attribute="Indexer.ecore#//TX/index"/>
+        <referencedAttributes attribute="Indexer.ecore#//TX/amount"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Indexer.ecore#//TX" traversedAssocRole="Indexer.ecore#//Customer/transactions">
+        <alias value="tx2"/>
+        <referencedAttributes attribute="Indexer.ecore#//TX/index"/>
+        <referencedAttributes attribute="Indexer.ecore#//TX/amount"/>
+      </extension>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5"/>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.1"/>
+          </children>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Variable">
+        <variableReference xsi:type="com.corticon.rulesemf.asg:Term" text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="N.x">
+          <parentTerm text="N" datatype="N" termtype="ENTITY" fulltext="N"/>
+        </variableReference>
+        <valueSetCell valueSet="{N.x - 1, N.x, N.x + 1, N.x - 2}"/>
+        <expressionCell external="tx1.index">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="tx1.index" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="index" datatype="Integer" termtype="ATTRIBUTE" fulltext="tx1.index">
+                <parentTerm text="tx1" datatype="TX" termtype="ENTITY" fulltext="tx1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Variable">
+        <variableReference xsi:type="com.corticon.rulesemf.asg:Term" text="x" datatype="Integer" termtype="ATTRIBUTE" fulltext="N.x">
+          <parentTerm text="N" datatype="N" termtype="ENTITY" fulltext="N"/>
+        </variableReference>
+        <valueSetCell valueSet="{N.x, N.x + 1, N.x + 2}"/>
+        <expressionCell external="tx2.index">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="tx2.index" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="index" datatype="Integer" termtype="ATTRIBUTE" fulltext="tx2.index">
+                <parentTerm text="tx2" datatype="TX" termtype="ENTITY" fulltext="tx2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="tx1.amount > tx2.amount">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="tx1.amount > tx2.amount" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="amount" datatype="Decimal" termtype="ATTRIBUTE" fulltext="tx1.amount">
+                <parentTerm text="tx1" datatype="TX" termtype="ENTITY" fulltext="tx1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="amount" datatype="Decimal" termtype="ATTRIBUTE" fulltext="tx2.amount">
+                <parentTerm text="tx2" datatype="TX" termtype="ENTITY" fulltext="tx2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="N.x - 1"/>
+        <conditionValueSetCellList valueSet="N.x + 1"/>
+        <conditionValueSetCellList valueSet="T"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="N.x - 2"/>
+        <conditionValueSetCellList valueSet="N.x + 2"/>
+        <conditionValueSetCellList valueSet="T"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

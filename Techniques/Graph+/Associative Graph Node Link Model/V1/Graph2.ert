@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_wo3IaGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_wqe5ZGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_rNcBg2qnEeGMCd15vaZIXw" ruleActivity="Graph.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="********************** CREATE INITIAL PATHS FROM LINKS IN GRAPH G1 ***********************************"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Graph.ecore#//Graph">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="G1" eAttribute="Graph.ecore#//Graph/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" expanded="false" eReference="Graph.ecore#//Graph/link" eClass="Graph.ecore#//Link">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="Graph.ecore#//Link/distance"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1-2" eAttribute="Graph.ecore#//Link/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" manuallyCreated="true" eReference="Graph.ecore#//Link/fromNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.6"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" manuallyCreated="true" eReference="Graph.ecore#//Link/toNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.7"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" expanded="false" eReference="Graph.ecore#//Graph/link" eClass="Graph.ecore#//Link">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="Graph.ecore#//Link/distance"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2-3" eAttribute="Graph.ecore#//Link/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" manuallyCreated="true" eReference="Graph.ecore#//Link/fromNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.7"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" manuallyCreated="true" eReference="Graph.ecore#//Link/toNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.8"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" expanded="false" eReference="Graph.ecore#//Graph/link" eClass="Graph.ecore#//Link">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="Graph.ecore#//Link/distance"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="3-4" eAttribute="Graph.ecore#//Link/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" manuallyCreated="true" eReference="Graph.ecore#//Link/fromNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.8"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" manuallyCreated="true" eReference="Graph.ecore#//Link/toNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.9"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" expanded="false" eReference="Graph.ecore#//Graph/link" eClass="Graph.ecore#//Link">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="Graph.ecore#//Link/distance"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="4-5" eAttribute="Graph.ecore#//Link/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" manuallyCreated="true" eReference="Graph.ecore#//Link/fromNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.9"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="5" manuallyCreated="true" eReference="Graph.ecore#//Link/toNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.10"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" expanded="false" eReference="Graph.ecore#//Graph/link" eClass="Graph.ecore#//Link">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="Graph.ecore#//Link/distance"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5-6" eAttribute="Graph.ecore#//Link/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="5" manuallyCreated="true" eReference="Graph.ecore#//Link/fromNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.10"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="6" manuallyCreated="true" eReference="Graph.ecore#//Link/toNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.11"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.1/@children.2" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.1/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.2/@children.2" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.2/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.3/@children.2" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="3" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.3/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.4/@children.2" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="4" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.4/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.5/@children.2" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" manuallyCreated="true" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.0/@children.5/@children.3" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="6" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+        </children>
+      </inputRoot>
+      <outputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="Graph.ecore#//Graph">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="G1" eAttribute="Graph.ecore#//Graph/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" expanded="false" eReference="Graph.ecore#//Graph/link" eClass="Graph.ecore#//Link">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Graph.ecore#//Link/distance"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1-2" eAttribute="Graph.ecore#//Link/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Graph.ecore#//Link/fromNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" eReference="Graph.ecore#//Link/toNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.7"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" expanded="false" eReference="Graph.ecore#//Graph/link" eClass="Graph.ecore#//Link">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Graph.ecore#//Link/distance"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2-3" eAttribute="Graph.ecore#//Link/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" eReference="Graph.ecore#//Link/fromNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.7"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" eReference="Graph.ecore#//Link/toNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.8"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" expanded="false" eReference="Graph.ecore#//Graph/link" eClass="Graph.ecore#//Link">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Graph.ecore#//Link/distance"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3-4" eAttribute="Graph.ecore#//Link/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" eReference="Graph.ecore#//Link/fromNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.8"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" eReference="Graph.ecore#//Link/toNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.9"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" expanded="false" eReference="Graph.ecore#//Graph/link" eClass="Graph.ecore#//Link">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Graph.ecore#//Link/distance"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4-5" eAttribute="Graph.ecore#//Link/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" eReference="Graph.ecore#//Link/fromNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.9"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="5" eReference="Graph.ecore#//Link/toNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.10"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" expanded="false" eReference="Graph.ecore#//Graph/link" eClass="Graph.ecore#//Link">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Graph.ecore#//Link/distance"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5-6" eAttribute="Graph.ecore#//Link/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="5" eReference="Graph.ecore#//Link/fromNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.10"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="6" eReference="Graph.ecore#//Link/toNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.11"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.1/@children.2" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.1/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2/@children.2" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.2" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4/@children.2" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.5/@children.2" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.5/@children.3" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Graph.ecore#//Graph">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="G1" eAttribute="Graph.ecore#//Graph/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" expanded="false" eReference="Graph.ecore#//Graph/link" eClass="Graph.ecore#//Link">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="Graph.ecore#//Link/distance"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1-2" eAttribute="Graph.ecore#//Link/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" manuallyCreated="true" eReference="Graph.ecore#//Link/fromNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.6"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" manuallyCreated="true" eReference="Graph.ecore#//Link/toNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.7"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" expanded="false" eReference="Graph.ecore#//Graph/link" eClass="Graph.ecore#//Link">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="Graph.ecore#//Link/distance"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2-3" eAttribute="Graph.ecore#//Link/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" manuallyCreated="true" eReference="Graph.ecore#//Link/fromNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.7"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" manuallyCreated="true" eReference="Graph.ecore#//Link/toNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.8"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" expanded="false" eReference="Graph.ecore#//Graph/link" eClass="Graph.ecore#//Link">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="Graph.ecore#//Link/distance"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="3-4" eAttribute="Graph.ecore#//Link/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" manuallyCreated="true" eReference="Graph.ecore#//Link/fromNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.8"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" manuallyCreated="true" eReference="Graph.ecore#//Link/toNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.9"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" expanded="false" eReference="Graph.ecore#//Graph/link" eClass="Graph.ecore#//Link">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="Graph.ecore#//Link/distance"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="4-5" eAttribute="Graph.ecore#//Link/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" manuallyCreated="true" eReference="Graph.ecore#//Link/fromNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.9"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="5" manuallyCreated="true" eReference="Graph.ecore#//Link/toNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.10"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" expanded="false" eReference="Graph.ecore#//Graph/link" eClass="Graph.ecore#//Link">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="Graph.ecore#//Link/distance"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5-6" eAttribute="Graph.ecore#//Link/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="5" manuallyCreated="true" eReference="Graph.ecore#//Link/fromNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.10"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="6" manuallyCreated="true" eReference="Graph.ecore#//Link/toNode" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.11"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.1/@children.2" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.1/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.2/@children.2" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.2/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.3/@children.2" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="3" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.3/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.4/@children.2" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="4" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.4/@children.3 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.5/@children.2" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" manuallyCreated="true" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.5/@children.3" eReference="Graph.ecore#//Graph/node" eClass="Graph.ecore#//Node">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="6" eAttribute="Graph.ecore#//Node/name"/>
+          </children>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_lC_4gGqnEeGMCd15vaZIXw" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="Graph.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="Graph"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" majorServiceNumber="3" buildNumber="5565" updateStamp="_zqcXEiNFEeSPLpXT40GnoA" externalChecksum="3054974779:507989954:1410878994">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_u1R-8iNFEeSPLpXT40GnoA" vocabulary="Messages.ecore#/">
+    <rule>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Thing.color = 'red'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.color = 'red'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="color" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.color">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.color" rhs="'red'"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <action>
+        <opaqueExpression expression="msg.rulesheet = 'Validation'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.rulesheet = 'Validation'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="rulesheet" datatype="String" termtype="ATTRIBUTE" fulltext="msg.rulesheet">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="msg.description = 'Color is red'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.description = 'Color is red'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="msg.description">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="msg.reference = '1'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.reference = '1'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="reference" datatype="String" termtype="ATTRIBUTE" fulltext="msg.reference">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="msg.score = 4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.score = 4" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="score" datatype="Integer" termtype="ATTRIBUTE" fulltext="msg.score">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="msg.severity = 'info'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.severity = 'info'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="severity" datatype="String" termtype="ATTRIBUTE" fulltext="msg.severity">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="msg.title = 'Thing Report'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.title = 'Thing Report'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="title" datatype="String" termtype="ATTRIBUTE" fulltext="msg.title">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action>
+        <opaqueExpression expression="actualReports+=Message.new[&#xD;&#xA;rulesheet=msg.rulesheet,&#xD;&#xA;description=msg.description,&#xD;&#xA;reference=msg.reference,&#xD;&#xA;score=msg.score,&#xD;&#xA;severity=msg.severity,&#xD;&#xA;title=msg.title,&#xD;&#xA;timestamp=now]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="actualReports += Message.new [ Message.title = msg.title , Message.timestamp = now , Message.severity = msg.severity , Message.score = msg.score , Message.rulesheet = msg.rulesheet , Message.reference = msg.reference , Message.description = msg.description ]" datatype="Message" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="actualReports" datatype="Message" termtype="ENTITY" fulltext="actualReports">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="severity" datatype="String" termtype="ATTRIBUTE" fulltext="msg.severity">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="reference" datatype="String" termtype="ATTRIBUTE" fulltext="msg.reference">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="rulesheet" datatype="String" termtype="ATTRIBUTE" fulltext="msg.rulesheet">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="msg.description">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="title" datatype="String" termtype="ATTRIBUTE" fulltext="msg.title">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="score" datatype="Integer" termtype="ATTRIBUTE" fulltext="msg.score">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Thing.size = 'large'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.size = 'large'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="size" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.size">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.size" rhs="'large'"/>
+      </condition>
+      <condition/>
+      <action>
+        <opaqueExpression expression="msg.rulesheet = 'Validation'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.rulesheet = 'Validation'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="rulesheet" datatype="String" termtype="ATTRIBUTE" fulltext="msg.rulesheet">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="msg.description = 'Size is large'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.description = 'Size is large'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="msg.description">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="msg.reference = '2'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.reference = '2'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="reference" datatype="String" termtype="ATTRIBUTE" fulltext="msg.reference">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="msg.score = 6">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.score = 6" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="score" datatype="Integer" termtype="ATTRIBUTE" fulltext="msg.score">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="msg.severity = 'warning'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.severity = 'warning'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="severity" datatype="String" termtype="ATTRIBUTE" fulltext="msg.severity">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="msg.title = 'Thing Report'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.title = 'Thing Report'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="title" datatype="String" termtype="ATTRIBUTE" fulltext="msg.title">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action>
+        <opaqueExpression expression="actualReports+=Message.new[&#xD;&#xA;rulesheet=msg.rulesheet,&#xD;&#xA;description=msg.description,&#xD;&#xA;reference=msg.reference,&#xD;&#xA;score=msg.score,&#xD;&#xA;severity=msg.severity,&#xD;&#xA;title=msg.title,&#xD;&#xA;timestamp=now]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="actualReports += Message.new [ Message.title = msg.title , Message.timestamp = now , Message.severity = msg.severity , Message.score = msg.score , Message.rulesheet = msg.rulesheet , Message.reference = msg.reference , Message.description = msg.description ]" datatype="Message" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="actualReports" datatype="Message" termtype="ENTITY" fulltext="actualReports">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="severity" datatype="String" termtype="ATTRIBUTE" fulltext="msg.severity">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="reference" datatype="String" termtype="ATTRIBUTE" fulltext="msg.reference">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="rulesheet" datatype="String" termtype="ATTRIBUTE" fulltext="msg.rulesheet">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="msg.description">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="title" datatype="String" termtype="ATTRIBUTE" fulltext="msg.title">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="score" datatype="Integer" termtype="ATTRIBUTE" fulltext="msg.score">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Thing.shape = 'square'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.shape = 'square'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.shape">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Thing.shape" rhs="'square'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="msg.rulesheet = 'Validation'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.rulesheet = 'Validation'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="rulesheet" datatype="String" termtype="ATTRIBUTE" fulltext="msg.rulesheet">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="msg.description = 'Shape is square'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.description = 'Shape is square'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="msg.description">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="msg.reference = '3'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.reference = '3'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="reference" datatype="String" termtype="ATTRIBUTE" fulltext="msg.reference">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="msg.score = 10">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.score = 10" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="score" datatype="Integer" termtype="ATTRIBUTE" fulltext="msg.score">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="msg.severity = 'violation'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.severity = 'violation'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="severity" datatype="String" termtype="ATTRIBUTE" fulltext="msg.severity">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="msg.title = 'Thing Report'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.title = 'Thing Report'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="title" datatype="String" termtype="ATTRIBUTE" fulltext="msg.title">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action>
+        <opaqueExpression expression="actualReports+=Message.new[&#xD;&#xA;rulesheet=msg.rulesheet,&#xD;&#xA;description=msg.description,&#xD;&#xA;reference=msg.reference,&#xD;&#xA;score=msg.score,&#xD;&#xA;severity=msg.severity,&#xD;&#xA;title=msg.title,&#xD;&#xA;timestamp=now]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="actualReports += Message.new [ Message.title = msg.title , Message.timestamp = now , Message.severity = msg.severity , Message.score = msg.score , Message.rulesheet = msg.rulesheet , Message.reference = msg.reference , Message.description = msg.description ]" datatype="Message" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="actualReports" datatype="Message" termtype="ENTITY" fulltext="actualReports">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="severity" datatype="String" termtype="ATTRIBUTE" fulltext="msg.severity">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="reference" datatype="String" termtype="ATTRIBUTE" fulltext="msg.reference">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="rulesheet" datatype="String" termtype="ATTRIBUTE" fulltext="msg.rulesheet">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="msg.description">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="title" datatype="String" termtype="ATTRIBUTE" fulltext="msg.title">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="score" datatype="Integer" termtype="ATTRIBUTE" fulltext="msg.score">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable entity="Messages.ecore#//Thing">
+      <extension explicit="true" association="true" entity="Messages.ecore#//Message" traversedAssocRole="Messages.ecore#//Thing/messages">
+        <alias value="actualReports"/>
+        <referencedAttributes attribute="Messages.ecore#//Message/rulesheet"/>
+      </extension>
+      <referencedAttributes attribute="Messages.ecore#//Thing/color"/>
+      <referencedAttributes attribute="Messages.ecore#//Thing/size"/>
+      <referencedAttributes attribute="Messages.ecore#//Thing/shape"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="Messages.ecore#//Message">
+      <alias value="msg"/>
+      <referencedAttributes attribute="Messages.ecore#//Message/description"/>
+      <referencedAttributes attribute="Messages.ecore#//Message/reference"/>
+      <referencedAttributes attribute="Messages.ecore#//Message/score"/>
+      <referencedAttributes attribute="Messages.ecore#//Message/severity"/>
+      <referencedAttributes attribute="Messages.ecore#//Message/title"/>
+      <referencedAttributes attribute="Messages.ecore#//Message/rulesheet"/>
+    </logicalVariable>
+    <logicalVariable entity="Messages.ecore#//Message"/>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="16" sashWeightConditionsActions="13" sashWeightConditionsIf="17">
+    <actionSection rowCount="51" columnWidthFactor="0.5">
+      <actionItemList>
+        <naturalLanguageText value="Set rule sheet name"/>
+        <valueSetCell/>
+        <expressionCell external="msg.rulesheet">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.rulesheet" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="rulesheet" datatype="String" termtype="ATTRIBUTE" fulltext="msg.rulesheet">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Set description"/>
+        <valueSetCell/>
+        <expressionCell external="msg.description">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.description" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="msg.description">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Set reference"/>
+        <valueSetCell/>
+        <expressionCell external="msg.reference">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.reference" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="reference" datatype="String" termtype="ATTRIBUTE" fulltext="msg.reference">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Set score"/>
+        <valueSetCell/>
+        <expressionCell external="msg.score">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.score" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="score" datatype="Integer" termtype="ATTRIBUTE" fulltext="msg.score">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Set severity"/>
+        <valueSetCell/>
+        <expressionCell external="msg.severity">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.severity" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="severity" datatype="String" termtype="ATTRIBUTE" fulltext="msg.severity">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Set title"/>
+        <valueSetCell/>
+        <expressionCell external="msg.title">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="msg.title" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="title" datatype="String" termtype="ATTRIBUTE" fulltext="msg.title">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell/>
+      </actionItemList>
+      <actionItemList rowHeight="204">
+        <naturalLanguageText value="Attach report"/>
+        <valueSetCell valueSet=""/>
+        <expressionCell external="actualReports+=Message.new[&#xD;&#xA;rulesheet=msg.rulesheet,&#xD;&#xA;description=msg.description,&#xD;&#xA;reference=msg.reference,&#xD;&#xA;score=msg.score,&#xD;&#xA;severity=msg.severity,&#xD;&#xA;title=msg.title,&#xD;&#xA;timestamp=now]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="actualReports += Message.new [ Message.title = msg.title , Message.timestamp = now , Message.severity = msg.severity , Message.score = msg.score , Message.rulesheet = msg.rulesheet , Message.reference = msg.reference , Message.description = msg.description ]" datatype="Message" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="actualReports" datatype="Message" termtype="ENTITY" fulltext="actualReports">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="severity" datatype="String" termtype="ATTRIBUTE" fulltext="msg.severity">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="reference" datatype="String" termtype="ATTRIBUTE" fulltext="msg.reference">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="rulesheet" datatype="String" termtype="ATTRIBUTE" fulltext="msg.rulesheet">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="description" datatype="String" termtype="ATTRIBUTE" fulltext="msg.description">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="title" datatype="String" termtype="ATTRIBUTE" fulltext="msg.title">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="score" datatype="Integer" termtype="ATTRIBUTE" fulltext="msg.score">
+                <parentTerm text="msg" datatype="Message" termtype="ENTITY" fulltext="msg" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.4"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.5"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2"/>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.7987012987012987">
+      <conditionItemList variableMode="Literal">
+        <naturalLanguageText value="What is the color?"/>
+        <valueSetCell/>
+        <expressionCell external="Thing.color">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.color" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="color" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.color">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <naturalLanguageText value="What is the Size?"/>
+        <valueSetCell/>
+        <expressionCell external="Thing.size">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.size" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="size" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.size">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <naturalLanguageText value="What is the Shape?"/>
+        <valueSetCell/>
+        <expressionCell external="Thing.shape">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Thing.shape" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Thing.shape">
+                <parentTerm text="Thing" datatype="Thing" termtype="ENTITY" fulltext="Thing" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="34" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="'red'"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="'Validation'"/>
+        <actionValueSetCellList valueSet="'Color is red'"/>
+        <actionValueSetCellList valueSet="'1'"/>
+        <actionValueSetCellList valueSet="4"/>
+        <actionValueSetCellList valueSet="'info'"/>
+        <actionValueSetCellList valueSet="'Thing Report'"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="'large'"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="'Validation'"/>
+        <actionValueSetCellList valueSet="'Size is large'"/>
+        <actionValueSetCellList valueSet="'2'"/>
+        <actionValueSetCellList valueSet="6"/>
+        <actionValueSetCellList valueSet="'warning'"/>
+        <actionValueSetCellList valueSet="'Thing Report'"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="'square'"/>
+        <actionValueSetCellList valueSet="'Validation'"/>
+        <actionValueSetCellList valueSet="'Shape is square'"/>
+        <actionValueSetCellList valueSet="'3'"/>
+        <actionValueSetCellList valueSet="10"/>
+        <actionValueSetCellList valueSet="'violation'"/>
+        <actionValueSetCellList valueSet="'Thing Report'"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

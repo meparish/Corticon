@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_sF5T2mqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset operationMode="ProcessAllLogicalLoops" vocabularyUpdateStamp="_lOiaIGqnEeGMCd15vaZIXw" vocabulary="Knapsack.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(box.availableVolume > item.volume)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( box.availableVolume > item.volume ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="volume" datatype="Integer" termtype="ATTRIBUTE" fulltext="item.volume">
+                <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="availableVolume" datatype="Integer" termtype="ATTRIBUTE" fulltext="box.availableVolume">
+                <parentTerm text="box" datatype="Container" termtype="ENTITY" fulltext="box" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="box.availableVolume > item.volume" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(item.inaBox)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( item.inaBox ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="inaBox" datatype="Boolean" termtype="ATTRIBUTE" fulltext="item.inaBox">
+                <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="item.inaBox" rhs="F"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="box.object+=item">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="box.object += item" datatype="Thing" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="object" datatype="Thing" termtype="ENTITY" fulltext="box.object">
+                <parentTerm text="box" datatype="Container" termtype="ENTITY" fulltext="box"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="box" datatype="Container" termtype="ENTITY" fulltext="box" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="box.availableVolume-=item.volume">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="box.availableVolume = box.availableVolume - item.volume" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="availableVolume" datatype="Integer" termtype="ATTRIBUTE" fulltext="box.availableVolume">
+                <parentTerm text="box" datatype="Container" termtype="ENTITY" fulltext="box"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="volume" datatype="Integer" termtype="ATTRIBUTE" fulltext="item.volume">
+                <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="availableVolume" datatype="Integer" termtype="ATTRIBUTE" fulltext="box.availableVolume">
+                <parentTerm text="box" datatype="Container" termtype="ENTITY" fulltext="box" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="box" datatype="Container" termtype="ENTITY" fulltext="box" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="item.inaBox=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="item.inaBox = true" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="inaBox" datatype="Boolean" termtype="ATTRIBUTE" fulltext="item.inaBox">
+                <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="(box.availableVolume > item.volume)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( box.availableVolume > item.volume ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="volume" datatype="Integer" termtype="ATTRIBUTE" fulltext="item.volume">
+                <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="availableVolume" datatype="Integer" termtype="ATTRIBUTE" fulltext="box.availableVolume">
+                <parentTerm text="box" datatype="Container" termtype="ENTITY" fulltext="box" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="box.availableVolume > item.volume" rhs="F"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(item.inaBox)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( item.inaBox ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="inaBox" datatype="Boolean" termtype="ATTRIBUTE" fulltext="item.inaBox">
+                <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="item.inaBox" rhs="F"/>
+      </condition>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.1">
+      <text expression="{box.name} has {box.availableVolume} space. {item.name} needs {item.volume} so it fits - add the {item.name}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="box.name +  has  + box.availableVolume +  space.  + item.name +  needs  + item.volume +  so it fits - add the  + item.name" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="item.name">
+              <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="volume" datatype="Integer" termtype="ATTRIBUTE" fulltext="item.volume">
+              <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="availableVolume" datatype="Integer" termtype="ATTRIBUTE" fulltext="box.availableVolume">
+              <parentTerm text="box" datatype="Container" termtype="ENTITY" fulltext="box" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="box.name">
+              <parentTerm text="box" datatype="Container" termtype="ENTITY" fulltext="box" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.1">
+      <text expression="{box.name} has {box.availableVolume} space. {item.name} needs {item.volume} so it won't fit">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="box.name +  has  + box.availableVolume +  space.  + item.name +  needs  + item.volume +  so it won't fit" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="item.name">
+              <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="volume" datatype="Integer" termtype="ATTRIBUTE" fulltext="item.volume">
+              <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="availableVolume" datatype="Integer" termtype="ATTRIBUTE" fulltext="box.availableVolume">
+              <parentTerm text="box" datatype="Container" termtype="ENTITY" fulltext="box" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="box.name">
+              <parentTerm text="box" datatype="Container" termtype="ENTITY" fulltext="box" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="Knapsack.ecore#//Container">
+      <alias value="box"/>
+      <extension association="true" entity="Knapsack.ecore#//Thing" traversedAssocRole="Knapsack.ecore#//Container/object"/>
+      <referencedAttributes attribute="Knapsack.ecore#//Container/availableVolume"/>
+      <referencedAttributes attribute="Knapsack.ecore#//Container/name"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="Knapsack.ecore#//Thing" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1">
+      <alias value="item"/>
+      <referencedAttributes attribute="Knapsack.ecore#//Thing/volume"/>
+      <referencedAttributes attribute="Knapsack.ecore#//Thing/inaBox"/>
+      <referencedAttributes attribute="Knapsack.ecore#//Thing/name"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="49" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="box.object+=item">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="box.object += item" datatype="Thing" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="object" datatype="Thing" termtype="ENTITY" fulltext="box.object">
+                <parentTerm text="box" datatype="Container" termtype="ENTITY" fulltext="box"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="box" datatype="Container" termtype="ENTITY" fulltext="box" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="box.availableVolume-=item.volume">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="box.availableVolume = box.availableVolume - item.volume" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="availableVolume" datatype="Integer" termtype="ATTRIBUTE" fulltext="box.availableVolume">
+                <parentTerm text="box" datatype="Container" termtype="ENTITY" fulltext="box"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="volume" datatype="Integer" termtype="ATTRIBUTE" fulltext="item.volume">
+                <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="availableVolume" datatype="Integer" termtype="ATTRIBUTE" fulltext="box.availableVolume">
+                <parentTerm text="box" datatype="Container" termtype="ENTITY" fulltext="box" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="box" datatype="Container" termtype="ENTITY" fulltext="box" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="item.inaBox=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="item.inaBox = true" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="inaBox" datatype="Boolean" termtype="ATTRIBUTE" fulltext="item.inaBox">
+                <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.2"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="{box.name} has {box.availableVolume} space. {item.name} needs {item.volume} so it fits - add the {item.name}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="box.name +  has  + box.availableVolume +  space.  + item.name +  needs  + item.volume +  so it fits - add the  + item.name" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="item.name">
+                <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="volume" datatype="Integer" termtype="ATTRIBUTE" fulltext="item.volume">
+                <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="availableVolume" datatype="Integer" termtype="ATTRIBUTE" fulltext="box.availableVolume">
+                <parentTerm text="box" datatype="Container" termtype="ENTITY" fulltext="box" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="box.name">
+                <parentTerm text="box" datatype="Container" termtype="ENTITY" fulltext="box" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="{box.name} has {box.availableVolume} space. {item.name} needs {item.volume} so it won't fit">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="box.name +  has  + box.availableVolume +  space.  + item.name +  needs  + item.volume +  so it won't fit" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="item.name">
+                <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="volume" datatype="Integer" termtype="ATTRIBUTE" fulltext="item.volume">
+                <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="availableVolume" datatype="Integer" termtype="ATTRIBUTE" fulltext="box.availableVolume">
+                <parentTerm text="box" datatype="Container" termtype="ENTITY" fulltext="box" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="box.name">
+                <parentTerm text="box" datatype="Container" termtype="ENTITY" fulltext="box" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="box.availableVolume > item.volume">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="box.availableVolume > item.volume" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="volume" datatype="Integer" termtype="ATTRIBUTE" fulltext="item.volume">
+                <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="availableVolume" datatype="Integer" termtype="ATTRIBUTE" fulltext="box.availableVolume">
+                <parentTerm text="box" datatype="Container" termtype="ENTITY" fulltext="box" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="item.inaBox">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="item.inaBox" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="inaBox" datatype="Boolean" termtype="ATTRIBUTE" fulltext="item.inaBox">
+                <parentTerm text="item" datatype="Thing" termtype="ENTITY" fulltext="item" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="F"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

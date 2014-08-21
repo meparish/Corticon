@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_rOxedGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_lD20IGqnEeGMCd15vaZIXw" vocabulary="Graph.ecore#/">
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0"/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="(p1&lt;>p2)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( p1 &lt;> p2 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="p1&lt;>p2" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(p1.endNode=p2.startNode)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( p1.endNode = p2.startNode ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="startNode" datatype="Node" termtype="ENTITY" fulltext="p2.startNode" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+                <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="endNode" datatype="Node" termtype="ENTITY" fulltext="p1.endNode" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="p1.endNode=p2.startNode" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="aGraph.path+=Path.new[startNode=p1.startNode,endNode=p2.endNode,distance=p1.distance + p2.distance,name=p1.name.concat(p2.name)]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aGraph.path += Path.new [ Path.startNode = p1.startNode , Path.name = p1.name.concat ( p2.name ) , Path.endNode = p2.endNode , Path.distance = p1.distance + p2.distance ]" datatype="Path" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="path" datatype="Path" termtype="ENTITY" fulltext="aGraph.path">
+                <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="endNode" datatype="Node" termtype="ENTITY" fulltext="p2.endNode" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.1">
+                <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="concat" datatype="String" termtype="METHOD" fulltext="p1.name.concat">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p1.name">
+                  <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="p1.distance">
+                <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p2.name">
+                <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="startNode" datatype="Node" termtype="ENTITY" fulltext="p1.startNode" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="p2.distance">
+                <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.1">
+      <text expression="********CREATE NEW PATHS WHEN THE END OF ONE IS THE BEGINNING OF ANOTHER ******************">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="********CREATE NEW PATHS WHEN THE END OF ONE IS THE BEGINNING OF ANOTHER ******************" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+      <text expression="path {p1.startNode.name}-{p2.endNode.name} created by adding path {p2.name} to path {p1.name}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="path  + p1_startNode.name + - + p2_endNode.name +  created by adding path  + p2.name +  to path  + p1.name" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p1.startNode.name">
+              <parentTerm text="startNode" datatype="Node" termtype="ENTITY" fulltext="p1.startNode" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </parentTerm>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p2.name">
+              <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p1.name">
+              <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p2.endNode.name">
+              <parentTerm text="endNode" datatype="Node" termtype="ENTITY" fulltext="p2.endNode" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.1">
+                <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="Graph.ecore#//Graph">
+      <alias value="aGraph"/>
+      <extension explicit="true" association="true" entity="Graph.ecore#//Path" traversedAssocRole="Graph.ecore#//Graph/path" ruleStatements="#//@ruleset/@ruleStatements.1">
+        <alias value="p1"/>
+        <extension association="true" entity="Graph.ecore#//Node" traversedAssocRole="Graph.ecore#//Path/endNode"/>
+        <extension association="true" entity="Graph.ecore#//Node" traversedAssocRole="Graph.ecore#//Path/startNode">
+          <referencedAttributes attribute="Graph.ecore#//Node/name"/>
+        </extension>
+        <referencedAttributes attribute="Graph.ecore#//Path/name"/>
+        <referencedAttributes attribute="Graph.ecore#//Path/distance"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Graph.ecore#//Path" traversedAssocRole="Graph.ecore#//Graph/path">
+        <alias value="p2"/>
+        <extension association="true" entity="Graph.ecore#//Node" traversedAssocRole="Graph.ecore#//Path/startNode"/>
+        <extension association="true" entity="Graph.ecore#//Node" traversedAssocRole="Graph.ecore#//Path/endNode">
+          <referencedAttributes attribute="Graph.ecore#//Node/name"/>
+        </extension>
+        <referencedAttributes attribute="Graph.ecore#//Path/name"/>
+        <referencedAttributes attribute="Graph.ecore#//Path/distance"/>
+      </extension>
+      <extension association="true" entity="Graph.ecore#//Path" traversedAssocRole="Graph.ecore#//Graph/path"/>
+    </logicalVariable>
+    <logicalVariable entity="Graph.ecore#//Graph" ruleStatements="#//@ruleset/@ruleStatements.0"/>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="aGraph.path+=Path.new[startNode=p1.startNode,endNode=p2.endNode,distance=p1.distance + p2.distance,name=p1.name.concat(p2.name)]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aGraph.path += Path.new [ Path.startNode = p1.startNode , Path.name = p1.name.concat ( p2.name ) , Path.endNode = p2.endNode , Path.distance = p1.distance + p2.distance ]" datatype="Path" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="path" datatype="Path" termtype="ENTITY" fulltext="aGraph.path">
+                <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="endNode" datatype="Node" termtype="ENTITY" fulltext="p2.endNode">
+                <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="concat" datatype="String" termtype="METHOD" fulltext="p1.name.concat">
+                <parentTerm text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p1.name">
+                  <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="p1.distance">
+                <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p2.name">
+                <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="startNode" datatype="Node" termtype="ENTITY" fulltext="p1.startNode">
+                <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="distance" datatype="Integer" termtype="ATTRIBUTE" fulltext="p2.distance">
+                <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1/@referencedAttributes.0"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.1">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@extension.1/@referencedAttributes.0"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1"/>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="0"/>
+        <text external="********CREATE NEW PATHS WHEN THE END OF ONE IS THE BEGINNING OF ANOTHER ******************">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="********CREATE NEW PATHS WHEN THE END OF ONE IS THE BEGINNING OF ANOTHER ******************" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="1"/>
+        <text external="path {p1.startNode.name}-{p2.endNode.name} created by adding path {p2.name} to path {p1.name}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="path  + p1_startNode.name + - + p2_endNode.name +  created by adding path  + p2.name +  to path  + p1.name" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p1.startNode.name">
+                <parentTerm text="startNode" datatype="Node" termtype="ENTITY" fulltext="p1.startNode">
+                  <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p2.name">
+                <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p1.name">
+                <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="p2.endNode.name">
+                <parentTerm text="endNode" datatype="Node" termtype="ENTITY" fulltext="p2.endNode">
+                  <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                    <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="p1&lt;>p2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p1 &lt;> p2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="p1.endNode=p2.startNode">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p1.endNode = p2.startNode" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="startNode" datatype="Node" termtype="ENTITY" fulltext="p2.startNode">
+                <parentTerm text="p2" datatype="Path" termtype="ENTITY" fulltext="p2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="endNode" datatype="Node" termtype="ENTITY" fulltext="p1.endNode">
+                <parentTerm text="p1" datatype="Path" termtype="ENTITY" fulltext="p1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="aGraph" datatype="Graph" termtype="ENTITY" fulltext="aGraph" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

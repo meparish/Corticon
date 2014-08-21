@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" majorServiceNumber="3" buildNumber="5565" updateStamp="_1W_eBn15EeOX286JNQDY9A" externalChecksum="3054974779:507989954:1410878994">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_1JcKMH15EeOX286JNQDY9A" vocabulary="MAB.ecore#/">
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(Monkey.at = aThing.at)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Monkey.at = aThing.at ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="at" datatype="String" termtype="ATTRIBUTE" fulltext="Monkey.at">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="at" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.at">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Monkey.at = aThing.at" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Monkey.on = aThing.on)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Monkey.on = aThing.on ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.on">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="Monkey.on">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Monkey.on = aThing.on" rhs="F"/>
+      </condition>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(anyGoal2->exists(action='get on',arg1=aThing.on,status='pending'))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( anyGoal2 ->exists( anyGoal2.action = 'get on' , anyGoal2.arg1 = aThing.on , anyGoal2.status = 'pending' ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="anyGoal2" datatype="Boolean" termtype="COLLECTION" fulltext="anyGoal2->notEmpty">
+                <parentTerm text="anyGoal2" datatype="Goal" termtype="ENTITY" fulltext="anyGoal2" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.on">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="arg1" datatype="String" termtype="ATTRIBUTE" fulltext="anyGoal2.arg1">
+                <parentTerm text="anyGoal2" datatype="Goal" termtype="ENTITY" fulltext="anyGoal2" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="action" datatype="String" termtype="ATTRIBUTE" fulltext="anyGoal2.action">
+                <parentTerm text="anyGoal2" datatype="Goal" termtype="ENTITY" fulltext="anyGoal2" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="anyGoal2.status">
+                <parentTerm text="anyGoal2" datatype="Goal" termtype="ENTITY" fulltext="anyGoal2" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="anyGoal2->exists(action='get on',arg1=aThing.on,status='pending')" rhs="F"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="goal+=Goal.new[action='get on',arg1=aThing.on,status='pending']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goal += Goal.new [ Goal.status = 'pending' , Goal.arg1 = aThing.on , Goal.action = 'get on' ]" datatype="Goal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.on">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="(Monkey.at = aThing.at)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Monkey.at = aThing.at ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="at" datatype="String" termtype="ATTRIBUTE" fulltext="Monkey.at">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="at" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.at">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Monkey.at = aThing.at" rhs="F"/>
+      </condition>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(anyGoal1->exists(action='walk',arg1=aThing.at,status='pending'))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( anyGoal1 ->exists( anyGoal1.action = 'walk' , anyGoal1.arg1 = aThing.at , anyGoal1.status = 'pending' ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="anyGoal1" datatype="Boolean" termtype="COLLECTION" fulltext="anyGoal1->notEmpty">
+                <parentTerm text="anyGoal1" datatype="Goal" termtype="ENTITY" fulltext="anyGoal1" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="arg1" datatype="String" termtype="ATTRIBUTE" fulltext="anyGoal1.arg1">
+                <parentTerm text="anyGoal1" datatype="Goal" termtype="ENTITY" fulltext="anyGoal1" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="action" datatype="String" termtype="ATTRIBUTE" fulltext="anyGoal1.action">
+                <parentTerm text="anyGoal1" datatype="Goal" termtype="ENTITY" fulltext="anyGoal1" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="at" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.at">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="anyGoal1.status">
+                <parentTerm text="anyGoal1" datatype="Goal" termtype="ENTITY" fulltext="anyGoal1" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="anyGoal1->exists(action='walk',arg1=aThing.at,status='pending')" rhs="F"/>
+      </condition>
+      <condition/>
+      <action>
+        <opaqueExpression expression="goal+=Goal.new[action='walk',arg1=aThing.at,status='pending']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goal += Goal.new [ Goal.status = 'pending' , Goal.arg1 = aThing.at , Goal.action = 'walk' ]" datatype="Goal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="at" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.at">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="(Monkey.at = aThing.at)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Monkey.at = aThing.at ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="at" datatype="String" termtype="ATTRIBUTE" fulltext="Monkey.at">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="at" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.at">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Monkey.at = aThing.at" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Monkey.on = aThing.on)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Monkey.on = aThing.on ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.on">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="Monkey.on">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Monkey.on = aThing.on" rhs="T"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Monkey.on = goal.arg1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Monkey.on = goal.arg1" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="Monkey.on">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="arg1" datatype="String" termtype="ATTRIBUTE" fulltext="goal.arg1">
+                <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="goal.status = 'complete'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goal.status = 'complete'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="goal.status">
+                <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal">
+                  <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0">
+      <opaqueExpression expression="goal.action = 'get on'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goal.action = 'get on'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="action" datatype="String" termtype="ATTRIBUTE" fulltext="goal.action">
+              <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0">
+      <opaqueExpression expression="goal.status = 'pending'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goal.status = 'pending'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+          <referencedTermList>
+            <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="goal.status">
+              <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0">
+      <opaqueExpression expression="Monkey.on &lt;> goal.arg1">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Monkey.on &lt;> goal.arg1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="arg1" datatype="String" termtype="ATTRIBUTE" fulltext="goal.arg1">
+              <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="Monkey.on">
+              <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.1 #//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0">
+      <opaqueExpression expression="aThing.name = goal.arg1">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aThing.name = goal.arg1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.name">
+              <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="arg1" datatype="String" termtype="ATTRIBUTE" fulltext="goal.arg1">
+              <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="GETON3: Goal: {goal.action} to {goal.arg1}. Monkey is on {Monkey.on} but {aThing.name} is on {aThing.on} so the monkey must first get on {aThing.on}. New goal-> get on {aThing.on}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="GETON3: Goal:  + goal.action +  to  + goal.arg1 + . Monkey is on  + Monkey.on +  but  + aThing.name +  is on  + aThing.on +  so the monkey must first get on  + aThing.on + . New goal-> get on  + aThing.on" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.on">
+              <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.name">
+              <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="arg1" datatype="String" termtype="ATTRIBUTE" fulltext="goal.arg1">
+              <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="Monkey.on">
+              <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="action" datatype="String" termtype="ATTRIBUTE" fulltext="goal.action">
+              <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="GETON1: Goal: {goal.action} to {goal.arg1}. Monkey is at {Monkey.at}. {aThing.name} is at {aThing.at} so the monkey must first walk from {Monkey.at} to {aThing.at}. New goal-> walk to {aThing.at}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="GETON1: Goal:  + goal.action +  to  + goal.arg1 + . Monkey is at  + Monkey.at + .  + aThing.name +  is at  + aThing.at +  so the monkey must first walk from  + Monkey.at +  to  + aThing.at + . New goal-> walk to  + aThing.at" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="at" datatype="String" termtype="ATTRIBUTE" fulltext="Monkey.at">
+              <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.name">
+              <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="at" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.at">
+              <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="arg1" datatype="String" termtype="ATTRIBUTE" fulltext="goal.arg1">
+              <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="action" datatype="String" termtype="ATTRIBUTE" fulltext="goal.action">
+              <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="GETON2: Goal: {goal.action} to {goal.arg1}. Monkey and {aThing.name} are both on {aThing.on} so the monkey climbs on to {aThing.name}. Goal complete">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="GETON2: Goal:  + goal.action +  to  + goal.arg1 + . Monkey and  + aThing.name +  are both on  + aThing.on +  so the monkey climbs on to  + aThing.name + . Goal complete" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.on">
+              <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.name">
+              <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="arg1" datatype="String" termtype="ATTRIBUTE" fulltext="goal.arg1">
+              <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="action" datatype="String" termtype="ATTRIBUTE" fulltext="goal.action">
+              <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="MAB.ecore#//Monkey" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.1 #//@ruleset/@filters.2 #//@ruleset/@filters.3">
+      <extension explicit="true" association="true" entity="MAB.ecore#//Goal" traversedAssocRole="MAB.ecore#//Monkey/goals" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.1 #//@ruleset/@filters.2 #//@ruleset/@filters.3">
+        <alias value="goal"/>
+        <referencedAttributes attribute="MAB.ecore#//Goal/action"/>
+        <referencedAttributes attribute="MAB.ecore#//Goal/status"/>
+        <referencedAttributes attribute="MAB.ecore#//Goal/arg1"/>
+      </extension>
+      <referencedAttributes attribute="MAB.ecore#//Monkey/on"/>
+      <referencedAttributes attribute="MAB.ecore#//Monkey/at"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="MAB.ecore#//Thing" filters="#//@ruleset/@filters.3">
+      <alias value="aThing"/>
+      <referencedAttributes attribute="MAB.ecore#//Thing/name"/>
+      <referencedAttributes attribute="MAB.ecore#//Thing/at"/>
+      <referencedAttributes attribute="MAB.ecore#//Thing/on"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="MAB.ecore#//Goal">
+      <alias value="anyGoal1"/>
+      <referencedAttributes attribute="MAB.ecore#//Goal/arg1"/>
+      <referencedAttributes attribute="MAB.ecore#//Goal/action"/>
+      <referencedAttributes attribute="MAB.ecore#//Goal/status"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="MAB.ecore#//Goal">
+      <alias value="anyGoal2"/>
+      <referencedAttributes attribute="MAB.ecore#//Goal/arg1"/>
+      <referencedAttributes attribute="MAB.ecore#//Goal/action"/>
+      <referencedAttributes attribute="MAB.ecore#//Goal/status"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="49" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="goal+=Goal.new[action='walk',arg1=aThing.at,status='pending']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goal += Goal.new [ Goal.status = 'pending' , Goal.arg1 = aThing.at , Goal.action = 'walk' ]" datatype="Goal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="at" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.at">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="goal+=Goal.new[action='get on',arg1=aThing.on,status='pending']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goal += Goal.new [ Goal.status = 'pending' , Goal.arg1 = aThing.on , Goal.action = 'get on' ]" datatype="Goal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.on">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Monkey.on = goal.arg1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Monkey.on = goal.arg1" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="Monkey.on">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="arg1" datatype="String" termtype="ATTRIBUTE" fulltext="goal.arg1">
+                <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet="{'complete', 'pending'}"/>
+        <expressionCell external="goal.status">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goal.status" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="goal.status">
+                <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="goal.action = 'get on'" filter="#//@ruleset/@filters.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="goal.status = 'pending'" filter="#//@ruleset/@filters.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Monkey.on &lt;> goal.arg1" filter="#//@ruleset/@filters.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="aThing.name = goal.arg1" filter="#//@ruleset/@filters.3"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="goal.action = 'get on'" filter="#//@ruleset/@filters.0"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="goal.status = 'pending'" filter="#//@ruleset/@filters.1"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Monkey.on &lt;> goal.arg1" filter="#//@ruleset/@filters.2"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="aThing.name = goal.arg1" filter="#//@ruleset/@filters.3"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.2"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="aThing.name = goal.arg1" filter="#//@ruleset/@filters.3"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.3">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.2"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="goal.action = 'get on'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goal.action = 'get on'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="action" datatype="String" termtype="ATTRIBUTE" fulltext="goal.action">
+                <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.1">
+        <expressionCell external="goal.status = 'pending'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="goal.status = 'pending'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="goal.status">
+                <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.2">
+        <expressionCell external="Monkey.on &lt;> goal.arg1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Monkey.on &lt;> goal.arg1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="arg1" datatype="String" termtype="ATTRIBUTE" fulltext="goal.arg1">
+                <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="Monkey.on">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.3">
+        <expressionCell external="aThing.name = goal.arg1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aThing.name = goal.arg1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.name">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="arg1" datatype="String" termtype="ATTRIBUTE" fulltext="goal.arg1">
+                <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="GETON3: Goal: {goal.action} to {goal.arg1}. Monkey is on {Monkey.on} but {aThing.name} is on {aThing.on} so the monkey must first get on {aThing.on}. New goal-> get on {aThing.on}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="GETON3: Goal:  + goal.action +  to  + goal.arg1 + . Monkey is on  + Monkey.on +  but  + aThing.name +  is on  + aThing.on +  so the monkey must first get on  + aThing.on + . New goal-> get on  + aThing.on" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.on">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.name">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="arg1" datatype="String" termtype="ATTRIBUTE" fulltext="goal.arg1">
+                <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="Monkey.on">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="action" datatype="String" termtype="ATTRIBUTE" fulltext="goal.action">
+                <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="GETON1: Goal: {goal.action} to {goal.arg1}. Monkey is at {Monkey.at}. {aThing.name} is at {aThing.at} so the monkey must first walk from {Monkey.at} to {aThing.at}. New goal-> walk to {aThing.at}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="GETON1: Goal:  + goal.action +  to  + goal.arg1 + . Monkey is at  + Monkey.at + .  + aThing.name +  is at  + aThing.at +  so the monkey must first walk from  + Monkey.at +  to  + aThing.at + . New goal-> walk to  + aThing.at" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="at" datatype="String" termtype="ATTRIBUTE" fulltext="Monkey.at">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.name">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="at" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.at">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="arg1" datatype="String" termtype="ATTRIBUTE" fulltext="goal.arg1">
+                <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="action" datatype="String" termtype="ATTRIBUTE" fulltext="goal.action">
+                <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="GETON2: Goal: {goal.action} to {goal.arg1}. Monkey and {aThing.name} are both on {aThing.on} so the monkey climbs on to {aThing.name}. Goal complete">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="GETON2: Goal:  + goal.action +  to  + goal.arg1 + . Monkey and  + aThing.name +  are both on  + aThing.on +  so the monkey climbs on to  + aThing.name + . Goal complete" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.on">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.name">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="arg1" datatype="String" termtype="ATTRIBUTE" fulltext="goal.arg1">
+                <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="action" datatype="String" termtype="ATTRIBUTE" fulltext="goal.action">
+                <parentTerm text="goal" datatype="Goal" termtype="ENTITY" fulltext="goal" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="Monkey.at = aThing.at">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Monkey.at = aThing.at" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="at" datatype="String" termtype="ATTRIBUTE" fulltext="Monkey.at">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="at" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.at">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="Monkey.on = aThing.on">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Monkey.on = aThing.on" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.on">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="Monkey.on">
+                <parentTerm text="Monkey" datatype="Monkey" termtype="ENTITY" fulltext="Monkey" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="anyGoal1->exists(action='walk',arg1=aThing.at,status='pending')">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="anyGoal1 ->exists( anyGoal1.action = 'walk' , anyGoal1.arg1 = aThing.at , anyGoal1.status = 'pending' )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="anyGoal1" datatype="Boolean" termtype="COLLECTION" fulltext="anyGoal1->notEmpty">
+                <parentTerm text="anyGoal1" datatype="Goal" termtype="ENTITY" fulltext="anyGoal1" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="arg1" datatype="String" termtype="ATTRIBUTE" fulltext="anyGoal1.arg1">
+                <parentTerm text="anyGoal1" datatype="Goal" termtype="ENTITY" fulltext="anyGoal1" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="action" datatype="String" termtype="ATTRIBUTE" fulltext="anyGoal1.action">
+                <parentTerm text="anyGoal1" datatype="Goal" termtype="ENTITY" fulltext="anyGoal1" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="at" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.at">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="anyGoal1.status">
+                <parentTerm text="anyGoal1" datatype="Goal" termtype="ENTITY" fulltext="anyGoal1" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="anyGoal2->exists(action='get on',arg1=aThing.on,status='pending')">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="anyGoal2 ->exists( anyGoal2.action = 'get on' , anyGoal2.arg1 = aThing.on , anyGoal2.status = 'pending' )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="anyGoal2" datatype="Boolean" termtype="COLLECTION" fulltext="anyGoal2->notEmpty">
+                <parentTerm text="anyGoal2" datatype="Goal" termtype="ENTITY" fulltext="anyGoal2" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="on" datatype="String" termtype="ATTRIBUTE" fulltext="aThing.on">
+                <parentTerm text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="arg1" datatype="String" termtype="ATTRIBUTE" fulltext="anyGoal2.arg1">
+                <parentTerm text="anyGoal2" datatype="Goal" termtype="ENTITY" fulltext="anyGoal2" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="action" datatype="String" termtype="ATTRIBUTE" fulltext="anyGoal2.action">
+                <parentTerm text="anyGoal2" datatype="Goal" termtype="ENTITY" fulltext="anyGoal2" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="status" datatype="String" termtype="ATTRIBUTE" fulltext="anyGoal2.status">
+                <parentTerm text="anyGoal2" datatype="Goal" termtype="ENTITY" fulltext="anyGoal2" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="aThing" datatype="Thing" termtype="ENTITY" fulltext="aThing" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet=""/>
+        <conditionValueSetCellList valueSet=""/>
+        <conditionValueSetCellList valueSet=""/>
+        <conditionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="'complete'"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

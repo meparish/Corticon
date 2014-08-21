@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_y9uuH2qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_y900uGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_tpXRY2qnEeGMCd15vaZIXw" ruleActivity="Duplicates.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Remove leading separator from ',,,, X1002 ,X1028,X1030,,,,X1002,X1002,X1028,X1002,,,'"/>
+        <PostedMessage severity="Info" text="Remove trailing separator from ',,, X1002 ,X1028,X1030,,,,X1002,X1002,X1028,X1002,,,'"/>
+        <PostedMessage severity="Info" text="Remove leading separator from ',,, X1002 ,X1028,X1030,,,,X1002,X1002,X1028,X1002,,'"/>
+        <PostedMessage severity="Info" text="Remove trailing separator from ',, X1002 ,X1028,X1030,,,,X1002,X1002,X1028,X1002,,'"/>
+        <PostedMessage severity="Info" text="Remove leading separator from ',, X1002 ,X1028,X1030,,,,X1002,X1002,X1028,X1002,'"/>
+        <PostedMessage severity="Info" text="Remove trailing separator from ', X1002 ,X1028,X1030,,,,X1002,X1002,X1028,X1002,'"/>
+        <PostedMessage severity="Info" text="Remove leading separator from ', X1002 ,X1028,X1030,,,,X1002,X1002,X1028,X1002'"/>
+        <PostedMessage severity="Info" text="snip off the string ' X1002 ' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'X1028' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'X1030' up to the first separator"/>
+        <PostedMessage severity="Info" text="Remove leading separator from ',,,X1002,X1002,X1028,X1002'"/>
+        <PostedMessage severity="Info" text="Remove leading separator from ',,X1002,X1002,X1028,X1002'"/>
+        <PostedMessage severity="Info" text="Remove leading separator from ',X1002,X1002,X1028,X1002'"/>
+        <PostedMessage severity="Info" text="snip off the string 'X1002' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'X1002' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'X1028' up to the first separator"/>
+        <PostedMessage severity="Info" text="deal with the last code 'X1002'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' X1002 '"/>
+        <PostedMessage severity="Info" text="Remove trailing space from 'X1002 '"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Duplicates.ecore#//Input">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value=",,,, X1002 ,X1028,X1030,,,,X1002,X1002,X1028,X1002,,," eAttribute="Duplicates.ecore#//Input/codelist"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="," eAttribute="Duplicates.ecore#//Input/separator"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Duplicates.ecore#//Output">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Duplicates.ecore#//Output/codes"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.5 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.6 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.7 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.8 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.9 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.10 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.11 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.12 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.13 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.14 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.15 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.16" eClass="Duplicates.ecore#//Input">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" eAttribute="Duplicates.ecore#//Input/codelist"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="X1028" eAttribute="Duplicates.ecore#//Input/firstCode"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="X1002" eAttribute="Duplicates.ecore#//Input/remainingCodes"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="," eAttribute="Duplicates.ecore#//Input/separator"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6" eAttribute="Duplicates.ecore#//Input/separatorIndex"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Duplicates.ecore#//Output">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="X1030,X1002,X1028" eAttribute="Duplicates.ecore#//Output/codes"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="X1030" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="X1028" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="X1002" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="4" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.8" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.9" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.10" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.11" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.12" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.13" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.14" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.15" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.16" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.17"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.18"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Input">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" eAttribute="Duplicates.ecore#//Input/codelist"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="X1028" eAttribute="Duplicates.ecore#//Input/firstCode"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="X1002" eAttribute="Duplicates.ecore#//Input/remainingCodes"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="," eAttribute="Duplicates.ecore#//Input/separator"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="6" eAttribute="Duplicates.ecore#//Input/separatorIndex"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Output">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="X1030,X1002,X1028" eAttribute="Duplicates.ecore#//Output/codes"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="X1030" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="1" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="X1028" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="X1002" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="4" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_y900uWqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_tpXRY2qnEeGMCd15vaZIXw" ruleActivity="Duplicates.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="snip off the string 'X1002' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'X1028' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'X1030' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'X1002' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'X1002' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'X1028' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'X1002' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'X1002' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'X4567' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'X9876' up to the first separator"/>
+        <PostedMessage severity="Info" text="deal with the last code 'X1002'"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Duplicates.ecore#//Input">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="X1002,X1028,X1030,X1002,X1002,X1028,X1002,X1002,X4567,X9876,X1002" eAttribute="Duplicates.ecore#//Input/codelist"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="," eAttribute="Duplicates.ecore#//Input/separator"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Duplicates.ecore#//Output">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Duplicates.ecore#//Output/codes"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.2 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.5 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.6 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.7 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.8 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.9 #//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.10" eClass="Duplicates.ecore#//Input">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" eAttribute="Duplicates.ecore#//Input/codelist"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="X9876" eAttribute="Duplicates.ecore#//Input/firstCode"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="X1002" eAttribute="Duplicates.ecore#//Input/remainingCodes"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="," eAttribute="Duplicates.ecore#//Input/separator"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6" eAttribute="Duplicates.ecore#//Input/separatorIndex"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Duplicates.ecore#//Output">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="X1002,X4567,X1030,X1028,X9876" eAttribute="Duplicates.ecore#//Output/codes"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="X1028" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="X1030" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="X1002" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="6" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="9" newOrModified="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="X4567" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="10" newOrModified="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="X9876" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.8" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.9" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.10" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Input">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" eAttribute="Duplicates.ecore#//Input/codelist"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="X9876" eAttribute="Duplicates.ecore#//Input/firstCode"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="X1002" eAttribute="Duplicates.ecore#//Input/remainingCodes"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="," eAttribute="Duplicates.ecore#//Input/separator"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="6" eAttribute="Duplicates.ecore#//Input/separatorIndex"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Output">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="X1002,X4567,X1030,X1028,X9876" eAttribute="Duplicates.ecore#//Output/codes"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="X1028" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="X1030" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="1" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="X1002" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="6" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="9" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="X4567" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="1" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="10" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="X9876" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="1" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_y900u2qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954">
+    <testsheet ruleActivityUpdateStamp="_tpXRY2qnEeGMCd15vaZIXw" ruleActivity="Duplicates.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Remove trailing separator from 'GTG,GTT, GTC, GTG,GTA, GTG,TGA,GTA, GTA, GTG,GTA, GTG,TGA,GTA, GTG,TGA,GTA, GTG,GTG,GTG,GTG,TGA,GTA, GTG,GTG,GTA, GTG,GTA, GTG,GTG,TGA,GTA, GTG,GTG,GTT, GTC, GTG,GTA, GTG,TGA,GTA, GTA, GTG,GTA, GTG,TGA,GTA, GTG,TGA,GTA, GTG,GTG,GTG,GTG,TGA,GTA, GTG,GTG,GTA, GTG,GTA, GTG,GTG,TGA,GTA, GTG,'"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTT' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTC' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'TGA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'TGA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'TGA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'TGA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'TGA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTT' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTC' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'TGA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'TGA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'TGA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'TGA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string ' GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTG' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'TGA' up to the first separator"/>
+        <PostedMessage severity="Info" text="snip off the string 'GTA' up to the first separator"/>
+        <PostedMessage severity="Info" text="deal with the last code ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTA'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTC'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTA'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTC'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+        <PostedMessage severity="Info" text="Remove leading space from ' GTG'"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Duplicates.ecore#//Input">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="GTG,GTT, GTC, GTG,GTA, GTG,TGA,GTA, GTA, GTG,GTA, GTG,TGA,GTA, GTG,TGA,GTA, GTG,GTG,GTG,GTG,TGA,GTA, GTG,GTG,GTA, GTG,GTA, GTG,GTG,TGA,GTA, GTG,GTG,GTT, GTC, GTG,GTA, GTG,TGA,GTA, GTA, GTG,GTA, GTG,TGA,GTA, GTG,TGA,GTA, GTG,GTG,GTG,GTG,TGA,GTA, GTG,GTG,GTA, GTG,GTA, GTG,GTG,TGA,GTA, GTG," eAttribute="Duplicates.ecore#//Input/codelist"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="," eAttribute="Duplicates.ecore#//Input/separator"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Duplicates.ecore#//Output">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Duplicates.ecore#//Output/codes"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.2 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.5 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.6 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.7 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.8 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.9 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.10 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.11 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.12 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.13 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.14 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.15 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.16 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.17 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.18 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.19 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.20 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.21 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.22 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.23 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.24 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.25 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.26 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.27 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.28 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.29 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.30 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.31 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.32 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.33 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.34 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.35 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.36 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.37 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.38 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.39 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.40 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.41 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.42 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.43 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.44 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.45 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.46 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.47 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.48 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.49 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.50 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.51 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.52 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.53 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.54 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.55 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.56 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.57 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.58 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.59 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.60 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.61 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.62 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.63 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.64 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.65 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.66" eClass="Duplicates.ecore#//Input">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" eAttribute="Duplicates.ecore#//Input/codelist"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="GTA" eAttribute="Duplicates.ecore#//Input/firstCode"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="GTG" eAttribute="Duplicates.ecore#//Input/remainingCodes"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="," eAttribute="Duplicates.ecore#//Input/separator"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Duplicates.ecore#//Input/separatorIndex"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Duplicates.ecore#//Output">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="GTT,TGA,GTG,GTA,GTC" eAttribute="Duplicates.ecore#//Output/codes"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="33" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.83" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="GTG" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="32" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="35" newOrModified="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="GTT" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="36" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.87" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="GTC" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="49" newOrModified="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="TGA" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="10" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="65" newOrModified="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="GTA" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="20" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.8" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.9" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.10" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.11" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.12" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.13" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.14" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.15" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.16" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.17" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.18" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.19" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.20" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.21" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.22" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.23" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.24" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.25" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.26" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.27" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.28" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.29" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.30" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.31" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.32" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.33" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.34" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.35" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.36" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.37" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.38" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.39" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.40" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.41" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.42" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.43" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.44" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.45" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.46" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.47" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.48" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.49" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.50" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.51" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.52" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.53" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.54" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.55" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.56" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.57" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.58" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.59" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.60" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.61" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.62" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.63" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.64" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.65" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.66" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.67"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.68"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.69"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.70"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.71"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.72"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.73"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.74"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.75"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.76"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.77"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.78"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.79"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.80"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.81"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.82"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.83" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.84"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.85"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.86"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.87" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.88"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.89"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.90"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Input">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" eAttribute="Duplicates.ecore#//Input/codelist"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="GTA" eAttribute="Duplicates.ecore#//Input/firstCode"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="GTG" eAttribute="Duplicates.ecore#//Input/remainingCodes"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="," eAttribute="Duplicates.ecore#//Input/separator"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="4" eAttribute="Duplicates.ecore#//Input/separatorIndex"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Output">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="GTT,TGA,GTG,GTA,GTC" eAttribute="Duplicates.ecore#//Output/codes"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="33" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="GTG" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="32" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="35" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="GTT" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="36" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="GTC" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="2" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="49" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="TGA" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="10" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="65" newOrModified="true" manuallyCreated="true" eClass="Duplicates.ecore#//Codes">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="GTA" eAttribute="Duplicates.ecore#//Codes/code"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="20" eAttribute="Duplicates.ecore#//Codes/count"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_loMQQGqnEeGMCd15vaZIXw" testsheets="#//@testsheetAssets.0/@testsheet #//@testsheetAssets.1/@testsheet #//@testsheetAssets.2/@testsheet" vocabulary="Duplicates.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="Duplicates"/>
+    <testTabList name="Duplicates_9"/>
+    <testTabList name="Codons"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

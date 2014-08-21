@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_tzqdDGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:2389860949">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_lrbxgGqnEeGMCd15vaZIXw" vocabulary="Application.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="Lineup.new[application=app.value,incomingFeedLocation=feed.value,switchboardType=switchboard.value]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Lineup.new [ Lineup.switchboardType = switchboard.value , Lineup.incomingFeedLocation = feed.value , Lineup.application = app.value ]" datatype="Lineup" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="switchboardType" datatype="String" termtype="ATTRIBUTE" fulltext="Lineup.switchboardType">
+                <parentTerm text="Lineup" datatype="Lineup" termtype="ENTITY" fulltext="Lineup"/>
+              </terms>
+              <terms text="incomingFeedLocation" datatype="String" termtype="ATTRIBUTE" fulltext="Lineup.incomingFeedLocation">
+                <parentTerm text="Lineup" datatype="Lineup" termtype="ENTITY" fulltext="Lineup"/>
+              </terms>
+              <terms text="Lineup" datatype="Lineup" termtype="ENTITY" fulltext="Lineup"/>
+              <terms text="application" datatype="String" termtype="ATTRIBUTE" fulltext="Lineup.application">
+                <parentTerm text="Lineup" datatype="Lineup" termtype="ENTITY" fulltext="Lineup"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="app.value">
+                <parentTerm text="app" datatype="Application" termtype="ENTITY" fulltext="app" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="switchboard.value">
+                <parentTerm text="switchboard" datatype="SwitchboardType" termtype="ENTITY" fulltext="switchboard" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="new" datatype="Lineup" termtype="NEW" fulltext="Lineup.new">
+                <parentTerm text="Lineup" datatype="Lineup" termtype="ENTITY" fulltext="Lineup" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="feed.value">
+                <parentTerm text="feed" datatype="Feed" termtype="ENTITY" fulltext="feed" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable explicit="true" entity="Application.ecore#//Application">
+      <alias value="app"/>
+      <referencedAttributes attribute="Application.ecore#//Application/value"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="Application.ecore#//Feed">
+      <alias value="feed"/>
+      <referencedAttributes attribute="Application.ecore#//Feed/value"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="Application.ecore#//SwitchboardType">
+      <alias value="switchboard"/>
+      <referencedAttributes attribute="Application.ecore#//SwitchboardType/value"/>
+    </logicalVariable>
+    <logicalVariable entity="Application.ecore#//Lineup">
+      <referencedAttributes attribute="Application.ecore#//Lineup/switchboardType"/>
+      <referencedAttributes attribute="Application.ecore#//Lineup/incomingFeedLocation"/>
+      <referencedAttributes attribute="Application.ecore#//Lineup/application"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="18" sashWeightConditionsIf="69">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Lineup.new[application=app.value,incomingFeedLocation=feed.value,switchboardType=switchboard.value]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Lineup.new [ Lineup.switchboardType = switchboard.value , Lineup.incomingFeedLocation = feed.value , Lineup.application = app.value ]" datatype="Lineup" expressiontype="EXPRESSION" cellValue="false">
+            <modifiedTermList>
+              <terms text="switchboardType" datatype="String" termtype="ATTRIBUTE" fulltext="Lineup.switchboardType">
+                <parentTerm text="Lineup" datatype="Lineup" termtype="ENTITY" fulltext="Lineup"/>
+              </terms>
+              <terms text="incomingFeedLocation" datatype="String" termtype="ATTRIBUTE" fulltext="Lineup.incomingFeedLocation">
+                <parentTerm text="Lineup" datatype="Lineup" termtype="ENTITY" fulltext="Lineup"/>
+              </terms>
+              <terms text="Lineup" datatype="Lineup" termtype="ENTITY" fulltext="Lineup"/>
+              <terms text="application" datatype="String" termtype="ATTRIBUTE" fulltext="Lineup.application">
+                <parentTerm text="Lineup" datatype="Lineup" termtype="ENTITY" fulltext="Lineup"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="app.value">
+                <parentTerm text="app" datatype="Application" termtype="ENTITY" fulltext="app" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="switchboard.value">
+                <parentTerm text="switchboard" datatype="SwitchboardType" termtype="ENTITY" fulltext="switchboard" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="new" datatype="Lineup" termtype="NEW" fulltext="Lineup.new">
+                <parentTerm text="Lineup" datatype="Lineup" termtype="ENTITY" fulltext="Lineup" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="value" datatype="String" termtype="ATTRIBUTE" fulltext="feed.value">
+                <parentTerm text="feed" datatype="Feed" termtype="ENTITY" fulltext="feed" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.3">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.2"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

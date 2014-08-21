@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_lEuP4mowEeG5P4kWG-yizA" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_DW5rY2olEeG5P4kWG-yizA" vocabulary="simpleSort.ecore#/">
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0"/>
+    <filter>
+      <opaqueExpression expression="sortedThings->next">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="sortedThings->next" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="sortedThings" datatype="Boolean" termtype="COLLECTION" fulltext="sortedThings->next">
+              <parentTerm text="sortedThings" datatype="Thing" termtype="ENTITY" fulltext="sortedThings" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0" logicalVariable="#//@ruleset/@logicalVariables.1">
+      <text expression="{sortedThings.order} {sortedThings.value}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="sortedThings.order +   + sortedThings.value" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="sortedThings.value">
+              <parentTerm text="sortedThings" datatype="Thing" termtype="ENTITY" fulltext="sortedThings" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="order" datatype="Integer" termtype="ATTRIBUTE" fulltext="sortedThings.order">
+              <parentTerm text="sortedThings" datatype="Thing" termtype="ENTITY" fulltext="sortedThings" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="simpleSort.ecore#//Thing">
+      <referencedAttributes attribute="simpleSort.ecore#//Thing/order"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" sortedAliasAttributeName="order" entity="simpleSort.ecore#//Thing" ruleStatements="#//@ruleset/@ruleStatements.0">
+      <alias value="sortedThings"/>
+      <referencedAttributes attribute="simpleSort.ecore#//Thing/order"/>
+      <referencedAttributes attribute="simpleSort.ecore#//Thing/value"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightConditionsIf="15">
+    <actionSection rowCount="50" columnWidthFactor="0.5"/>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" expanded="true" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeSortedAlias" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.1" operatorID="com.corticon.operations.EntityAssocOperators.Collection.sortedBy">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder" expanded="true">
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="sortedThings->next" filter="#//@ruleset/@filters.0"/>
+              </children>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+            </children>
+          </children>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="sortedThings->next">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="sortedThings->next" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="sortedThings" datatype="Boolean" termtype="COLLECTION" fulltext="sortedThings->next">
+                <parentTerm text="sortedThings" datatype="Thing" termtype="ENTITY" fulltext="sortedThings" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="0"/>
+        <text external="{sortedThings.order} {sortedThings.value}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="sortedThings.order +   + sortedThings.value" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="sortedThings.value">
+                <parentTerm text="sortedThings" datatype="Thing" termtype="ENTITY" fulltext="sortedThings" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="order" datatype="Integer" termtype="ATTRIBUTE" fulltext="sortedThings.order">
+                <parentTerm text="sortedThings" datatype="Thing" termtype="ENTITY" fulltext="sortedThings" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="48" pRule="#//@ruleset/@rules.0"/>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

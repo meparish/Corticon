@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_rQlcO2qnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_lEPO2WqnEeGMCd15vaZIXw" vocabulary="opt4_full_onlynext.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="node2.id = RandomGenerator.getRandomNumber">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node2.id = RandomGenerator.getRandomNumber" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="id" datatype="Decimal" termtype="ATTRIBUTE" fulltext="node2.id">
+                <parentTerm text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2">
+                  <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="node2.tagged = 'optimal'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node2.tagged = 'optimal'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="tagged" datatype="String" termtype="ATTRIBUTE" fulltext="node2.tagged">
+                <parentTerm text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2">
+                  <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(node2.id &lt; node21.id)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( node2.id &lt; node21.id ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="id" datatype="Decimal" termtype="ATTRIBUTE" fulltext="node2.id">
+                <parentTerm text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="id" datatype="Decimal" termtype="ATTRIBUTE" fulltext="node21.id">
+                <parentTerm text="node21" datatype="Wezel" termtype="ENTITY" fulltext="node21" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="node2.id &lt; node21.id" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="node1.name = 'i'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node1.name = 'i'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node1.name">
+                <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="node1.name" rhs="'i'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="node3.name = 'f'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node3.name = 'f'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node3.name">
+                <parentTerm text="node3" datatype="Wezel" termtype="ENTITY" fulltext="node3" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="node3.name" rhs="'f'"/>
+      </condition>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="node2.tagged = 'removable'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node2.tagged = 'removable'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="tagged" datatype="String" termtype="ATTRIBUTE" fulltext="node2.tagged">
+                <parentTerm text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2">
+                  <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter>
+      <opaqueExpression expression="node2 &lt;> node21">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node2 &lt;> node21" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="node21" datatype="Wezel" termtype="ENTITY" fulltext="node21" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+              <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+              <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter>
+      <opaqueExpression expression="node2.name = node21.name">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node2.name = node21.name" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node2.name">
+              <parentTerm text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node21.name">
+              <parentTerm text="node21" datatype="Wezel" termtype="ENTITY" fulltext="node21" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+      <text expression="redundant path removed">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="redundant path removed" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="opt4_full_onlynext.ecore#//Wezel">
+      <alias value="node1"/>
+      <extension explicit="true" association="true" entity="opt4_full_onlynext.ecore#//Wezel" traversedAssocRole="opt4_full_onlynext.ecore#//Wezel/nextWezel" ruleStatements="#//@ruleset/@ruleStatements.0">
+        <alias value="node2"/>
+        <extension explicit="true" association="true" entity="opt4_full_onlynext.ecore#//Wezel" traversedAssocRole="opt4_full_onlynext.ecore#//Wezel/nextWezel">
+          <alias value="node3"/>
+          <referencedAttributes attribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+        </extension>
+        <referencedAttributes attribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+        <referencedAttributes attribute="opt4_full_onlynext.ecore#//Wezel/id"/>
+        <referencedAttributes attribute="opt4_full_onlynext.ecore#//Wezel/tagged"/>
+      </extension>
+      <extension explicit="true" association="true" entity="opt4_full_onlynext.ecore#//Wezel" traversedAssocRole="opt4_full_onlynext.ecore#//Wezel/nextWezel">
+        <alias value="node21"/>
+        <referencedAttributes attribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+        <referencedAttributes attribute="opt4_full_onlynext.ecore#//Wezel/id"/>
+      </extension>
+      <referencedAttributes attribute="opt4_full_onlynext.ecore#//Wezel/name"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="node2.id = RandomGenerator.getRandomNumber">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node2.id = RandomGenerator.getRandomNumber" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="id" datatype="Decimal" termtype="ATTRIBUTE" fulltext="node2.id">
+                <parentTerm text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2">
+                  <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="node2.tagged = 'optimal'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node2.tagged = 'optimal'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="tagged" datatype="String" termtype="ATTRIBUTE" fulltext="node2.tagged">
+                <parentTerm text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2">
+                  <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet="{'optimal', 'removable'}"/>
+        <expressionCell external="node2.tagged">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node2.tagged" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tagged" datatype="String" termtype="ATTRIBUTE" fulltext="node2.tagged">
+                <parentTerm text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="node2 &lt;> node21" filter="#//@ruleset/@filters.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="node2.name = node21.name" filter="#//@ruleset/@filters.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="node2 &lt;> node21" filter="#//@ruleset/@filters.0"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="node2.name = node21.name" filter="#//@ruleset/@filters.1"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.0"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.2"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="node2 &lt;> node21" filter="#//@ruleset/@filters.0"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="node2.name = node21.name" filter="#//@ruleset/@filters.1"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="node2 &lt;> node21">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node2 &lt;> node21" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="node21" datatype="Wezel" termtype="ENTITY" fulltext="node21" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.1">
+        <expressionCell external="node2.name = node21.name">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node2.name = node21.name" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node2.name">
+                <parentTerm text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node21.name">
+                <parentTerm text="node21" datatype="Wezel" termtype="ENTITY" fulltext="node21" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="redundant path removed">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="redundant path removed" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="node2.id &lt; node21.id">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node2.id &lt; node21.id" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="id" datatype="Decimal" termtype="ATTRIBUTE" fulltext="node2.id">
+                <parentTerm text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="id" datatype="Decimal" termtype="ATTRIBUTE" fulltext="node21.id">
+                <parentTerm text="node21" datatype="Wezel" termtype="ENTITY" fulltext="node21" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'i', 'a', 'b', 'c', 'd', 'e', 'f'}"/>
+        <expressionCell external="node1.name">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node1.name" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node1.name">
+                <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'i', 'a', 'b', 'c', 'd', 'e', 'f'}"/>
+        <expressionCell external="node3.name">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="node3.name" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="node3.name">
+                <parentTerm text="node3" datatype="Wezel" termtype="ENTITY" fulltext="node3" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="node2" datatype="Wezel" termtype="ENTITY" fulltext="node2" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="node1" datatype="Wezel" termtype="ENTITY" fulltext="node1" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="'i'"/>
+        <conditionValueSetCellList valueSet="'f'"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'removable'"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

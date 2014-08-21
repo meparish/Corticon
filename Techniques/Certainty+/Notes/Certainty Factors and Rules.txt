@@ -1,0 +1,19 @@
+ Certainty Factors and Rule-Based Systems
+
+We mentioned easlier that rule systems can be augmented so that we can draw variably certain conclusions. The approach which is typically used is influenced by probability theory, but makes strong simplifying assumptions concerning the independence of different rules. We won't go into this in detail but you should be aware that the methods are not always sound, and erroneous conclusions (about probabilities) may be drawn.
+
+The basic idea is to add certainty factors to rules, and use these to calculate the measure of belief in some hypothesis. So, we might have a rule such as:
+
+    IF has-spots(X)
+    AND has-fever(X)
+    THEN has-measles(X) CF 0.5 
+
+Certainty factors are related to conditional probabilities, but are not the same. For one thing, we allow certainty factors of less than zero to represent cases where some evidence tends to deny some hypothesis. Rich and Knight discuss how certainty factors consist of two components: a measure of belief and a measure of disbelief. However, here we'll assume that we only have positive evidence and equate certainty factors with measures of belief.
+
+Suppose we have already concluded has-spots(fred) with certainty 0.3, and has-fever(fred) with certainty 0.8. To work out the probability of has-measles(X) we need to take account both of the certainties of the evidence and the certainty factor attached to the rule. The certainty associated with the conjoined premise (has-spots(fred) AND has-fever(fred)) is taken to be the minimum of the certainties attached to each (ie min(0.3, 0.8) = 0.3). The certainty of the conclusion is the total certainty of the premises multiplied by the certainty factor of the rule (ie, 0.3 x 0.5 = 0.15).
+
+If we have another rule drawing the same conclusion (e.g., measles(X)) then we will need to update our certainties to reflect this additional evidence. To do this we calculate the certainties using the individual rules (say CF1 and CF2), then combine them to get a total certainty of (CF1 + CF2 - CF1*CF2). The result will be a certainty greater than each individual certainty, but still less than 1.
+
+Certainty factors provide a simple way of updating probabilities given new evidence. They are slightly dodgy theoretically, but in practice this tends not to matter too much. This is mainly because the error in dealing with certainties tends to lie as much in the certainty factors attached to the rules (or in conditional probabilities assigned to things) as in how they are manipulated. Generally these certainty factors will be based on rough guesses of experts in the domain, rather than based on actual statistical knowledge. These guesses tend not to be very good.
+
+There are many other ways of dealing with uncertainty, such as Demster Shafer theory and Fuzzy logic. It's a big topic, and we have only touched the surface above. 

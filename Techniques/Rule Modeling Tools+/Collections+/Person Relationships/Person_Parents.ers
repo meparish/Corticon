@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_s6D7kmqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_lXsWPGqnEeGMCd15vaZIXw" vocabulary="Person.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(parent1.gender = 'female')=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( parent1.gender = 'female' ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="gender" datatype="String" termtype="ATTRIBUTE" fulltext="parent1.gender">
+                <parentTerm text="parent1" datatype="Person" termtype="ENTITY" fulltext="parent1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="person" datatype="Person" termtype="ENTITY" fulltext="person" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="parent1.gender = 'female'" rhs="T"/>
+      </condition>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(parent2.gender = 'male')=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( parent2.gender = 'male' ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="gender" datatype="String" termtype="ATTRIBUTE" fulltext="parent2.gender">
+                <parentTerm text="parent2" datatype="Person" termtype="ENTITY" fulltext="parent2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="person" datatype="Person" termtype="ENTITY" fulltext="person" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="parent2.gender = 'male'" rhs="T"/>
+      </condition>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+      <text expression="{person.name}'s mother is {parent1.name}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="person.name + 's mother is  + parent1.name" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="parent1.name">
+              <parentTerm text="parent1" datatype="Person" termtype="ENTITY" fulltext="parent1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="person" datatype="Person" termtype="ENTITY" fulltext="person" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="person.name">
+              <parentTerm text="person" datatype="Person" termtype="ENTITY" fulltext="person" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+      <text expression="{person.name}'s father is {parent2.name}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="person.name + 's father is  + parent2.name" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="person.name">
+              <parentTerm text="person" datatype="Person" termtype="ENTITY" fulltext="person" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="parent2.name">
+              <parentTerm text="parent2" datatype="Person" termtype="ENTITY" fulltext="parent2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="person" datatype="Person" termtype="ENTITY" fulltext="person" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="Person.ecore#//Person">
+      <alias value="person"/>
+      <extension explicit="true" association="true" entity="Person.ecore#//Person" traversedAssocRole="Person.ecore#//Person/parents" ruleStatements="#//@ruleset/@ruleStatements.0">
+        <alias value="parent1"/>
+        <referencedAttributes attribute="Person.ecore#//Person/gender"/>
+        <referencedAttributes attribute="Person.ecore#//Person/name"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Person.ecore#//Person" traversedAssocRole="Person.ecore#//Person/parents" ruleStatements="#//@ruleset/@ruleStatements.1">
+        <alias value="parent2"/>
+        <referencedAttributes attribute="Person.ecore#//Person/gender"/>
+        <referencedAttributes attribute="Person.ecore#//Person/name"/>
+      </extension>
+      <referencedAttributes attribute="Person.ecore#//Person/name"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5"/>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="{person.name}'s mother is {parent1.name}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="person.name + 's mother is  + parent1.name" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="parent1.name">
+                <parentTerm text="parent1" datatype="Person" termtype="ENTITY" fulltext="parent1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="person" datatype="Person" termtype="ENTITY" fulltext="person" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="person.name">
+                <parentTerm text="person" datatype="Person" termtype="ENTITY" fulltext="person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="{person.name}'s father is {parent2.name}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="person.name + 's father is  + parent2.name" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="person.name">
+                <parentTerm text="person" datatype="Person" termtype="ENTITY" fulltext="person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="parent2.name">
+                <parentTerm text="parent2" datatype="Person" termtype="ENTITY" fulltext="parent2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="person" datatype="Person" termtype="ENTITY" fulltext="person" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="parent1.gender = 'female'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="parent1.gender = 'female'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="gender" datatype="String" termtype="ATTRIBUTE" fulltext="parent1.gender">
+                <parentTerm text="parent1" datatype="Person" termtype="ENTITY" fulltext="parent1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="person" datatype="Person" termtype="ENTITY" fulltext="person" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="parent2.gender = 'male'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="parent2.gender = 'male'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="gender" datatype="String" termtype="ATTRIBUTE" fulltext="parent2.gender">
+                <parentTerm text="parent2" datatype="Person" termtype="ENTITY" fulltext="parent2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="person" datatype="Person" termtype="ENTITY" fulltext="person" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="T"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

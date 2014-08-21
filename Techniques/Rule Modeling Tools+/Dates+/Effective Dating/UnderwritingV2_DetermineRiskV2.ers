@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_qWH_WmqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_k72HoGqnEeGMCd15vaZIXw" vocabulary="Underwriting.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Applicant.skydiver = 'yes'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Applicant.skydiver = 'yes'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="skydiver" datatype="String" termtype="ATTRIBUTE" fulltext="Applicant.skydiver">
+                <parentTerm text="Applicant" datatype="Applicant" termtype="ENTITY" fulltext="Applicant" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Applicant.skydiver" rhs="'yes'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Applicant.riskRating = 'high'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Applicant.riskRating = 'high'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="riskRating" datatype="String" termtype="ATTRIBUTE" fulltext="Applicant.riskRating">
+                <parentTerm text="Applicant" datatype="Applicant" termtype="ENTITY" fulltext="Applicant"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Applicant" datatype="Applicant" termtype="ENTITY" fulltext="Applicant" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="Applicant.age &lt; 30">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Applicant.age &lt; 30" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="Applicant.age">
+                <parentTerm text="Applicant" datatype="Applicant" termtype="ENTITY" fulltext="Applicant" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Applicant.age" rhs="&lt; 30"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Applicant.skydiver = 'no'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Applicant.skydiver = 'no'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="skydiver" datatype="String" termtype="ATTRIBUTE" fulltext="Applicant.skydiver">
+                <parentTerm text="Applicant" datatype="Applicant" termtype="ENTITY" fulltext="Applicant" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Applicant.skydiver" rhs="'no'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Applicant.riskRating = 'low'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Applicant.riskRating = 'low'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="riskRating" datatype="String" termtype="ATTRIBUTE" fulltext="Applicant.riskRating">
+                <parentTerm text="Applicant" datatype="Applicant" termtype="ENTITY" fulltext="Applicant"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Applicant" datatype="Applicant" termtype="ENTITY" fulltext="Applicant" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="Applicant.age >= 30">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Applicant.age >= 30" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="Applicant.age">
+                <parentTerm text="Applicant" datatype="Applicant" termtype="ENTITY" fulltext="Applicant" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Applicant.age" rhs=">= 30"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Applicant.skydiver = 'no'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Applicant.skydiver = 'no'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="skydiver" datatype="String" termtype="ATTRIBUTE" fulltext="Applicant.skydiver">
+                <parentTerm text="Applicant" datatype="Applicant" termtype="ENTITY" fulltext="Applicant" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Applicant.skydiver" rhs="'no'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Applicant.riskRating = 'med'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Applicant.riskRating = 'med'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="riskRating" datatype="String" termtype="ATTRIBUTE" fulltext="Applicant.riskRating">
+                <parentTerm text="Applicant" datatype="Applicant" termtype="ENTITY" fulltext="Applicant"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Applicant" datatype="Applicant" termtype="ENTITY" fulltext="Applicant" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="V2: Risk is high because applicant is a skydiver">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="V2: Risk is high because applicant is a skydiver" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="V2: Risk is low because applicant is under 30 and not a skydiver">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="V2: Risk is low because applicant is under 30 and not a skydiver" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="V2: Risk is me because applicant is 30 or over and not a skydiver">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="V2: Risk is me because applicant is 30 or over and not a skydiver" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="Underwriting.ecore#//Applicant" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2">
+      <referencedAttributes attribute="Underwriting.ecore#//Applicant/age"/>
+      <referencedAttributes attribute="Underwriting.ecore#//Applicant/skydiver"/>
+      <referencedAttributes attribute="Underwriting.ecore#//Applicant/riskRating"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell valueSet="{'high', 'low', 'med'}"/>
+        <expressionCell external="Applicant.riskRating">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Applicant.riskRating" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="riskRating" datatype="String" termtype="ATTRIBUTE" fulltext="Applicant.riskRating">
+                <parentTerm text="Applicant" datatype="Applicant" termtype="ENTITY" fulltext="Applicant" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="V2: Risk is high because applicant is a skydiver">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="V2: Risk is high because applicant is a skydiver" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="V2: Risk is low because applicant is under 30 and not a skydiver">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="V2: Risk is low because applicant is under 30 and not a skydiver" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="V2: Risk is me because applicant is 30 or over and not a skydiver">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="V2: Risk is me because applicant is 30 or over and not a skydiver" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{&lt; 30, >= 30}"/>
+        <expressionCell external="Applicant.age">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Applicant.age" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="Applicant.age">
+                <parentTerm text="Applicant" datatype="Applicant" termtype="ENTITY" fulltext="Applicant" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'yes', 'no'}"/>
+        <expressionCell external="Applicant.skydiver">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Applicant.skydiver" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="skydiver" datatype="String" termtype="ATTRIBUTE" fulltext="Applicant.skydiver">
+                <parentTerm text="Applicant" datatype="Applicant" termtype="ENTITY" fulltext="Applicant" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="'yes'"/>
+        <actionValueSetCellList valueSet="'high'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="&lt; 30"/>
+        <conditionValueSetCellList valueSet="'no'"/>
+        <actionValueSetCellList valueSet="'low'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet=">= 30"/>
+        <conditionValueSetCellList valueSet="'no'"/>
+        <actionValueSetCellList valueSet="'med'"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

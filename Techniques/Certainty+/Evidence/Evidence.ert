@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_ISp6GB7XEeKwc-1Q5N6mow" externalChecksum="3054974779:507989954">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_oErYGh7wEeKwc-1Q5N6mow" externalChecksum="3054974779:507989954">
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_oErYGB7wEeKwc-1Q5N6mow" key="100" type="Validation" severity="Warning" textKey="TestsheetTreeSetModelAPIImpl.Validation.Mismatch.OutputTree.ExpectedTree" locationKey="TestsheetTreeSetModelAPIImpl.Validation.Testsheet.Name">
+      <locationVariables>Evidence</locationVariables>
+    </validationMessages>
+    <testsheet ruleActivityUpdateStamp="_ISXmMR7XEeKwc-1Q5N6mow" ruleActivity="Evidence.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Its a Banana with a certainty of 0.755000 because its long and small and yellow"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Evidence.ecore#//G">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Evidence.ecore#//G/certainty"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Evidence.ecore#//G/statement"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Evidence.ecore#//Evidence">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="yellow" eAttribute="Evidence.ecore#//Evidence/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="long" eAttribute="Evidence.ecore#//Evidence/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="Evidence.ecore#//Evidence/size"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Evidence.ecore#//G">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.500000" eAttribute="Evidence.ecore#//G/certainty"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Raspberry" eAttribute="Evidence.ecore#//G/statement"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" eClass="Evidence.ecore#//Evidence">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="yellow" eAttribute="Evidence.ecore#//Evidence/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="long" eAttribute="Evidence.ecore#//Evidence/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="small" eAttribute="Evidence.ecore#//Evidence/size"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eReference="Evidence.ecore#//Evidence/conclusion" eClass="Evidence.ecore#//Conclusion">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="false" eAttribute="Evidence.ecore#//Conclusion/used"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Banana" eAttribute="Evidence.ecore#//Conclusion/statement"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="long and small and yellow" eAttribute="Evidence.ecore#//Conclusion/fact"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.755000" eAttribute="Evidence.ecore#//Conclusion/certainty"/>
+          </children>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1/@children.3"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true" passed="false">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Evidence.ecore#//G">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="0.500000" eAttribute="Evidence.ecore#//G/certainty"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Raspberry" eAttribute="Evidence.ecore#//G/statement"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" manuallyCreated="true" eClass="Evidence.ecore#//Evidence">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="yellow" eAttribute="Evidence.ecore#//Evidence/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="long" eAttribute="Evidence.ecore#//Evidence/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="Evidence.ecore#//Evidence/size"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eReference="Evidence.ecore#//Evidence/conclusion" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eReference="Evidence.ecore#//Evidence/conclusion" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eReference="Evidence.ecore#//Evidence/conclusion" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.4"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eReference="Evidence.ecore#//Evidence/conclusion" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.5"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="5" newOrModified="true" manuallyCreated="true" eReference="Evidence.ecore#//Evidence/conclusion" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.6"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="6" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eReference="Evidence.ecore#//Evidence/conclusion" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.7"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="7" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eReference="Evidence.ecore#//Evidence/conclusion" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.8"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="8" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" eReference="Evidence.ecore#//Evidence/conclusion" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.9"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1/@children.3" eClass="Evidence.ecore#//Conclusion">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="0.500000" eAttribute="Evidence.ecore#//Conclusion/certainty"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="yellow" eAttribute="Evidence.ecore#//Conclusion/fact"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Banana" eAttribute="Evidence.ecore#//Conclusion/statement"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="true" eAttribute="Evidence.ecore#//Conclusion/used"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1/@children.4" eClass="Evidence.ecore#//Conclusion">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="0.500000" eAttribute="Evidence.ecore#//Conclusion/certainty"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="yellow" eAttribute="Evidence.ecore#//Conclusion/fact"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Lemon" eAttribute="Evidence.ecore#//Conclusion/statement"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="false" eAttribute="Evidence.ecore#//Conclusion/used"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1/@children.5" eClass="Evidence.ecore#//Conclusion">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="0.000000" eAttribute="Evidence.ecore#//Conclusion/certainty"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="yellow" eAttribute="Evidence.ecore#//Conclusion/fact"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Submarine" eAttribute="Evidence.ecore#//Conclusion/statement"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="true" eAttribute="Evidence.ecore#//Conclusion/used"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1/@children.6" eClass="Evidence.ecore#//Conclusion">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="-1.000000" eAttribute="Evidence.ecore#//Conclusion/certainty"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="yellow" eAttribute="Evidence.ecore#//Conclusion/fact"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Raspberry" eAttribute="Evidence.ecore#//Conclusion/statement"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="true" eAttribute="Evidence.ecore#//Conclusion/used"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1/@children.7" eClass="Evidence.ecore#//Conclusion">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="0.755000" eAttribute="Evidence.ecore#//Conclusion/certainty"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="long and small and yellow" eAttribute="Evidence.ecore#//Conclusion/fact"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Banana" eAttribute="Evidence.ecore#//Conclusion/statement"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="false" eAttribute="Evidence.ecore#//Conclusion/used"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1/@children.8" eClass="Evidence.ecore#//Conclusion">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="0.300000" eAttribute="Evidence.ecore#//Conclusion/certainty"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="long and yellow" eAttribute="Evidence.ecore#//Conclusion/fact"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Submarine" eAttribute="Evidence.ecore#//Conclusion/statement"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="false" eAttribute="Evidence.ecore#//Conclusion/used"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1/@children.9" eClass="Evidence.ecore#//Conclusion">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="0.300000" eAttribute="Evidence.ecore#//Conclusion/certainty"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="small" eAttribute="Evidence.ecore#//Conclusion/fact"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Banana" eAttribute="Evidence.ecore#//Conclusion/statement"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="true" eAttribute="Evidence.ecore#//Conclusion/used"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="8" newOrModified="true" manuallyCreated="true" passed="false" issue="Missing" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.1/@children.10" eClass="Evidence.ecore#//Conclusion">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="-1.000000" eAttribute="Evidence.ecore#//Conclusion/certainty"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="small and yellow" eAttribute="Evidence.ecore#//Conclusion/fact"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="Raspberry" eAttribute="Evidence.ecore#//Conclusion/statement"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" issue="Missing" value="false" eAttribute="Evidence.ecore#//Conclusion/used"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_ILgJMB7XEeKwc-1Q5N6mow" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="Evidence.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="Evidence"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

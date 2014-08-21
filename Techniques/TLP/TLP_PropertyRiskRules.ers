@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" majorServiceNumber="3" buildNumber="5565" updateStamp="_2dzm47cmEeOe68pXBLeUJw" externalChecksum="3054974779:507989954:1410878994">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_2c3LsLcmEeOe68pXBLeUJw" vocabulary="TLP.ecore#/">
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="Customers.properties.typeOfConstruction = 'straw'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customers.properties.typeOfConstruction = 'straw'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="typeOfConstruction" datatype="String" termtype="ATTRIBUTE" fulltext="Customers.properties.typeOfConstruction">
+                <parentTerm text="properties" datatype="Properties" termtype="ENTITY" fulltext="Customers.properties" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Customers" datatype="Customers" termtype="ENTITY" fulltext="Customers" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Customers.properties.typeOfConstruction" rhs="'straw'"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Customers.properties.propertyRisk = 'high'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customers.properties.propertyRisk = 'high'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="propertyRisk" datatype="String" termtype="ATTRIBUTE" fulltext="Customers.properties.propertyRisk">
+                <parentTerm text="properties" datatype="Properties" termtype="ENTITY" fulltext="Customers.properties">
+                  <parentTerm text="Customers" datatype="Customers" termtype="ENTITY" fulltext="Customers"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="properties" datatype="Properties" termtype="ENTITY" fulltext="Customers.properties" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Customers" datatype="Customers" termtype="ENTITY" fulltext="Customers" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="Customers.properties.typeOfConstruction = 'sticks'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customers.properties.typeOfConstruction = 'sticks'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="typeOfConstruction" datatype="String" termtype="ATTRIBUTE" fulltext="Customers.properties.typeOfConstruction">
+                <parentTerm text="properties" datatype="Properties" termtype="ENTITY" fulltext="Customers.properties" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Customers" datatype="Customers" termtype="ENTITY" fulltext="Customers" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Customers.properties.typeOfConstruction" rhs="'sticks'"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Customers.properties.propertyRisk = 'med'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customers.properties.propertyRisk = 'med'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="propertyRisk" datatype="String" termtype="ATTRIBUTE" fulltext="Customers.properties.propertyRisk">
+                <parentTerm text="properties" datatype="Properties" termtype="ENTITY" fulltext="Customers.properties">
+                  <parentTerm text="Customers" datatype="Customers" termtype="ENTITY" fulltext="Customers"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="properties" datatype="Properties" termtype="ENTITY" fulltext="Customers.properties" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Customers" datatype="Customers" termtype="ENTITY" fulltext="Customers" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="Customers.properties.typeOfConstruction = 'bricks'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customers.properties.typeOfConstruction = 'bricks'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="typeOfConstruction" datatype="String" termtype="ATTRIBUTE" fulltext="Customers.properties.typeOfConstruction">
+                <parentTerm text="properties" datatype="Properties" termtype="ENTITY" fulltext="Customers.properties" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Customers" datatype="Customers" termtype="ENTITY" fulltext="Customers" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Customers.properties.typeOfConstruction" rhs="'bricks'"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Customers.properties.propertyRisk = 'low'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customers.properties.propertyRisk = 'low'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="propertyRisk" datatype="String" termtype="ATTRIBUTE" fulltext="Customers.properties.propertyRisk">
+                <parentTerm text="properties" datatype="Properties" termtype="ENTITY" fulltext="Customers.properties">
+                  <parentTerm text="Customers" datatype="Customers" termtype="ENTITY" fulltext="Customers"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="properties" datatype="Properties" termtype="ENTITY" fulltext="Customers.properties" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Customers" datatype="Customers" termtype="ENTITY" fulltext="Customers" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Houses made of straw are high risk">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Houses made of straw are high risk" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Houses made of sticks are medium risk">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Houses made of sticks are medium risk" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Houses made of bricks are low risk">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Houses made of bricks are low risk" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="TLP.ecore#//Customers" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2">
+      <extension association="true" entity="TLP.ecore#//Properties" traversedAssocRole="TLP.ecore#//Customers/properties">
+        <referencedAttributes attribute="TLP.ecore#//Properties/typeOfConstruction"/>
+        <referencedAttributes attribute="TLP.ecore#//Properties/value"/>
+        <referencedAttributes attribute="TLP.ecore#//Properties/age"/>
+        <referencedAttributes attribute="TLP.ecore#//Properties/priorLosses"/>
+        <referencedAttributes attribute="TLP.ecore#//Properties/propertyRisk"/>
+      </extension>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell valueSet="{'high', 'med', 'low'}"/>
+        <expressionCell external="Customers.properties.propertyRisk">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customers.properties.propertyRisk" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="propertyRisk" datatype="String" termtype="ATTRIBUTE" fulltext="Customers.properties.propertyRisk">
+                <parentTerm text="properties" datatype="Properties" termtype="ENTITY" fulltext="Customers.properties">
+                  <parentTerm text="Customers" datatype="Customers" termtype="ENTITY" fulltext="Customers" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.3"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.4"/>
+          </children>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="Houses made of straw are high risk">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Houses made of straw are high risk" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="Houses made of sticks are medium risk">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Houses made of sticks are medium risk" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="Houses made of bricks are low risk">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Houses made of bricks are low risk" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'straw', 'sticks', 'bricks'}"/>
+        <expressionCell external="Customers.properties.typeOfConstruction">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customers.properties.typeOfConstruction" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="typeOfConstruction" datatype="String" termtype="ATTRIBUTE" fulltext="Customers.properties.typeOfConstruction">
+                <parentTerm text="properties" datatype="Properties" termtype="ENTITY" fulltext="Customers.properties">
+                  <parentTerm text="Customers" datatype="Customers" termtype="ENTITY" fulltext="Customers" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{&lt; 50000, >= 50000}"/>
+        <expressionCell external="Customers.properties.value">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customers.properties.value" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="value" datatype="Integer" termtype="ATTRIBUTE" fulltext="Customers.properties.value">
+                <parentTerm text="properties" datatype="Properties" termtype="ENTITY" fulltext="Customers.properties">
+                  <parentTerm text="Customers" datatype="Customers" termtype="ENTITY" fulltext="Customers" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{&lt; 10, >= 10}"/>
+        <expressionCell external="Customers.properties.age">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customers.properties.age" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="age" datatype="Integer" termtype="ATTRIBUTE" fulltext="Customers.properties.age">
+                <parentTerm text="properties" datatype="Properties" termtype="ENTITY" fulltext="Customers.properties">
+                  <parentTerm text="Customers" datatype="Customers" termtype="ENTITY" fulltext="Customers" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{&lt; 1000, >= 1000}"/>
+        <expressionCell external="Customers.properties.priorLosses">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customers.properties.priorLosses" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="priorLosses" datatype="Integer" termtype="ATTRIBUTE" fulltext="Customers.properties.priorLosses">
+                <parentTerm text="properties" datatype="Properties" termtype="ENTITY" fulltext="Customers.properties">
+                  <parentTerm text="Customers" datatype="Customers" termtype="ENTITY" fulltext="Customers" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet=""/>
+        <conditionValueSetCellList valueSet=""/>
+        <conditionValueSetCellList valueSet=""/>
+        <conditionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="'straw'"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="'high'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="'sticks'"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="'med'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="'bricks'"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="'low'"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="2" buildNumber="2438" updateStamp="_t_G4GGqnEeGMCd15vaZIXw" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_luxZYGqnEeGMCd15vaZIXw" vocabulary="Transform.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(item1.itemID = item2.itemID)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( item1.itemID = item2.itemID ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="itemID" datatype="String" termtype="ATTRIBUTE" fulltext="item2.itemID">
+                <parentTerm text="item2" datatype="Item" termtype="ENTITY" fulltext="item2" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="itemID" datatype="String" termtype="ATTRIBUTE" fulltext="item1.itemID">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="item1.itemID = item2.itemID" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(item1.unitPrice = item2.unitPrice)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( item1.unitPrice = item2.unitPrice ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="unitPrice" datatype="Decimal" termtype="ATTRIBUTE" fulltext="item2.unitPrice">
+                <parentTerm text="item2" datatype="Item" termtype="ENTITY" fulltext="item2" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="unitPrice" datatype="Decimal" termtype="ATTRIBUTE" fulltext="item1.unitPrice">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="item1.unitPrice = item2.unitPrice" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(item1.qty > 0)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( item1.qty > 0 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item1.qty">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="item1.qty > 0" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(item2.qty > 0)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( item2.qty > 0 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item2.qty">
+                <parentTerm text="item2" datatype="Item" termtype="ENTITY" fulltext="item2" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="item2.qty > 0" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="item1.qty += item2.qty">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="item1.qty = item1.qty + item2.qty" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item1.qty">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item1.qty">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item2.qty">
+                <parentTerm text="item2" datatype="Item" termtype="ENTITY" fulltext="item2" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="item1.totalCost = item1.unitPrice * item1.qty">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="item1.totalCost = item1.unitPrice * item1.qty" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="totalCost" datatype="Decimal" termtype="ATTRIBUTE" fulltext="item1.totalCost">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="unitPrice" datatype="Decimal" termtype="ATTRIBUTE" fulltext="item1.unitPrice">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item1.qty">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="item2.qty=0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="item2.qty = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item2.qty">
+                <parentTerm text="item2" datatype="Item" termtype="ENTITY" fulltext="item2">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="item2" datatype="Item" termtype="ENTITY" fulltext="item2" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+                <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="item2.totalCost = 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="item2.totalCost = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="totalCost" datatype="Decimal" termtype="ATTRIBUTE" fulltext="item2.totalCost">
+                <parentTerm text="item2" datatype="Item" termtype="ENTITY" fulltext="item2">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="item2" datatype="Item" termtype="ENTITY" fulltext="item2" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+                <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter>
+      <opaqueExpression expression="item1 &lt;> item2">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="item1 &lt;> item2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="item2" datatype="Item" termtype="ENTITY" fulltext="item2" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+              <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </parentTerm>
+            </terms>
+            <terms text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+              <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+      <text expression="Two separate line items for {item1.itemID} for {item1.qty} and {item2.qty} at the same unit price will be merged into one">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Two separate line items for  + item1.itemID +  for  + item1.qty +  and  + item2.qty +  at the same unit price will be merged into one" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="itemID" datatype="String" termtype="ATTRIBUTE" fulltext="item1.itemID">
+              <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </parentTerm>
+            </terms>
+            <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item1.qty">
+              <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </parentTerm>
+            </terms>
+            <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item2.qty">
+              <parentTerm text="item2" datatype="Item" termtype="ENTITY" fulltext="item2" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+                <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="Transform.ecore#//Hierarchical">
+      <alias value="hier"/>
+      <extension explicit="true" association="true" entity="Transform.ecore#//Customer" traversedAssocRole="Transform.ecore#//Hierarchical/customers">
+        <alias value="customer"/>
+        <extension explicit="true" association="true" entity="Transform.ecore#//Order" traversedAssocRole="Transform.ecore#//Customer/orders">
+          <alias value="order"/>
+          <extension explicit="true" association="true" entity="Transform.ecore#//Item" traversedAssocRole="Transform.ecore#//Order/items" ruleStatements="#//@ruleset/@ruleStatements.0">
+            <alias value="item1"/>
+            <referencedAttributes attribute="Transform.ecore#//Item/itemID"/>
+            <referencedAttributes attribute="Transform.ecore#//Item/unitPrice"/>
+            <referencedAttributes attribute="Transform.ecore#//Item/qty"/>
+            <referencedAttributes attribute="Transform.ecore#//Item/totalCost"/>
+          </extension>
+          <extension explicit="true" association="true" entity="Transform.ecore#//Item" traversedAssocRole="Transform.ecore#//Order/items">
+            <alias value="item2"/>
+            <referencedAttributes attribute="Transform.ecore#//Item/itemID"/>
+            <referencedAttributes attribute="Transform.ecore#//Item/unitPrice"/>
+            <referencedAttributes attribute="Transform.ecore#//Item/qty"/>
+            <referencedAttributes attribute="Transform.ecore#//Item/totalCost"/>
+          </extension>
+        </extension>
+      </extension>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="49" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="item1.qty += item2.qty">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="item1.qty = item1.qty + item2.qty" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item1.qty">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item1.qty">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item2.qty">
+                <parentTerm text="item2" datatype="Item" termtype="ENTITY" fulltext="item2" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="item1.totalCost = item1.unitPrice * item1.qty">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="item1.totalCost = item1.unitPrice * item1.qty" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="totalCost" datatype="Decimal" termtype="ATTRIBUTE" fulltext="item1.totalCost">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="unitPrice" datatype="Decimal" termtype="ATTRIBUTE" fulltext="item1.unitPrice">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item1.qty">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="item2.qty=0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="item2.qty = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item2.qty">
+                <parentTerm text="item2" datatype="Item" termtype="ENTITY" fulltext="item2">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="item2" datatype="Item" termtype="ENTITY" fulltext="item2" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+                <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="item2.totalCost = 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="item2.totalCost = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="totalCost" datatype="Decimal" termtype="ATTRIBUTE" fulltext="item2.totalCost">
+                <parentTerm text="item2" datatype="Item" termtype="ENTITY" fulltext="item2">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="item2" datatype="Item" termtype="ENTITY" fulltext="item2" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+                <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="item1 &lt;> item2" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="item1 &lt;> item2" filter="#//@ruleset/@filters.0"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="item1 &lt;> item2" filter="#//@ruleset/@filters.0"/>
+              </children>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+                  <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="item1 &lt;> item2" filter="#//@ruleset/@filters.0"/>
+                </children>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0/@referencedAttributes.0"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0/@referencedAttributes.1"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0/@referencedAttributes.2"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0/@referencedAttributes.3"/>
+              </children>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+                  <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="item1 &lt;> item2" filter="#//@ruleset/@filters.0"/>
+                </children>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1/@referencedAttributes.0"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1/@referencedAttributes.1"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1/@referencedAttributes.2"/>
+                <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1/@referencedAttributes.3"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="item1 &lt;> item2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="item1 &lt;> item2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="item2" datatype="Item" termtype="ENTITY" fulltext="item2" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+                <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="Two separate line items for {item1.itemID} for {item1.qty} and {item2.qty} at the same unit price will be merged into one">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Two separate line items for  + item1.itemID +  for  + item1.qty +  and  + item2.qty +  at the same unit price will be merged into one" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="itemID" datatype="String" termtype="ATTRIBUTE" fulltext="item1.itemID">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item1.qty">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item2.qty">
+                <parentTerm text="item2" datatype="Item" termtype="ENTITY" fulltext="item2" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="item1.itemID = item2.itemID">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="item1.itemID = item2.itemID" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="itemID" datatype="String" termtype="ATTRIBUTE" fulltext="item2.itemID">
+                <parentTerm text="item2" datatype="Item" termtype="ENTITY" fulltext="item2" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="itemID" datatype="String" termtype="ATTRIBUTE" fulltext="item1.itemID">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="item1.unitPrice = item2.unitPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="item1.unitPrice = item2.unitPrice" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="unitPrice" datatype="Decimal" termtype="ATTRIBUTE" fulltext="item2.unitPrice">
+                <parentTerm text="item2" datatype="Item" termtype="ENTITY" fulltext="item2" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="unitPrice" datatype="Decimal" termtype="ATTRIBUTE" fulltext="item1.unitPrice">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="item1.qty > 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="item1.qty > 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item1.qty">
+                <parentTerm text="item1" datatype="Item" termtype="ENTITY" fulltext="item1" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.0">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="item2.qty > 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="item2.qty > 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="qty" datatype="Integer" termtype="ATTRIBUTE" fulltext="item2.qty">
+                <parentTerm text="item2" datatype="Item" termtype="ENTITY" fulltext="item2" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@extension.1">
+                  <parentTerm text="order" datatype="Order" termtype="ENTITY" fulltext="order" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                    <parentTerm text="customer" datatype="Customer" termtype="ENTITY" fulltext="customer" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                      <parentTerm text="hier" datatype="Hierarchical" termtype="ENTITY" fulltext="hier" variable="#//@ruleset/@logicalVariables.0"/>
+                    </parentTerm>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

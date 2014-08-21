@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="3" buildNumber="2822" updateStamp="_ij25EAhGEeKQ1tmMitp5cg" externalChecksum="3054974779:507989954:1292135240">
+  <languageCode>en_US</languageCode>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_dEK9QAhGEeKQ1tmMitp5cg" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@conditionSection/@conditionItemList.0/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidConditionExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Condition">
+    <textVariables>Invalid token: [een].</textVariables>
+    <locationVariables>a</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_dEg7gQhGEeKQ1tmMitp5cg" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@conditionSection/@conditionItemList.1/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidConditionExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Condition">
+    <textVariables>Invalid token: [alle].</textVariables>
+    <locationVariables>b</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_dpQAQAhGEeKQ1tmMitp5cg" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@actionSection/@actionItemList.0/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidActionExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Action">
+    <textVariables>Invalid token: [alle].</textVariables>
+    <locationVariables>A</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_dpkJUQhGEeKQ1tmMitp5cg" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@actionSection/@actionItemList.1/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidActionExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Action">
+    <textVariables>Invalid token: [het].</textVariables>
+    <locationVariables>B</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_dpw9oQhGEeKQ1tmMitp5cg" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@actionSection/@actionItemList.2/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidActionExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Action">
+    <textVariables>Invalid token: [het].</textVariables>
+    <locationVariables>C</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_dp9K4QhGEeKQ1tmMitp5cg" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@actionSection/@actionItemList.3/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidActionExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Action">
+    <textVariables>Invalid token: [deze].</textVariables>
+    <locationVariables>D</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_dqJ_MAhGEeKQ1tmMitp5cg" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@actionSection/@actionItemList.4/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidActionExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Action">
+    <textVariables>Invalid token: [dit].</textVariables>
+    <locationVariables>E</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_f8rbcAhGEeKQ1tmMitp5cg" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@filterSection/@filterItemList.0/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidFilterExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Filter">
+    <textVariables>Invalid token: [beschikbare].</textVariables>
+    <locationVariables>1</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_f8-9cAhGEeKQ1tmMitp5cg" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@filterSection/@filterItemList.1/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidFilterExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Filter">
+    <textVariables>Invalid token: [komen].</textVariables>
+    <locationVariables>2</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_f9PcIAhGEeKQ1tmMitp5cg" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@filterSection/@filterItemList.2/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidFilterExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Filter">
+    <textVariables>Invalid token: [alleen].</textVariables>
+    <locationVariables>3</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_f9abQAhGEeKQ1tmMitp5cg" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@filterSection/@filterItemList.3/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidFilterExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Filter">
+    <textVariables>Invalid token: [aanlegplaatsen].</textVariables>
+    <locationVariables>4</locationVariables>
+  </validationMessages>
+  <ruleset operationMode="ProcessAllLogicalLoops" vocabularyUpdateStamp="_ta1AILaYEeGU39-PZxk6cQ" vocabulary="PortV.ecore#/">
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <action disabled="true"/>
+      <action disabled="true"/>
+      <action disabled="true"/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition disabled="true"/>
+      <condition disabled="true"/>
+      <action disabled="true"/>
+      <action disabled="true"/>
+      <action disabled="true"/>
+      <action disabled="true"/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition disabled="true"/>
+      <condition disabled="true"/>
+      <action disabled="true"/>
+      <action disabled="true"/>
+      <action disabled="true"/>
+      <action disabled="true"/>
+      <action disabled="true"/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition disabled="true"/>
+      <condition disabled="true"/>
+    </rule>
+    <filter disabled="true"/>
+    <filter disabled="true"/>
+    <filter disabled="true"/>
+    <filter disabled="true"/>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.0">
+      <text expression="Toewijzing van schepen wordt gedaan op basis van binnenkomst, maar de aanlegplaatsen worden verwerkt van klein naar groot.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Toewijzing van schepen wordt gedaan op basis van binnenkomst, maar de aanlegplaatsen worden verwerkt van klein naar groot." expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.1">
+      <text expression="{aShip.name}-{aBerth.name}: controleer de vereisten van elk schip op basis van de mogelijkheden van elke aanlegplaats en markeer de vereiste als voldaan indien de aanlegplaats deze mogelijkheid biedt.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aShip.name + - + aBerth.name + : controleer de vereisten van elk schip op basis van de mogelijkheden van elke aanlegplaats en markeer de vereiste als voldaan indien de aanlegplaats deze mogelijkheid biedt." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aShip.name">
+              <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aBerth.name">
+              <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.2">
+      <text expression="Aanlegplaats {aBerth.name} biedt alle mogelijkheden die het schip {aShip.name} vereist.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Aanlegplaats  + aBerth.name +  biedt alle mogelijkheden die het schip  + aShip.name +  vereist." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aShip.name">
+              <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aBerth.name">
+              <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.3">
+      <text expression="Aanlegplaats {aBerth.name} biedt niet alle mogelijkheden die het schip {aShip.name} vereist.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Aanlegplaats  + aBerth.name +  biedt niet alle mogelijkheden die het schip  + aShip.name +  vereist." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aShip.name">
+              <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aBerth.name">
+              <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="PortV.ecore#//Ship">
+      <alias value="aShip"/>
+      <extension explicit="true" association="true" entity="PortV.ecore#//Requirement" traversedAssocRole="PortV.ecore#//Ship/requirements">
+        <alias value="requirement"/>
+      </extension>
+      <referencedAttributes attribute="PortV.ecore#//Ship/name"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="PortV.ecore#//Berth">
+      <alias value="unsortedBerths"/>
+      <referencedAttributes attribute="PortV.ecore#//Berth/length"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" sortedAliasAttributeName="length" entity="PortV.ecore#//Berth">
+      <alias value="aBerth"/>
+      <extension explicit="true" association="true" entity="PortV.ecore#//Capability" traversedAssocRole="PortV.ecore#//Berth/capabilities">
+        <alias value="capability"/>
+      </extension>
+      <referencedAttributes attribute="PortV.ecore#//Berth/name"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell validationMessages="#//@validationMessages.2" tooltip="Invalid token: [alle]." external="markeer alle vereisten waaran het schip dient te voldoen als NIET VOLDAAN"/>
+      </actionItemList>
+      <actionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell validationMessages="#//@validationMessages.3" tooltip="Invalid token: [het]." external="tel het aantal mogenlijkheden dat elke aanlegplaats biedt"/>
+      </actionItemList>
+      <actionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell validationMessages="#//@validationMessages.4" tooltip="Invalid token: [het]." external="tel het aantal vereisten van elk schip"/>
+      </actionItemList>
+      <actionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell validationMessages="#//@validationMessages.5" tooltip="Invalid token: [deze]." external="markeer deze vereiste als VOLDAAN"/>
+      </actionItemList>
+      <actionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell validationMessages="#//@validationMessages.6" tooltip="Invalid token: [dit]." external="wijs dit schip toe aan de aanlegplaats"/>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeSortedAlias" logicalVariable="#//@ruleset/@logicalVariables.2" operatorID="com.corticon.operations.EntityAssocOperators.Collection.sortedBy">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.2/@extension.0"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+            </children>
+          </children>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList disabled="true" filter="#//@ruleset/@filters.0">
+        <expressionCell validationMessages="#//@validationMessages.7" tooltip="Invalid token: [beschikbare]." external="laat beschikbare aanlegplaatsen in aanmerking komen startend met de kleinste."/>
+      </filterItemList>
+      <filterItemList disabled="true" filter="#//@ruleset/@filters.1">
+        <expressionCell validationMessages="#//@validationMessages.8" tooltip="Invalid token: [komen]." external="aanlegplaasten komen alleen in aanmerking als ze groter zijn dan het schip"/>
+      </filterItemList>
+      <filterItemList disabled="true" filter="#//@ruleset/@filters.2">
+        <expressionCell validationMessages="#//@validationMessages.9" tooltip="Invalid token: [alleen]." external="laat alleen aanlegplaatsen in aanmerking komen als de diepte groter is dan de diepgang van het schip"/>
+      </filterItemList>
+      <filterItemList disabled="true" filter="#//@ruleset/@filters.3">
+        <expressionCell validationMessages="#//@validationMessages.10" tooltip="Invalid token: [aanlegplaatsen]." external="alleen aanlegplaatsen die operationeel zijn in aanmerking laten komen."/>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="0"/>
+        <text external="Toewijzing van schepen wordt gedaan op basis van binnenkomst, maar de aanlegplaatsen worden verwerkt van klein naar groot.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Toewijzing van schepen wordt gedaan op basis van binnenkomst, maar de aanlegplaatsen worden verwerkt van klein naar groot." expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="1"/>
+        <text external="{aShip.name}-{aBerth.name}: controleer de vereisten van elk schip op basis van de mogelijkheden van elke aanlegplaats en markeer de vereiste als voldaan indien de aanlegplaats deze mogelijkheid biedt.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="aShip.name + - + aBerth.name + : controleer de vereisten van elk schip op basis van de mogelijkheden van elke aanlegplaats en markeer de vereiste als voldaan indien de aanlegplaats deze mogelijkheid biedt." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aShip.name">
+                <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aBerth.name">
+                <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="2"/>
+        <text external="Aanlegplaats {aBerth.name} biedt alle mogelijkheden die het schip {aShip.name} vereist.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Aanlegplaats  + aBerth.name +  biedt alle mogelijkheden die het schip  + aShip.name +  vereist." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aShip.name">
+                <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aBerth.name">
+                <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="3"/>
+        <text external="Aanlegplaats {aBerth.name} biedt niet alle mogelijkheden die het schip {aShip.name} vereist.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Aanlegplaats  + aBerth.name +  biedt niet alle mogelijkheden die het schip  + aShip.name +  vereist." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aShip.name">
+                <parentTerm text="aShip" datatype="Ship" termtype="ENTITY" fulltext="aShip" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="aBerth.name">
+                <parentTerm text="aBerth" datatype="Berth" termtype="ENTITY" fulltext="aBerth" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList disabled="true">
+        <valueSetCell valueSet="{'ja', 'nee'}"/>
+        <expressionCell validationMessages="#//@validationMessages.0" tooltip="Invalid token: [een]." external="komt een van de mogelijkheden van deze aanlegplaat tegemoed aan de vereisten van het schip?"/>
+      </conditionItemList>
+      <conditionItemList disabled="true">
+        <valueSetCell valueSet="{'ja', 'nee'}"/>
+        <expressionCell validationMessages="#//@validationMessages.1" tooltip="Invalid token: [alle]." external="worden alle vereisten van het schip afgedekt?"/>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="'yes'"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="'yes'"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="'no'"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>
